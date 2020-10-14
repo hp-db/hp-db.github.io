@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/E25.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "db"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130EF"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "hippopotamus"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃯"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E25"
+      }
+    ]
+  }
+]

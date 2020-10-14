@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A53.json",
+    "http://example.org/notes": [
+      {
+        "@value": "form, likeness, image, (double)Tutankhamun: Form-Living-(of)- Amun"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "tut"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1303E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "standing mummy"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A53"
+      }
+    ]
+  }
+]

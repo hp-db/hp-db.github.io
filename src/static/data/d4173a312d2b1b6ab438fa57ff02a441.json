@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/data/d4173a312d2b1b6ab438fa57ff02a441.json",
+    "http://example.org/hieroglyphNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D53.json"
+      }
+    ],
+    "http://example.org/identifier": [
+      {
+        "@value": "d4173a312d2b1b6ab438fa57ff02a441"
+      }
+    ],
+    "http://example.org/möllerNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/96.json"
+      }
+    ],
+    "http://example.org/note": [
+      {
+        "@id": "Most of the examples of vol.2 are compounded with 538(Y1)."
+      },
+      {
+        "@value": "Most of the examples of vol.2 are compounded with 538(Y1)."
+      }
+    ],
+    "http://example.org/phoneWord": [
+      {
+        "@value": "bAH"
+      }
+    ],
+    "http://example.org/vol": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_038.tif/936,5322,3840,476/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/relation": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=77"
+      }
+    ]
+  }
+]

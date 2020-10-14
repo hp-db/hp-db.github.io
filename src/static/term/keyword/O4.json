@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O4.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. first alphabetic h; 2. Egyptian uniliteral sign h; 3. see second uniliteral h, the wick (hieroglyph), Gardiner no. V28,"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "h"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13254"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "shelter"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉔"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O4"
+      }
+    ]
+  }
+]

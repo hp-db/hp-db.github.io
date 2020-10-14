@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D54.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "approach (tkn) enterprise (nmtt), do not move, stop Injure leg (rd), thigh (mnt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130BB"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "legs walking"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂻"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D54"
+      }
+    ]
+  }
+]

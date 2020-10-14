@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Y4.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Rarer alternative of Y3"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "naa, snaa"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Scribe's outfit (mnhd) abbreviation for write, (ssch) writing, etc."
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133DF"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Scribe's outfit"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏟"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Y4"
+      }
+    ]
+  }
+]

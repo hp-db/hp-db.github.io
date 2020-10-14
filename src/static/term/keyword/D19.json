@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D19.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram or det. for the \"nose\", fnḏ/fnd-(fnḏ/fnd), (sh)rt-(šrt); det. for words relating to smell, joy, and the nose; det. for \"face\", (kh)nt, -(ẖnt), (and the phoneme for face)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "fnḏ/fnd-(fnḏ/fnd)(sh)rt-(šrt)(kh)nt-ẖnt"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13089"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "nose, eye and cheek"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂉"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D19"
+      }
+    ]
+  }
+]

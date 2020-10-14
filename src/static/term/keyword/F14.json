@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F14.json",
+    "http://example.org/notes": [
+      {
+        "@value": "(see: Renpet)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "wpt-rnpt"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1310D"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "horns with palm branch"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄍"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F14"
+      }
+    ]
+  }
+]

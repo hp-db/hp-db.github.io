@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z6.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "for death, die (mwt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133F1"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Substitute for various human figures"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏱"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z6"
+      }
+    ]
+  }
+]

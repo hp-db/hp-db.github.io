@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D8A.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1307E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "eye with painted lower lid enclosed in sandy tract"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D8A"
+      }
+    ]
+  }
+]

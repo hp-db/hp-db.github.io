@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W10.json",
+    "http://example.org/notes": [
+      {
+        "@value": "A. Determinative for the \"vessel\", Egyptian language, i'b-(no. 5 of 6); det. for i'b (1 & 2), 1: to approach, to come towards, to meet; 2: \"to present a gift\", to make an offering, 'an offering'; B. i', i'y, bathing; i'u, food, morning meal; i'b-(no. 3 of 6), uses Gardiner no. F16,     as det. for \"to comb\"; the other use of 'to comb', is for 'to card wool' and also uses the Horn hieroglyph, but is the equivalent word: b'-(no. 2, of 3); (no. 1 is a vessel, bowl, but made of \"copper\", etc.)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "wsḫ, sẖw Determinative for goblet (jab)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133BA"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "cup"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎺"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W10"
+      }
+    ]
+  }
+]

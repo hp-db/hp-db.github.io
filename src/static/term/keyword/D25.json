@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D25.json",
+    "http://example.org/notes": [
+      {
+        "@value": "the two lips"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "(Both) lips (sptj)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1308F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "lips"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂏"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D25"
+      }
+    ]
+  }
+]

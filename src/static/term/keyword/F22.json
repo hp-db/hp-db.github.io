@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F22.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. ideas of 'physical force', and 'strength, (from the legs of the hindparts); 2. Biliteral pḥ; 3. see also: \"forepart of lion\", what is 'foremost', what 'excels', etc.,"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "pḥ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13116"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "hind-quarters of lion"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄖"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F22"
+      }
+    ]
+  }
+]

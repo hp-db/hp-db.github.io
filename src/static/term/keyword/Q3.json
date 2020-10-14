@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Q3.json",
+    "http://example.org/notes": [
+      {
+        "@value": "A common usage is for the name of god Ptah-(p,t,h)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "support (p), stool, stool made out of reed\n    (originally the stool's Mat)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132AA"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "stool"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊪"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Q3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/V20I.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Egyptian numeral 20"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1338F"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎏"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "V20I"
+      }
+    ]
+  }
+]

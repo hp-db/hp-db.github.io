@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Y2.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Old Kingdom variation of Y1."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "papyrus scroll, book (mḏꜣt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133DD"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Y2"
+      }
+    ]
+  }
+]

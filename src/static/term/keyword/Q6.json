@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Q6.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram or det. for qrsw, sarcophagus"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "coffin (qrsw), bury (qrs)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132AD"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "sarcophagus"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊭"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Q6"
+      }
+    ]
+  }
+]

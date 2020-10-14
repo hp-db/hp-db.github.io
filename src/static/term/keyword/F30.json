@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F30.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Determinative for (sh)dw-(šdu), \"belly\"; phon. for (sh)d-(šd);2. (See: similar shaped hieroglyph: whip)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "šd"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1311E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "water-skin"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄞"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F30"
+      }
+    ]
+  }
+]

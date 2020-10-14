@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D51.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "dqr"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "finger nail (ant).  Activities with finger: measure (ḫꜣj), take (ṯꜣj), go (jw) (schm)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130B7"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "one finger (horizontal)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂷"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D51"
+      }
+    ]
+  }
+]

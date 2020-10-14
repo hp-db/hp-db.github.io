@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D36.json",
+    "http://example.org/notes": [
+      {
+        "@value": "uniliteral sign representing Egyptian ayin"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ꜥ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1309D"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "forearm (palm upwards)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D36"
+      }
+    ]
+  }
+]

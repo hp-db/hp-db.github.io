@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A35.json",
+    "http://example.org/notes": [
+      {
+        "@value": "man constructing: a \"Mason\"; Ideogram or det. for qd, \"to construct\"; (see Wall, (Collapsing)-Wall)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "to build (qd)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13028"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man building wall"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀨"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A35"
+      }
+    ]
+  }
+]

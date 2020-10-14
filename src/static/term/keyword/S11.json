@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/S11.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132DD"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "broad collar"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S11"
+      }
+    ]
+  }
+]

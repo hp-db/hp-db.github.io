@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Aa6.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "tmꜣ, ṯmꜣ."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "mat (ṯmꜣ)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13412"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓐒"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aa6"
+      }
+    ]
+  }
+]

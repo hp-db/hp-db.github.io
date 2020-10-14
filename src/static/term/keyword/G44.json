@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G44.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "ww"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13173"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "two quail chicks"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅳"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G44"
+      }
+    ]
+  }
+]

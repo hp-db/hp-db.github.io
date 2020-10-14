@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/K4.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Phonetic value (kh)a-((kh)ꜣ), from name, ideogram (kh)it-(ḫit); 2. Bil. for (kh)a"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "achA"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Mormyrus (achAt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1319E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "elephant-snout fish"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆞"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "K4"
+      }
+    ]
+  }
+]

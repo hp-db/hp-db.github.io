@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W21.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Determinative in irp, \"wine\""
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Wine (jrp)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133C9"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Wine jars"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏉"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W21"
+      }
+    ]
+  }
+]

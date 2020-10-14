@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D42.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "mḥ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "yard (make)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130A3"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "forearm with palm down and straight upper arm"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D42"
+      }
+    ]
+  }
+]

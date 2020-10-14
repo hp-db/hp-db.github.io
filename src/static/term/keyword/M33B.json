@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M33B.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131E2"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "3 grains in triangular arrangement"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇢"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M33B"
+      }
+    ]
+  }
+]

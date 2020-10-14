@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A31.json",
+    "http://example.org/notes": [
+      {
+        "@value": "the connotation of A31 is unclear."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "to turn away"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13023"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man with hands raised behind him"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A31"
+      }
+    ]
+  }
+]

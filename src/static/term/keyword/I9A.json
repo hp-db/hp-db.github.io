@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/I9A.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13192"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "horned viper crawling out of enclosure"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆒"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I9A"
+      }
+    ]
+  }
+]

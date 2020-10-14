@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/E11.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "bꜣ ẖnmw"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130DE"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "ram"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃞"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E11"
+      }
+    ]
+  }
+]

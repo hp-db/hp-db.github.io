@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/K1.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Egyptian biliteral sign jn; det. for \"Tilapia\", jnt; phoneme for jn; the common fish shape for reliefs & art; also for the fish cosmetic palettes."
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "int, in--(bil.)-in"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Nile tilapia ỉn.t or flathead mullet (Mugil cephalus)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1319B"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "tilapia"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆛"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "K1"
+      }
+    ]
+  }
+]

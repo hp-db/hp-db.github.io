@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/P5.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "sail (tjꜣwt) (achtꜣw), sailor (nfw), wind, north wind (mḥyt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132A1"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "sail"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊡"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "P5"
+      }
+    ]
+  }
+]

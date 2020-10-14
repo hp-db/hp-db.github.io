@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M36.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Bil. & phoneme for ḏr; 2. Determinative for dmꜣ, to tie together, to bind, to gather together, to collect"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "1-ḏrmany wordconstructs2-dma--(bil.)-ḏr"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131E5"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "bundle of flax"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇥"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M36"
+      }
+    ]
+  }
+]

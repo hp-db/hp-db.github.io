@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G37A.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1316B"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "sparrow (low)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅫"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G37A"
+      }
+    ]
+  }
+]

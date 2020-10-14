@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/NL18.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Nome of Lower Egypt (NL018)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13233"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓈳"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "NL18"
+      }
+    ]
+  }
+]

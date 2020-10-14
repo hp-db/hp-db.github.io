@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/C2B.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1305D"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "C2A reversed"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C2B"
+      }
+    ]
+  }
+]

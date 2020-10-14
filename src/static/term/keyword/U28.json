@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/U28.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. bil. ḏꜣ; Ideogram for \"forest\"Emphatically used with words as ḏꜥḏꜥ constructs;2. (see AUS-(article), and \"Scale-2\"-(on list)-wḏꜣ')"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ḏaḏ3--(bil.)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13351"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "fire-drill"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍑"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U28"
+      }
+    ]
+  }
+]

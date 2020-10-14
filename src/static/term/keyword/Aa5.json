@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Aa5.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "achp (rarely)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Hasten (hip), Hepet-device (achpt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13411"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Part of steering gear of a ship"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓐑"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aa5"
+      }
+    ]
+  }
+]

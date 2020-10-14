@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/NU4.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Nome of Upper Egypt (NU004)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13239"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓈹"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "NU4"
+      }
+    ]
+  }
+]

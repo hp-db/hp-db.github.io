@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Aa14.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "m, m, gs"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "side area (jmw), side (gs)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1341C"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓐜"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aa14"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/U12.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13340"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍀"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U12"
+      }
+    ]
+  }
+]

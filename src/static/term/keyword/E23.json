@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/E23.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "mꜣj"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130ED"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "lying lion"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃭"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E23"
+      }
+    ]
+  }
+]

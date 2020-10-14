@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/S1.json",
+    "http://example.org/notes": [
+      {
+        "@value": "see Hedjet; (see also Red crown & Pschent))"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ḥḏ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132D1"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "white crown"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋑"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S1"
+      }
+    ]
+  }
+]

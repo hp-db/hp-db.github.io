@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A25.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Most likely synonymous with A24"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "to hit or strike (achwj)\n    possibly 'attack'"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1301D"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man striking, with left arm hanging behind back"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A25"
+      }
+    ]
+  }
+]

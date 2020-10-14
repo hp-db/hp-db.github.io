@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/R9.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132BA"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "combination of cloth on pole and bag"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊺"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "R9"
+      }
+    ]
+  }
+]

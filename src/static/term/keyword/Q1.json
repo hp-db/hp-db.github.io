@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Q1.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram for st, seat, throne, place; and phonogram st; see is-t, for major use of Place of  XXXX, etc."
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "st, achtm"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "seat (st), place"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132A8"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seatthrone"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊨"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Q1"
+      }
+    ]
+  }
+]

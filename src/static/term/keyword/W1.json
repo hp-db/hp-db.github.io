@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W1.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "Ointment (mrḥt), oil"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133AF"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Oil jar"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎯"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O41.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Determinative for qꜣ-(constructs): high ground, hill, high place; 2. same for iꜣr, to climb"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "q3, q33, q3i"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1328E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "double stairway"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊎"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O41"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F44.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Phoneme, isu-\"Reward\". 2. Determinative for thigh bone, iw' -\"Heir\", Inheritance, Ancestry, (phonetic iw. Also, tibia, swt."
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "jsw"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "isuiw', iwswt"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1312F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "bone with meat"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄯"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F44"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O31.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Egyptian language, 'ꜣ, equivalent to     .2. Determinative, 'open'"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "'ꜣ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1327F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "door"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉿"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O31"
+      }
+    ]
+  }
+]

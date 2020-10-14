@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D66.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130C8"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "arm with reed pen"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃈"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D66"
+      }
+    ]
+  }
+]

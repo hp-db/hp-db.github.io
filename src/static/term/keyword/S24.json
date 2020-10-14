@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/S24.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. knot; to tie in a knot, fetter; 2. Bil. (tsh)s, t_s"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ṯs--(bil.)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132ED"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "girdle knot"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋭"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S24"
+      }
+    ]
+  }
+]

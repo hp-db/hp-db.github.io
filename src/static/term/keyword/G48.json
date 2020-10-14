@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G48.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "Id. sš"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Nest, pond, marsh (sš)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13178"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "three ducklings in nest"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅸"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G48"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W20.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "milk (jrṯt), milk container and contents"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133C8"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Milk jug with cover"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏈"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W20"
+      }
+    ]
+  }
+]

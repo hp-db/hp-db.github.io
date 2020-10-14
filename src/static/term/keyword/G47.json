@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G47.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Bil. (tsh)ꜣ, t_ꜣ, for 'baby bird', duckling; Ideogram for 'young bird'(The Egyptian vizier is the \"tshat(y)\")"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "ṯꜣ, Id. ṯꜣ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "tjꜣt_ꜣ--(bil.)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13177"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "duckling"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅷"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G47"
+      }
+    ]
+  }
+]

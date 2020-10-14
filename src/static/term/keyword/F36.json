@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F36.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Egyptian \"lung\", sma-(smꜣ); used for union, (as in the \"Two Lands\", \"Upper and Lower Egypt)-(Lower Egypt=the Nile Delta); Ideogram or det. for \"unite\", \"join\""
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "smꜣ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "sma(smꜣ)--(tril.)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13125"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "lung and windpipe"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄥"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F36"
+      }
+    ]
+  }
+]

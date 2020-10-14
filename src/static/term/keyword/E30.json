@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/E30.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "njꜣw"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130F5"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "ibex"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃵"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E30"
+      }
+    ]
+  }
+]

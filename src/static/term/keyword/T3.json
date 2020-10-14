@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T3.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram, and phonogram for mace, ḥḏ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ḥḏ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13309"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "mace with round head"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌉"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "T3"
+      }
+    ]
+  }
+]

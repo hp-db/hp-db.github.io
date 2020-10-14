@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A11.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "friend (ḫnms)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1300D"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seated man holding scepter of authority and shepherd's crook"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀍"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A11"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/X1.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Uniliteral for \"t\""
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "t"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133CF"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "loaf of bread"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏏"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X1"
+      }
+    ]
+  }
+]
