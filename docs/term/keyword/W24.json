@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W24.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Phoneme for nw; det. for qd, construct, mold; (see: ḥnk, Arm-with-nu-pot)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "nuqd--(bil.)-nu"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "nw, jn * (accompanies the signs Aa-27 and Aa-28) get (jnj)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133CC"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Pot"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏌"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W24"
+      }
+    ]
+  }
+]

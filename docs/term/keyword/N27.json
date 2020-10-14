@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/N27.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram for a(kh)t-(ꜣḫt), \"horizon\"; (see Akhenaten's townsite, Akhetaten)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "a(kh)tꜣḫt"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1320C"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "sun over mountain"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓈌"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "N27"
+      }
+    ]
+  }
+]

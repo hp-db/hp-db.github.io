@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T15.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1331A"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "throw stick slanted"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌚"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "T15"
+      }
+    ]
+  }
+]

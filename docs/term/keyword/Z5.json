@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z5.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Can be used as a replacement for signs perceived to be dangerous to be actually written)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133EF"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Diagonal stroke (from hieratic)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏯"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z5"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D2.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Bil. hr-(ḥr); 2. Ideogram for 'face';3. A major preposition for \"on, upon\", etc.; additional preposition constructs; 4. (see also: Nose, sometimes used for the face)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "ḥr"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "face\non, around, over, for"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13077"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "face"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁷"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D2"
+      }
+    ]
+  }
+]

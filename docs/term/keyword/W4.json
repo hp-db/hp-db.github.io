@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W4.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Sed festival"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "Sṯ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "festival (ḥb)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133B3"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "festival chamber, (the tail is also vertical 'Great':  'ꜣ)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎳"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W4"
+      }
+    ]
+  }
+]

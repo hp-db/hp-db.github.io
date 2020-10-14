@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/V15.json",
+    "http://example.org/notes": [
+      {
+        "@value": "to take possession of, seize, carry off, conquer, acquire"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ṯtt_t"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13381"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Tethering rope w/ walking legs"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎁"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "V15"
+      }
+    ]
+  }
+]

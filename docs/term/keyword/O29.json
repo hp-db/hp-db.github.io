@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O29.json",
+    "http://example.org/notes": [
+      {
+        "@value": "'Great'(wooden)-column"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "ꜥꜣ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1327B"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "horizontal wooden column"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉻"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O29"
+      }
+    ]
+  }
+]

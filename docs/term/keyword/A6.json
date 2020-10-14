@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A6.json",
+    "http://example.org/notes": [
+      {
+        "@value": "possibly refers to all aspects of 'clean' dependent on context, i.e. 'cleanliness', 'to cleanse', 'purify', etc."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "to be clean"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13006"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seated man under vase from which water flows"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀆"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A6"
+      }
+    ]
+  }
+]

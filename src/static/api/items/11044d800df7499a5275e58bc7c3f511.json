@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/data/11044d800df7499a5275e58bc7c3f511.json",
+    "http://example.org/hieroglyphNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/V32.json"
+      }
+    ],
+    "http://example.org/identifier": [
+      {
+        "@value": "11044d800df7499a5275e58bc7c3f511"
+      }
+    ],
+    "http://example.org/möllerNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/513.json"
+      }
+    ],
+    "http://example.org/note": [
+      {
+        "@value": "513(V32), 516bis(V32)"
+      },
+      {
+        "@id": "513(V32), 516bis(V32)"
+      }
+    ],
+    "http://example.org/phoneWord": [
+      {
+        "@value": "gAw"
+      },
+      {
+        "@value": "msn"
+      }
+    ],
+    "http://example.org/vol": [
+      {
+        "@value": 3
+      }
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_071.tif/900,3035,3908,494/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/relation": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1540"
+      }
+    ]
+  }
+]

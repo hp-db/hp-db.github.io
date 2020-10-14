@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W3.json",
+    "http://example.org/notes": [
+      {
+        "@value": "festival(Equivalent to Gardiner W4, Jubilee Pavilion (hieroglyph))det. in sš, 'alabaster', or \"precious stone\"; det. in hb\nabbreviation for ḥbt in \"ritual book\" ḥrj-ḥbt"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "sšsš-s(sh)'(sesh)'"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Alabaster (schs), festival (achb)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133B1"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "alabasterbasin"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎱"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W3"
+      }
+    ]
+  }
+]

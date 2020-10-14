@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A54.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "death (mnj)\n    dead"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1303F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "lying mummy"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀿"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A54"
+      }
+    ]
+  }
+]

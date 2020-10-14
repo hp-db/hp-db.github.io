@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W19.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. like, as, according to, inasmuch as, since, as well as, together with; all adverbial forms, some as a segue; 2. early forms use other hieroglyphs; 3. Egyptian: mity and mitt relate to \"image\" or \"likeness\": likeness, copy, resemblance, statue, image, similitude, the like etc."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "mi"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133C7"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Milk jug with handle"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏇"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W19"
+      }
+    ]
+  }
+]

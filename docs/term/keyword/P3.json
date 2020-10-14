@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/P3.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "sacred barque (wiꜣ)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1329E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "sacred barque"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊞"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "P3"
+      }
+    ]
+  }
+]

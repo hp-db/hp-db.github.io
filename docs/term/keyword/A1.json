@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A1.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Commonly placed behind a name to indicate masculine sex of named person."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "I (Masculine) (paeu)\n    male, man, typical masculine role, son, courtier (Masculine)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13000"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seated man"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀀"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A1"
+      }
+    ]
+  }
+]

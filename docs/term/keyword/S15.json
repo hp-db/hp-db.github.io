@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/S15.json",
+    "http://example.org/notes": [
+      {
+        "@value": "four props, the Four Pillars of Heaven; also as, s(kh)nut, four pillars of the sky; (sa)(kh)niu, additionally, 4 legs of a chair; s(kh)nut, 4 legs of a vessel & s(kh)nut IV, the 4 Pillars that Support the Sky"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132E3"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "pectoral"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S15"
+      }
+    ]
+  }
+]

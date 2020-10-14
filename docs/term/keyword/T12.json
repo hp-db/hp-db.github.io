@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T12.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Tril. rwḏ; Ideo. for \"bowstring\";2. items that are \"hard, durable, strong, rooted,\" thus \"growth, growing\";3. (see Pharaoh Rudamun)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ruḏrwḏ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13317"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "bowstring"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌗"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "T12"
+      }
+    ]
+  }
+]

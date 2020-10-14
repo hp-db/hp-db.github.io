@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/R22.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132C9"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "two narrow belemnites"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋉"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "R22"
+      }
+    ]
+  }
+]

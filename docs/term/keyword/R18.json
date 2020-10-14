@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/R18.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132C5"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "combination of wig on pole and irrigation canal system"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋅"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "R18"
+      }
+    ]
+  }
+]

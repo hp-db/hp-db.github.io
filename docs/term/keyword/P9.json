@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/P9.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Combination of P8 and I9"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "says (Xryfy)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132A5"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "combination of oar and horned viper"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊥"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "P9"
+      }
+    ]
+  }
+]

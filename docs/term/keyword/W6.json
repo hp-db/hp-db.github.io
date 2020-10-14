@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W6.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "boiler (wḥꜣt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133B5"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Metal vessel"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎵"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W6"
+      }
+    ]
+  }
+]

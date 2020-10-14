@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G40.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram and bil. for pꜣ, to fly; phoneme for pꜣ"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "pꜣ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "pꜣ--(bil.)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1316E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "pintail flying"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅮"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G40"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D56.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideo., det. for rd, \"leg\"; Det. \"to tread\";(see Foot)Also: for pds, w'rt, sbq."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "rd"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130BE"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "leg"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D56"
+      }
+    ]
+  }
+]

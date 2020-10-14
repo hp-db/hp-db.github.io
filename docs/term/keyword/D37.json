@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D37.json",
+    "http://example.org/notes": [
+      {
+        "@value": "to give, or given"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "sound sign for ḏ (only in ḏdw busiris), mj (rarely), m (especially in: see (mk))"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "give!  (jmj), give (rḏj) (ḏj)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1309E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "forearm with bread cone"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂞"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D37"
+      }
+    ]
+  }
+]

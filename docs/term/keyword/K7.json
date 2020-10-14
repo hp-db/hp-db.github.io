@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/K7.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "Nile pufferfish,\n    annoying (schpt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131A1"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "puffer"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆡"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "K7"
+      }
+    ]
+  }
+]

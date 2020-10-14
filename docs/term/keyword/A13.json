@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A13.json",
+    "http://example.org/notes": [
+      {
+        "@value": "possibly also 'criminal', 'traitor', 'prisoner'"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "enemy (ḫfty)\n    rebel (sbj)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1300F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man with arms tied behind his back"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀏"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A13"
+      }
+    ]
+  }
+]

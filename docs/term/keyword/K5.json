@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/K5.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "bs"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Petrocephalus bane (rm)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1319F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Petrocephalus bane"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆟"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "K5"
+      }
+    ]
+  }
+]

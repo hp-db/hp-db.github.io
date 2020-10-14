@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F1.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "kꜣ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130FE"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "ox head"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F1"
+      }
+    ]
+  }
+]

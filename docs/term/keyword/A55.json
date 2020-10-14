@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A55.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Overnight meaning an overnight stay in any location, i.e. 'spend the night at home', 'spent the night in a hotel', 'slept over at (random person's name)'s house', etc..."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "lie down(sḏr)\n    spend the night/overnight, corpse display (achAt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13040"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "mummy on bed"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁀"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A55"
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/E16A.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130E4"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "lying canine on shrine with flagellum"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃤"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E16A"
+      }
+    ]
+  }
+]

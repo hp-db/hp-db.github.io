@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Q7.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. lamp 2. (see Fire-Flame)-(in progress) 3. \"Brazier\" 4. Egyptian language, (kh)ꜣbs, (for lamp, etc.-tied to (kh)ꜣbs, for \"star\", \"luminary\"; for Flame: (kh)t, sḏt, & nsr; for Heat: rkḥ & tꜣ."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "1.-Fire-Flame2.-Lamp3.-Brazier"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132AE"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "brazier"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓊮"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Q7"
+      }
+    ]
+  }
+]

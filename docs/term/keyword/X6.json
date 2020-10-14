@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/X6.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Determinative for the 'decorated bread loaf', pꜣt; phoneme for pꜣ; meanings of: stuff, matter, substance; for 'bread': dough, cake, bread, offering, food, product; 2. for the \"primordial god(s)\": \"Pauti\",    (or)    (many spelling versions)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "pꜣt(phoneme pꜣ)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133D6"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "loaf-with-decoration"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏖"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X6"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G38.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. \"son of\", \"daughter of\", sa, sa-t; 2. goose"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "sꜣ, sꜣ-t--(bil.)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Bird"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1316C"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "white-fronted goose"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅬"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G38"
+      }
+    ]
+  }
+]

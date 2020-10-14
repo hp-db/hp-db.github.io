@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W12.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "g"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "seat (nst)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133BD"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Jar stand"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓎽"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "W12"
+      }
+    ]
+  }
+]

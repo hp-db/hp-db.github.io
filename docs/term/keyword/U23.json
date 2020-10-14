@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/U23.json",
+    "http://example.org/notes": [
+      {
+        "@value": "(See: Narmer Palette)bil., ꜣb, mr; (see also for mr, Canal)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ꜣbmr"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1334B"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "chisel"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍋"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U23"
+      }
+    ]
+  }
+]

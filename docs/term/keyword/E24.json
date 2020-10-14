@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/E24.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "ꜣby"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130EE"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "panther"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃮"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E24"
+      }
+    ]
+  }
+]

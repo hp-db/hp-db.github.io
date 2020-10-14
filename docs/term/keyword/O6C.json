@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O6C.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1325A"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "opening of ḥwt-enclosure"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉚"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O6C"
+      }
+    ]
+  }
+]

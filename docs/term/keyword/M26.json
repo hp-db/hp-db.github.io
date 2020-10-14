@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M26.json",
+    "http://example.org/notes": [
+      {
+        "@value": "flowering rush; also Gardiner nos. M25, M27, M28,"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "(sh)m'ušm'w"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131D7"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "floweringsedge"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇗"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M26"
+      }
+    ]
+  }
+]

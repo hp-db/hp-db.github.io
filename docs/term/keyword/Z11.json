@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z11.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "imi"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133F6"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Two planks crossed and joined"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏶"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z11"
+      }
+    ]
+  }
+]

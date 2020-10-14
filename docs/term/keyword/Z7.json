@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z7.json",
+    "http://example.org/notes": [
+      {
+        "@value": "unil., equivalent of unil. w, the quail chick,    ; Both chick and coil are used for plural, the w, (or u);(see also: Plural)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "w or (u)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133F2"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "coil(hieratic equivalent)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏲"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z7"
+      }
+    ]
+  }
+]

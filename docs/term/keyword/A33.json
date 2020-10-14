@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A33.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "to herd, (mnjw) journey,\n    tramp (ḫwsj)\n    shepherd (mnjw)\n    wander,\n    hike,\n    traveler, (ḫwsj)\n    construction, (qb)\n    foreign, strange(schmAw)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13026"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man with stick and bundle on shoulder"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀦"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A33"
+      }
+    ]
+  }
+]

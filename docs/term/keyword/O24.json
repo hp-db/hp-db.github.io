@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O24.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13274"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "pyramid"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉴"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O24"
+      }
+    ]
+  }
+]

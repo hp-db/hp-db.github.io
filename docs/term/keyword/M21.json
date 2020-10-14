@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M21.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131D0"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "reeds with root"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇐"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M21"
+      }
+    ]
+  }
+]

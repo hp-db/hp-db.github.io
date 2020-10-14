@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A27.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Original Wiki English translation: sound sign for, only in \"through\" (jn)\nPossibly this means to transition."
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "jn (ḏ + n) Egyptian biliteral signs"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1301F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "hastening man"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀟"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A27"
+      }
+    ]
+  }
+]

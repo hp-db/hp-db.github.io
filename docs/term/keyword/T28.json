@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T28.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Bil. (kh)r; 2. Ideas of items below, (butchered, segmented, then 'owned'); and major use of 'below', or 'under', as a prepositional use"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "khrẖr"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13328"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "butcher's block"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌨"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "T28"
+      }
+    ]
+  }
+]

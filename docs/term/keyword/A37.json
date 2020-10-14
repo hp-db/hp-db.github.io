@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A37.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "brewer (aftj)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1302A"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man in vessel"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀪"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A37"
+      }
+    ]
+  }
+]

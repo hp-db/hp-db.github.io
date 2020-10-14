@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A56.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13041"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seated man holding stick"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁁"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A56"
+      }
+    ]
+  }
+]

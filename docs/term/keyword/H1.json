@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/H1.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. an abbreviation for ꜣpd, \"bird\""
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "mꜣꜥ, wšm, pq (pꜣq)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "bird (in ringing of bird's neck wšn)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1317F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "head of pintail"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅿"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "H1"
+      }
+    ]
+  }
+]

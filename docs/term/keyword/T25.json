@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T25.json",
+    "http://example.org/notes": [
+      {
+        "@value": "to supply, furnish with, equip, provide, & to decorate...(thus the \"life preserver\")see also: seal, (to seal, ḏb'i-t)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ḏb(ḏa)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13325"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "float"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌥"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "T25"
+      }
+    ]
+  }
+]

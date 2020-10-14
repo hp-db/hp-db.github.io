@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A4.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "offer, beseech (dwꜣ)\n    to shield oneself (jmn)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13003"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seated man with hands raised"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀃"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A4"
+      }
+    ]
+  }
+]

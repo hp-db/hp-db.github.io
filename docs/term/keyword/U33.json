@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/U33.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Bil. ti"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "ti"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13358"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "'pestle'-(curved top)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍘"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U33"
+      }
+    ]
+  }
+]

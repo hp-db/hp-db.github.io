@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M18.json",
+    "http://example.org/notes": [
+      {
+        "@value": "combined sound-sign, determinative for i(+i); come, to come, coming, etc"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "i(i)it"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131CD"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "combination of reed and legs walking"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇍"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M18"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A20.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "Elder (smsw)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13018"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man leaning on forked staff"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀘"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A20"
+      }
+    ]
+  }
+]

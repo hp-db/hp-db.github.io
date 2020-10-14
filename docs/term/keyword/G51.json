@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G51.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "To catch fish (ḥꜣm/ḥjm)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1317B"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "bird pecking at fish"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅻"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G51"
+      }
+    ]
+  }
+]

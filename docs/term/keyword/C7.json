@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/C7.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "God Seth"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13063"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "god with Seth-animal head"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C7"
+      }
+    ]
+  }
+]

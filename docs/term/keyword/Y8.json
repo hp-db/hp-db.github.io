@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Y8.json",
+    "http://example.org/notes": [
+      {
+        "@value": "A. Ideo. for \"sistrum\", sššt, (or s(kh)m(=sistrum)); det. in sššt; B. s(kh)m is Egyptian for 'power', (confer with Sekhem scepter-(list skhm) and Medamud-(article))"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "sš, sššt(also s(kh)m)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Sistrum (sschscht)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+133E3"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Sistrum"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Y8"
+      }
+    ]
+  }
+]

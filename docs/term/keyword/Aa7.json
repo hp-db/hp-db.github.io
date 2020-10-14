@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Aa7.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Abbreviation for \"smite\" (spr)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "spr"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13413"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "A Smiting-Blade"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓐓"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aa7"
+      }
+    ]
+  }
+]

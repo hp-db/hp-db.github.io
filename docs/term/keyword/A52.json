@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A52.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "to be of noble blood (schpsi)\n    entrepreneur of noble blood[3] as in 'one or distinguished one who undertakes a task or distinguished task'\n    (schpsi)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1303D"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "noble squatting with flagellum"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀽"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A52"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M35.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Determinative in 1.  'ḥ'-'ḥ'u, for \"stack-(of grain)\"; (or other determiners for: food, provisions, stores, heaps of grain, wealth, riches, abundance); 2. and (kh)ty, 'heap of grain', where (kh)tyt, is \"barn floor\", or \"place where grain is stored for sale\""
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "(kh)ty 'ḥ'-'ḥ'u"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131E4"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "stack(of grain)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇤"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M35"
+      }
+    ]
+  }
+]

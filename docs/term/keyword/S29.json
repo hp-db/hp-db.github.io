@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/S29.json",
+    "http://example.org/notes": [
+      {
+        "@value": "A. Sirius, Sothic cycle, Sothis;B. 'Readiness', beginning of the year: planting, the Season of the Inundation, (w/ rising of the Dog Star)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "spdit"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+132F4"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "folded cloth"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋴"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S29"
+      }
+    ]
+  }
+]

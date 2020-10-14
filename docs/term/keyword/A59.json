@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A59.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "to take away/withhold"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13044"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man threatening with stick"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁄"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A59"
+      }
+    ]
+  }
+]

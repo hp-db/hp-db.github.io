@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/data/a702de3188aa36647f6d69c573d50675.json",
+    "http://example.org/hieroglyphNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O29.json"
+      }
+    ],
+    "http://example.org/identifier": [
+      {
+        "@value": "a702de3188aa36647f6d69c573d50675"
+      }
+    ],
+    "http://example.org/möllerNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/363B.json"
+      }
+    ],
+    "http://example.org/note": [
+      {
+        "@value": "Vertical signs are attested only in NK."
+      },
+      {
+        "@id": "Vertical signs are attested only in NK."
+      }
+    ],
+    "http://example.org/phoneWord": [
+      {
+        "@value": "aA"
+      }
+    ],
+    "http://example.org/vol": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_064.tif/993,4432,3864,484/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/relation": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=325"
+      }
+    ]
+  }
+]

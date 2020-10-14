@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D53.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Censored by some OS/browser vendors.Image rendering:"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "in before (m bAach), phallus (achnn), urinate (wssch), seed (mtwt), man (tjAy), husband (hj)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+130BA"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "phallus with emission"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂺"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D53"
+      }
+    ]
+  }
+]

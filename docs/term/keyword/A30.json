@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A30.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "offer, praise, laud, respect, entreat, beseech"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13022"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man with hands raised in front"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀢"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A30"
+      }
+    ]
+  }
+]

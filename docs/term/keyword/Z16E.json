@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z16E.json",
+    "http://example.org/notes": [
+      {
+        "@value": "numeral 6 in dates"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13409"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓐉"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z16E"
+      }
+    ]
+  }
+]

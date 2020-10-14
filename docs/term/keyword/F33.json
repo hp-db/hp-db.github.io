@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F33.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Determinative for sd, \"tail\"; then phon., sd;2. (See: \"Festival of the Tail\", the Sed festival)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "sd"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "sd"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13122"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "tail"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄢"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F33"
+      }
+    ]
+  }
+]

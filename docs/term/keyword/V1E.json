@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/V1E.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Egyptian numeral 600"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13367"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍧"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "V1E"
+      }
+    ]
+  }
+]

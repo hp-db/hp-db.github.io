@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G54.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Determinative for u(sh)n, (wšn), Egyptian: \"twist the neck (of a bird)\";2. Phonetically sn(tj), (snṯ)3. (see Trussed-goose Palette)"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "snḏ"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "To wring (birds' necks) (wšn)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1317E"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "plucked bird"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G54"
+      }
+    ]
+  }
+]

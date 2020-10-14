@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O11.json",
+    "http://example.org/notes": [
+      {
+        "@value": "1. Ideogram,  'h-('ḥ), \"palace\"; see also:     palace, temple, tomb, ḥut"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "'ḥ"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13265"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "palace"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉥"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O11"
+      }
+    ]
+  }
+]

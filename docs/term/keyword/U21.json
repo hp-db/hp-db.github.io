@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/U21.json",
+    "http://example.org/notes": [
+      {
+        "@value": "triliteral, stp, for \"chosen\";often used in Pharaonic cartouche names as: \"Chosen of God XXXX\", (example: Beloved of Maat, Chosen of Maat)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "stp"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13349"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "adze-on-block"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍉"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U21"
+      }
+    ]
+  }
+]

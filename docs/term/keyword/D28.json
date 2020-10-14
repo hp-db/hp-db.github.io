@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D28.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Bil. kꜣ, ka"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "kꜣ--(bil.)"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "Close, the Ka (life spirit) (kA)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13093"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "two arms upraised"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂓"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D28"
+      }
+    ]
+  }
+]

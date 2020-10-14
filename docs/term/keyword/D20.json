@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D20.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Determinative and Ideogram for nose (fnḏ), smell (sn), be happy (rschw), be\n    (sfn) face, front (ḫnt), mild, itself wiedersetzten (bṯn), disobediently"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "ḫnt"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "nose (fnḏ),\n    smell (sn), \n    be happy (rschw), \n    be (sfn) \n    face, front (ḫnt), \n    mild, itself wiedersetzten (btjn), \n    disobediently"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1308A"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "nose, eye and cheek (cursive)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂊"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D20"
+      }
+    ]
+  }
+]

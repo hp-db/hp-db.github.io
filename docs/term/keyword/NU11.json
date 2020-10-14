@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/NU11.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Nome of Upper Egypt (NU011)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13241"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉁"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "NU11"
+      }
+    ]
+  }
+]

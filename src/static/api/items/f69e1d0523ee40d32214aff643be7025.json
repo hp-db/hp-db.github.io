@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/data/f69e1d0523ee40d32214aff643be7025.json",
+    "http://example.org/hieroglyphNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/R22.json"
+      }
+    ],
+    "http://example.org/identifier": [
+      {
+        "@value": "f69e1d0523ee40d32214aff643be7025"
+      }
+    ],
+    "http://example.org/möllerNo": [
+      {
+        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/545.json"
+      }
+    ],
+    "http://example.org/note": [
+      {
+        "@value": "Identification is uncertain. R22 or R118\nGoedickeはR23=なしにしている。\nMollerの字形もばらついている。"
+      },
+      {
+        "@id": "Identification is uncertain. R22 or R118\nGoedickeはR23=なしにしている。\nMollerの字形もばらついている。"
+      }
+    ],
+    "http://example.org/phoneWord": [
+      {
+        "@value": "mnw"
+      },
+      {
+        "@value": "xm"
+      }
+    ],
+    "http://example.org/vol": [
+      {
+        "@value": 2
+      }
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_071.tif/880,3489,3909,490/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/relation": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1018"
+      }
+    ]
+  }
+]

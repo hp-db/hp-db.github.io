@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/H6.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Goddess Shu; Maat's Shu feather"
+      }
+    ],
+    "http://example.org/phonetic": [
+      {
+        "@value": "schw"
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "feather (schwt), Maat (mꜣꜥt)"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13184"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "feather"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆄"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "H6"
+      }
+    ]
+  }
+]

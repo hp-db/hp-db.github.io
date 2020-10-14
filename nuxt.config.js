@@ -42,7 +42,6 @@ const manifestIcon = 'img/icons/icon-512.png'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-
   srcDir: 'src/',
 
   env,
@@ -208,6 +207,7 @@ export default {
   ...routerBase,
 
   generate: {
+    dir: 'docs',
     async routes() {
       const pages = await axios
         .get('https://moeller.jinsha.tsukuba.ac.jp/data/curation.json')

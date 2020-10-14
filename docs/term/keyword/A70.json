@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A70.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1304F"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "seated man with raised arms"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁏"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A70"
+      }
+    ]
+  }
+]

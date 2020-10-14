@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D12.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Determinative for pupil (ḏfḏ) abbreviation for Heqat-measure grain"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13082"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "pupil"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂂"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D12"
+      }
+    ]
+  }
+]

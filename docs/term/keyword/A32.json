@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A32.json",
+    "http://example.org/notes": [
+      {
+        "@value": "Ideogram or det. for (kh)bi, to dance; also  det. for ib, ibu; ibꜣu, ibꜣ, for dance, dancer, etc."
+      }
+    ],
+    "http://example.org/transliteration": [
+      {
+        "@value": "dance (ḫbj)\n    cheer, rejoice (hy-hnw)\n    be happy"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13024"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man dancing with arms to the back"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀤"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A32"
+      }
+    ]
+  }
+]

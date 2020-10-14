@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T5.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+1330C"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "combination of mace with round head and cobra"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌌"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "T5"
+      }
+    ]
+  }
+]

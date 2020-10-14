@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M12A.json",
+    "http://example.org/transliteration": [
+      {
+        "@value": "2000"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131BD"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "two lotus plants"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆽"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M12A"
+      }
+    ]
+  }
+]

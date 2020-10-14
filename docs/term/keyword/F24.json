@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F24.json",
+    "http://example.org/phonetic": [
+      {
+        "@value": "ḫpš"
+      }
+    ],
+    "http://example.org/unicode": [
+      {
+        "@value": "U+13118"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "F23 reversed"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄘"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F24"
+      }
+    ]
+  }
+]

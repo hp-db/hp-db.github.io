@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M14.json",
+    "http://example.org/unicode": [
+      {
+        "@value": "U+131C6"
+      }
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "combination of papyrus and cobra"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇆"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M14"
+      }
+    ]
+  }
+]
