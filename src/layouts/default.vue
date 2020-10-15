@@ -75,7 +75,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-app-bar app>
+      <v-app-bar>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
         <v-toolbar-title>Hieratische Paläographie DB</v-toolbar-title>
       </v-app-bar>

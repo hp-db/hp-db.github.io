@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="py-0">
+    <v-container class="py-5">
       <iframe
         :src="getIframeUrl()"
         width="100%"
@@ -17,6 +17,23 @@
     </v-sheet>
     -->
     <v-container>
+      <b>{{ url }}</b>
+      <p class="text-center">
+        <a :href="baseUrl + '/snorql/?describe=' + prefix + '/api/items/' + id">
+          <v-img
+            src="https://jpsearch.go.jp/assets/img/icon/rdf-logo.svg"
+            width="45px"
+          />
+        </a>
+      </p>
+      <dl class="row">
+        <dt class="col-sm-3 text-muted">URL</dt>
+        <dd class="col-sm-9">
+          <a :href="prefix + '/item/' + $route.params.id">{{
+            prefix + '/item/' + $route.params.id
+          }}</a>
+        </dd>
+      </dl>
       <dl v-for="(obj, key) in metadata" :key="key" class="row">
         <dt class="col-sm-3 text-muted">{{ obj.label }}</dt>
         <dd class="col-sm-9">
@@ -47,14 +64,26 @@ export default {
   data() {
     return {
       baseUrl: process.env.BASE_URL,
+      prefix: 'https://w3id.org/hpdb',
     }
+  },
+
+  computed: {
+    // 算出 getter 関数
+    url() {
+      // `this` は vm インスタンスを指します
+      return this.baseUrl + '/item/' + this.$route.params.id
+    },
+    id() {
+      return this.$route.params.id
+    },
   },
 
   methods: {
     getIframeUrl() {
       const url =
         this.baseUrl +
-        'curation/?manifest=' +
+        '/curation/?manifest=' +
         this.manifest +
         '&canvas=' +
         encodeURIComponent(this['@id'])

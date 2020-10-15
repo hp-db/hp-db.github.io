@@ -19,8 +19,8 @@ const routerBase =
 const GOOGLE_ANALYTICS_ID = 'abc'
 
 // path
-const baseUrl = 'https://nakamura196.github.io/'
-const baseDir = 'hpdb4/'
+const baseUrl = env.BASE_URL || ''
+const baseDir = env.BASE_DIR || '/'
 const basePath = baseUrl + baseDir
 
 // meta
@@ -139,6 +139,8 @@ export default {
   icon: {
     iconFileName: manifestIcon,
   },
+
+  loading: { color: '#E64A19', height: '5px' },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
