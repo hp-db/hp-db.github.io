@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/C2B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "C2A reversed"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C2B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1305D"
+      }
+    ]
+  }
+]

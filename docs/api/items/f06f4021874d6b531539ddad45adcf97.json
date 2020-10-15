@@ -1,38 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/f06f4021874d6b531539ddad45adcf97.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A17.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/f06f4021874d6b531539ddad45adcf97",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "f06f4021874d6b531539ddad45adcf97"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/30.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "mst"
-      },
-      {
-        "@value": "DAm"
-      },
-      {
-        "@value": "Xrd"
-      },
-      {
-        "@value": "msw"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 2
       }
     ],
     "http://schema.org/image": [
@@ -43,6 +17,40 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=575"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "f06f4021874d6b531539ddad45adcf97"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A17"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/30"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mst"
+      },
+      {
+        "@value": "msw"
+      },
+      {
+        "@value": "Xrd"
+      },
+      {
+        "@value": "DAm"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
       }
     ]
   }

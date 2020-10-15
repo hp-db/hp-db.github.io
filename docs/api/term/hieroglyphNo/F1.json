@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F1",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "ox head"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓃾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F1"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "kꜣ"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+130FE"
+      }
+    ]
+  }
+]

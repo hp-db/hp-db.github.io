@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/e19f04d491368b1f2638cff941302c84.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W24.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/e19f04d491368b1f2638cff941302c84",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "e19f04d491368b1f2638cff941302c84"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/572.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "495(W24), 572(W24). Identification is uncertain."
-      },
-      {
-        "@value": "495(W24), 572(W24). Identification is uncertain."
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "qd"
-      },
-      {
-        "@value": "Sn"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -42,9 +14,47 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_085.tif/936,1248,3885,486/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/e19f04d491368b1f2638cff941302c84"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=517"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "e19f04d491368b1f2638cff941302c84"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/W24"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/572"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "495(W24), 572(W24). Identification is uncertain."
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "qd"
+      },
+      {
+        "@value": "Sn"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

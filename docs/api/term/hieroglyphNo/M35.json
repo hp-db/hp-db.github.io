@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M35",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "stack(of grain)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇤"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M35"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Determinative in 1.  'ḥ'-'ḥ'u, for \"stack-(of grain)\"; (or other determiners for: food, provisions, stores, heaps of grain, wealth, riches, abundance); 2. and (kh)ty, 'heap of grain', where (kh)tyt, is \"barn floor\", or \"place where grain is stored for sale\""
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "(kh)ty 'ḥ'-'ḥ'u"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+131E4"
+      }
+    ]
+  }
+]

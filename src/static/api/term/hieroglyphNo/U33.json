@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/U33",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "'pestle'-(curved top)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍘"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U33"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Bil. ti"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "ti"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13358"
+      }
+    ]
+  }
+]

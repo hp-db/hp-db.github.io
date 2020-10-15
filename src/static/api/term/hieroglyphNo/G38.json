@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G38",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "white-fronted goose"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅬"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G38"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. \"son of\", \"daughter of\", sa, sa-t; 2. goose"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "sꜣ, sꜣ-t--(bil.)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "Bird"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1316C"
+      }
+    ]
+  }
+]

@@ -1,37 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/ec89670641716ab51460c7ab6325f89f.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/V10.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/ec89670641716ab51460c7ab6325f89f",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "ec89670641716ab51460c7ab6325f89f"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/531.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "531(V10), 532(V10), 533(V10)"
-      },
-      {
-        "@id": "531(V10), 532(V10), 533(V10)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": ""
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -39,9 +14,44 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_080.tif/922,4893,3889,496/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/ec89670641716ab51460c7ab6325f89f"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=479"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ec89670641716ab51460c7ab6325f89f"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/V10"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/531"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "531(V10), 532(V10), 533(V10)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

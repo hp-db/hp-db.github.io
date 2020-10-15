@@ -1,29 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/bf2dbf532f07e1306e0fa84426b5c88b.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/W6/W7.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/bf2dbf532f07e1306e0fa84426b5c88b",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "bf2dbf532f07e1306e0fa84426b5c88b"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/505.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "mAt"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -31,9 +14,39 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_078.tif/943,1690,3891,484/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/bf2dbf532f07e1306e0fa84426b5c88b"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=453"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bf2dbf532f07e1306e0fa84426b5c88b"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/W6/W7"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/505"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mAt"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

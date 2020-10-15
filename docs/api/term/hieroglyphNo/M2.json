@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M2",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "plant"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆰"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M2"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. Determinative for various plants or flowers;2. Two phonemes for \"cane\", and \"canes\", ḥn-(from ḥni), is-(from isw). 3. flower (garland), plant, branch, seed 4. Rosetta Stone, line R12, The people shall wear garlands on their heads, shall be made festal..."
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "ḥn-(from ḥni)is-(from isw)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+131B0"
+      }
+    ]
+  }
+]

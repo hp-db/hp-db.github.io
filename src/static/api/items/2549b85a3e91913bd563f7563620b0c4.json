@@ -1,32 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/2549b85a3e91913bd563f7563620b0c4.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G10.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/2549b85a3e91913bd563f7563620b0c4",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "2549b85a3e91913bd563f7563620b0c4"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/378.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "skr"
-      },
-      {
-        "@value": "Hnw"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -34,9 +14,42 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_065.tif/1005,5291,3864,482/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/2549b85a3e91913bd563f7563620b0c4"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=337"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "2549b85a3e91913bd563f7563620b0c4"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G10"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/378"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Hnw"
+      },
+      {
+        "@value": "skr"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

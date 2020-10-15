@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M31",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "rhizome"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓇝"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M31"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+131DD"
+      }
+    ]
+  }
+]

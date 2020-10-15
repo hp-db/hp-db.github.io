@@ -1,37 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/d6f30193ae1f92db2f497ac5955bc669.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D46.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/d6f30193ae1f92db2f497ac5955bc669",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "d6f30193ae1f92db2f497ac5955bc669"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/115.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "118B=118(D51)+105(D40)"
-      },
-      {
-        "@id": "118B=118(D51)+105(D40)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "d"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -42,6 +17,36 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=95"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "d6f30193ae1f92db2f497ac5955bc669"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D46"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/115"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "118B=118(D51)+105(D40)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "d"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

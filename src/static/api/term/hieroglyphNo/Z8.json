@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z8",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Oval"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏳"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z8"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "round (šnw)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+133F3"
+      }
+    ]
+  }
+]

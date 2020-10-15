@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/U22",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "clapper-(of-bell)tool/instrumentforked-staff, etc."
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍊"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U22"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. Determinative for mn(kh)-(mnḫ), for \"cut\", \"give shape to\";2. Ideogram in mn(kh)-(mnḫ), for \"to be excellent\";3. The grandfather of Ptolemy V of the Rosetta Stone is Ptolemy III Euergetes-(the Canopus Stone), the \"Well-doer Gods\"-(pharaohs).[6] Their name is a composition block of two 'God' hieroglyphs-(husband & wife), (no. R8),    , with a chisel at the base of each,"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "mn(kh)-(mnḫ)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1334A"
+      }
+    ]
+  }
+]

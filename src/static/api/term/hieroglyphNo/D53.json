@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D53",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "phallus with emission"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂺"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D53"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Censored by some OS/browser vendors.Image rendering:"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "in before (m bAach), phallus (achnn), urinate (wssch), seed (mtwt), man (tjAy), husband (hj)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+130BA"
+      }
+    ]
+  }
+]

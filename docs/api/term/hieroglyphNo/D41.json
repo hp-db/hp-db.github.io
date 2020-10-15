@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D41",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "forearm with palm down and bent upper arm"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂢"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D41"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "nj (rarely)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "Arm (gbꜣ), shoulder (rmn), to the left (jꜣbj), sing (ḥsj), actions with arm: bend (ḥms), movement: stop (grach), deny (nj) protect (ḫwj) lead (ḫrp)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+130A2"
+      }
+    ]
+  }
+]

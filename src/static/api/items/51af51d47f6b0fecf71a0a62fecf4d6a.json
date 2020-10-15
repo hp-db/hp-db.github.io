@@ -1,22 +1,45 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/51af51d47f6b0fecf71a0a62fecf4d6a.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/U33.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/51af51d47f6b0fecf71a0a62fecf4d6a",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "51af51d47f6b0fecf71a0a62fecf4d6a"
       }
     ],
-    "http://example.org/möllerNo": [
+    "http://schema.org/image": [
       {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/401.json"
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_068.tif/970,2602,3857,485/,200/0/default.jpg"
       }
     ],
-    "http://example.org/phoneWord": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/51af51d47f6b0fecf71a0a62fecf4d6a"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=361"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "51af51d47f6b0fecf71a0a62fecf4d6a"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/U33"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/401"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "ti"
       },
@@ -27,19 +50,9 @@
         "@value": "T"
       }
     ],
-    "http://example.org/vol": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
-      }
-    ],
-    "http://schema.org/image": [
-      {
-        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_068.tif/970,2602,3857,485/,200/0/default.jpg"
-      }
-    ],
-    "http://schema.org/relation": [
-      {
-        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=361"
       }
     ]
   }

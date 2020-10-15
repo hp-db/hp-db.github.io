@@ -1,41 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/c27145a0988ed60a5625a605ea5a69c8.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/F18.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/c27145a0988ed60a5625a605ea5a69c8",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "c27145a0988ed60a5625a605ea5a69c8"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/160.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "wSa"
-      },
-      {
-        "@value": "nHdt"
-      },
-      {
-        "@value": "bH"
-      },
-      {
-        "@value": "dbH"
-      },
-      {
-        "@value": "sbt"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 3
       }
     ],
     "http://schema.org/image": [
@@ -43,9 +14,51 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_036.tif/895,3012,3923,495/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/c27145a0988ed60a5625a605ea5a69c8"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1193"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "c27145a0988ed60a5625a605ea5a69c8"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F18"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/160"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "nHdt"
+      },
+      {
+        "@value": "wSa"
+      },
+      {
+        "@value": "dbH"
+      },
+      {
+        "@value": "sbt"
+      },
+      {
+        "@value": "bH"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 3
       }
     ]
   }

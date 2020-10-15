@@ -1,29 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/e253f681e0c33f7cdb498cfc41dd6208.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/O50.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/e253f681e0c33f7cdb498cfc41dd6208",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "e253f681e0c33f7cdb498cfc41dd6208"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/403.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "sp"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 2
       }
     ],
     "http://schema.org/image": [
@@ -34,6 +17,31 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=890"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "e253f681e0c33f7cdb498cfc41dd6208"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O50"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/403"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "sp"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
       }
     ]
   }

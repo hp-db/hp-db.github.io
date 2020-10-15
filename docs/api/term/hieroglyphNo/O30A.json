@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O30A",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "four supports"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓉾"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O30A"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1327E"
+      }
+    ]
+  }
+]

@@ -1,32 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/a2f310d0d9c2a4875af2a04c83c6e629.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Aa19.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/a2f310d0d9c2a4875af2a04c83c6e629",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "a2f310d0d9c2a4875af2a04c83c6e629"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/591.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "Hr"
-      },
-      {
-        "@value": "Hrit"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -37,6 +17,34 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=535"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "a2f310d0d9c2a4875af2a04c83c6e629"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Aa19"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/591"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Hr"
+      },
+      {
+        "@value": "Hrit"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

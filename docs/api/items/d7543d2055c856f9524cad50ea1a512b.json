@@ -1,49 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/d7543d2055c856f9524cad50ea1a512b.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A19.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/d7543d2055c856f9524cad50ea1a512b",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "d7543d2055c856f9524cad50ea1a512b"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/13.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "13(A19)=wr, rkH, mDAy, 14(A19)=iAw, smsw"
-      },
-      {
-        "@id": "13(A19)=wr, rkH, mDAy, 14(A19)=iAw, smsw"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "rkH"
-      },
-      {
-        "@value": "smsw"
-      },
-      {
-        "@value": "mDAy"
-      },
-      {
-        "@value": "wr"
-      },
-      {
-        "@value": "iAw"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -54,6 +17,48 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=7"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "d7543d2055c856f9524cad50ea1a512b"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A19"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/13"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "13(A19)=wr, rkH, mDAy, 14(A19)=iAw, smsw"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mDAy"
+      },
+      {
+        "@value": "iAw"
+      },
+      {
+        "@value": "smsw"
+      },
+      {
+        "@value": "rkH"
+      },
+      {
+        "@value": "wr"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

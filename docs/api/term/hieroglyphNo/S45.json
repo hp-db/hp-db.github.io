@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S45",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "flagellum"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓌅"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S45"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13305"
+      }
+    ]
+  }
+]

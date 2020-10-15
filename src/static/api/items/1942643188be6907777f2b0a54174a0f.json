@@ -1,35 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/1942643188be6907777f2b0a54174a0f.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A28.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/1942643188be6907777f2b0a54174a0f",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "1942643188be6907777f2b0a54174a0f"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/4.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "Hai"
-      },
-      {
-        "@value": "Haa"
-      },
-      {
-        "@value": "qA"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 2
       }
     ],
     "http://schema.org/image": [
@@ -37,9 +14,45 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/982,3444,3905,523/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/1942643188be6907777f2b0a54174a0f"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=557"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "1942643188be6907777f2b0a54174a0f"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A28"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/4"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "qA"
+      },
+      {
+        "@value": "Hai"
+      },
+      {
+        "@value": "Haa"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
       }
     ]
   }

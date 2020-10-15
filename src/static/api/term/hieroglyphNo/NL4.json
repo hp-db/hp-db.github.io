@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/NL4",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓈣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "NL4"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Nome of Lower Egypt (NL004)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13223"
+      }
+    ]
+  }
+]

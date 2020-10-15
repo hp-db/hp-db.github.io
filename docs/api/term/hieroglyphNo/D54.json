@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D54",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "legs walking"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂻"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D54"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "approach (tkn) enterprise (nmtt), do not move, stop Injure leg (rd), thigh (mnt)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+130BB"
+      }
+    ]
+  }
+]

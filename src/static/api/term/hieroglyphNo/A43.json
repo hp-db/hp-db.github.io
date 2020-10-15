@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A43",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "king wearing white crown"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀲"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A43"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "King of Upper Egypt (nsw)\n    Osiris (wsjr)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13032"
+      }
+    ]
+  }
+]

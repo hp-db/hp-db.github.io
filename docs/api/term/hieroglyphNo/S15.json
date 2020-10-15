@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S15",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "pectoral"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋣"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S15"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "four props, the Four Pillars of Heaven; also as, s(kh)nut, four pillars of the sky; (sa)(kh)niu, additionally, 4 legs of a chair; s(kh)nut, 4 legs of a vessel & s(kh)nut IV, the 4 Pillars that Support the Sky"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+132E3"
+      }
+    ]
+  }
+]

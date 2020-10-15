@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/476120eb0aa1caa99bb0d819b8915def.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A4/A5.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/476120eb0aa1caa99bb0d819b8915def",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "476120eb0aa1caa99bb0d819b8915def"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/39.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "vol.1=A4, vols.2-3=A5.  See 38(A4)"
-      },
-      {
-        "@id": "vol.1=A4, vols.2-3=A5.  See 38(A4)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "dgA"
-      },
-      {
-        "@value": "imn"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -45,6 +17,39 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=28"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "476120eb0aa1caa99bb0d819b8915def"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A4/A5"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/39"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "vol.1=A4, vols.2-3=A5.  See 38(A4)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "imn"
+      },
+      {
+        "@value": "dgA"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

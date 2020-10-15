@@ -1,37 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/46f81ca384361084a6a1f0a7f74aaaeb.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z3a.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/46f81ca384361084a6a1f0a7f74aaaeb",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "46f81ca384361084a6a1f0a7f74aaaeb"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/562.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "562(Z3A), 563(Z3)"
-      },
-      {
-        "@value": "562(Z3A), 563(Z3)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": ""
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 3
       }
     ],
     "http://schema.org/image": [
@@ -39,9 +14,44 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_076.tif/953,4405,3903,485/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/46f81ca384361084a6a1f0a7f74aaaeb"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1589"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "46f81ca384361084a6a1f0a7f74aaaeb"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z3a"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/562"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "562(Z3A), 563(Z3)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 3
       }
     ]
   }

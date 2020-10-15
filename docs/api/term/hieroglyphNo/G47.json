@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G47",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "duckling"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓅷"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G47"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Bil. (tsh)ꜣ, t_ꜣ, for 'baby bird', duckling; Ideogram for 'young bird'(The Egyptian vizier is the \"tshat(y)\")"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "ṯꜣ, Id. ṯꜣ"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "tjꜣt_ꜣ--(bil.)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13177"
+      }
+    ]
+  }
+]

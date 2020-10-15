@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/3a712ef84ca9fb99fe7ec36e68992e1d.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/N25.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/T14.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/3a712ef84ca9fb99fe7ec36e68992e1d",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "3a712ef84ca9fb99fe7ec36e68992e1d"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/322bis.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "457(T14)+322(N25)"
-      },
-      {
-        "@value": "457(T14)+322(N25)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": ""
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 3
       }
     ],
     "http://schema.org/image": [
@@ -45,6 +17,39 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1352"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "3a712ef84ca9fb99fe7ec36e68992e1d"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N25"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/T14"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/322bis"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "457(T14)+322(N25)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 3
       }
     ]
   }

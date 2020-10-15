@@ -1,37 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/ae29c1bb67ae6f7e2baaba6499acd5b7.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D35.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/ae29c1bb67ae6f7e2baaba6499acd5b7",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "ae29c1bb67ae6f7e2baaba6499acd5b7"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/111.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "111(D35) is occasionally used as 331(N31). \nSee 332(D35)."
-      },
-      {
-        "@id": "111(D35) is occasionally used as 331(N31). \nSee 332(D35)."
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "n"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -42,6 +17,36 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=91"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ae29c1bb67ae6f7e2baaba6499acd5b7"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D35"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/111"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "111(D35) is occasionally used as 331(N31). \nSee 332(D35)."
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "n"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

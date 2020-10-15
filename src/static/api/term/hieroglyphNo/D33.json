@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D33",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "arms rowing"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂙"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D33"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Egyptian biliteral sign (kh)n, ẖn"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "(kh)nẖn"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "row (achnj) fight (aachA) fight (aachA)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13099"
+      }
+    ]
+  }
+]

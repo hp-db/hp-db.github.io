@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/b8bee9d098f8a9cc53f176e1ab4d5003.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Num4.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/N12.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/b8bee9d098f8a9cc53f176e1ab4d5003",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "b8bee9d098f8a9cc53f176e1ab4d5003"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/313.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "309(N12/N11)+617(Num4)"
-      },
-      {
-        "@value": "309(N12/N11)+617(Num4)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "Abd 4"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 3
       }
     ],
     "http://schema.org/image": [
@@ -42,9 +14,47 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_051.tif/927,2573,3906,480/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/b8bee9d098f8a9cc53f176e1ab4d5003"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1340"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "b8bee9d098f8a9cc53f176e1ab4d5003"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Num4"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N12"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/313"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "309(N12/N11)+617(Num4)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Abd 4"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 3
       }
     ]
   }

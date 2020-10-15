@@ -1,46 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/33e58607440830d647ca4ff859ef103c.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/M43.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/33e58607440830d647ca4ff859ef103c",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "33e58607440830d647ca4ff859ef103c"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/267.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "267(M43), 355(M43)"
-      },
-      {
-        "@id": "267(M43), 355(M43)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "wnS"
-      },
-      {
-        "@value": "SAbw"
-      },
-      {
-        "@value": "iSd"
-      },
-      {
-        "@value": "db"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -51,6 +17,45 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=238"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "33e58607440830d647ca4ff859ef103c"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M43"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/267"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "267(M43), 355(M43)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "wnS"
+      },
+      {
+        "@value": "db"
+      },
+      {
+        "@value": "SAbw"
+      },
+      {
+        "@value": "iSd"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

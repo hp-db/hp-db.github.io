@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X4",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏒"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X4"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+133D2"
+      }
+    ]
+  }
+]

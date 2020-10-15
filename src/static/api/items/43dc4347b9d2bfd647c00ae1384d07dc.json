@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/43dc4347b9d2bfd647c00ae1384d07dc.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Y5.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/N35.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/43dc4347b9d2bfd647c00ae1384d07dc",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "43dc4347b9d2bfd647c00ae1384d07dc"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/540B.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "540(Y5)+331(N33)"
-      },
-      {
-        "@value": "540(Y5)+331(N33)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "mn"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 2
       }
     ],
     "http://schema.org/image": [
@@ -42,9 +14,47 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_071.tif/898,1217,3897,490/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/43dc4347b9d2bfd647c00ae1384d07dc"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1014"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "43dc4347b9d2bfd647c00ae1384d07dc"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Y5"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N35"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/540B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "540(Y5)+331(N33)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mn"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
       }
     ]
   }

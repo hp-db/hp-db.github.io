@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X8",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "cone-shapedbread"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏙"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X8"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Ideogram for di, rdi, give, given, to give; (an equivalent to arm offering conical \"loaf\"), Gardiner no. D37,    In iconography and reliefs, used for pharaonic statements: \"Given, Life, Power...Forever\"-(the vertical form of 'to give')"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "di"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+133D9"
+      }
+    ]
+  }
+]

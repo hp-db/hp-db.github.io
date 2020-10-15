@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S20",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "necklace with seal"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓋩"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S20"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. (confer cylinder seal); 2. Ideogram or det. in (kh)tm-(ẖtm), sḏꜣt, ḏb't, all words for \"seal\", or equivalent wordsSeal-rings, (Impression seals, or Seals of Office)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "manysee under:ḏb-to sealḏb'i-t"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+132E9"
+      }
+    ]
+  }
+]

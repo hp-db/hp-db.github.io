@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/dfd859405f8a74d2c5a0eaa3eb6699d9.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D35.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/N35.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/dfd859405f8a74d2c5a0eaa3eb6699d9",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "dfd859405f8a74d2c5a0eaa3eb6699d9"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/111B.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "111(D35)+331(N35)"
-      },
-      {
-        "@id": "111(D35)+331(N35)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "nn"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 3
       }
     ],
     "http://schema.org/image": [
@@ -42,9 +14,47 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_032.tif/923,1311,3903,462/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/dfd859405f8a74d2c5a0eaa3eb6699d9"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1152"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dfd859405f8a74d2c5a0eaa3eb6699d9"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N35"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D35"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/111B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "111(D35)+331(N35)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "nn"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 3
       }
     ]
   }

@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/1de50c0b8ee7e0412b1950bf1177430a.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/G50.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/1de50c0b8ee7e0412b1950bf1177430a",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "1de50c0b8ee7e0412b1950bf1177430a"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/225.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "Vol.2=225(G237)+575(X1)+560(Z4)."
-      },
-      {
-        "@value": "Vol.2=225(G237)+575(X1)+560(Z4)."
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "rxty"
-      },
-      {
-        "@value": "rx"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -45,6 +17,39 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=205"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "1de50c0b8ee7e0412b1950bf1177430a"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G50"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/225"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Vol.2=225(G237)+575(X1)+560(Z4)."
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rxty"
+      },
+      {
+        "@value": "rx"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

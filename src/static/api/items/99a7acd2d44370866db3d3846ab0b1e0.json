@@ -1,38 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/99a7acd2d44370866db3d3846ab0b1e0.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/A17.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/99a7acd2d44370866db3d3846ab0b1e0",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "99a7acd2d44370866db3d3846ab0b1e0"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/30.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "mst"
-      },
-      {
-        "@value": "msw"
-      },
-      {
-        "@value": "Xrd"
-      },
-      {
-        "@value": "DAm"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -40,9 +14,48 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_032.tif/952,4871,3898,508/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/99a7acd2d44370866db3d3846ab0b1e0"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=18"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "99a7acd2d44370866db3d3846ab0b1e0"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A17"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/30"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mst"
+      },
+      {
+        "@value": "msw"
+      },
+      {
+        "@value": "DAm"
+      },
+      {
+        "@value": "Xrd"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

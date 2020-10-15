@@ -1,27 +1,50 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/6511ac67aebb437f078e23774bd51f6d.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D7.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/6511ac67aebb437f078e23774bd51f6d",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "6511ac67aebb437f078e23774bd51f6d"
       }
     ],
-    "http://example.org/möllerNo": [
+    "http://schema.org/image": [
       {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/84.json"
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_029.tif/960,3041,3897,495/,200/0/default.jpg"
       }
     ],
-    "http://example.org/phoneWord": [
+    "http://schema.org/relationLink": [
       {
-        "@value": "anw"
+        "@id": "http://w3id.org/hpdb/item/6511ac67aebb437f078e23774bd51f6d"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=613"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "6511ac67aebb437f078e23774bd51f6d"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D7"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/84"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "msDmt"
       },
       {
-        "@value": "ptr"
+        "@value": "anw"
       },
       {
         "@value": "an"
@@ -30,22 +53,12 @@
         "@value": "ain"
       },
       {
-        "@value": "msDmt"
+        "@value": "ptr"
       }
     ],
-    "http://example.org/vol": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 2
-      }
-    ],
-    "http://schema.org/image": [
-      {
-        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_029.tif/960,3041,3897,495/,200/0/default.jpg"
-      }
-    ],
-    "http://schema.org/relation": [
-      {
-        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=613"
       }
     ]
   }

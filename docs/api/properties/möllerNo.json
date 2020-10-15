@@ -1,11 +1,8 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/api/properties/möllerNo.json",
-    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/ns/hpdb/MöllerNo.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/properties/möllerNo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
     "http://www.w3.org/2000/01/rdf-schema#description": [
       {
@@ -15,6 +12,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Möller No"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/hpdb/api/classes/MöllerNo"
       }
     ]
   }

@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A2",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man with hand to mouth"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀁"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A2"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Activities involving the mouth, head, or ideas."
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "eat (wnm)\n    drink (swr)\n    speak, think, feel, tell (sḏd)\n    refrain from speech (gr) advise/counsel (kꜣj)\n    love (mrj)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13001"
+      }
+    ]
+  }
+]

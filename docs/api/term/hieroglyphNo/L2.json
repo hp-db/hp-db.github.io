@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/L2",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "bee"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓆤"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "L2"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "This hieroglyphic shows the very important hieroglyphic for bee, that stands also for honey. It is found very often on pharaonic naming-inscriptions-(as the combined term: Nesu-bity), because this hieroglyphic is a symbol for Lower Egypt together with the sedge, the symbol that stands for Upper Egypt, showing the domination of the Pharaohs over Upper Egypt and Lower Egypt.\n    see also nswt-bjt"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "for bjt (only in \"king of lower Egypt\" (bjt))"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "bee (bjt)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+131A4"
+      }
+    ]
+  }
+]

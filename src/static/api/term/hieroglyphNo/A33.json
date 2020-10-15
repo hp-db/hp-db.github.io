@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A33",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man with stick and bundle on shoulder"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀦"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A33"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "to herd, (mnjw) journey,\n    tramp (ḫwsj)\n    shepherd (mnjw)\n    wander,\n    hike,\n    traveler, (ḫwsj)\n    construction, (qb)\n    foreign, strange(schmAw)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13026"
+      }
+    ]
+  }
+]

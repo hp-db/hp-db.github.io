@@ -1,40 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/6a22a9cc2e633da9df2c96f593f24bb6.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/N12.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Num4.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/6a22a9cc2e633da9df2c96f593f24bb6",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "6a22a9cc2e633da9df2c96f593f24bb6"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/313.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "309(N12/N11)+617(Num4)"
-      },
-      {
-        "@value": "309(N12/N11)+617(Num4)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "Abd 4"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -45,6 +17,39 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=282"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "6a22a9cc2e633da9df2c96f593f24bb6"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Num4"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N12"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/313"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "309(N12/N11)+617(Num4)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Abd 4"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

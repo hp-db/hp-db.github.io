@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X2",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏐"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X2"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+133D0"
+      }
+    ]
+  }
+]

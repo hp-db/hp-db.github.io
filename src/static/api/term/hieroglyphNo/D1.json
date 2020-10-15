@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D1",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "head"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓁶"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D1"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. Ideogram for tp, \"head\"; other uses related to actions of the head; (example \"the tp of the rebels\", 'the \"chief\" of the rebels');2. also for tp, see archaic dagger;3. (Narmer Palette shows 10 enemy heads-(decapitated))"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "head (tp) (dAdA)\n    back of head (hA)\n    behind (hA)\n    neglect, to leave behind (mkachA)\n    forehead (dhnt)\n    appoint (dhn)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13076"
+      }
+    ]
+  }
+]

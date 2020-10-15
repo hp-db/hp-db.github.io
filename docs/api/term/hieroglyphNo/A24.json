@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A24",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "man striking with both hands"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓀜"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A24"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "to hit or strike (achwj)\n    power, strength\nteach lesson or instruct (sbꜣ)\n    call (njs)\n    be happy (achaj)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1301C"
+      }
+    ]
+  }
+]

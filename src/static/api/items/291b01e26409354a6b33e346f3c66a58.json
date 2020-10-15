@@ -1,43 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/291b01e26409354a6b33e346f3c66a58.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Aa2/Aa3.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/291b01e26409354a6b33e346f3c66a58",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "291b01e26409354a6b33e346f3c66a58"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/582.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@id": "566(Aa2/Aa3)=Hsb, 597(Aa2/Aa3)=sty, 582(Aa2/Aa3)=wt"
-      },
-      {
-        "@value": "566(Aa2/Aa3)=Hsb, 597(Aa2/Aa3)=sty, 582(Aa2/Aa3)=wt"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "Hsb"
-      },
-      {
-        "@value": "sty"
-      },
-      {
-        "@value": "wt"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -45,9 +14,50 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_086.tif/896,1262,3873,480/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/291b01e26409354a6b33e346f3c66a58"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=526"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "291b01e26409354a6b33e346f3c66a58"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Aa2/Aa3"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/582"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "566(Aa2/Aa3)=Hsb, 597(Aa2/Aa3)=sty, 582(Aa2/Aa3)=wt"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Hsb"
+      },
+      {
+        "@value": "wt"
+      },
+      {
+        "@value": "sty"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

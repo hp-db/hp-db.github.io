@@ -1,46 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/ffce24add55d92ee57f8579da2266850.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/X1.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/Z2.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/X3.json"
-      },
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/X4.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/ffce24add55d92ee57f8579da2266850",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "ffce24add55d92ee57f8579da2266850"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/554_555.json"
-      }
-    ],
-    "http://example.org/note": [
-      {
-        "@value": "575(X1)+553(X3)+555(X4)+561(Z2)"
-      },
-      {
-        "@id": "575(X1)+553(X3)+555(X4)+561(Z2)"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "t"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 2
       }
     ],
     "http://schema.org/image": [
@@ -51,6 +17,45 @@
     "http://schema.org/relation": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1024"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ffce24add55d92ee57f8579da2266850"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X4"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X3"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z2"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X1"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/554_555"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "575(X1)+553(X3)+555(X4)+561(Z2)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "t"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
       }
     ]
   }

@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X6",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "loaf-with-decoration"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓏖"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X6"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. Determinative for the 'decorated bread loaf', pꜣt; phoneme for pꜣ; meanings of: stuff, matter, substance; for 'bread': dough, cake, bread, offering, food, product; 2. for the \"primordial god(s)\": \"Pauti\",    (or)    (many spelling versions)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "pꜣt(phoneme pꜣ)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+133D6"
+      }
+    ]
+  }
+]

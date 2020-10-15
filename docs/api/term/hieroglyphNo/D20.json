@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D20",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "nose, eye and cheek (cursive)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓂊"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D20"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Determinative and Ideogram for nose (fnḏ), smell (sn), be happy (rschw), be\n    (sfn) face, front (ḫnt), mild, itself wiedersetzten (bṯn), disobediently"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "ḫnt"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "nose (fnḏ),\n    smell (sn), \n    be happy (rschw), \n    be (sfn) \n    face, front (ḫnt), \n    mild, itself wiedersetzten (btjn), \n    disobediently"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1308A"
+      }
+    ]
+  }
+]

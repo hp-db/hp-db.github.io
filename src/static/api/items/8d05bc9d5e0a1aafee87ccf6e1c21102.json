@@ -1,35 +1,12 @@
 [
   {
-    "@id": "https://nakamura196.github.io/hpdb4/data/8d05bc9d5e0a1aafee87ccf6e1c21102.json",
-    "http://example.org/hieroglyphNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/keyword/D6.json"
-      }
+    "@id": "https://w3id.org/hpdb/api/items/8d05bc9d5e0a1aafee87ccf6e1c21102",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
     ],
-    "http://example.org/identifier": [
+    "http://purl.org/dc/terms/identifer": [
       {
         "@value": "8d05bc9d5e0a1aafee87ccf6e1c21102"
-      }
-    ],
-    "http://example.org/möllerNo": [
-      {
-        "@id": "https://nakamura196.github.io/hpdb4/term/möllerNo/83.json"
-      }
-    ],
-    "http://example.org/phoneWord": [
-      {
-        "@value": "dgi"
-      },
-      {
-        "@value": "rs"
-      },
-      {
-        "@value": "Sp"
-      }
-    ],
-    "http://example.org/vol": [
-      {
-        "@value": 1
       }
     ],
     "http://schema.org/image": [
@@ -37,9 +14,45 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_037.tif/885,5130,3893,493/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/8d05bc9d5e0a1aafee87ccf6e1c21102"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=65"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "8d05bc9d5e0a1aafee87ccf6e1c21102"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D6"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/möllerNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/möllerNo/83"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "dgi"
+      },
+      {
+        "@value": "Sp"
+      },
+      {
+        "@value": "rs"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
       }
     ]
   }

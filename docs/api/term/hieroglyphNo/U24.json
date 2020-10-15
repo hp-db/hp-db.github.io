@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/U24",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "handdrill(hieroglyph)"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓍍"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U24"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "1. Ideogram in hmt-(ḥmt), the name for the 'hand drill tool'; also hmt for words of \"art\", \"artisan\", etc. 2. Ideo. or det. for uba, (wbꜣ), to 'rise', to 'open'; see: Rise of a Star: ubn:"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "ḥmt"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+1334D"
+      }
+    ]
+  }
+]

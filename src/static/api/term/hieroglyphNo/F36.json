@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F36",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "lung and windpipe"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "𓄥"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F36"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "Egyptian \"lung\", sma-(smꜣ); used for union, (as in the \"Two Lands\", \"Upper and Lower Egypt)-(Lower Egypt=the Nile Delta); Ideogram or det. for \"unite\", \"join\""
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "smꜣ"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/transliteration": [
+      {
+        "@value": "sma(smꜣ)--(tril.)"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unicode": [
+      {
+        "@value": "U+13125"
+      }
+    ]
+  }
+]
