@@ -14,7 +14,12 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_044.tif/920,4405,3918,484/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/66f9f63932c3a4d8498e905fd9c384e6"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1276"
       }
@@ -26,10 +31,10 @@
     ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/I3"
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/R12"
       },
       {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/R12"
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/I3"
       }
     ],
     "https://w3id.org/hpdb/api/properties/möllerNo": [

@@ -14,7 +14,12 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_031.tif/847,1747,3968,500/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/e7d8f83b39f0ab85df4fd74474821fb6"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=1144"
       }
@@ -26,10 +31,10 @@
     ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D21"
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X1"
       },
       {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X1"
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D21"
       },
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D36/D37"
@@ -47,10 +52,10 @@
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
-        "@value": "rdi"
+        "@value": "rdit"
       },
       {
-        "@value": "rdit"
+        "@value": "rdi"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

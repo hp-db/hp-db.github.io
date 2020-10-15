@@ -14,7 +14,12 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_042.tif/911,2992,3912,497/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/4836e03c96237b701919aa8a142840d8"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=740"
       }
@@ -26,10 +31,10 @@
     ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G41"
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/T14"
       },
       {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/T14"
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G41"
       }
     ],
     "https://w3id.org/hpdb/api/properties/möllerNo": [
@@ -44,10 +49,10 @@
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
-        "@value": "Tn"
+        "@value": "tn"
       },
       {
-        "@value": "tn"
+        "@value": "Tn"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

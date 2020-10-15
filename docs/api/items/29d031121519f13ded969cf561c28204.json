@@ -14,7 +14,12 @@
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_078.tif/937,2141,3897,490/,200/0/default.jpg"
       }
     ],
-    "http://schema.org/relation": [
+    "http://schema.org/relationLink": [
+      {
+        "@id": "http://w3id.org/hpdb/item/29d031121519f13ded969cf561c28204"
+      }
+    ],
+    "http://schema.org/url": [
       {
         "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&pos=454"
       }
@@ -39,10 +44,10 @@
         "@value": "wrH"
       },
       {
-        "@value": "qrHt"
+        "@value": "wdpw"
       },
       {
-        "@value": "wdpw"
+        "@value": "qrHt"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

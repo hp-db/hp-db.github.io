@@ -228,6 +228,7 @@ export default {
 
               const memberId = member['@id']
               const id = md5(memberId)
+              member.manifest = selection.within['@id']
 
               pages.push({
                 route: `/item/${id}`,
