@@ -17,17 +17,87 @@
     </v-sheet>
     -->
     <v-container>
-      <b>{{ url }}</b>
       <p class="text-center">
-        <a :href="baseUrl + '/snorql/?describe=' + prefix + '/api/items/' + id">
-          <v-img
-            src="https://jpsearch.go.jp/assets/img/icon/rdf-logo.svg"
-            width="45px"
-          />
-        </a>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="mx-1"
+              icon
+              target="_blank"
+              :href="getCurationUrl()"
+              v-on="on"
+              ><img
+                src="https://cultural.jp/img/icons/icp-logo.svg"
+                width="30px"
+            /></v-btn>
+          </template>
+          <span>{{ 'IIIF Curation Viewer' }}</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              icon
+              class="mx-1"
+              target="_blank"
+              :href="
+                baseUrl + '/snorql/?describe=' + prefix + '/api/items/' + id
+              "
+              v-on="on"
+              ><img
+                src="https://jpsearch.go.jp/assets/img/icon/rdf-logo.svg"
+                width="30px"
+            /></v-btn>
+          </template>
+          <span>{{ 'RDF' }}</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="mx-1"
+              icon
+              target="_blank"
+              :href="'https://twitter.com/intent/tweet?url=' + url"
+              v-on="on"
+              ><v-icon>mdi-twitter</v-icon></v-btn
+            >
+          </template>
+          <span>{{ 'Twitter' }}</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="mx-1"
+              icon
+              target="_blank"
+              :href="'https://www.facebook.com/sharer/sharer.php?u=' + url"
+              v-on="on"
+              ><v-icon>mdi-facebook</v-icon></v-btn
+            >
+          </template>
+          <span>{{ 'Facebook' }}</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="mx-1"
+              icon
+              target="_blank"
+              :href="'http://getpocket.com/edit?url=' + url"
+              v-on="on"
+              ><img
+                style="font-size: 30px"
+                src="https://cultural.jp/img/icons/pocket.svg"
+            /></v-btn>
+          </template>
+          <span>{{ 'Pocket' }}</span>
+        </v-tooltip>
       </p>
       <dl class="row">
-        <dt class="col-sm-3 text-muted">URL</dt>
+        <dt class="col-sm-3 text-muted"><b>URL</b></dt>
         <dd class="col-sm-9">
           <a :href="prefix + '/item/' + $route.params.id">{{
             prefix + '/item/' + $route.params.id
@@ -35,10 +105,20 @@
         </dd>
       </dl>
       <dl v-for="(obj, key) in metadata" :key="key" class="row">
-        <dt class="col-sm-3 text-muted">{{ obj.label }}</dt>
-        <dd class="col-sm-9">
-          {{ Array.isArray(obj.value) ? obj.value.join(', ') : obj.value }}
-        </dd>
+        <template
+          v-if="
+            !obj.label.includes('sort') &&
+            !obj.label.includes('Mod') &&
+            obj.value != ''
+          "
+        >
+          <dt class="col-sm-3 text-muted">
+            <b>{{ obj.label }}</b>
+          </dt>
+          <dd class="col-sm-9">
+            {{ Array.isArray(obj.value) ? obj.value.join(', ') : obj.value }}
+          </dd>
+        </template>
       </dl>
     </v-container>
   </div>
@@ -89,6 +169,22 @@ export default {
         encodeURIComponent(this['@id'])
       return url
     },
+
+    getCurationUrl() {
+      const memberId = this['@id']
+      const memberIdSpl = memberId.split('#xywh=')
+      const canvasId = memberIdSpl[0]
+      const xywh = memberIdSpl[1]
+      const url =
+        'http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=' +
+        this.manifest +
+        '&canvas=' +
+        encodeURIComponent(canvasId) +
+        '&xywh=' +
+        xywh +
+        '&xywh_highlight=border'
+      return url
+    },
   },
 
   head() {
@@ -123,7 +219,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.related,
+          content: this.url,
         },
         {
           hid: 'og:image',

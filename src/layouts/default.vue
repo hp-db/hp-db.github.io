@@ -77,7 +77,11 @@
 
       <v-app-bar>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-        <v-toolbar-title>Hieratische Paläographie DB</v-toolbar-title>
+        <v-toolbar-title to="/">
+          <nuxt-link to="/" style="color: inherit; text-decoration: inherit">
+            Hieratische Paläographie DB
+          </nuxt-link>
+        </v-toolbar-title>
       </v-app-bar>
     </div>
 
@@ -89,6 +93,12 @@
       <v-container>
         <p class="text-center my-5">
           Masakatsu NAGAI, Toshihito WAKI, Yona TAKAHASHI and Satoru NAKAMURA
+        </p>
+        <p class="text-center my-5">
+          This work was supported by JSPS KAKENHI Grant Number
+          <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18K00525/"
+            >18K00525</a
+          >.
         </p>
       </v-container>
     </v-footer>
