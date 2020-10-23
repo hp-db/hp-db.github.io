@@ -230,6 +230,7 @@ export default {
 
   generate: {
     dir: 'docs',
+    /*
     async routes() {
       const pages = await axios
         .get('https://moeller.jinsha.tsukuba.ac.jp/data/curation.json')
@@ -257,11 +258,17 @@ export default {
                 route: `/item/${id}`,
                 payload: member,
               })
+
+              pages.push({
+                route: `/en/item/${id}`,
+                payload: member,
+              })
             }
           }
           return pages
         })
       return pages
     },
+    */
   },
 }

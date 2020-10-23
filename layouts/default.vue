@@ -3,7 +3,7 @@
     <div>
       <v-navigation-drawer v-model="drawer" app :temporary="true">
         <v-list>
-          <v-list-item link :to="{ name: 'index' }">
+          <v-list-item link :to="localePath({ name: 'index' })">
             <v-list-item-action>
               <v-icon>mdi-home</v-icon>
             </v-list-item-action>
@@ -12,7 +12,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item link :to="{ name: 'search' }">
+          <v-list-item link :to="localePath({ name: 'search' })">
             <v-list-item-action>
               <v-icon>mdi-magnify</v-icon>
             </v-list-item-action>

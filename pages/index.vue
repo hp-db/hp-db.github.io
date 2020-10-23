@@ -6,7 +6,11 @@
           <h1 class="white--text mb-2 display-1 text-center">
             <b>Hieratische Paläographie DB</b>
           </h1>
-          <v-btn large class="mt-5" :to="{ name: 'search' }" color="primary"
+          <v-btn
+            large
+            class="mt-5"
+            :to="localePath({ name: 'search' })"
+            color="primary"
             >Try out</v-btn
           >
         </v-layout>
