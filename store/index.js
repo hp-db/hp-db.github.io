@@ -9,6 +9,8 @@ function convert2arr(value) {
 }
 
 export const state = () => ({
+  title: 'IIIF Multi Viewer',
+
   sort: '_score:desc',
   size: 24,
 
@@ -43,14 +45,15 @@ export const state = () => ({
   data: null, // 全データ
   query: {}, // クエリ
 
-  result4print: null,
+  thumbnail: null,
+  attribution: null,
+  description: null,
+  json: null,
+  entity: null,
+  api: null,
 
-  // piranesi
-
-  collection: null,
-
-  index4Photo: null, // 転置インデックス
-  data4Photo: null, // 全データ
+  currentManifest: '',
+  currentMember: '',
 })
 
 export const mutations = {
@@ -91,6 +94,7 @@ export const mutations = {
   setSize(state, value) {
     state.size = value
   },
+
   setSort(state, value) {
     state.sort = value
   },
@@ -155,8 +159,8 @@ export const mutations = {
   setMode(state, value) {
     state.mode = value
   },
+  /*
   setFc(state, data) {
-    // console.log('setFc', data.label, data.values)
     const label = data.label
     let values = data.values
     values = convert2arr(values)
@@ -188,6 +192,8 @@ export const mutations = {
 
     state.advanced[label] = obj
   },
+  */
+  /*
   removeFc(state, data) {
     const label = data.label
     const values = data.values
@@ -203,6 +209,7 @@ export const mutations = {
       advanced[label][type] = arr.filter((item) => item !== value)
     }
   },
+  */
   removeAdvanced(state, data) {
     const label = data.label
     const values = data.values
@@ -264,17 +271,35 @@ export const mutations = {
     state.query = value
   },
 
-  // piranesi
-
-  setCollection(state, value) {
-    state.collection = value
+  setTitle(state, value) {
+    state.title = value
   },
 
-  setIndex4Photo(state, value) {
-    state.index4Photo = value
+  setDescription(state, value) {
+    state.description = value
   },
 
-  setData4Photo(state, value) {
-    state.data4Photo = value
+  setThumbnail(state, value) {
+    state.thumbnail = value
+  },
+
+  setAttribution(state, value) {
+    state.attribution = value
+  },
+  setJson(state, value) {
+    state.json = value
+  },
+  setEntity(state, value) {
+    state.entity = value
+  },
+  setApi(state, value) {
+    state.api = value
+  },
+
+  setCurrentManifest(state, value) {
+    state.currentManifest = value
+  },
+  setCurrentMember(state, value) {
+    state.currentMember = value
   },
 }

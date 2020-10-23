@@ -30,93 +30,26 @@
             })
           "
         >
-          <template v-if="$i18n.locale == 'en'">
-            <small
-              >Vol. {{ $utils.formatArrayValue(item._source.volume) }}
-              {{ $utils.formatArrayValue(item._source.series) }}</small
-            >
-            <br />
-            Page. {{ getPlate(item._source) }}
-            <br />
-            {{ $utils.formatArrayValue(item._source.title) }}
-          </template>
-          <template v-else>
-            <small
-              >{{ $utils.formatArrayValue(item._source.volume) }}巻
-              {{ $utils.formatArrayValue(item._source.series_JP) }}</small
-            >
-            <br />
-            {{ getPlate(item._source) }}葉
-            {{ $utils.formatArrayValue(item._source.title_JP) }}
-            <br />
-            {{ $utils.formatArrayValue(item._source.title) }}
-          </template>
+          <span v-html="item.label"></span>
         </nuxt-link>
       </template>
 
       <template v-slot:item.icons="{ item }">
-        <ResultOption :item="item" />
+        <ResultOption
+          :item="{
+            label: $utils.formatArrayValue(item.raw._source._label),
+            manifest: $utils.formatArrayValue(item.raw._source._manifest),
+            url: encodeURIComponent(getUrl(item.raw)),
+            id: item.id,
+          }"
+        />
       </template>
     </v-data-table>
-
-    <v-simple-table v-if="false" fixed-header>
-      <template v-slot:default>
-        <thead>
-          <tr>
-            <th class="text-left"></th>
-            <th class="text-left"></th>
-            <th class="text-left">{{ $t('Edificio') }}</th>
-            <th class="text-left">{{ $t('conservazione') }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(item, key) in items" :key="key">
-            <td>
-              <nuxt-link class="mb-4" :to="localePath(item.path)">
-                <v-img
-                  :src="item.image"
-                  contain
-                  style="height: 90px; width: 90px;"
-                  class="grey lighten-2 my-2"
-                ></v-img>
-              </nuxt-link>
-            </td>
-            <td>
-              <router-link :to="localePath(item.path)">
-                <template v-if="$i18n.locale == 'en'">
-                  <small
-                    >Vol. {{ $utils.formatArrayValue(item._source.volume) }}
-                    {{ $utils.formatArrayValue(item._source.series) }}</small
-                  >
-                  <br />
-                  Page. {{ getPlate(item._source) }}
-                  <br />
-                  {{ $utils.formatArrayValue(item._source.title) }}
-                </template>
-                <template v-else>
-                  <small
-                    >{{ $utils.formatArrayValue(item._source.volume) }}巻
-                    {{ $utils.formatArrayValue(item._source.series_JP) }}</small
-                  >
-                  <br />
-                  {{ getPlate(item._source) }}葉
-                  {{ $utils.formatArrayValue(item._source.title_JP) }}
-                  <br />
-                  {{ $utils.formatArrayValue(item._source.title) }}
-                </template>
-              </router-link>
-            </td>
-            <td>{{ $utils.formatArrayValue(item._source.Edificio_IL) }}</td>
-            <td>{{ $utils.formatArrayValue(item._source.conservazione) }}</td>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Watch } from 'nuxt-property-decorator'
+import { Vue, Watch, Component } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
 
 @Component({
@@ -140,13 +73,18 @@ export default class TableSearchResult extends Vue {
   }
 
   mounted() {
+    const facetLabels: any = this.$store.state.facetLabels
     const fields: any = [
       { key: 'image', label: '' },
       { key: 'label', label: this.$t('title') },
-      { key: 'Edificio', label: this.$t('Edificio') },
-      { key: 'conservazione', label: this.$t('conservazione') },
-      { key: 'icons', label: '' },
     ]
+    for (const field in facetLabels) {
+      fields.push({
+        key: field,
+        label: field,
+      })
+    }
+    fields.push({ key: 'icons', label: '' })
     this.fields = fields
 
     const headers = []
@@ -172,18 +110,11 @@ export default class TableSearchResult extends Vue {
     const items: any[] = []
     for (let i = 0; i < results.length; i++) {
       const result: any = results[i]
-
       const item: any = {
-        image: this.$utils.formatArrayValue(result._source._image),
-        label: this.$utils.formatArrayValue(result._source._title),
+        image: this.$utils.formatArrayValue(result._source._thumbnail),
+        label: this.$utils.formatArrayValue(result._source._label),
         id: result._id,
         raw: result,
-        manifest: result._id,
-        url:
-          process.env.BASE_URL +
-          '/item/' +
-          this.$utils.formatArrayValue(result._source.file_no),
-        _source: result._source,
       }
 
       for (let j = 0; j < fields.length; j++) {
@@ -200,11 +131,16 @@ export default class TableSearchResult extends Vue {
     this.items = items
   }
 
-  getPlate(obj: any) {
+  getUrl(item: any) {
     return (
-      (this.$utils.formatArrayValue(obj.plate)
-        ? this.$utils.formatArrayValue(obj.plate)
-        : 0) + this.$utils.formatArrayValue(obj.constellation)
+      process.env.BASE_URL +
+      this.localePath({
+        name: 'item',
+        query: {
+          u: this.$route.query.u,
+          id: item._id,
+        },
+      })
     )
   }
 }

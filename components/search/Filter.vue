@@ -1,6 +1,6 @@
 <template>
   <div v-show="filterShowFlag">
-    <v-divider />
+    <!-- <v-divider /> -->
     <v-container fluid>
       <b style="vertical-align: middle;">{{ $t('search_query') }}</b>
       <template v-if="query.keyword">
@@ -10,16 +10,12 @@
           style="white-space: normal; word-wrap: break-word;"
           class="ma-1"
           close
-          :color="!value.startsWith('-') ? 'primary' : 'grey'"
+          color="primary"
           label
           text-color="white"
           @click:close="removeKey(value, 'keyword')"
         >
-          <v-icon v-if="value.startsWith('-')" class="mr-1"
-            >mdi-minus-box</v-icon
-          >
-          {{ $t('keyword') }}:
-          {{ !value.startsWith('-') ? value : value.slice(1) }}
+          {{ $t('keyword') }}: {{ value }}
         </v-chip>
       </template>
 
@@ -113,7 +109,7 @@
       <v-btn
         small
         text
-        :to="localePath({ name: 'search' })"
+        :to="localePath({ name: 'search', query: { u: $route.query.u } })"
         class="error--text ma-1"
       >
         <v-icon>mdi-close</v-icon> {{ $t('clear') }}
@@ -139,7 +135,10 @@ export default class searchfilter extends Vue {
     this.$router.push(
       this.localePath({
         name: 'search',
-        query: this.$utils.getSearchQueryFromQueryStore(this.$store.state),
+        query: this.$utils.getSearchQueryFromQueryStore(
+          this.$store.state,
+          this.$route.query.u
+        ),
       }),
       () => {},
       () => {}
@@ -178,7 +177,8 @@ export default class searchfilter extends Vue {
 
     // push 処理
     const query: any = this.$utils.getSearchQueryFromQueryStore(
-      this.$store.state
+      this.$store.state,
+      this.$route.query.u
     )
 
     this.$router.push(
@@ -220,11 +220,10 @@ export default class searchfilter extends Vue {
         const label = term.replace(type, '')
 
         result =
+          '[' +
           types[type] +
-          '-' +
-          (termLabels && termLabels[label]
-            ? this.$t(termLabels[label])
-            : this.$t(label))
+          '] ' +
+          (termLabels && termLabels[label] ? termLabels[label] : label)
 
         break
       }

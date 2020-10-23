@@ -1,9 +1,7 @@
 <template>
   <v-row>
-    <v-col v-for="(value, index) in results" :key="index" cols="12" :sm="col">
-      <CardItem
-        :item="$utils.item2CardItem(value, query, index, '', $i18n.locale)"
-      />
+    <v-col v-for="(value, index) in results" :key="index" :cols="12" :sm="col">
+      <CardItem :item="value" />
     </v-col>
   </v-row>
 </template>

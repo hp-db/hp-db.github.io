@@ -7,7 +7,7 @@
       <v-expansion-panel-header class="grey lighten-2"
         ><h3>
           <!-- {{ label.startsWith('_') ? $t(label.slice(1)) : $t(label) }} -->
-          {{ label.startsWith('_') ? $t(label.slice(1)) : $t(label) }}
+          {{ label.startsWith('_') ? label.slice(1) : label }}
           <small>({{ message }})</small>
         </h3></v-expansion-panel-header
       >
@@ -99,6 +99,7 @@
 
 <script lang="ts">
 import { Vue, Prop, Watch, Component } from 'nuxt-property-decorator'
+// import { queryStore } from '~/store'
 
 @Component
 export default class FacetOption extends Vue {
@@ -203,7 +204,10 @@ export default class FacetOption extends Vue {
   }
 
   updateQuery() {
-    const query = this.$utils.getSearchQueryFromQueryStore(this.$store.state)
+    const query = this.$utils.getSearchQueryFromQueryStore(
+      this.$store.state,
+      this.$route.query.u
+    )
     query.from = 0
     this.$router.push(
       this.localePath({

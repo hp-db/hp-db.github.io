@@ -26,7 +26,7 @@
   "map_comparison" : "国絵図の比較",
   "metadata" : "メタデータ",
   "about_iiif" : "マニフェストURアイコンとIIIF対応ビューア",
-  "view_full_item" : "収録データベースで表示",
+  "view_full_item" : "アイテムを閲覧する",
   "view_rdf" : "RDFデータを表示",
   "description" : "内容記述",
   "agential" : "人物",
@@ -39,10 +39,10 @@
   "type" : "基本区分",
   "show_more" : "もっと見る",
   "temporal" : "時間",
-  "more_like_this" : "タイトルが似ているアイテム",
+  "more_like_this" : "メタデータが似ているアイテム",
   "similar_images" : "画像が似ているアイテム",
   "browse_by" : "で探す",
-  "source" : "収録データベース",
+  "source" : "収録DB",
   "access" : "所在（所蔵機関）",
   "hits": "件見つかりました。",
   "items_per_page" : "表示数",
@@ -94,7 +94,7 @@
     "Altars" : "祭壇",
     "Photo by" : "撮影者",
     "Description by" : "執筆者",
-    "Localizzazione moderna": "現代の場所",
+    "Localizzazione moderna": "現在の場所",
     "Cronologia" : "時代",
     "Parte dell'oggetto" : "説明",
     "Didascalia" : "キャプション",
@@ -104,7 +104,7 @@
     
     
     
-    "piranesi_db" : "ピラネージ画像データベース（拡張版）",
+    "piranesi_db" : "『大正新脩大蔵経』底本・校本データベース",
     
 
     "reset" : "リセット",
@@ -162,9 +162,9 @@
 
     "signatute" : "署名",
 
-    "prints_and_photos" : "版画と現代の写真",
+    "prints_and_photos" : "版画と現在の写真",
 
-    "present_photos" : "現代の写真",
+    "present_photos" : "現在の写真",
 
     "move_to_comp" : "版画と写真の閲覧画面に遷移します。",
     "move_to_search" : "検索画面に遷移します。",
@@ -255,15 +255,95 @@
     "J. W. Ely" : "J. W. Ely",
 
     "序文" : "序文",
-    "図版目録" : "図版目録",
 
     "thumbnail" : "サムネイル",
     "table" : "テーブル",
     "graph" : "グラフ",
 
-    "search_query" : "フィルタ",
+    "map" : "地図",
+  
+    "検索結果をIIIFコレクションで取得する" : "検索結果をIIIFコレクションで取得する",
+    "Image Annotatorで見る" : "高精細画像を開く",
+  
+    "previous_page" : "前に戻る",
+  
+    "Image Annotator" : "Image Annotator",
+  
+    "isPartOf" : "コレクション",
+  
+    "jp" : "所蔵場所",
+  
+    "False" : "日本国外",
+    "True" : "日本",
+  
+    "self_museum" : "セルフミュージアム",
+  
+    "Between Year" : "開始年",
+    "and Year" : "終了年",
+  
+    "機械的に翻訳したタイトルです。" : "機械的に翻訳したタイトルです。",
+  
+    "policy" : "サイトポリシー",
+  
+    "privacy policy" : "プライバシーポリシー",
+    "contact" : "お問い合わせ",
+  
+    "pickup" : "ピックアップ",
+  
+    "_media" : "メディア有無",
+  
+    "country" : "所蔵国",
+    "apply" : "適用",
+  
+    "has_thumbnails" : "サムネイル画像あり",
+  
+    "overseas" : "海外",
+    "in-country" : "国内",
+    "all" : "すべて",
+  
+    "cc-license" : "CCライセンス",
+    "free-reuse" : "自由利用可",
+    "limited-reuse" : "限定利用可",
+    "or" : "または",
+  
+    "search_query" : "検索クエリ",
+  
+    "縄文時代" : "縄文時代",
+    "弥生時代" : "弥生時代",
+    "古墳時代" : "古墳時代",
+    "飛鳥時代" : "飛鳥時代",
+    "奈良時代" : "奈良時代",
+    "平安時代" : "平安時代",
+    "鎌倉時代" : "鎌倉時代",
+    "室町時代" : "室町時代",
+    "南北朝時代" : "南北朝時代",
+    "戦国時代" : "戦国時代",
+    "安土桃山時代" : "安土桃山時代",
+    "江戸時代" : "江戸時代",
+    "明治" : "明治",
+    "大正" : "大正",
+    "昭和" : "昭和",
+    "平成" : "平成",
+    "時代（日本）" : "時代（日本）",
+  
+    "browse_similar_items" : "類似アイテムを探す",
+  
+    "save_to_my_list" : "マイリストに登録",
+    "save_to_iiif_pocket" : "IIIF pocketに遷移します",
+  
     "clear" : "クリア",
+  
+    "support" : "協力",
 
-    "attribution" : "東京大学総合図書館所蔵 亀井文庫"
+    "tree" : "コレクション",
 
+    "view" : "閲覧する",
+
+    "desc_search" : "ファセットを使ってアイテムを検索する。",
+    "desc_category" : "メタデータ毎のアイテム数を閲覧する。",
+    "desc_tree" : "IIIFコレクションの階層に沿ってアイテムを閲覧する。",
+    "_label" : "label",
+    "manifest" : "Manifest",
+    "entity" : "事物",
+    "random" : "ランダム"
   }

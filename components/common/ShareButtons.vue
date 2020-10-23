@@ -1,58 +1,56 @@
 <template>
   <v-card flat>
-    <v-card-actions>
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn icon class="ma-2" @click="copyLink()" v-on="on"
-            ><v-icon>mdi-link</v-icon></v-btn
-          >
-        </template>
-        <span>{{ 'Copy this link.' }}</span>
-      </v-tooltip>
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn icon class="ma-2" target="_blank" :href="twitterUrl" v-on="on"
-            ><v-icon>mdi-twitter</v-icon></v-btn
-          >
-        </template>
-        <span>{{ 'Twitter' }}</span>
-      </v-tooltip>
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn icon class="ma-2" target="_blank" :href="facebookUrl" v-on="on"
-            ><v-icon>mdi-facebook</v-icon></v-btn
-          >
-        </template>
-        <span>{{ 'Facebook' }}</span>
-      </v-tooltip>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn icon class="ma-2" @click="copyLink()" v-on="on"
+          ><v-icon>mdi-link</v-icon></v-btn
+        >
+      </template>
+      <span>{{ 'Copy this link.' }}</span>
+    </v-tooltip>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn icon class="ma-2" target="_blank" :href="twitterUrl" v-on="on"
+          ><v-icon>mdi-twitter</v-icon></v-btn
+        >
+      </template>
+      <span>{{ 'Twitter' }}</span>
+    </v-tooltip>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn icon class="ma-2" target="_blank" :href="facebookUrl" v-on="on"
+          ><v-icon>mdi-facebook</v-icon></v-btn
+        >
+      </template>
+      <span>{{ 'Facebook' }}</span>
+    </v-tooltip>
 
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn icon class="ma-2" target="_blank" :href="pocketUrl" v-on="on"
-            ><img style="font-size: 24px;" :src="baseUrl + '/img/pocket.svg'"
-          /></v-btn>
-        </template>
-        <span>{{ 'Pocket' }}</span>
-      </v-tooltip>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn icon class="ma-2" target="_blank" :href="pocketUrl" v-on="on"
+          ><img style="font-size: 24px;" :src="baseUrl + '/img/pocket.svg'"
+        /></v-btn>
+      </template>
+      <span>{{ 'Pocket' }}</span>
+    </v-tooltip>
 
-      <v-tooltip v-if="image" bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn icon class="ma-2" target="_blank" :href="googleUrl" v-on="on"
-            ><v-icon>mdi-google</v-icon></v-btn
-          >
-        </template>
-        <span>{{ $t('google_image_search') }}</span>
-      </v-tooltip>
+    <v-tooltip v-if="image" bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn icon class="ma-2" target="_blank" :href="googleUrl" v-on="on"
+          ><v-icon>mdi-google</v-icon></v-btn
+        >
+      </template>
+      <span>{{ $t('google_image_search') }}</span>
+    </v-tooltip>
 
-      <v-tooltip v-if="manifest != ''" bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn icon class="ma-2" target="_blank" :href="iiifUrl" v-on="on"
-            ><v-icon>mdi-star</v-icon></v-btn
-          >
-        </template>
-        <span>{{ 'IIIF pocket' }}</span>
-      </v-tooltip>
-    </v-card-actions>
+    <v-tooltip v-if="manifest != ''" bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn icon class="ma-2" target="_blank" :href="iiifUrl" v-on="on"
+          ><v-icon>mdi-star</v-icon></v-btn
+        >
+      </template>
+      <span>IIIF pocket</span>
+    </v-tooltip>
   </v-card>
 </template>
 
@@ -61,6 +59,8 @@ import { Prop, Component, Vue } from 'nuxt-property-decorator'
 
 @Component
 export default class ShareButtons extends Vue {
+  baseUrl: any = process.env.BASE_URL
+
   copyLink() {
     const str = this.url
 
@@ -80,8 +80,6 @@ export default class ShareButtons extends Vue {
     // alert('Copied.')
   }
 
-  baseUrl: any = process.env.BASE_URL
-
   @Prop({ required: true })
   url!: string
 
@@ -96,22 +94,16 @@ export default class ShareButtons extends Vue {
 
   get twitterUrl() {
     return (
-      'https://twitter.com/intent/tweet?url=' +
-      encodeURIComponent(this.url) +
-      '&text=' +
-      this.title
+      'https://twitter.com/intent/tweet?url=' + this.url + '&text=' + this.title
     )
   }
 
   get facebookUrl() {
-    return (
-      'https://www.facebook.com/sharer/sharer.php?u=' +
-      encodeURIComponent(this.url)
-    )
+    return 'https://www.facebook.com/sharer/sharer.php?u=' + this.url
   }
 
   get pocketUrl() {
-    return 'http://getpocket.com/edit?url=' + encodeURIComponent(this.url)
+    return 'http://getpocket.com/edit?url=' + this.url
   }
 
   get googleUrl() {
@@ -128,10 +120,14 @@ export default class ShareButtons extends Vue {
       'http://pocket.cultural.jp/' +
       lang +
       '?url=' +
-      encodeURIComponent(this.manifest) +
+      encodeURIComponent(this.manifest) /* +
       '&related=' +
-      this.url
+      this.url */
     )
+  }
+
+  get id() {
+    return Buffer.from(this.url).toString('base64')
   }
 }
 </script>

@@ -28,6 +28,7 @@
     "nuxt-i18n": "^6.15.4",
     "nuxt-property-decorator": "^2.8.8",
     "push-dir": "^0.4.1",
+    "vue-chartjs": "^3.5.1",
     "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {

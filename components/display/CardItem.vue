@@ -1,40 +1,72 @@
 <template>
-  <v-card>
-    <router-link :to="item.path ? localePath(item.path) : null">
+  <v-card
+    no-body
+    class="mb-4"
+    :style="horizontal ? 'width: ' + width + 'px;' : ''"
+  >
+    <nuxt-link
+      :to="
+        localePath({
+          name: 'item-id',
+          params: { id: item._id },
+        })
+      "
+    >
       <v-img
-        :src="item.image"
+        :src="$utils.formatArrayValue(item._source._thumbnail)"
         contain
-        style="height: 200px;"
+        style="height: 150px"
         width="100%"
         class="grey lighten-2"
       ></v-img>
-    </router-link>
+    </nuxt-link>
 
-    <v-card-title>
-      <router-link :to="item.path ? localePath(item.path) : null">
-        <template v-if="obj">
-          <template v-if="$i18n.locale == 'en'">
-            Vol.
-            {{ $utils.formatArrayValue(obj.volume) }}
-            Page. {{ plate }}
-          </template>
-          <template v-else>
-            第{{ $utils.formatArrayValue(obj.volume) }}巻 第{{ plate }}葉
-          </template>
-        </template>
-        <template v-else>
-          {{ item.label }}
-        </template>
-      </router-link>
-    </v-card-title>
+    <div
+      class="pa-4"
+      :style="
+        horizontal
+          ? 'width: ' +
+            width +
+            'px; height: ' +
+            /*height*/ 100 +
+            'px; overflow-y: auto;'
+          : ''
+      "
+    >
+      <nuxt-link
+        :to="
+          localePath({
+            name: 'item-id',
+            params: { id: item._id },
+          })
+        "
+        class="mr-2"
+      >
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <b v-html="$utils.formatArrayValue(item._source._label)"></b>
+      </nuxt-link>
+      <template v-if="item.access">
+        <div class="mt-2">
+          {{ item.access }}
+        </div>
+      </template>
+    </div>
 
-    <v-divider />
+    <template v-if="!item.share_hide">
+      <v-divider />
 
-    <v-card-actions>
-      <v-spacer></v-spacer>
-
-      <ResultOption :item="item" />
-    </v-card-actions>
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <ResultOption
+          :item="{
+            label: $utils.formatArrayValue(item._source._label),
+            manifest: $utils.formatArrayValue(item._source._manifest),
+            url: encodeURIComponent(getUrl(item)),
+            id: item._id,
+          }"
+        />
+      </v-card-actions>
+    </template>
   </v-card>
 </template>
 
@@ -47,32 +79,41 @@ import ResultOption from '~/components/display/ResultOption.vue'
     ResultOption,
   },
 })
-export default class cardItem extends Vue {
-  baseUrl: any = process.env.BASE_URL
-
-  @Prop({
-    default: 200,
-  })
-  width!: number
-
+export default class CardItem extends Vue {
   @Prop({ required: true })
   item!: any
 
-  get obj() {
-    return this.item._source
-  }
+  @Prop({
+    default: 240,
+  })
+  width!: number
+
+  @Prop({
+    default: 300,
+  })
+  height!: number
 
   @Prop({
     default: false,
   })
   horizontal!: boolean
 
-  get plate() {
+  getUrl(item: any) {
     return (
-      (this.$utils.formatArrayValue(this.obj.plate)
-        ? this.$utils.formatArrayValue(this.obj.plate)
-        : 0) + this.$utils.formatArrayValue(this.obj.constellation)
+      process.env.BASE_URL +
+      this.localePath({
+        name: 'item',
+        query: {
+          u: this.$route.query.u,
+          id: item._id,
+        },
+      })
     )
   }
 }
 </script>
+<style>
+a {
+  text-decoration: none;
+}
+</style>

@@ -24,7 +24,7 @@ const baseDir = env.BASE_DIR || '/'
 const basePath = baseUrl + baseDir
 
 // meta
-const lang = 'ja'
+const lang = 'en'
 const siteName = 'Hieratische Paläographie DB'
 const siteDesc =
   "This is a retrieval system for hieratic scripts; it uses IIIF format images (owned by the Asian Research Library of the University of Tokyo) of Georg Möller's Hieratische Paläographie (1909–36)."
@@ -174,7 +174,7 @@ export default {
     ],
     'nuxt-i18n',
     // Simple usage
-    '@nuxtjs/amp',
+    // '@nuxtjs/amp',
   ],
 
   sitemap: {
@@ -209,7 +209,7 @@ export default {
       { code: 'en', iso: 'en_US', file: 'en.json' },
       { code: 'ja', iso: 'ja_JP', file: 'ja.json' },
     ],
-    defaultLocale: 'ja',
+    defaultLocale: 'en',
     vueI18nLoader: true,
     lazy: true,
     langDir: 'lang/',
@@ -218,6 +218,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    standalone: true, // これを追加！
     babel: {
       plugins: [
         ['@babel/plugin-proposal-decorators', { legacy: true }],
@@ -230,7 +231,7 @@ export default {
 
   generate: {
     dir: 'docs',
-    /*
+
     async routes() {
       const pages = await axios
         .get('https://moeller.jinsha.tsukuba.ac.jp/data/curation.json')
@@ -260,7 +261,7 @@ export default {
               })
 
               pages.push({
-                route: `/en/item/${id}`,
+                route: `/ja/item/${id}`,
                 payload: member,
               })
             }
@@ -269,6 +270,5 @@ export default {
         })
       return pages
     },
-    */
   },
 }

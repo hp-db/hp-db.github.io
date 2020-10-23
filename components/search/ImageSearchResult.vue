@@ -1,9 +1,14 @@
 <template>
-  <v-row>
-    <v-col v-for="(value, index) in results" :key="index" cols="12" :sm="col">
-      <ThumbItem
-        :item="$utils.item2CardItem(value, query, index, '', $i18n.locale)"
-      />
+  <v-row align-v="stretch">
+    <v-col
+      v-for="(value, index) in results"
+      :key="index"
+      :cols="12"
+      :sm="col"
+      align-self="stretch"
+      class="mb-4"
+    >
+      <ThumbItem :item="value" />
     </v-col>
   </v-row>
 </template>

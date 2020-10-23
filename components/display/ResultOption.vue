@@ -1,66 +1,82 @@
 <template>
   <span>
-    <v-btn v-if="item.manifest" icon :href="item.manifest">
-      <img height="24px" :src="baseUrl + '/img/iiif-logo.svg'" />
+    <v-btn depressed icon @click="view">
+      <!-- {{ $t('view') }} color="primary" -->
+      <v-icon>mdi-eye</v-icon>
     </v-btn>
-
-    <v-btn icon>
-      <v-menu top offset-y>
+    <v-btn
+      v-if="item.manifest"
+      depressed
+      icon
+      :href="item.manifest"
+      target="_blank"
+    >
+      <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-icon v-on="on">mdi-share-variant</v-icon>
+          <img
+            height="24px"
+            :src="baseUrl + $utils.getManifestIcon(manifest)"
+            v-on="on"
+          />
         </template>
-
-        <ShareButtons
-          :url="item.url"
-          :title="item.label"
-          :manifest="item.manifest ? item.manifest : ''"
-        />
-      </v-menu>
+        <span>{{ $t('manifest') }}</span>
+      </v-tooltip>
     </v-btn>
-    <!-- 
-    <a v-if="manifest" :href="manifest" target="_blank" style="color: #ca4316;">
-      <img
-        v-b-tooltip.hover
-        :title="$t('manifest')"
-        style="cursor: pointer; font-size: 20px;"
-        class="mx-2 pb-1 iiif-drag-and-drop-link"
-        width="20px"
-        :src="$utils.getManifestIcon(manifest)"
-      />
-    </a>
 
-    <nuxt-link
-      v-if="SIMILAR_IMAGES_FLAG"
-      :to="localePath({ name: 'search', query: { image: id } })"
-      style="color: #ca4316;"
-    >
-      <img
-        v-b-tooltip.hover
-        :title="$t('similar_images')"
-        style="cursor: pointer; font-size: 20px;"
-        class="mx-2 pb-1"
-        width="20px"
-        src="~/static/img/icons/image-search.png"
-      />
-    </nuxt-link>
+    <!--
 
-    <nuxt-link
-      :to="localePath({ name: 'search', query: { id: id } })"
-      style="color: #ca4316;"
-    >
-      <img
-        v-b-tooltip.hover
-        :title="$t('more_like_this')"
-        style="cursor: pointer; font-size: 20px;"
-        class="mx-2 pb-1"
-        width="20px"
-        src="~/static/img/icons/text-search.png"
-      />
-    </nuxt-link>
-
-    <ShareButtons class="mx-2" :url="url" :title="title" />
+    <template v-if="advanced">
+      <v-btn
+        v-if="item.manifest"
+        depressed
+        icon
+        :href="
+          'http://www.kanzaki.com/works/2016/pub/image-annotator?u=' +
+          encodeURIComponent(item.manifest)
+        "
+        target="_blank"
+      >
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn depressed icon v-on="on">
+              <v-icon>mdi-monitor-eye</v-icon>
+            </v-btn>
+          </template>
+          <span>{{ $t('Image Annotatorで見る') }}</span>
+        </v-tooltip>
+      </v-btn>
+    </template>
 
     -->
+
+    <!-- 
+    <v-menu open-on-hover top offset-y>
+      <template v-slot:activator="{ on }">
+        <v-btn depressed icon v-on="on">
+          <v-icon>mdi-share-variant</v-icon>
+        </v-btn>
+      </template>
+
+      <ShareButtons
+        :url="url"
+        :title="title"
+        :manifest="item.manifest ? item.manifest : ''"
+      />
+    </v-menu>
+    -->
+    <v-menu top offset-y>
+      <template v-slot:activator="{ on }">
+        <v-btn depressed icon v-on="on">
+          <v-icon>mdi-share-variant</v-icon>
+        </v-btn>
+      </template>
+
+      <ShareButtons
+        :url="url"
+        :title="title"
+        :manifest="item.manifest ? item.manifest : ''"
+      />
+    </v-menu>
   </span>
 </template>
 
@@ -77,6 +93,14 @@ export default class resultoption extends Vue {
   baseUrl: any = process.env.BASE_URL
 
   SIMILAR_IMAGES_FLAG: boolean = process.env.SIMILAR_IMAGES_FLAG === 'true'
+
+  get advanced() {
+    if (this.$store.state.mode === 'all') {
+      return true
+    } else {
+      return false
+    }
+  }
 
   /*
   @Prop({ required: true })
@@ -116,7 +140,13 @@ export default class resultoption extends Vue {
   }
 
   get url() {
-    return process.env.BASE_URL + '/item/' + this.id
+    // return process.env.BASE_URL + '/item/' + this.id
+    return this.item.url
+  }
+
+  view() {
+    this.$store.commit('setCurrentManifest', this.item.manifest)
+    this.$store.commit('setCurrentMember', this.item.id)
   }
 }
 </script>

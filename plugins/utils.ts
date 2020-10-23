@@ -1,87 +1,310 @@
 // /plugins/logger.ts
 export class Utils {
-  getPrintData(response: any): any {
-    const result = response.data
+  createQuery(routeQuery: any, config: any): any {
+    const fcs = Object.keys(config.facetLabels) // JSON.parse(process.env.FACETS_LABELS)
 
-    const data: any = {}
-    const index: any = {}
+    // const qs = Object.keys(config.termLabels)
 
-    const manifests = result.manifests
-    for (let i = 0; i < manifests.length; i++) {
-      const obj = manifests[i]
-      const metadata = obj.metadata
+    // 検索対象メタデータ
+    const fields = ['_full_text', '_title'] // JSON.parse(process.env.SEARCH_LABELS)
 
-      const map: any = {}
-      for (let j = 0; j < metadata.length; j++) {
-        const m = metadata[j]
-        const label = m.label
-        const value = m.value
-        if (!index[label]) {
-          index[label] = {}
+    const FC_SIZE = 50
+
+    const from = routeQuery.from ? Number(routeQuery.from) : 0
+    let size = routeQuery.size ? Number(routeQuery.size) : config.size
+
+    const ops: any = {
+      keyword: routeQuery.keywordOr === 'true',
+      q: routeQuery.advancedOr === 'true',
+      fc: routeQuery.facetOr === 'true',
+    }
+
+    // const advancedOr: boolean = routeQuery.advancedOr === 'true'
+
+    if (size > 500) {
+      size = 500
+    }
+
+    // -------------------------
+
+    // Aggregation
+
+    const aggs: any = {}
+
+    const fcsMap: any = {}
+    for (let i = 0; i < fcs.length; i++) {
+      const field = fcs[i]
+      const fcsField = 'fc-' + field
+      if (routeQuery[fcsField]) {
+        const value = routeQuery[fcsField]
+        let values = []
+        if (!Array.isArray(value)) {
+          values = [value]
+        } else {
+          values = value
         }
-        if (!index[label][value]) {
-          index[label][value] = []
-        }
-        index[label][value].push(obj['@id'])
-
-        map[label] = value
+        fcsMap[fcsField] = values
       }
 
-      data[obj['@id']] = map
-
-      map.thumbnail = obj.thumbnail
-      map.manifest = obj['@id']
+      // aggs
+      aggs[field] = {
+        terms: {
+          field: field + '.keyword',
+          size: FC_SIZE,
+          order: {
+            _count: 'desc',
+          },
+        },
+      }
     }
 
-    return {
-      data,
-      index,
+    // クエリ本体
+
+    const query: any = {
+      bool: {
+        must: [],
+        should: [],
+        filter: [],
+        must_not: [],
+      },
     }
-  }
 
-  getPhotoData(response: any): any {
-    const result = response.data
+    // キーワード
+    const keyword = routeQuery.keyword ? routeQuery.keyword : []
+    let keywords = []
+    if (!Array.isArray(keyword)) {
+      keywords = [keyword]
+    } else {
+      keywords = keyword
+    }
 
-    const data: any = {}
-    const index: any = {}
+    // const kerwordPhase = []
+    for (let i = 0; i < keywords.length; i++) {
+      const keyword = keywords[i]
 
-    const manifests = result.manifests
-    for (let i = 0; i < manifests.length; i++) {
-      const obj = manifests[i]
-      const metadata = obj.metadata
+      // キーワード NOT
+      if (keyword.startsWith('-')) {
+        // const mustNotPhase = []
 
-      const map: any = {}
-      for (let j = 0; j < metadata.length; j++) {
-        const m = metadata[j]
-        const label = m.label
-        const value = m.value
-        if (!index[label]) {
-          index[label] = {}
+        for (let j = 0; j < fields.length; j++) {
+          const matchPhrase: any = {}
+          matchPhrase[fields[j]] = keyword.slice(1)
+
+          query.bool.must_not.push({
+            match_phrase: matchPhrase,
+          })
         }
-        if (!index[label][value]) {
-          index[label][value] = []
-        }
-        index[label][value].push(obj['@id'])
+      } else if (ops.keyword) {
+        // or 検索
+        // console.log('keywordOr')
+      } else {
+        const shouldPhase = []
 
-        map[label] = value
+        for (let j = 0; j < fields.length; j++) {
+          const matchPhrase: any = {}
+          matchPhrase[fields[j]] = keyword
+          shouldPhase.push({
+            match_phrase: matchPhrase,
+          })
+        }
+
+        query.bool.must.push({
+          bool: {
+            should: shouldPhase,
+          },
+        })
       }
 
-      data[obj['@id']] = map
+      /*
+        const shouldPhase = []
 
-      map.manifest = obj['@id']
+        for (let j = 0; j < fields.length; j++) {
+          const matchPhrase: any = {}
+          matchPhrase[fields[j]] = keyword
+          shouldPhase.push({
+            match_phrase: matchPhrase,
+          })
+        }
+
+        query.bool[ops.keyword ? 'should' : 'must'].push({
+          bool: {
+            should: shouldPhase,
+          },
+        })
+        */
     }
 
-    return {
-      data,
-      index,
+    // ---------------------
+
+    for (const field in routeQuery) {
+      if (field.startsWith('q-') || field.startsWith('fc-')) {
+        const qsField = field
+
+        const type: string = qsField.split('-')[0]
+
+        const prefix: string = qsField.split('-')[0]
+
+        const mustOfFilter: string = prefix === 'q' ? 'must' : 'filter' // fc-の場合はfilter
+
+        const boolQuery = ops[prefix] ? 'should' : mustOfFilter // OR条件
+
+        const value = routeQuery[qsField]
+        let values = []
+        if (!Array.isArray(value)) {
+          values = [value]
+        } else {
+          values = value
+        }
+
+        const pluses: string[] = []
+        const minuses: string[] = []
+
+        for (let j = 0; j < values.length; j++) {
+          const value = values[j]
+          if (value.startsWith('-')) {
+            minuses.push(value.slice(1))
+          } else {
+            pluses.push(value)
+          }
+        }
+
+        // minuses
+        for (let j = 0; j < minuses.length; j++) {
+          const value = minuses[j]
+          if (type === 'fc') {
+            const termPhase: any = {}
+            termPhase[field.slice(3) + '.keyword'] = value // "fc-"の除外
+
+            query.bool.must_not.push({
+              term: termPhase,
+            })
+          } else {
+            const termPhase: any = {}
+            termPhase[field.slice(2)] = value // "-"の除外 // "q-"の除外
+
+            query.bool.must_not.push({
+              term: termPhase,
+            })
+          }
+        }
+
+        if (pluses.length === 0) {
+          continue
+        }
+        // ファセット か 否か
+        if (type === 'fc') {
+          const shoulds: any[] = []
+          for (let j = 0; j < pluses.length; j++) {
+            const value = values[j]
+            const termPhase: any = {}
+            termPhase[field.slice(3) + '.keyword'] = value // "q-"の除外
+
+            shoulds.push({
+              term: termPhase,
+            })
+          }
+          query.bool[boolQuery].push({
+            bool: {
+              should: shoulds,
+            },
+          })
+        } else {
+          // plus
+          for (let j = 0; j < pluses.length; j++) {
+            const value = values[j]
+            const termPhase: any = {}
+            termPhase[field.slice(2)] = value // "q-"の除外
+
+            query.bool[boolQuery].push({
+              term: termPhase,
+            })
+          }
+        }
+
+        /*
+        for (let j = 0; j < values.length; j++) {
+          const value = values[j]
+
+          // ファセット
+          if (type === 'fc') {
+            if (value.startsWith('-')) {
+              // 除外
+              const termPhase: any = {}
+              termPhase[field.slice(3) + '.keyword'] = value.slice(1) // "fc-"の除外
+
+              query.bool.must_not.push({
+                term: termPhase,
+              })
+            } else {
+              const termPhase: any = {}
+              termPhase[field.slice(3) + '.keyword'] = value // "fc-"の除外
+
+              query.bool[boolQuery].push({
+                term: termPhase,
+              })
+            }
+          }
+          // 詳細検索
+          else if (type === 'q') {
+            // 除外
+            if (value.startsWith('-')) {
+              const termPhase: any = {}
+              termPhase[field.slice(2)] = value.slice(1) // "-"の除外 // "q-"の除外
+
+              query.bool.must_not.push({
+                term: termPhase,
+              })
+            } else {
+              const termPhase: any = {}
+              termPhase[field.slice(2)] = value // "q-"の除外
+
+              query.bool[boolQuery].push({
+                term: termPhase,
+              })
+            }
+          }
+        }
+        */
+      }
     }
+
+    const sort = routeQuery.sort ? routeQuery.sort : null
+    const sorts = []
+    if (sort != null && !sort.includes('_score')) {
+      const tmp = sort.split(':')
+      const field = tmp[0] // tmp[0].includes('_') ? tmp[0] + '.keyword' : tmp[0]
+      const order = tmp[1]
+      const obj: any = {}
+      obj[field] = {
+        order,
+      }
+      sorts.push(obj)
+      sorts.push('_score')
+    }
+
+    const body = {
+      query,
+      aggs,
+      size,
+      from,
+      sort: sorts,
+    }
+
+    return body
   }
 
   getTitle(metadata: any, lang: string): any {
     if (metadata.title_mt && metadata.title_mt.length > 0 && lang === 'ja') {
       return (
         this.formatArrayValue(metadata.title_mt) +
-        " <i class='mdi mdi-google-translate' data-toggle='tooltip' title='Google翻訳を使用したタイトルです。'></i>"
+        " <i class='mdi mdi-google-translate'></i>"
+        /*
+        `<v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <i class='mdi mdi-google-translate' v-on="on"></i>
+          </template>
+          <span>Google翻訳を使用したタイトルです。</span>
+        </v-tooltip>` */
       )
     } else {
       return this.formatArrayValue(metadata._title)
@@ -120,17 +343,15 @@ export class Utils {
 
   item2CardItem(
     item: any,
-    // query: any = null,
-    // index: number = -1,
-    type: string = ''
-    // lang: string = 'ja'
+    query: any = null,
+    // eslint-disable-next-line
+    index: number = -1,
+    type: string = '',
+    lang: string = 'ja'
   ) {
-    if (!item) {
-      return item
-    }
     const _source = item._source
 
-    const id = _source.file_no[0]
+    const id = item._id
 
     const path: any = {
       name: 'item-id',
@@ -139,36 +360,25 @@ export class Utils {
       },
     }
 
-    /*
     if (query !== null) {
-      path.query = this.indexedQuery(query, index)
+      // console.log({ index })
+      // path.query = this.indexedQuery(query, index)
     }
-    */
-    // console.log(query, index, lang)
-
-    // {{ obj2.volume }}巻
 
     const cardItem: any = {
       path,
-      label:
-        '第' +
-        this.formatArrayValue(item._source.volume) +
-        '巻 第' +
-        this.formatArrayValue(item._source.plate) +
-        '葉',
+      label: this.getTitle(_source, lang),
       id,
-      url:
-        process.env.BASE_URL +
-        '/item/' +
-        this.formatArrayValue(item._source.file_no), // this.formatArrayValue(_source._url),
-      _source,
+      url: this.formatArrayValue(_source._url),
     }
 
     if (_source._image) {
-      cardItem.image = this.formatArrayValue(_source._image)
+      cardItem.image = this.formatArrayValue(_source._image).split(', ')[0]
     }
 
-    cardItem.manifest = item._id // 要注意
+    if (_source._manifest) {
+      cardItem.manifest = this.formatArrayValue(_source._manifest)
+    }
 
     if (_source.access) {
       cardItem.access = this.formatArrayValue(_source.access)
@@ -229,7 +439,26 @@ export class Utils {
     // 全角を半角に変換
     // 空の配列を削除
     // eslint-disable-next-line
-    return keyword.replace(/　/g, ' ').split(' ').filter(item => item !== "")
+    const keywords: string[] = keyword.replace(/　/g, ' ').split(' ').filter(item => item !== "")
+
+    const keywords2: any[] = []
+    for (let i = 0; i < keywords.length; i++) {
+      const keyword: string = keywords[i]
+      const splitTmp = keyword.split(':')
+      if (splitTmp.length === 2) {
+        keywords2.push({
+          label: 'q-' + splitTmp[0].trim(),
+          value: splitTmp[1].trim(),
+        })
+      } else {
+        keywords2.push({
+          label: 'keyword',
+          value: keyword,
+        })
+      }
+    }
+
+    return keywords2
   }
 
   createFacetQuery(arr: any[]): { [key: string]: string } {
@@ -241,8 +470,12 @@ export class Utils {
     return result
   }
 
-  truncate(str: string, length: number): string {
-    return str.length <= length ? str : str.substr(0, length) + '...'
+  truncate(str: any, length: number): string {
+    if (str && str['@id']) {
+      return ''
+    }
+    str = String(str)
+    return str.length <= length ? str : str.substring(0, length) + '...'
   }
 
   convert2arr(value: any) {
@@ -258,7 +491,7 @@ export class Utils {
     return values
   }
 
-  getSearchQueryFromQueryStore(query: any): any {
+  getSearchQueryFromQueryStore(query: any, u: any): any {
     const params: any = {
       sort: query.sort,
       size: query.size,
@@ -303,19 +536,27 @@ export class Utils {
       }
     }
 
-    // params.after = query.after ? query.after : null
-    // params.before = query.before ? query.before : null
-    // params.id = query.id ? query.id : null
+    if (u) {
+      params.u = u
+    }
 
     return params
   }
 
-  getHibunUrl(id: string) {
-    return process.env.BASE_URL + '/img/CIL_list/img/' + id + '.jpg'
+  getManifestIcon(manifest: string): string {
+    const url = manifest.includes('api.cultural.jp')
+      ? '/img/icons/iiif-gray-logo.svg'
+      : '/img/icons/iiif-logo.svg'
+    return url
   }
 
-  getHibunImageUrl(id: string) {
-    return process.env.BASE_URL + '/img/CIL_list/hibun/' + id + '.jpg'
+  getTopMessage(size: number, top: number, lang: string) {
+    let prefix: string = ''
+    const suffix: string = lang === 'ja' ? '件' : ''
+    if (size === top) {
+      prefix = lang === 'ja' ? '上位' : 'Top '
+    }
+    return prefix + size.toLocaleString() + suffix
   }
 }
 

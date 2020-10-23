@@ -9,7 +9,7 @@ function convert2arr(value: any): string[] {
   }
   return values
 }
-
+// /plugins/logger.ts
 export class SearchUtils {
   createQuery(routeQuery: any, config: any): any {
     const fcs = Object.keys(config.facetLabels) // JSON.parse(process.env.FACETS_LABELS)
@@ -312,9 +312,38 @@ export class SearchUtils {
         _id: manifest['@id'],
 
         _source: {
-          _title: [manifest.label],
-          _image: [manifest.thumbnail],
+          _label: [manifest.label],
+
+          _manifest: [manifest['@id']],
         },
+      }
+
+      if (manifest.thumbnail) {
+        obj._source._thumbnail = [manifest.thumbnail]
+      }
+
+      if (manifest.texts) {
+        obj.texts = manifest.texts
+      }
+
+      if (manifest.images) {
+        obj.images = manifest.images
+      }
+
+      if (manifest.attribution) {
+        let values = manifest.attribution
+        if (!Array.isArray(values)) {
+          values = [values]
+        }
+        const values2 = []
+        for (let j = 0; j < values.length; j++) {
+          let value2 = values[j]
+          if (value2['@value']) {
+            value2 = value2['@value']
+          }
+          values2.push(value2)
+        }
+        obj._source.Attribution = values2
       }
 
       let related
@@ -330,6 +359,9 @@ export class SearchUtils {
       if (manifest.description) {
         obj._source.Description = [manifest.description]
       }
+
+      const entity: any = {}
+
       const metadata = manifest.metadata
       if (metadata) {
         for (let k = 0; k < metadata.length; k++) {
@@ -339,9 +371,41 @@ export class SearchUtils {
           if (!Array.isArray(values)) {
             values = [values]
           }
-          obj._source[m.label] = values
+
+          if (!obj._source[m.label]) {
+            obj._source[m.label] = []
+          }
+          for (let l = 0; l < values.length; l++) {
+            const value = values[l]
+            if (!obj._source[m.label].includes(value)) {
+              obj._source[m.label].push(value)
+            }
+            // obj._source[m.label] = values
+          }
+
+          // entity
+          if (m.property) {
+            const propertyUri = m.property
+            if (!entity[propertyUri]) {
+              entity[propertyUri] = {}
+            }
+
+            if (m.uri) {
+              if (!entity[propertyUri][m.uri]) {
+                entity[propertyUri][m.uri] = {
+                  label: m.value,
+                }
+              }
+            } else if (!entity[propertyUri][m.value]) {
+              entity[propertyUri][m.valu] = {
+                label: m.value,
+              }
+            }
+          }
         }
       }
+
+      obj.entity = entity
 
       results.push(obj)
     }
@@ -351,6 +415,7 @@ export class SearchUtils {
 
   handleCollections(collections: any[], hie: number) {
     const manifests: any[] = []
+
     for (let i = 0; i < collections.length; i++) {
       const collection: any = collections[i]
       let results = []
@@ -359,11 +424,13 @@ export class SearchUtils {
       } else {
         results = this.handleCollections(collection.collections, hie + 1)
       }
-      // console.log({ results })
+
       for (let j = 0; j < results.length; j++) {
         const manifest = results[j]
         if (collection.label) {
-          manifest._source['_collection_' + hie] = collection.label
+          manifest._source[('0000000000' + hie).slice(-2) + ' Collection'] = [
+            collection.label,
+          ]
         }
         manifests.push(manifest)
       }
@@ -371,49 +438,338 @@ export class SearchUtils {
     return manifests
   }
 
-  async createIndexFromIIIFCollection(collectionUri: string): Promise<any> {
-    const data = await axios.get(collectionUri).then((response) => {
-      const collection = response.data
+  initStore(store: any, index: any) {
+    store.commit('setIndex', index.index)
+    store.commit('setData', index.data)
+    store.commit('setTitle', index.title)
+    store.commit('setThumbnail', index.thumbnail)
+    store.commit('setDescription', index.description)
+    store.commit('setAttribution', index.attribution)
+    store.commit('setJson', index.json)
+    store.commit('setEntity', index.entity)
+    store.commit('setApi', index.api)
+    if (index.layout) {
+      store.commit('setLayout', index.layout)
+    }
+  }
 
-      let manifests = []
-      if (collection.manifests) {
-        manifests = this.handleManifests(collection.manifests)
-      } else if (collection.collections) {
-        manifests = this.handleCollections(collection.collections, 1)
+  async createIndex(u: string): Promise<any> {
+    const data = await axios.get(u).then((response) => {
+      const result = response.data
+
+      if (result['@type'] === 'sc:Collection') {
+        return this.createIndexFromIIIFCollection(result)
+      } else if (result['@type'] === 'cr:Curation') {
+        return this.createIndexFromIIIFCurationList(result)
+      } else {
+        return {}
+      }
+    })
+
+    return data
+  }
+
+  createIndexFromIIIFCollection(collection: any): any {
+    let manifests = []
+    if (collection.manifests) {
+      manifests = this.handleManifests(collection.manifests)
+    } else if (collection.collections) {
+      manifests = this.handleCollections(collection.collections, 1)
+    }
+
+    let pos = 1
+
+    const index: any = {}
+
+    const data = []
+
+    const entities: any = {}
+
+    for (let i = 0; i < manifests.length; i++) {
+      const obj = manifests[i]
+
+      let fulltext = ''
+      const posIndex: number = pos - 1
+
+      // Indexに登録
+
+      for (const key in obj._source) {
+        if (!index[key]) {
+          index[key] = {}
+        }
+
+        const values = obj._source[key]
+
+        for (let j = 0; j < values.length; j++) {
+          let value = values[j]
+
+          let values2: string[] = []
+          if (Array.isArray(value)) {
+            for (let k = 0; k < value.length; k++) {
+              let value3 = value[k]
+              if (value3['@value']) {
+                value3 = value3['@value']
+              }
+
+              if (!values2.includes(value3)) {
+                values2.push(value3)
+              }
+            }
+          } else {
+            if (value['@value']) {
+              value = value['@value']
+            }
+            values2 = [value]
+          }
+
+          for (let l = 0; l < values2.length; l++) {
+            const value2 = values2[l]
+
+            // URIの場合は無視
+            if (value2 == null || String(value2).startsWith('http')) {
+              continue
+            }
+
+            if (!index[key][value2]) {
+              index[key][value2] = []
+            }
+
+            index[key][value2].push(posIndex)
+
+            fulltext += value2 + ' '
+          }
+        }
       }
 
-      let pos = 1
+      const key = '_full_text'
 
-      const index: any = {}
+      if (!index[key]) {
+        index[key] = {}
+      }
 
-      const data = []
+      if (!index[key][fulltext]) {
+        index[key][fulltext] = []
+      }
 
-      for (let i = 0; i < manifests.length; i++) {
-        const obj = manifests[i]
+      index[key][fulltext].push(posIndex)
+
+      data.push(obj)
+
+      pos += 1
+
+      // Entity
+
+      const currentEntities = obj.entity
+      // console.log({ entities })
+      for (const property in currentEntities) {
+        if (!entities[property]) {
+          entities[property] = {}
+        }
+
+        const entity = currentEntities[property]
+        for (const uri in entity) {
+          const label: string = entity[uri].label
+
+          if (!entities[property][uri]) {
+            entities[property][uri] = {
+              label,
+              count: 0,
+            }
+          }
+
+          const count = entities[property][uri].count + 1
+          entities[property][uri].count = count
+        }
+      }
+    }
+
+    let layout = 'list'
+    if (collection.viewingHint === 'grid') {
+      layout = 'grid'
+    }
+
+    return {
+      data,
+      index,
+      title: collection.label,
+      thumbnail: collection.thumbnail,
+      description: collection.description,
+      attribution: collection.attribution,
+      json: collection,
+      entity: entities,
+      api: collection.api,
+      layout,
+    }
+  }
+
+  async createIndexFromIIIFCurationList(curation: any): Promise<any> {
+    const title: string = curation.label
+    let thumbnail = ''
+    const curationUri: string = curation['@id']
+
+    if (curation.thumbnail) {
+      thumbnail = curation.thumbnail
+    }
+
+    const data = []
+
+    const selections = curation.selections
+
+    let pos = 1
+
+    const index: any = {} // this.index
+
+    const pendings: any = {}
+
+    const entities: any = {}
+
+    for (let i = 0; i < selections.length; i++) {
+      const selection = selections[i]
+      const members = selection.members
+
+      const manifest = selection.within['@id']
+
+      for (let j = 0; j < members.length; j++) {
+        const member = members[j]
 
         let fulltext = ''
-        const posIndex: number = pos - 1
 
-        // Indexに登録
+        if (i === 0 && j === 0 && thumbnail === '') {
+          thumbnail = member.thumbnail
+        }
 
-        for (const key in obj._source) {
+        let label = member.label
+        if (label['@value']) {
+          label = label['@value']
+        }
+
+        const obj: any = {
+          // _id: [member['@id']],
+          _label: [label],
+        }
+
+        if (member.related) {
+          obj._related = [member.related]
+        }
+
+        if (member.thumbnail) {
+          obj._thumbnail = [member.thumbnail]
+        } else {
+          if (!pendings[manifest]) {
+            pendings[manifest] = {}
+          }
+          pendings[manifest][pos - 1] = member['@id']
+        }
+
+        const entity: any = {}
+        const metadata = member.metadata
+        if (metadata) {
+          for (let k = 0; k < metadata.length; k++) {
+            const m = metadata[k]
+
+            // 全て配列に
+            let values = m.value
+            if (!Array.isArray(values)) {
+              values = [values]
+            }
+
+            const value = values[0]
+            if (value && value['@type'] === 'oa:Annotation') {
+              const chars = value.resource.chars.replace(/<[^>]*>?/gm, '')
+              obj._label = [chars]
+              continue
+            }
+
+            if (!obj[m.label]) {
+              obj[m.label] = []
+            }
+
+            for (let l = 0; l < values.length; l++) {
+              const value = values[l]
+              if (!obj[m.label].includes(value)) {
+                obj[m.label].push(value)
+              }
+            }
+
+            // entity
+            if (m.property) {
+              const propertyUri = m.property
+              if (!entity[propertyUri]) {
+                entity[propertyUri] = {}
+              }
+
+              if (m.uri) {
+                if (!entity[propertyUri][m.uri]) {
+                  entity[propertyUri][m.uri] = {
+                    label: m.value,
+                  }
+                }
+              } else if (!entity[propertyUri][m.value]) {
+                entity[propertyUri][m.valu] = {
+                  label: m.value,
+                }
+              }
+            }
+
+            // entity
+            if (m.property) {
+              const property = m.property
+
+              if (!entities[property]) {
+                entities[property] = {}
+              }
+
+              const uri = m.uri
+              const label = m.value
+
+              if (!entities[property][uri]) {
+                entities[property][uri] = {
+                  label,
+                  count: 0,
+                }
+              }
+
+              const count = entities[property][uri].count + 1
+              entities[property][uri].count = count
+            }
+          }
+        }
+
+        obj._manifest = [manifest]
+
+        // インデクシング
+        for (const key in obj) {
           if (!index[key]) {
             index[key] = {}
           }
 
-          const values = obj._source[key]
+          const values = obj[key]
 
           for (let j = 0; j < values.length; j++) {
             const value = values[j]
 
+            if (Array.isArray(value)) {
+              continue
+            }
+
+            if (value && value['@id']) {
+              continue
+            }
+
             // URIの場合は無視
-            if (value == null || value.startsWith('http')) {
+            if (
+              value &&
+              String(value).startsWith('http') &&
+              key !== '_manifest'
+            ) {
               continue
             }
 
             if (!index[key][value]) {
               index[key][value] = []
             }
+
+            const posIndex = pos - 1
 
             index[key][value].push(posIndex)
 
@@ -431,104 +787,88 @@ export class SearchUtils {
           index[key][fulltext] = []
         }
 
-        index[key][fulltext].push(posIndex)
+        index[key][fulltext].push(pos - 1)
 
-        data.push(obj)
+        obj._curation = [curationUri]
+        obj._pos = [pos]
+
+        const item: any = {
+          _id: obj.m_sort[0],
+          _source: obj,
+          entity,
+        }
+
+        if (member.images) {
+          item.images = member.images
+        }
+
+        if (member.texts) {
+          item.texts = member.texts
+        }
+
+        data.push(item)
 
         pos += 1
       }
+    }
 
-      return {
-        index,
-        data,
+    for (const manifest in pendings) {
+      const canvasImgMap = await axios
+        .get(manifest)
+        .then((response) => {
+          const canvasImgMap: any = {}
+          const canvases = response.data.sequences[0].canvases
+          for (let i = 0; i < canvases.length; i++) {
+            const canvas = canvases[i]
+            if (canvas.images[0].resource.service) {
+              canvasImgMap[canvas['@id']] =
+                canvas.images[0].resource.service['@id'] + '/info.json'
+            } else {
+              canvasImgMap[canvas['@id']] = canvas.images[0].resource['@id']
+            }
+          }
+          return canvasImgMap
+        })
+        .catch(() => {
+          return null
+        })
+      if (!canvasImgMap) {
+        continue
       }
-    })
-
-    return data
-  }
-
-  async createIndexFromIIIFCurationList(collectionUri: string): Promise<any> {
-    const data = await axios.get(collectionUri).then((response) => {
-      const curation = response.data
-
-      const data = []
-
-      const selections = curation.selections
-
-      let pos = 1
-
-      const index: any = {} // this.index
-
-      for (let i = 0; i < selections.length; i++) {
-        const selection = selections[i]
-        const members = selection.members
-        for (let j = 0; j < members.length; j++) {
-          const member = members[j]
-
-          const obj: any = {
-            thumbnail: [member.thumbnail],
-            related: [member.related],
-            id: member['@id'],
-          }
-          const metadata = member.metadata
-          for (let k = 0; k < metadata.length; k++) {
-            const m = metadata[k]
-
-            // 全て配列に
-            let values = m.value
-            if (!Array.isArray(values)) {
-              values = [values]
-            }
-
-            obj[m.label] = values
+      const poses = pendings[manifest]
+      for (const i in poses) {
+        const memberId = poses[i].split('#xywh=')
+        const canvasUri = memberId[0]
+        const area = memberId[1]
+        let image = canvasImgMap[canvasUri]
+        if (image) {
+          if (image.includes('info.json')) {
+            image = image.replace('info.json', area + '/256,/0/default.jpg')
           }
 
-          for (const key in obj) {
-            if (!index[key]) {
-              index[key] = {}
-            }
-
-            const values = obj[key]
-
-            for (let j = 0; j < values.length; j++) {
-              const value = values[j]
-
-              // URIの場合は無視
-              if (value.startsWith('http')) {
-                continue
-              }
-
-              if (!index[key][value]) {
-                index[key][value] = []
-              }
-
-              const posIndex = pos - 1
-
-              index[key][value].push(posIndex)
-            }
-          }
-
-          const tmp = member.related
-            .replace('&pos=', '?curation=')
-            .split('?curation=')
-
-          obj.manifest = selection.within['@id']
-          obj.curation = tmp[1]
-          obj.pos = Number(tmp[2])
-
-          data.push(obj)
-
-          pos += 1
+          data[Number(i)]._source._thumbnail = [image]
         }
       }
+    }
 
-      return {
-        index,
-        data,
-      }
-    })
+    let layout = 'list'
+    if (curation.viewingHint === 'annotation') {
+      layout = 'table'
+    } else if (curation.viewingHint) {
+      layout = curation.viewingHint
+    }
 
-    return data
+    return {
+      data,
+      index,
+      title,
+      thumbnail,
+      json: curation,
+      entity: entities,
+      api: curation.api,
+      layout,
+      description: curation.description,
+    }
   }
 
   search(index: any, dataAll: any[], query: any): any {
@@ -762,6 +1102,14 @@ export class SearchUtils {
     return aggs
   }
 
+  shuffle = ([...array]) => {
+    for (let i = array.length - 1; i >= 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[array[i], array[j]] = [array[j], array[i]]
+    }
+    return array
+  }
+
   sortData(sort: any, dataFiltered: any): any {
     const sortObj: any = convert2arr(sort)[0]
 
@@ -769,6 +1117,11 @@ export class SearchUtils {
       return dataFiltered
     }
     let field = Object.keys(sortObj)[0]
+
+    if (field === '_random') {
+      return this.shuffle(dataFiltered)
+    }
+
     const type: string = sortObj[field].order
 
     field = field.replace('.keyword', '')

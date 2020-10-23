@@ -89,7 +89,7 @@
     "works" : "works",
     
     "search_subject_directory" : "Search Subject",
-    "piranesi_db" : "Opere di Giovanni Battista Piranesi - Advanced",
+    "piranesi_db" : "『大正新脩大蔵経』底本・校本データベース",
     "volume_index" : "Volume Index",
     "related_information" : "Related Information",
     "detailed_information" : "Detailed Information",
@@ -229,13 +229,101 @@
     "J. W. Ely" : "J. W. Ely",
 
     "序文" : "PREFAZIONE",
-    "図版目録" : "図版目録",
 
     "thumbnail" : "Thumbnail",
     "table" : "Table",
     "graph" : "Graph",
-    "search_query" : "Filter",
-    "clear" : "Clear",
 
-    "attribution" : "The University of Tokyo, The General Library's Kamei Collection"
+
+
+  "map" : "Map",
+
+  "検索結果をIIIFコレクションで取得する" : "IIIF Collection",
+  "Image Annotatorで見る" : "Open with IIIF Viewer",
+  "previous_page" : "Previous page",
+
+  "Image Annotator" : "Image Annotator",
+
+  "isPartOf" : "Collection",
+
+  "jp" : "Owner Location",
+
+  "False" : "Outside Japan",
+  "True" : "Japan",
+
+  "名前順" : "Name",
+  "作品の多い順" : "Number of items",
+
+  "self_museum" : "Self Museum",
+
+  "Between Year" : "Between Year",
+  "and Year" : "and Year",
+
+  "機械的に翻訳したタイトルです。" : "機械的に翻訳したタイトルです。",
+
+  "policy" : "Policy",
+
+  "privacy policy" : "Privacy Policy",
+
+  "contact" : "Contact",
+  "pickup" : "Pick Up",
+
+  "_media" : "Media",
+
+  "country" : "Owner Country",
+  "apply" : "Apply",
+
+  "has_thumbnails" : "Has Thumbnails",
+
+  "overseas" : "Outside Japan",
+  "in-country" : "Japan",
+  "all" : "All",
+
+  "cc-license" : "CC License",
+  "free-reuse" : "Free Re-use",
+  "limited-reuse" : "Limited Re-use",
+  "or" : "or",
+
+  "search_query" : "Search Query",
+
+
+  "縄文時代" : "Jomon Period",
+  "弥生時代" : "Yayoi Period",
+  "古墳時代" : "Kofun Period",
+  "飛鳥時代" : "Asuka Period",
+  "奈良時代" : "Nara Period",
+  "平安時代" : "Heian Period",
+  "鎌倉時代" : "Kamakura Period",
+  "室町時代" : "Muromachi Period",
+  "南北朝時代" : "Nanbokucho Period",
+  "戦国時代" : "Sengoku Period",
+  "安土桃山時代" : "Azuchi-Momoyama Period",
+  "江戸時代" : "Edo Period",
+  "明治" : "Edo Period",
+  "大正" : "Taisho Period",
+  "昭和" : "Showa Period",
+  "平成" : "Heisei Period",
+
+  "時代（日本）" : "Japanese Era",
+
+  "browse_similar_items" : "Browse similar items",
+
+  "save_to_my_list" : "Save to My List",
+  "save_to_iiif_pocket" : "Move to IIIF pocket",
+
+  "clear" : "Clear",
+
+  "support" : "Support",
+
+  "tree" : "Collection",
+
+  "view" : "View",
+
+  "desc_search" : "Search items with facets.",
+  "desc_category" : "Count items by metadata.",
+  "desc_tree" : "Browse IIIF collection tree.",
+  "_label" : "label",
+  "manifest" : "Manifest",
+  "entity" : "Entity",
+  "random" : "Random"
   }

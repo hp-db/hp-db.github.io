@@ -10,10 +10,10 @@
           rounded
           dense
           hide-details
-          :label="$t('search_works')"
+          :label="$t('キーワード検索')"
           clearable
           clear-icon="mdi-close-circle"
-          append-icon="mdi-magnify"
+          append-icon="search"
           @click:append="search"
           @keydown.enter="trigger"
         ></v-text-field>
@@ -22,9 +22,11 @@
         <v-btn color="primary" class="mr-2" @click="search">
           {{ $t('search') }}
         </v-btn>
+        <!-- 
         <v-btn @click="dialog = !dialog">
           {{ $t('advanced_search') }}
         </v-btn>
+        -->
       </v-col>
     </v-row>
 
@@ -35,298 +37,135 @@
         </v-card-title>
         <v-card-text :style="'height: ' + height * 0.6 + ';'">
           <v-container>
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('keyword') }}</v-subheader>
+            <h3>経典番号</h3>
+
+            <v-row>
+              <v-col>
+                <v-combobox
+                  v-model="from"
+                  :loading="loadingFrom"
+                  :search-input.sync="termFrom"
+                  filled
+                  rounded
+                  :items="items"
+                  :label="$t('From')"
+                  clearable
+                  clear-icon="mdi-close-circle"
+                ></v-combobox>
               </v-col>
-              <v-col cols="12" :sm="8">
+              <v-col>
+                <v-combobox
+                  v-model="to"
+                  :loading="loadingTo"
+                  :search-input.sync="termTo"
+                  filled
+                  rounded
+                  :items="items"
+                  :label="$t('To')"
+                  clearable
+                  clear-icon="mdi-close-circle"
+                ></v-combobox>
+              </v-col>
+            </v-row>
+
+            <h3>検索文字列</h3>
+
+            <v-row>
+              <v-col cols="12" :sm="7">
                 <v-text-field
-                  v-model="keywordStr"
-                  @keyup.enter="advancedSearch"
+                  v-model="from"
+                  :loading="loadingFrom"
+                  :search-input.sync="termFrom"
+                  filled
+                  rounded
+                  :label="$t('検索文字列を入力してください。')"
+                  clearable
+                  clear-icon="mdi-close-circle"
                 ></v-text-field>
               </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('author') }}</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-select
-                  v-model="advanced['q-author']"
-                  :items="creators"
-                ></v-select>
+              <v-col cols="12" :sm="5">
+                <v-radio-group v-model="radios" row>
+                  <v-radio label="and" value="and"></v-radio>
+                  <v-radio label="or" value="or"></v-radio>
+                </v-radio-group>
               </v-col>
             </v-row>
 
-            <!-- -->
+            <h3>検索対象</h3>
 
-            <v-sheet class="pa-2 mb-5" color="grey lighten-3">
-              {{ $t('Field') }}
-            </v-sheet>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('volume') }}</v-subheader>
+            <v-row>
+              <v-col cols="12" :sm="2">
+                <v-row>
+                  <v-col>
+                    <v-checkbox
+                      v-model="selected2"
+                      label="すべて"
+                      value="すべて"
+                    ></v-checkbox>
+                  </v-col>
+                </v-row>
               </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-volume']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
+              <v-col cols="12" :sm="10">
+                <v-row>
+                  <v-col
+                    ><v-checkbox
+                      v-model="selected3"
+                      label="勘同目録・脚注"
+                      value="勘同目録・脚注"
+                    ></v-checkbox
+                  ></v-col>
+                  <v-col>
+                    <v-checkbox
+                      v-model="selected3"
+                      label="テキスト"
+                      value="テキスト"
+                    ></v-checkbox>
+                  </v-col>
+                  <v-col>
+                    <v-checkbox
+                      v-model="selected3"
+                      label="所蔵者"
+                      value="所蔵者"
+                    ></v-checkbox>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col
+                    ><v-checkbox
+                      v-model="selected3"
+                      label="底本"
+                      value="底本"
+                    ></v-checkbox
+                  ></v-col>
+                  <v-col>
+                    <v-checkbox
+                      v-model="selected3"
+                      label="校本"
+                      value="校本"
+                    ></v-checkbox>
+                  </v-col>
+                  <v-col>
+                    <v-checkbox
+                      v-model="selected3"
+                      label="校本なし"
+                      value="校本なし"
+                    ></v-checkbox>
+                  </v-col>
+                </v-row>
               </v-col>
             </v-row>
 
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('plate') }}</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-plate']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
+            <h3>ソート</h3>
 
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('image_ID') }}</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-image_ID']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
+            <v-radio-group v-model="sort" row>
+              <span class="mr-5">経典番号順</span>
+              <v-radio label="昇順" value="aaa:asc"></v-radio>
+              <v-radio label="降順" value="aaa:desc"></v-radio>
 
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('series') }}
-                  <small>({{ $t('ja_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-series_JP']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('series') }}
-                  <small>({{ $t('it_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-series']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('work') }}
-                  <small>({{ $t('ja_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-title_JP']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('work') }}
-                  <small>({{ $t('it_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-title']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('WE_title') }}
-                  <small>({{ $t('en_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-WE_title']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('author') }}
-                  <small>({{ $t('ja_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-author_JP']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader
-                  >{{ $t('author') }}
-                  <small>({{ $t('it_text') }}）</small></v-subheader
-                >
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['q-author']"
-                  :label="$t('partical-match')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('kamei_no') }}</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-Kamei_no']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-sheet class="pa-2 mb-5" color="grey lighten-3">
-              {{ $t('catalogues_no') }}
-            </v-sheet>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>F.Didot</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-FD_no']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>Calcografia</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-Calco_no']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>H.Focillon</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-HF_no']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>J.Wilton-Ely</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-WE_no']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>Taschen</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-Taschen_no']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-sheet class="pa-2 mb-5" color="grey lighten-3">
-              {{ $t('Exhibition catalogues no') }}
-            </v-sheet>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('machida') }}</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-machida']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-
-            <v-row dense>
-              <v-col cols="12" :sm="4">
-                <v-subheader>{{ $t('kanagawa') }}</v-subheader>
-              </v-col>
-              <v-col cols="12" :sm="8">
-                <v-text-field
-                  v-model="advanced['fc-kanagawa']"
-                  :label="$t('half-width-help')"
-                  @keyup.enter="advancedSearch"
-                ></v-text-field>
-              </v-col>
-            </v-row>
+              <span class="ml-10 mr-5">配本順</span>
+              <v-radio label="昇順" value="bbb:asc"></v-radio>
+              <v-radio label="降順" value="bbb:desc"></v-radio>
+            </v-radio-group>
 
             <!-- -->
           </v-container>
@@ -349,6 +188,25 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({})
 export default class SearchForm extends Vue {
+  sort: string = 'aaa:asc'
+
+  from: string = ''
+  to: string = ''
+  termFrom: string = ''
+  loadingFrom: string = ''
+
+  termTo: string = ''
+  loadingTo: string = ''
+
+  items: any[] = ['T0001', 'T0002', 'T0003']
+
+  radios: string = 'and'
+
+  dialogFlag: boolean = false
+
+  selected2: string = 'すべて'
+  selected3: string[] = []
+
   trigger(event: any) {
     // 日本語入力中のEnterキー操作は無効にする
     if (event.keyCode !== 13) return

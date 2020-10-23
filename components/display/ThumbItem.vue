@@ -1,49 +1,30 @@
 <template>
-  <v-card>
-    <router-link :to="item.path ? localePath(item.path) : null">
+  <div>
+    <nuxt-link
+      :to="
+        localePath({
+          name: 'item',
+          query: { id: item._id, u: $route.query.u },
+        })
+      "
+    >
       <v-img
-        :src="item.image"
+        :src="$utils.formatArrayValue(item._source._thumbnail)"
         contain
         style="height: 200px;"
         width="100%"
         class="grey lighten-2"
       ></v-img>
-    </router-link>
-  </v-card>
+    </nuxt-link>
+  </div>
 </template>
 
 <script lang="ts">
 import { Vue, Prop, Component } from 'nuxt-property-decorator'
 
-@Component({
-  components: {},
-})
-export default class cardItem extends Vue {
-  baseUrl: any = process.env.BASE_URL
-
-  @Prop({
-    default: 200,
-  })
-  width!: number
-
+@Component
+export default class ThumbItem extends Vue {
   @Prop({ required: true })
   item!: any
-
-  get obj() {
-    return this.item._source
-  }
-
-  @Prop({
-    default: false,
-  })
-  horizontal!: boolean
-
-  get plate() {
-    return (
-      (this.$utils.formatArrayValue(this.obj.plate)
-        ? this.$utils.formatArrayValue(this.obj.plate)
-        : 0) + this.$utils.formatArrayValue(this.obj.constellation)
-    )
-  }
 }
 </script>
