@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/amp", {data:[{}],fetch:[],mutations:void 0});

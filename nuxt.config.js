@@ -42,7 +42,7 @@ const manifestIcon = 'img/icons/icon-512.png'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-  srcDir: 'src/',
+  // srcDir: 'src/',
 
   env,
 
@@ -146,7 +146,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['@/plugins/utils.ts', '@/plugins/searchUtils.ts'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -172,6 +172,7 @@ export default {
         id: GOOGLE_ANALYTICS_ID,
       },
     ],
+    'nuxt-i18n',
     // Simple usage
     '@nuxtjs/amp',
   ],
@@ -203,8 +204,27 @@ export default {
     },
   },
 
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en_US', file: 'en.json' },
+      { code: 'ja', iso: 'ja_JP', file: 'ja.json' },
+    ],
+    defaultLocale: 'ja',
+    vueI18nLoader: true,
+    lazy: true,
+    langDir: 'lang/',
+    // strategy: 'no_prefix'
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-decorators', { legacy: true }],
+        ['@babel/plugin-proposal-class-properties', { loose: true }],
+      ],
+    },
+  },
 
   ...routerBase,
 
@@ -228,8 +248,9 @@ export default {
                 metadataObj[obj.label] = obj.value
               }
 
-              const memberId = member['@id']
-              const id = md5(memberId)
+              // const memberId = member['@id']
+              // const id = md5(memberId)
+              const id = metadataObj.m_sort
               member.manifest = selection.within['@id']
 
               pages.push({
