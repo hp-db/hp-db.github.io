@@ -1,0 +1,506 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/shapes/ItemShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:Ne43cd25b27574f28844431087aa8ae4d"
+      },
+      {
+        "@id": "_:N2349384c5ccf431ab4c10503e76e97a5"
+      },
+      {
+        "@id": "_:Ndbc0d1ea1f064204b64e648e5a0f8cec"
+      },
+      {
+        "@id": "_:Nbdab1d8b69094e88bb92954112b24247"
+      },
+      {
+        "@id": "_:Na99e271bdbad45499120ac7b7bc4302e"
+      },
+      {
+        "@id": "_:Nb769b599227d45cd9f38708b6e87f574"
+      },
+      {
+        "@id": "_:Nb3f5c97613264b2ba324f4197d038746"
+      },
+      {
+        "@id": "_:Nbd169e9b3fd641e9bf4e1f2137343f86"
+      },
+      {
+        "@id": "_:N93c6e27ffc7f4e328a06c01c6e9c639f"
+      },
+      {
+        "@id": "_:N9658ac699904426aaf9ec1570ebafc89"
+      },
+      {
+        "@id": "_:Nbb5d67a55e7b4a638b00337c7e2d786a"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/classes/Item"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne43cd25b27574f28844431087aa8ae4d",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "1(A26)"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Name"
+      },
+      {
+        "@language": "ja",
+        "@value": "名称"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2349384c5ccf431ab4c10503e76e97a5",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/983,2131,3913,476/,200/0/default.jpg"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Thumbnail"
+      },
+      {
+        "@language": "ja",
+        "@value": "サムネイル画像"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 8
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://schema.org/image"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndbc0d1ea1f064204b64e648e5a0f8cec",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://moeller.jinsha.tsukuba.ac.jp/data/manifest/8aaa203c-1c5a-4fef-973b-4fb174d60d37/manifest.json&amp;canvas=https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23&amp;xywh=893,2105,3921,501&amp;xywh_highlight=border"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Link to IIIF Curation Viewer"
+      },
+      {
+        "@language": "ja",
+        "@value": "IIIF Curation Viewerへのリンク"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 9
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://schema.org/relatedLink"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbdab1d8b69094e88bb92954112b24247",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "https://w3id.org/hpdb/api/term/hieroglyphNo/A26"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Hieroglyph No"
+      },
+      {
+        "@language": "ja",
+        "@value": "ヒエログリフの文字番号"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 3
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/hieroglyphNo"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na99e271bdbad45499120ac7b7bc4302e",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "http://w3id.org/hpdb/item/0001"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "URL"
+      },
+      {
+        "@language": "ja",
+        "@value": "URL"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 10
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://schema.org/url"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb769b599227d45cd9f38708b6e87f574",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "https://w3id.org/hpdb/api/term/möllerNo/1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "https://w3id.org/hpdb/api/classes/MöllerNo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "Möllerの文字番号"
+      },
+      {
+        "@language": "en",
+        "@value": "Möller No"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 2
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/möllerNo"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb3f5c97613264b2ba324f4197d038746",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "nis, aA"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "発⾳・単語"
+      },
+      {
+        "@language": "en",
+        "@value": "Phone/Word"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 6
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/phonetic"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbd169e9b3fd641e9bf4e1f2137343f86",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": 3
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Volume"
+      },
+      {
+        "@language": "ja",
+        "@value": "巻数"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 4
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/vol"
+      }
+    ]
+  },
+  {
+    "@id": "_:N93c6e27ffc7f4e328a06c01c6e9c639f",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "License"
+      },
+      {
+        "@language": "ja",
+        "@value": "ライセンス"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 11
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://schema.org/license"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9658ac699904426aaf9ec1570ebafc89",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "See 39(A4/A5)."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "備考"
+      },
+      {
+        "@language": "en",
+        "@value": "Notes"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 5
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/notes"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbb5d67a55e7b4a638b00337c7e2d786a",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "0001"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Identifier"
+      },
+      {
+        "@language": "ja",
+        "@value": "識別子"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 7
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://purl.org/dc/terms/identifier"
+      }
+    ]
+  }
+]

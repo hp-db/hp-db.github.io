@@ -1,0 +1,230 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/shapes/HieroglyphNoShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:N4e8abbdd089a415f8be7843c78c190f6"
+      },
+      {
+        "@id": "_:Nddd5f25f8b0046869f558506ca0a356b"
+      },
+      {
+        "@id": "_:N0298204740b24d68a67acf4b51e97816"
+      },
+      {
+        "@id": "_:N46f21c5d2cfa47e4976a3bb53c79b6e4"
+      },
+      {
+        "@id": "_:N91c5d538361e47759fb74f4e90ac56c1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4e8abbdd089a415f8be7843c78c190f6",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "A19"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "Gardiner番号"
+      },
+      {
+        "@language": "en",
+        "@value": "Gardiner No"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nddd5f25f8b0046869f558506ca0a356b",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "bent man leaning on staff"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Description"
+      },
+      {
+        "@language": "ja",
+        "@value": "文字の説明"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 3
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#description"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0298204740b24d68a67acf4b51e97816",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "old, to be fragile (jꜥw)\nElder (smsw)\n\nbigger (wr)\n\nto learn (rhn)\n\nto hit (ḥwj)"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Transliteration"
+      },
+      {
+        "@language": "ja",
+        "@value": "翻字"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 4
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/transliteration"
+      }
+    ]
+  },
+  {
+    "@id": "_:N46f21c5d2cfa47e4976a3bb53c79b6e4",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "U+13017"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "ユニード"
+      },
+      {
+        "@language": "en",
+        "@value": "Unicode"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 2
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/unicode"
+      }
+    ]
+  },
+  {
+    "@id": "_:N91c5d538361e47759fb74f4e90ac56c1",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "jk biliteral"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Phonetic"
+      },
+      {
+        "@language": "ja",
+        "@value": "音声"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 5
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/phonetic"
+      }
+    ]
+  }
+]
