@@ -3,7 +3,7 @@
     <!-- facets -->
     <template v-for="(label, index) in facetLabels">
       <FacetOption
-        v-if="aggregations[index] && index != '_full_text'"
+        v-if="aggregations[index]"
         :key="index"
         :term="index"
         :label="label"

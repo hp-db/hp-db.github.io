@@ -1,5 +1,32 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/123",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "123"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "th"
+      },
+      {
+        "@value": "thi"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D57",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D57"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0298",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,22 +61,14 @@
         "@value": "123(D57)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/123"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D57"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/123"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "th"
-      },
-      {
-        "@value": "thi"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

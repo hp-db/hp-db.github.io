@@ -22,17 +22,13 @@ import ThumbItem from '~/components/display/ThumbItem.vue'
     ThumbItem,
   },
 })
-export default class GridSearchResult extends Vue {
+export default class ImageSearchResult extends Vue {
   get col() {
     return 12 / this.$store.state.col
   }
 
   get results() {
     return this.$store.state.result.hits.hits
-  }
-
-  get query() {
-    return this.$store.state.query
   }
 }
 </script>

@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/E130",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E130"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/131",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "131"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "pnw"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0317",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,19 +58,14 @@
         "@value": "131(E130)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/131"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/E130"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/131"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "pnw"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

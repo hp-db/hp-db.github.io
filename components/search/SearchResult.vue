@@ -12,8 +12,11 @@
     <template v-else-if="layoutOption === 'stats'">
       <StatsSearchResult />
     </template>
-    <template v-else>
+    <template v-else-if="layoutOption === 'table'">
       <TableSearchResult />
+    </template>
+    <template v-else-if="layoutOption === 'hpdb'">
+      <HpdbSearchResult />
     </template>
   </div>
 </template>
@@ -25,6 +28,7 @@ import ListSearchResult from '~/components/search/ListSearchResult.vue'
 import ImageSearchResult from '~/components/search/ImageSearchResult.vue'
 import StatsSearchResult from '~/components/search/StatsSearchResult.vue'
 import TableSearchResult from '~/components/search/TableSearchResult.vue'
+import HpdbSearchResult from '~/components/custom/HpdbSearchResult.vue'
 
 @Component({
   components: {
@@ -33,6 +37,7 @@ import TableSearchResult from '~/components/search/TableSearchResult.vue'
     ImageSearchResult,
     TableSearchResult,
     StatsSearchResult,
+    HpdbSearchResult,
   },
 })
 export default class SearchResult extends Vue {

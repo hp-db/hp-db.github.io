@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/B5",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "B5"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/68",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "68"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mnat"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0151",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,19 +58,14 @@
         "@value": "68(B5)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/68"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/B5"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/68"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "mnat"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

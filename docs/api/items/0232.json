@@ -1,5 +1,21 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/100",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "100"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mH"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0232",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +50,27 @@
         "@value": "100(D42)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/100"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D42"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/100"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "mH"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D42",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D42"
       }
     ]
   }

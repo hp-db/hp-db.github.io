@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/99",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "99"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "a"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D36",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D36"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0230",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +58,19 @@
         "@value": "99(D36)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/99"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D36"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/99"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "99(D36) is occasionally used as 103(D37) ."
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "a"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

@@ -226,7 +226,7 @@ export default class SearchForm extends Vue {
       keywordStr = ''
     }
 
-    const keywords = this.$utils.splitKeyword(keywordStr)
+    const keywords = this.$searchUtils.splitKeyword(keywordStr)
 
     // push 処理
     const query: any = Object.assign({}, this.$route.query)
@@ -295,7 +295,7 @@ export default class SearchForm extends Vue {
 
     const keywordStr = this.keywordStr
 
-    // const keywords = this.$utils.splitKeyword(keywordStr)
+    // const keywords = this.$searchUtils.splitKeyword(keywordStr)
     query.keyword = keywordStr // keywords
     query.from = 0
 

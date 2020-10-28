@@ -1,5 +1,21 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/341",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "341"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "tA"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0907",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +50,27 @@
         "@value": "341(O16/O17)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/341"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O16/O17"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/341"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "tA"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O16/O17",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O16/O17"
       }
     ]
   }

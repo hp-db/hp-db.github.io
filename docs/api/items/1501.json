@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z5",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z5"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1501",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,19 +42,30 @@
         "@value": "559(Z5)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/559"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z5"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/559"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/559",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "559"
       }
     ]
   }

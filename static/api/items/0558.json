@@ -1,5 +1,21 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/216",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "216"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "sA"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0558",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +50,27 @@
         "@value": "216(G39)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/216"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G39"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/216"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "sA"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G39",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G39"
       }
     ]
   }

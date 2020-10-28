@@ -34,14 +34,14 @@
         "@value": "103(D37)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/103"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D37"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/103"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,14 +49,33 @@
         "@value": "99(D36) is occasionally used as 103(D37) ."
       }
     ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/103",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "103"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "di"
       }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D37",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": 1
+        "@value": "D37"
       }
     ]
   }

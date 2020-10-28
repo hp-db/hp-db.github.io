@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S13",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S13"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1116",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +42,35 @@
         "@value": "419B(S13)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/419B"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S13"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/419B"
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/419B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "419B"
       }
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "nbi"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
-      {
-        "@value": 2
       }
     ]
   }

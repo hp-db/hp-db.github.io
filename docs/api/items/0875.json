@@ -1,5 +1,21 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/330",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "330"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "iw"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0875",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +50,27 @@
         "@value": "330(N18)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/330"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N18"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/330"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "iw"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N18",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "N18"
       }
     ]
   }

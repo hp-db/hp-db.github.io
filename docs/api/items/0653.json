@@ -1,5 +1,24 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/I86a",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I86a"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/249",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "249"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0653",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,14 +53,14 @@
         "@value": "249(I86a)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/249"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/I86a"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/249"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O30",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O30"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/362bis",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "362bis"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "sxnt"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0959",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +58,19 @@
         "@value": "362bis(O30)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/362bis"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O30"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/362bis"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "362bisi(O30), 598(O30)"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "sxnt"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

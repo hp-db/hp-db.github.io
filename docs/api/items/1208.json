@@ -1,5 +1,32 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S40",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S40"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/455",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "455"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Dam"
+      },
+      {
+        "@value": "wAs"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1208",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,22 +61,14 @@
         "@value": "455(S40)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/455"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S40"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/455"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "wAs"
-      },
-      {
-        "@value": "Dam"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

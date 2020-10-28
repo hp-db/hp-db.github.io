@@ -34,14 +34,14 @@
         "@value": "600(U13/U14)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/600"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/U13/U14"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/600"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,14 +49,33 @@
         "@value": "478(U13/U14), 600(U13/U14)"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "Sna"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/U13/U14",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "U13/U14"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/600",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "600"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Sna"
       }
     ]
   }

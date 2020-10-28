@@ -13,12 +13,12 @@
       >
       <v-expansion-panel-content>
         <v-list dense>
-          <div style="max-height: 400px;" class="overflow-y-auto">
+          <div style="max-height: 400px" class="overflow-y-auto">
             <template v-for="(bucket, index) in buckets">
               <v-list-item :key="'bucket_' + index">
                 <v-list-item-content
                   class="my-0 py-0"
-                  style="word-break: break-word;"
+                  style="word-break: break-word"
                 >
                   <v-checkbox
                     v-model="values[index]"
@@ -204,7 +204,7 @@ export default class FacetOption extends Vue {
   }
 
   updateQuery() {
-    const query = this.$utils.getSearchQueryFromQueryStore(
+    const query = this.$searchUtils.getSearchQueryFromQueryStore(
       this.$store.state,
       this.$route.query.u
     )

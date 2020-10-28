@@ -17,7 +17,16 @@
               <v-icon>mdi-magnify</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Search</v-list-item-title>
+              <v-list-item-title>{{ $t('search') }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item link :to="localePath({ name: 'about' })">
+            <v-list-item-action>
+              <v-icon>mdi-information</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>{{ $t('about_') }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
@@ -31,7 +40,8 @@
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title
-                >Hieratic Database<br />Project</v-list-item-title
+                >Hieratic Database<br />Project
+                <v-icon>mdi-open-in-new</v-icon></v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -46,7 +56,8 @@
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title
-                >Digital Resources for<br />Egyptian Studies</v-list-item-title
+                >Digital Resources for<br />Egyptian Studies
+                <v-icon>mdi-open-in-new</v-icon></v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -60,16 +71,22 @@
               <v-icon>mdi-image</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>IIIF Curation Platfrom</v-list-item-title>
+              <v-list-item-title
+                >IIIF Curation<br />Platform
+                <v-icon>mdi-open-in-new</v-icon></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
 
           <v-list-item link :href="baseUrl + '/snorql'" target="_blank">
             <v-list-item-action>
-              <v-icon>mdi-image</v-icon>
+              <v-icon>mdi-magnify</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>SPARQL Endpoint</v-list-item-title>
+              <v-list-item-title
+                >SPARQL Endpoint
+                <v-icon>mdi-open-in-new</v-icon></v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -82,6 +99,31 @@
             Hieratische Paläographie DB
           </nuxt-link>
         </v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <FullTextSearch />
+
+        <v-spacer></v-spacer>
+
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+            <v-btn depressed btn v-on="on">
+              <v-icon class="mr-2">mdi-translate</v-icon>
+              {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
+              <v-icon class="ml-2">mdi-menu-down</v-icon>
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item :to="switchLocalePath('en')">
+              <v-list-item-title>English</v-list-item-title>
+            </v-list-item>
+            <v-list-item :to="switchLocalePath('ja')">
+              <v-list-item-title>日本語</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
       </v-app-bar>
     </div>
 
@@ -92,24 +134,43 @@
     <v-footer :dark="true" class="mt-5">
       <v-container>
         <p class="text-center my-5">
-          Masakatsu NAGAI, Toshihito WAKI, Yona TAKAHASHI and Satoru NAKAMURA
+          <template v-if="$i18n.locale == 'ja'">
+            永井正勝, 和氣愛仁, 高橋洋成, 中村覚</template
+          >
+          <template v-else
+            >Masakatsu NAGAI, Toshihito WAKI, Yona TAKAHASHI and Satoru NAKAMURA
+          </template>
         </p>
         <p class="text-center my-5">
-          This work was supported by JSPS KAKENHI Grant Number
-          <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18K00525/"
-            >18K00525</a
-          >.
+          <template v-if="$i18n.locale == 'ja'">
+            本研究はJSPS科研費<a
+              href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18K00525/"
+              >18K00525</a
+            >の助成を受けたものです．
+          </template>
+          <template v-else>
+            This work was supported by JSPS KAKENHI Grant Number
+            <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-18K00525/"
+              >18K00525</a
+            >.
+          </template>
         </p>
       </v-container>
     </v-footer>
   </v-app>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    drawer: false,
-    baseUrl: process.env.BASE_URL,
-  }),
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator'
+import FullTextSearch from '~/components/search/FullTextSearch.vue'
+
+@Component({
+  components: {
+    FullTextSearch,
+  },
+})
+export default class search extends Vue {
+  drawer: boolean = false
+  baseUrl: string = process.env.BASE_URL || ''
 }
 </script>

@@ -11,6 +11,41 @@ function convert2arr(value: any): string[] {
 }
 // /plugins/logger.ts
 export class SearchUtils {
+  splitKeyword(keyword: string): string[] {
+    // 全角を半角に変換
+    // 空の配列を削除
+    // eslint-disable-next-line
+    const keywords: string[] = keyword.replace(/　/g, ' ').split(' ').filter(item => item !== "")
+
+    const keywords2: any[] = []
+    for (let i = 0; i < keywords.length; i++) {
+      const keyword: string = keywords[i]
+      const splitTmp = keyword.split(':')
+      if (splitTmp.length === 2) {
+        keywords2.push({
+          label: 'q-' + splitTmp[0].trim(),
+          value: splitTmp[1].trim(),
+        })
+      } else {
+        keywords2.push({
+          label: 'keyword',
+          value: keyword,
+        })
+      }
+    }
+
+    return keywords2
+  }
+
+  createFacetQuery(arr: any[]): { [key: string]: string } {
+    const result: { [key: string]: string } = {}
+    for (let i = 0; i < arr.length; i++) {
+      const obj = arr[i]
+      result[obj.field] = obj.value
+    }
+    return result
+  }
+
   createQuery(routeQuery: any, config: any): any {
     const fcs = Object.keys(config.facetLabels) // JSON.parse(process.env.FACETS_LABELS)
 
@@ -303,163 +338,131 @@ export class SearchUtils {
     return body
   }
 
-  handleManifests(manifests: any[]) {
-    const results: any[] = []
-    for (let i = 0; i < manifests.length; i++) {
-      const manifest: any = manifests[i]
-
-      const obj: any = {
-        _id: manifest['@id'],
-
-        _source: {
-          _label: [manifest.label],
-
-          _manifest: [manifest['@id']],
-        },
-      }
-
-      if (manifest.thumbnail) {
-        obj._source._thumbnail = [manifest.thumbnail]
-      }
-
-      if (manifest.texts) {
-        obj.texts = manifest.texts
-      }
-
-      if (manifest.images) {
-        obj.images = manifest.images
-      }
-
-      if (manifest.attribution) {
-        let values = manifest.attribution
-        if (!Array.isArray(values)) {
-          values = [values]
-        }
-        const values2 = []
-        for (let j = 0; j < values.length; j++) {
-          let value2 = values[j]
-          if (value2['@value']) {
-            value2 = value2['@value']
-          }
-          values2.push(value2)
-        }
-        obj._source.Attribution = values2
-      }
-
-      let related
-      if (manifest.related) {
-        related = manifest.related
-      } else {
-        related =
-          'http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=' +
-          encodeURIComponent(manifest['@id'])
-      }
-      obj._source._related = [related]
-
-      if (manifest.description) {
-        obj._source.Description = [manifest.description]
-      }
-
-      const entity: any = {}
-
-      const metadata = manifest.metadata
-      if (metadata) {
-        for (let k = 0; k < metadata.length; k++) {
-          const m = metadata[k]
-          // 全て配列に
-          let values = m.value
-          if (!Array.isArray(values)) {
-            values = [values]
-          }
-
-          if (!obj._source[m.label]) {
-            obj._source[m.label] = []
-          }
-          for (let l = 0; l < values.length; l++) {
-            const value = values[l]
-            if (!obj._source[m.label].includes(value)) {
-              obj._source[m.label].push(value)
-            }
-            // obj._source[m.label] = values
-          }
-
-          // entity
-          if (m.property) {
-            const propertyUri = m.property
-            if (!entity[propertyUri]) {
-              entity[propertyUri] = {}
-            }
-
-            if (m.uri) {
-              if (!entity[propertyUri][m.uri]) {
-                entity[propertyUri][m.uri] = {
-                  label: m.value,
-                }
-              }
-            } else if (!entity[propertyUri][m.value]) {
-              entity[propertyUri][m.valu] = {
-                label: m.value,
-              }
-            }
-          }
-        }
-      }
-
-      obj.entity = entity
-
-      results.push(obj)
-    }
-
-    return results
-  }
-
-  handleCollections(collections: any[], hie: number) {
-    const manifests: any[] = []
-
-    for (let i = 0; i < collections.length; i++) {
-      const collection: any = collections[i]
-      let results = []
-      if (collection.manifests) {
-        results = this.handleManifests(collection.manifests)
-      } else {
-        results = this.handleCollections(collection.collections, hie + 1)
-      }
-
-      for (let j = 0; j < results.length; j++) {
-        const manifest = results[j]
-        if (collection.label) {
-          manifest._source[('0000000000' + hie).slice(-2) + ' Collection'] = [
-            collection.label,
-          ]
-        }
-        manifests.push(manifest)
-      }
-    }
-    return manifests
-  }
-
   initStore(store: any, index: any) {
     store.commit('setIndex', index.index)
     store.commit('setData', index.data)
-    store.commit('setTitle', index.title)
-    store.commit('setThumbnail', index.thumbnail)
-    store.commit('setDescription', index.description)
-    store.commit('setAttribution', index.attribution)
-    store.commit('setJson', index.json)
-    store.commit('setEntity', index.entity)
-    store.commit('setApi', index.api)
-    if (index.layout) {
-      store.commit('setLayout', index.layout)
-    }
+  }
+
+  async loadIndex(u: string): Promise<any> {
+    const result = await axios.get(u).then((response) => {
+      const results = response.data
+
+      const data: any[] = []
+      const index: any = {}
+
+      for (let i = 0; i < results.length; i++) {
+        const result = results[i]
+
+        // _source
+        const _source: any = {}
+
+        let fulltext: string = ''
+
+        for (const key in result) {
+          if (key.startsWith('_')) {
+            continue
+          }
+
+          let values = result[key]
+          values = Array.isArray(values) ? values : [values]
+          _source[key] = values
+
+          // インデックス開始
+
+          if (!index[key]) {
+            index[key] = {}
+          }
+
+          for (let j = 0; j < values.length; j++) {
+            const value = values[j]
+
+            // URIの場合は無視
+            if (value && String(value).startsWith('http')) {
+              continue
+            }
+
+            if (!index[key][value]) {
+              index[key][value] = []
+            }
+
+            index[key][value].push(i)
+
+            fulltext += value + ' '
+          }
+
+          // インデックス終了
+        }
+
+        // ID開始
+
+        let key = '_id'
+
+        const _id = result._id
+
+        if (!index[key]) {
+          index[key] = {}
+        }
+
+        if (!index[key][_id]) {
+          index[key][_id] = []
+        }
+
+        index[key][_id].push(i)
+
+        // フルテキスト開始
+
+        key = '_full_text'
+
+        if (!index[key]) {
+          index[key] = {}
+        }
+
+        if (!index[key][fulltext]) {
+          index[key][fulltext] = []
+        }
+
+        index[key][fulltext].push(i)
+
+        // フルテキスト終了
+
+        if (result._label) {
+          _source._label = [result._label]
+        }
+
+        if (result._image) {
+          _source._thumbnail = [result._image]
+        }
+
+        if (result._related) {
+          _source._relatedLink = [result._related]
+        }
+
+        if (result._url) {
+          _source._url = [result._url]
+        }
+
+        const item: any = {
+          _id,
+          _source,
+        }
+
+        data.push(item)
+      }
+
+      return {
+        data,
+        index,
+      }
+    })
+
+    return result
   }
 
   async createIndex(u: string): Promise<any> {
     const data = await axios.get(u).then((response) => {
       const result = response.data
 
-      if (result['@type'] === 'sc:Collection') {
-        return this.createIndexFromIIIFCollection(result)
-      } else if (result['@type'] === 'cr:Curation') {
+      if (result['@type'] === 'cr:Curation') {
         return this.createIndexFromIIIFCurationList(result)
       } else {
         return {}
@@ -467,139 +470,6 @@ export class SearchUtils {
     })
 
     return data
-  }
-
-  createIndexFromIIIFCollection(collection: any): any {
-    let manifests = []
-    if (collection.manifests) {
-      manifests = this.handleManifests(collection.manifests)
-    } else if (collection.collections) {
-      manifests = this.handleCollections(collection.collections, 1)
-    }
-
-    let pos = 1
-
-    const index: any = {}
-
-    const data = []
-
-    const entities: any = {}
-
-    for (let i = 0; i < manifests.length; i++) {
-      const obj = manifests[i]
-
-      let fulltext = ''
-      const posIndex: number = pos - 1
-
-      // Indexに登録
-
-      for (const key in obj._source) {
-        if (!index[key]) {
-          index[key] = {}
-        }
-
-        const values = obj._source[key]
-
-        for (let j = 0; j < values.length; j++) {
-          let value = values[j]
-
-          let values2: string[] = []
-          if (Array.isArray(value)) {
-            for (let k = 0; k < value.length; k++) {
-              let value3 = value[k]
-              if (value3['@value']) {
-                value3 = value3['@value']
-              }
-
-              if (!values2.includes(value3)) {
-                values2.push(value3)
-              }
-            }
-          } else {
-            if (value['@value']) {
-              value = value['@value']
-            }
-            values2 = [value]
-          }
-
-          for (let l = 0; l < values2.length; l++) {
-            const value2 = values2[l]
-
-            // URIの場合は無視
-            if (value2 == null || String(value2).startsWith('http')) {
-              continue
-            }
-
-            if (!index[key][value2]) {
-              index[key][value2] = []
-            }
-
-            index[key][value2].push(posIndex)
-
-            fulltext += value2 + ' '
-          }
-        }
-      }
-
-      const key = '_full_text'
-
-      if (!index[key]) {
-        index[key] = {}
-      }
-
-      if (!index[key][fulltext]) {
-        index[key][fulltext] = []
-      }
-
-      index[key][fulltext].push(posIndex)
-
-      data.push(obj)
-
-      pos += 1
-
-      // Entity
-
-      const currentEntities = obj.entity
-      // console.log({ entities })
-      for (const property in currentEntities) {
-        if (!entities[property]) {
-          entities[property] = {}
-        }
-
-        const entity = currentEntities[property]
-        for (const uri in entity) {
-          const label: string = entity[uri].label
-
-          if (!entities[property][uri]) {
-            entities[property][uri] = {
-              label,
-              count: 0,
-            }
-          }
-
-          const count = entities[property][uri].count + 1
-          entities[property][uri].count = count
-        }
-      }
-    }
-
-    let layout = 'list'
-    if (collection.viewingHint === 'grid') {
-      layout = 'grid'
-    }
-
-    return {
-      data,
-      index,
-      title: collection.label,
-      thumbnail: collection.thumbnail,
-      description: collection.description,
-      attribution: collection.attribution,
-      json: collection,
-      entity: entities,
-      api: collection.api,
-      layout,
-    }
   }
 
   async createIndexFromIIIFCurationList(curation: any): Promise<any> {
@@ -1165,6 +1035,53 @@ export class SearchUtils {
       results.push(dataFiltered[i])
     }
     return results
+  }
+
+  getSearchQueryFromQueryStore(query: any, u: any): any {
+    const params: any = {
+      sort: query.sort,
+      size: query.size,
+      from: (query.currentPage - 1) * query.size,
+      col: query.col,
+      layout: query.layout,
+    }
+
+    if (query.keyword.length > 0) {
+      params.keyword = query.keyword
+    }
+
+    const advanced = query.advanced
+    const types = ['fc', 'q']
+    for (let t = 0; t < types.length; t++) {
+      const type = types[t]
+      for (const label in advanced[type]) {
+        const values = []
+        const obj = advanced[type][label]
+        for (const method in obj) {
+          const arr = obj[method]
+          for (let i = 0; i < arr.length; i++) {
+            const value = arr[i]
+            values.push(method === '+' ? value : '-' + value)
+          }
+        }
+        params[label] = values
+      }
+    }
+
+    if (u) {
+      params.u = u
+    }
+
+    return params
+  }
+
+  getTopMessage(size: number, top: number, lang: string) {
+    let prefix: string = ''
+    const suffix: string = lang === 'ja' ? '件' : ''
+    if (size === top) {
+      prefix = lang === 'ja' ? '上位' : 'Top '
+    }
+    return prefix + size.toLocaleString() + suffix
   }
 }
 

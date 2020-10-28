@@ -1,5 +1,24 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/280",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "280"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "wD"
+      },
+      {
+        "@value": "wAD"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0730",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,14 +53,14 @@
         "@value": "280(M13)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/280"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M13"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/280"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,17 +68,17 @@
         "@value": "281(M13)=280(M13)+250(I10)"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "wD"
-      },
-      {
-        "@value": "wAD"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M13",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M13"
       }
     ]
   }

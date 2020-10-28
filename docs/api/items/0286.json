@@ -1,5 +1,24 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/118B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "118B"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D51",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D51"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0286",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,17 +53,17 @@
         "@value": "118B(D51)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/118B"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D51"
       },
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D40"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/118B"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -55,6 +74,14 @@
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D40",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D40"
       }
     ]
   }

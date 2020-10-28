@@ -1,5 +1,27 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/597",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "597"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "wt"
+      },
+      {
+        "@value": "sty"
+      },
+      {
+        "@value": "Hsb"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1604",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,14 +56,14 @@
         "@value": "597(Aa2/Aa3)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/597"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Aa2/Aa3"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/597"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,20 +71,17 @@
         "@value": "566(Aa2/Aa3)=Hsb, 597(Aa2/Aa3)=sty, 582(Aa2/Aa3)=wt"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "Hsb"
-      },
-      {
-        "@value": "wt"
-      },
-      {
-        "@value": "sty"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Aa2/Aa3",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Aa2/Aa3"
       }
     ]
   }

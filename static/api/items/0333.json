@@ -34,14 +34,14 @@
         "@value": "139(E8)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/139"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/E8"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/139"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,14 +49,33 @@
         "@value": "138bis(E8), 139(E8)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 3
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/139",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "139"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "ib"
       }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/E8",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": 3
+        "@value": "E8"
       }
     ]
   }

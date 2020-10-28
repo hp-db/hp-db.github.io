@@ -34,24 +34,43 @@
         "@value": "580(M40)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/580"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M40"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/580"
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M40",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M40"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/580",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "580"
       }
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "is"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
-      {
-        "@value": 2
       }
     ]
   }

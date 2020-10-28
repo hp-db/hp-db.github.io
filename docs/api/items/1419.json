@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/V14/V13",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "V14/V13"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1419",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +42,35 @@
         "@value": "528(V14/V13)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/528"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/V14/V13"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/528"
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/528",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "528"
       }
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "T"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
-      {
-        "@value": 2
       }
     ]
   }

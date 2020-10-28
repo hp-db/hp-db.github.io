@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F46/F47/F48/F49",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F46/F47/F48/F49"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0456",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +42,35 @@
         "@value": "183(F46/F47/F48/F49)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/183"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F46/F47/F48/F49"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/183"
+        "@value": 3
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/183",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "183"
       }
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "qAb"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
-      {
-        "@value": 3
       }
     ]
   }

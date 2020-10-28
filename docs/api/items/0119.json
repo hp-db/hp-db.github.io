@@ -1,5 +1,35 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A15",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A15"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/52",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "52"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "xr"
+      },
+      {
+        "@value": "xrw"
+      },
+      {
+        "@value": "sxrt"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0119",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,25 +64,14 @@
         "@value": "52(A15)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/52"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A15"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/52"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "xrw"
-      },
-      {
-        "@value": "sxrt"
-      },
-      {
-        "@value": "xr"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

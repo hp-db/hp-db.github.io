@@ -11,7 +11,7 @@
             class="mt-5"
             :to="localePath({ name: 'search' })"
             color="primary"
-            >Try out</v-btn
+            >{{ $t('try_out') }}</v-btn
           >
         </v-layout>
       </v-parallax>
@@ -20,7 +20,7 @@
     <v-container>
       <v-card class="my-5">
         <v-card-title>
-          <h2>About</h2>
+          <h2>{{ $t('about_') }}</h2>
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
@@ -42,7 +42,7 @@
 
       <v-card class="my-5">
         <v-card-title>
-          <h2>Members</h2>
+          <h2>{{ $t('members') }}</h2>
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
@@ -79,7 +79,7 @@
 
       <v-card class="my-5">
         <v-card-title>
-          <h2>List of update</h2>
+          <h2>{{ $t('updates') }}</h2>
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
@@ -90,7 +90,7 @@
       </v-card>
       <v-card class="my-5">
         <v-card-title>
-          <h2>Contact information</h2>
+          <h2>{{ $t('contact_information') }}</h2>
         </v-card-title>
         <v-card-text>
           <div class="text--primary">

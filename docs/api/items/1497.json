@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/557",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "557"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "pAt"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X6",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X6"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1497",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +58,19 @@
         "@value": "557(X6)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/557"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X6"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/557"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "X6, N9 or N10 ?"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "pAt"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

@@ -1,5 +1,35 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/450",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "450"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "abA"
+      },
+      {
+        "@value": "sxm"
+      },
+      {
+        "@value": "xrp"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S42",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S42"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1192",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,30 +64,19 @@
         "@value": "450(S42)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/450"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/S42"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/450"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "449(S42)=sxm, 450(S42)=xrp, 451(S42)=abA, see 539(Y8)=sxm"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "abA"
-      },
-      {
-        "@value": "sxm"
-      },
-      {
-        "@value": "xrp"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

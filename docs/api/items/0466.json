@@ -34,27 +34,46 @@
         "@value": "187(G8)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/187"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G8"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/187"
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/187",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "187"
       }
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
-        "@value": "bik n nbw"
+        "@value": "Hr n nbw"
       },
       {
-        "@value": "Hr n nbw"
+        "@value": "bik n nbw"
       }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G8",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": 2
+        "@value": "G8"
       }
     ]
   }

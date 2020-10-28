@@ -9,68 +9,110 @@ function convert2arr(value) {
 }
 
 export const state = () => ({
-  title: 'IIIF Multi Viewer',
-
-  sort: '_score:desc',
-  size: 24,
-
-  from: 0,
-
-  after: '',
-  before: '',
-  id: [],
-  image: [],
+  sort: '',
+  size: -1,
+  from: -1,
   keyword: [],
-  advanced: {
-    q: {},
-    fc: {},
-  },
-
+  advanced: {},
   currentPage: 1,
-  layout: 'list',
-  col: 4,
+  layout: '',
+  col: -1,
+
   facetFlag: true,
-  // facetsFlag: {},
-
   facetFlags: {},
-
   facetLabels: {},
 
-  fullPath: '',
   result: {},
 
-  mode: '',
-
+  data: [],
   index: null, // 転置インデックス
-  data: null, // 全データ
-  query: {}, // クエリ
 
-  thumbnail: null,
-  attribution: null,
-  description: null,
-  json: null,
-  entity: null,
-  api: null,
-
-  currentManifest: '',
-  currentMember: '',
+  // HPDB拡張
+  selected: [],
 })
 
 export const mutations = {
-  init(state) {
-    state.sort = '_score:desc'
-    state.size = 24
-    state.from = 0
-    state.currentPage = 1
-    state.keyword = []
+  init(state, routeQuery) {
+    const keywords = routeQuery.keyword
+    if (keywords) {
+      state.keyword = Array.isArray(keywords) ? keywords : [keywords]
+    } else {
+      state.keyword = []
+    }
+
+    // 要検討
     state.advanced = {
       q: {},
       fc: {},
     }
-    state.id = []
-    state.image = []
-    state.after = ''
-    state.before = ''
+
+    for (const key in routeQuery) {
+      const types = ['fc', 'q']
+      for (let t = 0; t < types.length; t++) {
+        const type = types[t]
+        if (key.includes(type + '-')) {
+          const label = key
+          let values = routeQuery[key]
+          values = convert2arr(values)
+
+          const advanced = state.advanced[type]
+          if (!advanced[label]) {
+            advanced[label] = {
+              '+': [],
+              '-': [],
+            }
+          }
+          const obj = advanced[label]
+
+          for (let i = 0; i < values.length; i++) {
+            const value = values[i]
+            if (value.startsWith('-')) {
+              obj['-'].push(value.slice(1))
+            } else {
+              obj['+'].push(value)
+            }
+          }
+        }
+      }
+    }
+
+    const layout = routeQuery.layout
+    if (layout) {
+      state.layout = layout
+    } else {
+      state.layout = 'm_sort:asc'
+    }
+
+    const sort = routeQuery.sort
+    if (sort) {
+      state.sort = sort
+    } else {
+      state.sort = '_score:desc'
+    }
+
+    const from = routeQuery.from
+    if (from) {
+      state.from = Number(from)
+    } else {
+      state.from = 0
+    }
+
+    const size = routeQuery.size
+    if (size) {
+      state.size = Number(size)
+    } else {
+      state.size = 24
+    }
+
+    const currentPage = state.from / state.size + 1
+    state.currentPage = currentPage
+
+    const col = routeQuery.col
+    if (col) {
+      state.col = Number(col)
+    } else {
+      state.col = 4
+    }
   },
   setLayout(state, layout) {
     state.layout = layout
@@ -107,26 +149,8 @@ export const mutations = {
   setFacetFlag(state, value) {
     state.facetFlag = value
   },
-  setId(state, value) {
-    state.id = convert2arr(value)
-  },
-  setImage(state, value) {
-    state.image = convert2arr(value)
-  },
-
-  setAfter(state, value) {
-    state.after = convert2arr(value)
-  },
-
-  setBefore(state, value) {
-    state.before = convert2arr(value)
-  },
-
   setKeyword(state, value) {
     state.keyword = convert2arr(value)
-  },
-  setAdvanced2(state, value) {
-    state.advanced = value
   },
   setAdvanced(state, value) {
     const label = value.label
@@ -153,63 +177,6 @@ export const mutations = {
       }
     }
   },
-  setFullPath(state, value) {
-    state.fullPath = value
-  },
-  setMode(state, value) {
-    state.mode = value
-  },
-  /*
-  setFc(state, data) {
-    const label = data.label
-    let values = data.values
-    values = convert2arr(values)
-
-    const advanced = state.advanced
-    if (!advanced[label]) {
-      advanced[label] = {
-        '+': [],
-        '-': [],
-      }
-    }
-    const obj = advanced[label]
-
-    for (let i = 0; i < values.length; i++) {
-      let value = values[i]
-      let arr
-      if (value.startsWith('-')) {
-        arr = obj['-']
-        value = value.slice(1)
-        // obj['-'].push()
-      } else {
-        // obj['+'].push(value)
-        arr = obj['+']
-      }
-      if (!arr.includes(value)) {
-        arr.push(value)
-      }
-    }
-
-    state.advanced[label] = obj
-  },
-  */
-  /*
-  removeFc(state, data) {
-    const label = data.label
-    const values = data.values
-    const advanced = state.advanced
-    for (let i = 0; i < values.length; i++) {
-      let value = values[i]
-      let type = '+'
-      if (value.startsWith('-')) {
-        value = value.slice(1)
-        type = '-'
-      }
-      const arr = advanced[label][type]
-      advanced[label][type] = arr.filter((item) => item !== value)
-    }
-  },
-  */
   removeAdvanced(state, data) {
     const label = data.label
     const values = data.values
@@ -242,22 +209,8 @@ export const mutations = {
     const newArray = array.filter((n) => !data.value.includes(n))
     state[data.label] = newArray
   },
-  removeId(state, value) {
-    const array = state.id
-    const newArray = array.filter((n) => !value.includes(n))
-    state.id = newArray
-  },
-  removeImage(state, value) {
-    const array = state.image
-    const newArray = array.filter((n) => !value.includes(n))
-    state.image = newArray
-  },
 
   // -------------
-
-  setResult4Print(state, value) {
-    state.result4print = value
-  },
 
   setData(state, value) {
     state.data = value
@@ -267,39 +220,8 @@ export const mutations = {
     state.index = value
   },
 
-  setQuery(state, value) {
-    state.query = value
-  },
-
-  setTitle(state, value) {
-    state.title = value
-  },
-
-  setDescription(state, value) {
-    state.description = value
-  },
-
-  setThumbnail(state, value) {
-    state.thumbnail = value
-  },
-
-  setAttribution(state, value) {
-    state.attribution = value
-  },
-  setJson(state, value) {
-    state.json = value
-  },
-  setEntity(state, value) {
-    state.entity = value
-  },
-  setApi(state, value) {
-    state.api = value
-  },
-
-  setCurrentManifest(state, value) {
-    state.currentManifest = value
-  },
-  setCurrentMember(state, value) {
-    state.currentMember = value
+  // HPDB拡張
+  setSelected(state, value) {
+    state.selected = value
   },
 }

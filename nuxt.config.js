@@ -123,6 +123,10 @@ export default {
         sizes: '180x180',
         href: iconImages + 'apple-touch-icon.png',
       },
+      {
+        rel: 'stylesheet',
+        href: baseDir + 'assets/css/main.css',
+      },
     ],
   },
 
@@ -268,6 +272,23 @@ export default {
           }
           return pages
         })
+
+      // const pages = []
+
+      const aaa = ['Item', 'HieroglyphNo', 'HieraticNo']
+
+      for (let i = 0; i < aaa.length; i++) {
+        const id = aaa[i]
+
+        pages.push({
+          route: `/property/${id}`,
+        })
+
+        pages.push({
+          route: `/ja/property/${id}`,
+        })
+      }
+
       return pages
     },
   },

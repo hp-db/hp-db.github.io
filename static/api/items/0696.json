@@ -1,5 +1,38 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M43",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M43"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/267",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "267"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "SAbw"
+      },
+      {
+        "@value": "db"
+      },
+      {
+        "@value": "wnS"
+      },
+      {
+        "@value": "iSd"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0696",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,33 +67,19 @@
         "@value": "267(M43)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/267"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M43"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/267"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "267(M43), 355(M43)"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "wnS"
-      },
-      {
-        "@value": "iSd"
-      },
-      {
-        "@value": "db"
-      },
-      {
-        "@value": "SAbw"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

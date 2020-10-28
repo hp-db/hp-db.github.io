@@ -1,5 +1,38 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/95",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "95"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mt"
+      },
+      {
+        "@value": "kA"
+      },
+      {
+        "@value": "TAy"
+      },
+      {
+        "@value": "aA"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D52",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D52"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0218",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,28 +67,14 @@
         "@value": "95(D52)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/95"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D52"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/95"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "aA"
-      },
-      {
-        "@value": "kA"
-      },
-      {
-        "@value": "TAy"
-      },
-      {
-        "@value": "mt"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

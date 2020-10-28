@@ -1,5 +1,24 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/365",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "365"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O--",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O--"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0967",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,14 +53,14 @@
         "@value": "365(O--)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/365"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O--"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/365"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

@@ -1,5 +1,32 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/361",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "361"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rwd"
+      },
+      {
+        "@value": "xtyw"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O40",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "O40"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0954",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,22 +61,14 @@
         "@value": "361(O40)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/361"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/O40"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/361"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "rwd"
-      },
-      {
-        "@value": "xtyw"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

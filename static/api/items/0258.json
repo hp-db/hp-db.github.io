@@ -1,5 +1,21 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/109",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "109"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "Hm kA"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0258",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,14 +50,14 @@
         "@value": "109(D31)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/109"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D31"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/109"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,14 +65,17 @@
         "@value": "Combined or single?"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "Hm kA"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D31",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D31"
       }
     ]
   }

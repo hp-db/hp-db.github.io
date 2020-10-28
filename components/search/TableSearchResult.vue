@@ -6,15 +6,15 @@
           class="mb-4"
           :to="
             localePath({
-              name: 'item',
-              query: { id: item.id, u: $route.query.u },
+              name: 'item-id',
+              params: { id: item.id },
             })
           "
         >
           <v-img
             :src="item.image"
             contain
-            style="height: 90px; width: 90px;"
+            style="height: 90px; width: 90px"
             class="grey lighten-2 my-2"
           ></v-img>
         </nuxt-link>
@@ -25,8 +25,8 @@
           class="mb-4"
           :to="
             localePath({
-              name: 'item',
-              query: { id: item.id, u: $route.query.u },
+              name: 'item-id',
+              params: { id: item.id },
             })
           "
         >
@@ -38,9 +38,7 @@
         <ResultOption
           :item="{
             label: $utils.formatArrayValue(item.raw._source._label),
-            manifest: $utils.formatArrayValue(item.raw._source._manifest),
-            url: encodeURIComponent(getUrl(item.raw)),
-            id: item.id,
+            url: encodeURIComponent(item.raw._source._url),
           }"
         />
       </template>
@@ -81,7 +79,7 @@ export default class TableSearchResult extends Vue {
     for (const field in facetLabels) {
       fields.push({
         key: field,
-        label: field,
+        label: facetLabels[field],
       })
     }
     fields.push({ key: 'icons', label: '' })
@@ -129,19 +127,6 @@ export default class TableSearchResult extends Vue {
       items.push(item)
     }
     this.items = items
-  }
-
-  getUrl(item: any) {
-    return (
-      process.env.BASE_URL +
-      this.localePath({
-        name: 'item',
-        query: {
-          u: this.$route.query.u,
-          id: item._id,
-        },
-      })
-    )
   }
 }
 </script>

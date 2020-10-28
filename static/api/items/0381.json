@@ -1,5 +1,32 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/158",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "158"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "sDm"
+      },
+      {
+        "@value": "idm"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F21",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "F21"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0381",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,27 +61,19 @@
         "@value": "158(F21)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/158"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/F21"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/158"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "158=sDm, 159=idm"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "sDm"
-      },
-      {
-        "@value": "idm"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

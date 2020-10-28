@@ -1,0 +1,97 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/shapes/HieraticNoShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:N5df1741cc8cf41b8bc6450a7ec72e41e"
+      },
+      {
+        "@id": "_:Nd387b4b883db4f319591d975b8e7a264"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/classes/HieraticNo"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5df1741cc8cf41b8bc6450a7ec72e41e",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "nis, aA"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Phone/Word"
+      },
+      {
+        "@language": "ja",
+        "@value": "音価/単語"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 2
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/phonetic"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd387b4b883db4f319591d975b8e7a264",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "名称"
+      },
+      {
+        "@language": "en",
+        "@value": "Name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  }
+]

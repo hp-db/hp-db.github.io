@@ -34,14 +34,14 @@
         "@value": "14(A19)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/14"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A19"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/14"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
@@ -49,13 +49,23 @@
         "@value": "13(A19)=wr, rkH, mDAy, 14(A19)=iAw, smsw"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/14",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "14"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "smsw"
-      },
-      {
-        "@value": "wr"
-      },
       {
         "@value": "mDAy"
       },
@@ -63,12 +73,21 @@
         "@value": "iAw"
       },
       {
+        "@value": "smsw"
+      },
+      {
+        "@value": "wr"
+      },
+      {
         "@value": "rkH"
       }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A19",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": 2
+        "@value": "A19"
       }
     ]
   }

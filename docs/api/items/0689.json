@@ -1,5 +1,32 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/I24",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I24"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/263bis",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "263bis"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "pr"
+      },
+      {
+        "@value": "pri"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0689",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,27 +61,19 @@
         "@value": "263bis(I24)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/263bis"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/I24"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/263bis"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "328(Aa16)+263(I9)"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "pr"
-      },
-      {
-        "@value": "pri"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

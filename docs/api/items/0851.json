@@ -1,5 +1,13 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N25",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "N25"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0851",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,24 +42,35 @@
         "@value": "322(N25)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/322"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N25"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
+    "https://w3id.org/hpdb/api/properties/vol": [
       {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/322"
+        "@value": 3
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/322",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "322"
       }
     ],
     "https://w3id.org/hpdb/api/properties/phonetic": [
       {
         "@value": "xAst"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/vol": [
-      {
-        "@value": 3
       }
     ]
   }

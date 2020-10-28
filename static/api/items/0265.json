@@ -1,5 +1,29 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/111B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "111B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "nn"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N35",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "N35"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0265",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,6 +58,11 @@
         "@value": "111B(D35)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/111B"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D35"
@@ -42,24 +71,22 @@
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/N35"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/111B"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "111(D35)+331(N35)"
       }
     ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "nn"
-      }
-    ],
     "https://w3id.org/hpdb/api/properties/vol": [
       {
         "@value": 3
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D35",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D35"
       }
     ]
   }

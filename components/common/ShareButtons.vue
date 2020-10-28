@@ -28,28 +28,12 @@
     <v-tooltip bottom>
       <template v-slot:activator="{ on }">
         <v-btn icon class="ma-2" target="_blank" :href="pocketUrl" v-on="on"
-          ><img style="font-size: 24px;" :src="baseUrl + '/img/pocket.svg'"
+          ><img
+            style="font-size: 24px"
+            :src="baseUrl + '/img/icons/pocket.svg'"
         /></v-btn>
       </template>
       <span>{{ 'Pocket' }}</span>
-    </v-tooltip>
-
-    <v-tooltip v-if="image" bottom>
-      <template v-slot:activator="{ on }">
-        <v-btn icon class="ma-2" target="_blank" :href="googleUrl" v-on="on"
-          ><v-icon>mdi-google</v-icon></v-btn
-        >
-      </template>
-      <span>{{ $t('google_image_search') }}</span>
-    </v-tooltip>
-
-    <v-tooltip v-if="manifest != ''" bottom>
-      <template v-slot:activator="{ on }">
-        <v-btn icon class="ma-2" target="_blank" :href="iiifUrl" v-on="on"
-          ><v-icon>mdi-star</v-icon></v-btn
-        >
-      </template>
-      <span>IIIF pocket</span>
     </v-tooltip>
   </v-card>
 </template>
@@ -86,12 +70,6 @@ export default class ShareButtons extends Vue {
   @Prop({ required: true })
   title!: string
 
-  @Prop()
-  image!: string
-
-  @Prop()
-  manifest!: string
-
   get twitterUrl() {
     return (
       'https://twitter.com/intent/tweet?url=' + this.url + '&text=' + this.title
@@ -104,30 +82,6 @@ export default class ShareButtons extends Vue {
 
   get pocketUrl() {
     return 'http://getpocket.com/edit?url=' + this.url
-  }
-
-  get googleUrl() {
-    return (
-      'https://www.google.co.jp/searchbyimage?image_url=' +
-      encodeURIComponent(this.image)
-    )
-  }
-
-  get iiifUrl() {
-    const route: any = this.$route
-    const lang: any = route.name.includes('___en') ? 'en/' : ''
-    return (
-      'http://pocket.cultural.jp/' +
-      lang +
-      '?url=' +
-      encodeURIComponent(this.manifest) /* +
-      '&related=' +
-      this.url */
-    )
-  }
-
-  get id() {
-    return Buffer.from(this.url).toString('base64')
   }
 }
 </script>

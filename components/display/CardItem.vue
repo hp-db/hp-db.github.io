@@ -1,9 +1,5 @@
 <template>
-  <v-card
-    no-body
-    class="mb-4"
-    :style="horizontal ? 'width: ' + width + 'px;' : ''"
-  >
+  <v-card no-body class="mb-4">
     <nuxt-link
       :to="
         localePath({
@@ -21,18 +17,7 @@
       ></v-img>
     </nuxt-link>
 
-    <div
-      class="pa-4"
-      :style="
-        horizontal
-          ? 'width: ' +
-            width +
-            'px; height: ' +
-            /*height*/ 100 +
-            'px; overflow-y: auto;'
-          : ''
-      "
-    >
+    <div class="pa-4">
       <nuxt-link
         :to="
           localePath({
@@ -60,9 +45,7 @@
         <ResultOption
           :item="{
             label: $utils.formatArrayValue(item._source._label),
-            manifest: $utils.formatArrayValue(item._source._manifest),
-            url: encodeURIComponent(getUrl(item)),
-            id: item._id,
+            url: $utils.formatArrayValue(item._source._url),
           }"
         />
       </v-card-actions>
@@ -82,34 +65,6 @@ import ResultOption from '~/components/display/ResultOption.vue'
 export default class CardItem extends Vue {
   @Prop({ required: true })
   item!: any
-
-  @Prop({
-    default: 240,
-  })
-  width!: number
-
-  @Prop({
-    default: 300,
-  })
-  height!: number
-
-  @Prop({
-    default: false,
-  })
-  horizontal!: boolean
-
-  getUrl(item: any) {
-    return (
-      process.env.BASE_URL +
-      this.localePath({
-        name: 'item',
-        query: {
-          u: this.$route.query.u,
-          id: item._id,
-        },
-      })
-    )
-  }
 }
 </script>
 <style>

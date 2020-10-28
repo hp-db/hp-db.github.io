@@ -1,5 +1,45 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G29",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "G29"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/R7",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "R7"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z1",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/209",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "209"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "bA"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/0542",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,30 +74,25 @@
         "@value": "209(G29)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/209"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G29"
+      },
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z1"
       },
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/R7"
-      },
-      {
-        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/G29"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/209"
       }
     ],
     "https://w3id.org/hpdb/api/properties/notes": [
       {
         "@value": "209(G29)+550(R7), 209(G29)+550(R7)+558(Z1)"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "bA"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

@@ -1,5 +1,32 @@
 [
   {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/569",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "569"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "di"
+      },
+      {
+        "@value": "Di"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X8",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "X8"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/hpdb/api/items/1530",
     "@type": [
       "https://w3id.org/hpdb/api/classes/Item"
@@ -34,22 +61,14 @@
         "@value": "569(X8)"
       }
     ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/569"
+      }
+    ],
     "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
       {
         "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/X8"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/möllerNo": [
-      {
-        "@id": "https://w3id.org/hpdb/api/term/möllerNo/569"
-      }
-    ],
-    "https://w3id.org/hpdb/api/properties/phonetic": [
-      {
-        "@value": "di"
-      },
-      {
-        "@value": "Di"
       }
     ],
     "https://w3id.org/hpdb/api/properties/vol": [

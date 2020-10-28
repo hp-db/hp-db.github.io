@@ -26,9 +26,7 @@
               target="_blank"
               :href="getCurationUrl()"
               v-on="on"
-              ><img
-                src="https://cultural.jp/img/icons/icp-logo.svg"
-                width="30px"
+              ><img :src="baseUrl + '/img/icons/icp-logo.svg'" width="30px"
             /></v-btn>
           </template>
           <span>{{ 'IIIF Curation Viewer' }}</span>
@@ -44,9 +42,7 @@
                 baseUrl + '/snorql/?describe=' + prefix + '/api/items/' + id
               "
               v-on="on"
-              ><img
-                src="https://jpsearch.go.jp/assets/img/icon/rdf-logo.svg"
-                width="30px"
+              ><img :src="baseUrl + '/img/icons/rdf-logo.svg'" width="30px"
             /></v-btn>
           </template>
           <span>{{ 'RDF' }}</span>
@@ -106,7 +102,9 @@
       </dl>
 
       <dl class="row">
-        <dt class="col-sm-3 text-muted"><b>Label</b></dt>
+        <dt class="col-sm-3 text-muted">
+          <b>{{ $t('label') }}</b>
+        </dt>
         <dd class="col-sm-9">
           {{ title }}
         </dd>
@@ -121,26 +119,45 @@
           "
         >
           <dt class="col-sm-3 text-muted">
-            <b>{{ obj.label }}</b>
+            <b>{{ $t(obj.label) }}</b>
           </dt>
-          <dd class="col-sm-9">
+          <dd
+            class="col-sm-9"
+            :class="obj.label === 'Phone/Word' ? 'phone' : ''"
+          >
             {{ Array.isArray(obj.value) ? obj.value.join(', ') : obj.value }}
           </dd>
         </template>
       </dl>
 
       <dl class="row">
-        <dt class="col-sm-3 text-muted"><b>License</b></dt>
+        <dt class="col-sm-3 text-muted">
+          <b>{{ $t('license') }}</b>
+        </dt>
         <dd class="col-sm-9">
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
-            ><img
-              alt="Creative Commons License"
-              style="border-width: 0"
-              src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a
-          ><br />This work is licensed under a
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
-            >Creative Commons Attribution 4.0 International License</a
-          >.
+          <template v-if="$i18n.locale == 'ja'">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
+              ><img
+                alt="クリエイティブ・コモンズ・ライセンス"
+                style="border-width: 0"
+                src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a
+            ><br />この作品は<a
+              rel="license"
+              href="http://creativecommons.org/licenses/by/4.0/"
+              >クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a
+            >の下に提供されています。
+          </template>
+          <template v-else>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
+              ><img
+                alt="Creative Commons License"
+                style="border-width: 0"
+                src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a
+            ><br />This work is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
+              >Creative Commons Attribution 4.0 International License</a
+            >.
+          </template>
         </dd>
       </dl>
     </v-container>
