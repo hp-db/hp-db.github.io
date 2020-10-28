@@ -849,8 +849,10 @@ export class SearchUtils {
 
     let value = obj[term]
 
+    const lowerFlag = term !== 'Phone/Word.keyword'
+
     // 大文字小文字を区別しない
-    value = value.toLowerCase()
+    value = lowerFlag ? value.toLowerCase() : value
 
     let result: number[] = []
 
@@ -864,7 +866,8 @@ export class SearchUtils {
       // 部分一致
       const map = index[term]
       for (const field in map) {
-        if (field.toLowerCase().includes(value)) {
+        const fieldMod = lowerFlag ? field.toLowerCase() : field
+        if (fieldMod.includes(value)) {
           const ids = map[field]
           if (type !== 'must_not') {
             result = result.concat(ids) // 結合
@@ -880,7 +883,8 @@ export class SearchUtils {
       term = term.replace('.keyword', '') // 完全一致
       const map = index[term]
       for (const field in map) {
-        if (field.toLowerCase() === value) {
+        const fieldMod = lowerFlag ? field.toLowerCase() : field
+        if (fieldMod === value) {
           const ids = map[field]
           if (type !== 'must_not') {
             result = result.concat(ids)

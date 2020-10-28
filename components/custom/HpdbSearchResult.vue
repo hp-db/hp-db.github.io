@@ -7,7 +7,6 @@
         </template>
         <template v-else> Compare {{ selected.length }} items </template>
       </v-btn>
-      <v-btn class="ml-2" @click="selected = []">{{ $t('reset') }}</v-btn>
 
       <v-dialog v-model="dialog" scrollable max-width="600px">
         <template v-slot:activator="{ on }">
@@ -40,6 +39,9 @@
             <v-btn color="error" @click="deleteSelected">{{
               $t('delete')
             }}</v-btn>
+            <v-btn color="error" @click="selected = []">{{
+              $t('reset')
+            }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -67,7 +69,7 @@
                     localePath({
                       name: 'search',
                       query: {
-                        'fc-Hieratic No Mod': value,
+                        'fc-Hieratic No': value,
                       },
                     })
                   "
@@ -92,7 +94,7 @@
                     localePath({
                       name: 'search',
                       query: {
-                        'fc-Hieroglyph No Mod': value,
+                        'fc-Hieroglyph No': value,
                       },
                     })
                   "
@@ -120,7 +122,9 @@
                       localePath({
                         name: 'search',
                         query: {
-                          'fc-Phone/Word Mod': value,
+                          'fc-Phone/Word Mod': value
+                            .replace('(', '')
+                            .replace(')', ''),
                         },
                       })
                     "

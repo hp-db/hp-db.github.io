@@ -30,6 +30,18 @@
             </v-list-item-content>
           </v-list-item>
 
+          <v-list-item link :href="baseUrl + '/snorql'" target="_blank">
+            <v-list-item-action>
+              <v-icon>mdi-magnify</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title
+                >SPARQL Endpoint
+                <v-icon>mdi-open-in-new</v-icon></v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item
             link
             href="https://wdb.jinsha.tsukuba.ac.jp/hdb/"
@@ -78,14 +90,17 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item link :href="baseUrl + '/snorql'" target="_blank">
+          <v-list-item
+            link
+            href="https://diyhistory.org/public/sm/?collection=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&build=1"
+            target="_blank"
+          >
             <v-list-item-action>
-              <v-icon>mdi-magnify</v-icon>
+              <v-icon>mdi-image</v-icon>
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title
-                >SPARQL Endpoint
-                <v-icon>mdi-open-in-new</v-icon></v-list-item-title
+                >Self Museum <v-icon>mdi-open-in-new</v-icon></v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -94,15 +109,24 @@
 
       <v-app-bar>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-        <v-toolbar-title to="/">
-          <nuxt-link to="/" style="color: inherit; text-decoration: inherit">
+        <v-toolbar-title>
+          <nuxt-link
+            :to="
+              localePath({
+                name: 'index',
+              })
+            "
+            style="color: inherit; text-decoration: inherit"
+          >
             Hieratische Paläographie DB
           </nuxt-link>
         </v-toolbar-title>
 
-        <v-spacer></v-spacer>
+        <template v-if="$vuetify.breakpoint.name != 'xs'">
+          <v-spacer></v-spacer>
 
-        <FullTextSearch />
+          <FullTextSearch />
+        </template>
 
         <v-spacer></v-spacer>
 
@@ -110,7 +134,9 @@
           <template v-slot:activator="{ on }">
             <v-btn depressed btn v-on="on">
               <v-icon class="mr-2">mdi-translate</v-icon>
-              {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
+              <template v-if="$vuetify.breakpoint.name != 'xs'">
+                {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}</template
+              >
               <v-icon class="ml-2">mdi-menu-down</v-icon>
             </v-btn>
           </template>
@@ -172,5 +198,19 @@ import FullTextSearch from '~/components/search/FullTextSearch.vue'
 export default class search extends Vue {
   drawer: boolean = false
   baseUrl: string = process.env.BASE_URL || ''
+
+  /*
+  isMobile() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return true
+    } else {
+      return false
+    }
+  }
+  */
 }
 </script>

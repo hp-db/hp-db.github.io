@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-import FacetOption from '~/components/search/FacetOption.vue'
+import FacetOption from '~/components/custom/FacetOption.vue'
 
 @Component({
   components: {

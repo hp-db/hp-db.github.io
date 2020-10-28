@@ -9,8 +9,7 @@
       </div>
     </template>
     <template v-else>
-      <!--
-      <SearchForm /> -->
+      <SearchForm />
 
       <v-sheet color="grey lighten-3">
         <SearchFilter />
@@ -29,9 +28,9 @@
 
 <script lang="ts">
 import { Vue, Component, Watch } from 'nuxt-property-decorator'
-import SearchForm from '~/components/search/SearchForm.vue'
+import SearchForm from '~/components/custom/SearchForm.vue'
 
-import SearchFilter from '~/components/search/filter.vue'
+import SearchFilter from '~/components/custom/filter.vue'
 import Result from '~/components/search/Result.vue'
 import ResultHead from '~/components/search/ResultHead.vue'
 
@@ -88,8 +87,11 @@ export default class search extends Vue {
 
   facetLabels: any = {
     Vol: this.$t('Vol'),
-    'Hieratic No Mod': this.$t('Hieratic No'),
-    'Hieroglyph No Mod': this.$t('Hieroglyph No'),
+    // 'Hieratic No Mod': this.$t('Hieratic No'),
+    // 'Hieroglyph No Mod': this.$t('Hieroglyph No'),
+    // 'Phone/Word Mod': this.$t('Phone/Word'),
+    'Hieratic No': this.$t('Hieratic No'),
+    'Hieroglyph No': this.$t('Hieroglyph No'),
     'Phone/Word Mod': this.$t('Phone/Word'),
   }
 
@@ -98,6 +100,9 @@ export default class search extends Vue {
     'Hieratic No Mod',
     'Hieroglyph No Mod',
     'Phone/Word Mod',
+    'Hieratic No',
+    'Hieroglyph No',
+    'Phone/Word',
   ]
 
   loadingFlag: boolean = true
