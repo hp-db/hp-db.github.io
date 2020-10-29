@@ -4,7 +4,7 @@
       <iframe
         :src="getIframeUrl()"
         width="100%"
-        height="500"
+        height="200"
         allowfullscreen
         frameborder="0"
       ></iframe>

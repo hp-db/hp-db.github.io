@@ -30,7 +30,7 @@
 import { Vue, Component, Watch } from 'nuxt-property-decorator'
 import SearchForm from '~/components/custom/SearchForm.vue'
 
-import SearchFilter from '~/components/custom/filter.vue'
+import SearchFilter from '~/components/custom/CustomFilter.vue'
 import Result from '~/components/search/Result.vue'
 import ResultHead from '~/components/search/ResultHead.vue'
 
