@@ -1,14 +1,12 @@
 <template>
   <v-container class="pt-5">
-    <v-card class="my-5">
+    <v-card class="my-5" flat outlined>
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="3">
             <v-select
               v-model="vol"
               :items="vols"
-              attach
-              chips
               :label="$t('Vol')"
               multiple
             ></v-select>
@@ -52,10 +50,10 @@
             ></v-text-field>
           </v-col>
           <v-col cols="12" sm="4">
-            <v-btn color="primary" @click="search">{{ $t('search') }}</v-btn>
-            <v-btn class="ml-4" :to="localePath({ name: 'search' })">{{
-              $t('reset')
+            <v-btn class="ma-2" color="primary" @click="search">{{
+              $t('search')
             }}</v-btn>
+            <v-btn class="ma-2" @click="reset">{{ $t('reset') }}</v-btn>
           </v-col>
         </v-row>
       </v-card-text>
@@ -184,6 +182,16 @@ export default class SearchForm extends Vue {
       this.localePath({
         name: 'search',
         query,
+      }),
+      () => {},
+      () => {}
+    )
+  }
+
+  reset() {
+    this.$router.push(
+      this.localePath({
+        name: 'search',
       }),
       () => {},
       () => {}

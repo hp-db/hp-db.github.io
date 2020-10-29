@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="mb-5">
-      <v-parallax src="img/ogp/home.jpg" height="600">
+      <v-parallax src="img/ogp/home.jpg" height="300">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
             <b>Hieratische Paläographie DB</b>
@@ -24,18 +24,33 @@
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
-            <p>Welcome to our Hieratische Paläographie DB!</p>
-            <p>
-              This is a retrieval system for hieratic scripts; it uses IIIF
-              format images (owned by the Asian Research Library of the
-              University of Tokyo) of Georg Möller's
-              <i>Hieratische Paläographie</i> (1909–36).
-            </p>
-            <p>
-              We hope this platform is useful for everyone who has an interest
-              in Hieratic scripts.
-            </p>
-            <p>HDB (Hieratic Database) Project Team</p>
+            <template v-if="$i18n.locale === 'ja'">
+              <p>Hieratische Paläographie DBへようこそ</p>
+              <p>
+                本DBは、Hieraticスクリプトの検索システムです。Georg Möllerの<i
+                  >Hieratische Paläographie</i
+                >
+                (1909–36)のIIIF画像（東京大学アジア研究図書館所蔵）を使用しています。
+              </p>
+              <p>
+                このプラットフォームが、Hieraticスクリプトに関心のあるすべての人に役立つことを願っています。
+              </p>
+              <p>HDB (Hieratic Database)プロジェクトチーム</p>
+            </template>
+            <template v-else>
+              <p>Welcome to our Hieratische Paläographie DB!</p>
+              <p>
+                This is a retrieval system for hieratic scripts; it uses IIIF
+                format images (owned by the Asian Research Library of the
+                University of Tokyo) of Georg Möller's
+                <i>Hieratische Paläographie</i> (1909–36).
+              </p>
+              <p>
+                We hope this platform is useful for everyone who has an interest
+                in Hieratic scripts.
+              </p>
+              <p>HDB (Hieratic Database) Project Team</p>
+            </template>
           </div>
         </v-card-text>
       </v-card>
@@ -49,30 +64,25 @@
             <ul>
               <template v-if="$i18n.locale === 'ja'">
                 <li>
-                  <a href="https://researchmap.jp/read0105397/">永井正勝</a>,
-                  Associate Professor, Uehiro Project for the Asian Research
-                  Library, The University of Tokyo.
+                  <a href="https://researchmap.jp/Masakatsu-Nagai/">永井正勝</a
+                  >, 東京大学 附属図書館 特任准教授
                 </li>
                 <li>
-                  <a href="https://researchmap.jp/wakit/">和氣愛仁</a>,
-                  Associate Professor, Faculty of Humanities and Social
-                  Sciences, University of Tsukuba.
+                  <a href="https://researchmap.jp/wakit/">和氣愛仁</a>, 筑波大学
+                  人文社会系 准教授
                 </li>
                 <li>
                   <a href="https://researchmap.jp/takahashi.yona">高橋洋成</a>,
-                  Research Associate, Research Institute for Languages and
-                  Cultures of Asia and Africa, Tokyo University of Foreign
-                  Studies.
+                  東京外国語大学 アジア・アフリカ言語文化研究所 特任研究員
                 </li>
                 <li>
                   <a href="https://researchmap.jp/nakamura.satoru/">中村覚</a>,
-                  Assistant Professor, Information Technology Center, The
-                  University of Tokyo.
+                  東京大学 史料編纂所 助教
                 </li>
               </template>
               <template v-else>
                 <li>
-                  <a href="https://researchmap.jp/read0105397/?lang=english"
+                  <a href="https://researchmap.jp/Masakatsu-Nagai/?lang=english"
                     >Masakatsu NAGAI</a
                   >, Associate Professor, Uehiro Project for the Asian Research
                   Library, The University of Tokyo.
@@ -93,7 +103,7 @@
                 <li>
                   <a href="https://researchmap.jp/nakamura.satoru/?lang=english"
                     >Satoru NAKAMURA</a
-                  >, Assistant Professor, Information Technology Center, The
+                  >, Assistant Professor, Historiographical Institute, The
                   University of Tokyo.
                 </li>
               </template>

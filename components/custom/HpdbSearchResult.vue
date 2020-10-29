@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="my-4 text-right">
-      <v-btn color="primary" @click="compare">
+      <v-btn color="primary" class="ma-2" @click="compare">
         <template v-if="$i18n.locale == 'ja'">
           {{ selected.length }} 件のアイテムを比較
         </template>
@@ -10,7 +10,7 @@
 
       <v-dialog v-model="dialog" scrollable max-width="600px">
         <template v-slot:activator="{ on }">
-          <v-btn class="ml-2" v-on="on">{{ $t('list') }}</v-btn>
+          <v-btn class="ma-2" v-on="on">{{ $t('list') }}</v-btn>
         </template>
         <v-card>
           <v-card-title>{{ $t('selected_items') }}</v-card-title>
@@ -261,7 +261,8 @@ export default class ListSearchResult extends Vue {
     }
 
     const url =
-      'mirador/?params=' +
+      this.baseUrl +
+      '/mirador/?params=' +
       encodeURIComponent(JSON.stringify(param)) +
       '&layout=' +
       this.selected.length +
