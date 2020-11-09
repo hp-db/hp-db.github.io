@@ -1,0 +1,78 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@id": "https://moeller.jinsha.tsukuba.ac.jp/curation/540.json",
+    "@type": "cr:Curation",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "https://moeller.jinsha.tsukuba.ac.jp/curation/540.json/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p70#xywh=913,5309,3897,467",
+                    "@type": "sc:Canvas",
+                    "label": "[1013]",
+                    "metadata": [
+                        {
+                            "label": "Vol",
+                            "value": "2"
+                        },
+                        {
+                            "label": "Möller No",
+                            "value": [
+                                "540"
+                            ]
+                        },
+                        {
+                            "label": "Möller No Mod",
+                            "value": [
+                                "540"
+                            ]
+                        },
+                        {
+                            "label": "Hieroglyph No",
+                            "value": [
+                                "Y5"
+                            ]
+                        },
+                        {
+                            "label": "Hieroglyph No Mod",
+                            "value": [
+                                "Y5"
+                            ]
+                        },
+                        {
+                            "label": "Phone/Word",
+                            "value": [
+                                "mn"
+                            ]
+                        },
+                        {
+                            "label": "Note",
+                            "value": ""
+                        },
+                        {
+                            "label": "m_sort",
+                            "value": "1454"
+                        },
+                        {
+                            "label": "h_sort",
+                            "value": "24-0-005"
+                        }
+                    ],
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%22540%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_070.tif/4100,5334,348,436/140,/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://moeller.jinsha.tsukuba.ac.jp/data/manifest/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest.json",
+                "@type": "sc:Manifest",
+                "label": "[2]"
+            }
+        }
+    ]
+}
