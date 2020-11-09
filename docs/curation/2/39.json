@@ -54,6 +54,13 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "imn",
+                                "dgA"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": "vol.1=A4, vols.2-3=A5.  See 38(A4)"
                         },
@@ -66,7 +73,7 @@
                             "value": "01-0-004/5"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%2239%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=39",
                     "thumbnail": "https://wdb.jinsha.tsukuba.ac.jp/wdb/hdb/moeller/39.png"
                 }
             ],

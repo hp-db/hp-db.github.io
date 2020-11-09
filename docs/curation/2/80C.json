@@ -54,6 +54,12 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "Hr"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": "80(D2)+91(Z1)"
                         },
@@ -66,7 +72,7 @@
                             "value": "04-0-002+04-0-021"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%2280C%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=80C",
                     "thumbnail": "https://wdb.jinsha.tsukuba.ac.jp/wdb/hdb/moeller/80C.png"
                 }
             ],

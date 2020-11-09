@@ -54,6 +54,12 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "wn"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": "132(E34)+331(N33)"
                         },
@@ -66,7 +72,7 @@
                             "value": "05-0-034+13-0-35"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%22132B%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=132B",
                     "thumbnail": "https://wdb.jinsha.tsukuba.ac.jp/wdb/hdb/moeller/132B.png"
                 }
             ],

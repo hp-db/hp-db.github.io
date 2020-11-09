@@ -56,6 +56,16 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "sA",
+                                "sAw",
+                                "mniw",
+                                "miniw",
+                                "iry"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": "47(A47), 48(A47)"
                         },
@@ -68,7 +78,7 @@
                             "value": "01-0-047"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%2247%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=47",
                     "thumbnail": "https://wdb.jinsha.tsukuba.ac.jp/wdb/hdb/moeller/47.png"
                 }
             ],

@@ -53,6 +53,12 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "tA"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": "N16=with dot, N17=without dot"
                         },
@@ -65,7 +71,7 @@
                             "value": "13-0-016/017"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%22317%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=317",
                     "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_051.tif/4122,1265,350,438/140,/0/default.jpg"
                 }
             ],

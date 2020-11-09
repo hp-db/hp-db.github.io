@@ -57,6 +57,17 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "Hwi",
+                                "Hii",
+                                "nxt",
+                                "nHm",
+                                "HaDA",
+                                "sbA"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": ""
                         },
@@ -69,7 +80,7 @@
                             "value": "01-0-024"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%2215%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=15",
                     "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_024.tif/4168,3538,344,440/140,/0/default.jpg"
                 }
             ],

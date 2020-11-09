@@ -54,6 +54,14 @@
                             ]
                         },
                         {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                "sq",
+                                "wAH",
+                                "Xsr"
+                            ]
+                        },
+                        {
                             "label": "Note",
                             "value": "398(V29)=wAH, 399(V29)=sq, 400(V29)=Xsr"
                         },
@@ -66,7 +74,7 @@
                             "value": "21-0-029"
                         }
                     ],
-                    "related": "https://moeller.jinsha.tsukuba.ac.jp/app/#/search?facet=%7B%22Vol%22%3A%5B%222%22%5D,%22Hieroglyph%20No%22%3A%5B%5D,%22M%C3%B6ller%20No%22%3A%5B%22399%22%5D,%22Phone%2FWord%22%3A%5B%5D%7D",
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No%20Mod=399",
                     "thumbnail": "https://wdb.jinsha.tsukuba.ac.jp/wdb/hdb/moeller/399.png"
                 }
             ],
