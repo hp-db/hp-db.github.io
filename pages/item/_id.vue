@@ -173,7 +173,7 @@ export default {
       return payload
     } else {
       const { data } = await axios.get(
-        `https://moeller.jinsha.tsukuba.ac.jp/data/curation.json`
+        `http://localhost:3000/data/curation_old.json`
       )
       const result = data.selections[0].members[0]
       result.manifest = data.selections[0].within['@id']

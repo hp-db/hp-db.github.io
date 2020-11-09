@@ -6,10 +6,10 @@
     ],
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:N5df1741cc8cf41b8bc6450a7ec72e41e"
+        "@id": "_:N829e57d2b523477e8f034d3560478e42"
       },
       {
-        "@id": "_:Nd387b4b883db4f319591d975b8e7a264"
+        "@id": "_:Nee242d5cca4c44bbb4b47e6cc0e643ec"
       }
     ],
     "http://www.w3.org/ns/shacl#targetClass": [
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "@id": "_:N5df1741cc8cf41b8bc6450a7ec72e41e",
+    "@id": "_:N829e57d2b523477e8f034d3560478e42",
     "http://www.w3.org/2004/02/skos/core#example": [
       {
         "@value": "nis, aA"
@@ -37,7 +37,7 @@
       },
       {
         "@language": "ja",
-        "@value": "音価/単語"
+        "@value": "音価/語"
       }
     ],
     "http://www.w3.org/ns/shacl#order": [
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "@id": "_:Nd387b4b883db4f319591d975b8e7a264",
+    "@id": "_:Nee242d5cca4c44bbb4b47e6cc0e643ec",
     "http://www.w3.org/2004/02/skos/core#example": [
       {
         "@value": 1
@@ -75,12 +75,12 @@
     ],
     "http://www.w3.org/ns/shacl#name": [
       {
-        "@language": "ja",
-        "@value": "名称"
-      },
-      {
         "@language": "en",
         "@value": "Name"
+      },
+      {
+        "@language": "ja",
+        "@value": "名称"
       }
     ],
     "http://www.w3.org/ns/shacl#order": [

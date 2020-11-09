@@ -6,19 +6,19 @@
     ],
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:Nc7c7752c1594428ab4b9d0ee92fc7348"
+        "@id": "_:N6b31dc8ef63f4fe5bc89961bd6777588"
       },
       {
-        "@id": "_:Nd640990c87ef4255babe9389f0d642bc"
+        "@id": "_:N9f415c2e6d52482780df95946a81924b"
       },
       {
-        "@id": "_:Nf0df1cc036824752bf7a89bd1a9adbc6"
+        "@id": "_:N83acee8dabb1405f8b7301f0e686bed7"
       },
       {
-        "@id": "_:N660847caf41b47018826ae8e564f5381"
+        "@id": "_:Naa1c9039242a4675987747bfa1dc78f1"
       },
       {
-        "@id": "_:N44e52f62ff5a4c38b4ef863ed61cca85"
+        "@id": "_:N07adb15ff62446b191bacbea46f01c32"
       }
     ],
     "http://www.w3.org/ns/shacl#targetClass": [
@@ -28,126 +28,7 @@
     ]
   },
   {
-    "@id": "_:Nc7c7752c1594428ab4b9d0ee92fc7348",
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "bent man leaning on staff"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#datatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#maxCount": [
-      {
-        "@value": 1
-      }
-    ],
-    "http://www.w3.org/ns/shacl#name": [
-      {
-        "@language": "ja",
-        "@value": "文字の説明"
-      },
-      {
-        "@language": "en",
-        "@value": "Description"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#order": [
-      {
-        "@value": 3
-      }
-    ],
-    "http://www.w3.org/ns/shacl#path": [
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#description"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nd640990c87ef4255babe9389f0d642bc",
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "old, to be fragile (jꜥw)\nElder (smsw)\n\nbigger (wr)\n\nto learn (rhn)\n\nto hit (ḥwj)"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#datatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#maxCount": [
-      {
-        "@value": 1
-      }
-    ],
-    "http://www.w3.org/ns/shacl#name": [
-      {
-        "@language": "ja",
-        "@value": "翻字"
-      },
-      {
-        "@language": "en",
-        "@value": "Transliteration"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#order": [
-      {
-        "@value": 4
-      }
-    ],
-    "http://www.w3.org/ns/shacl#path": [
-      {
-        "@id": "https://w3id.org/hpdb/api/properties/transliteration"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nf0df1cc036824752bf7a89bd1a9adbc6",
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "A19"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#datatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#maxCount": [
-      {
-        "@value": 1
-      }
-    ],
-    "http://www.w3.org/ns/shacl#minCount": [
-      {
-        "@value": 1
-      }
-    ],
-    "http://www.w3.org/ns/shacl#name": [
-      {
-        "@language": "en",
-        "@value": "Name"
-      },
-      {
-        "@language": "ja",
-        "@value": "名称"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#order": [
-      {
-        "@value": 1
-      }
-    ],
-    "http://www.w3.org/ns/shacl#path": [
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
-      }
-    ]
-  },
-  {
-    "@id": "_:N660847caf41b47018826ae8e564f5381",
+    "@id": "_:N6b31dc8ef63f4fe5bc89961bd6777588",
     "http://www.w3.org/2004/02/skos/core#example": [
       {
         "@value": "U+13017"
@@ -170,12 +51,12 @@
     ],
     "http://www.w3.org/ns/shacl#name": [
       {
-        "@language": "en",
-        "@value": "Unicode"
-      },
-      {
         "@language": "ja",
         "@value": "ユニード"
+      },
+      {
+        "@language": "en",
+        "@value": "Unicode"
       }
     ],
     "http://www.w3.org/ns/shacl#order": [
@@ -190,7 +71,7 @@
     ]
   },
   {
-    "@id": "_:N44e52f62ff5a4c38b4ef863ed61cca85",
+    "@id": "_:N9f415c2e6d52482780df95946a81924b",
     "http://www.w3.org/2004/02/skos/core#example": [
       {
         "@value": "perhaps also wise and sage"
@@ -208,12 +89,12 @@
     ],
     "http://www.w3.org/ns/shacl#name": [
       {
-        "@language": "ja",
-        "@value": "備考"
-      },
-      {
         "@language": "en",
         "@value": "Notes"
+      },
+      {
+        "@language": "ja",
+        "@value": "備考"
       }
     ],
     "http://www.w3.org/ns/shacl#order": [
@@ -224,6 +105,125 @@
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://w3id.org/hpdb/api/properties/notes"
+      }
+    ]
+  },
+  {
+    "@id": "_:N83acee8dabb1405f8b7301f0e686bed7",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "bent man leaning on staff"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Description"
+      },
+      {
+        "@language": "ja",
+        "@value": "文字の説明"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 3
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#description"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naa1c9039242a4675987747bfa1dc78f1",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "A19"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "ja",
+        "@value": "名称"
+      },
+      {
+        "@language": "en",
+        "@value": "Name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:N07adb15ff62446b191bacbea46f01c32",
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "old, to be fragile (jꜥw)\nElder (smsw)\n\nbigger (wr)\n\nto learn (rhn)\n\nto hit (ḥwj)"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@language": "en",
+        "@value": "Transliteration"
+      },
+      {
+        "@language": "ja",
+        "@value": "翻字"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#order": [
+      {
+        "@value": 4
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/hpdb/api/properties/transliteration"
       }
     ]
   }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hpdb/api/classes/HieroglyphNo">
+    <rdfs:label>Hieroglyph No</rdfs:label>
+    <rdfs:description>Hieroglyphの番号</rdfs:description>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hpdb/api/classes/MöllerNo">
+    <rdfs:label>Möller No</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:description>Möllerの文字番号</rdfs:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hpdb/api/classes/Item">
+    <rdfs:label>アイテム</rdfs:label>
+    <rdfs:description>アイテムのためのクラス</rdfs:description>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

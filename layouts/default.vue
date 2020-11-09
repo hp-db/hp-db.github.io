@@ -92,7 +92,7 @@
 
           <v-list-item
             link
-            href="https://diyhistory.org/public/sm/?collection=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&build=1"
+            href="https://self-museum.cultural.jp/?collection=https://moeller.jinsha.tsukuba.ac.jp/data/curation.json&build=1"
             target="_blank"
           >
             <v-list-item-action>

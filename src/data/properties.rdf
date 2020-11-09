@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/unicode">
+    <rdfs:label>Unicode</rdfs:label>
+    <rdfs:description>Unicode</rdfs:description>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/phonetic">
+    <rdfs:description>Phonetic</rdfs:description>
+    <rdfs:label>Phone/Word</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/hieroglyphNo">
+    <rdfs:label>Hieroglyph No</rdfs:label>
+    <rdfs:description>Hieroglyphの番号</rdfs:description>
+    <rdfs:range rdf:resource="https://w3id.org/hpdb/api/classes/HieroglyphNo"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/vol">
+    <rdfs:label>Volume</rdfs:label>
+    <rdfs:description>Volume</rdfs:description>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/möllerNo">
+    <rdfs:range rdf:resource="https://w3id.org/hpdb/api/classes/MöllerNo"/>
+    <rdfs:label>Möller No</rdfs:label>
+    <rdfs:description>Möllerの文字番号</rdfs:description>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/notes">
+    <rdfs:label>Notes</rdfs:label>
+    <rdfs:description>Notes</rdfs:description>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://w3id.org/hpdb/api/properties/transliteration">
+    <rdfs:description>Transliteration</rdfs:description>
+    <rdfs:label>Transliteration</rdfs:label>
+  </rdf:Property>
+</rdf:RDF>

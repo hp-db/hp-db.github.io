@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:ns1="http://www.w3.org/ns/shacl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+>
+  <ns1:NodeShape rdf:about="https://w3id.org/hpdb/api/shapes/HieraticNoShape">
+    <ns1:targetClass rdf:resource="https://w3id.org/hpdb/api/classes/HieraticNo"/>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N829e57d2b523477e8f034d3560478e42">
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/phonetic"/>
+        <ns1:name xml:lang="en">Phone/Word</ns1:name>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:name xml:lang="ja">音価/語</ns1:name>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:order>
+        <ns2:example>nis, aA</ns2:example>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Nee242d5cca4c44bbb4b47e6cc0e643ec">
+        <ns1:name xml:lang="ja">名称</ns1:name>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:name xml:lang="en">Name</ns1:name>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <ns2:example rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns2:example>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:order>
+      </rdf:Description>
+    </ns1:property>
+  </ns1:NodeShape>
+  <ns1:NodeShape rdf:about="https://w3id.org/hpdb/api/shapes/HieroglyphNoShape">
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N6b31dc8ef63f4fe5bc89961bd6777588">
+        <ns2:example>U+13017</ns2:example>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:order>
+        <ns1:name xml:lang="ja">ユニード</ns1:name>
+        <ns1:name xml:lang="en">Unicode</ns1:name>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/unicode"/>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:targetClass rdf:resource="https://w3id.org/hpdb/api/classes/HieroglyphNo"/>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Naa1c9039242a4675987747bfa1dc78f1">
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:name xml:lang="ja">名称</ns1:name>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:order>
+        <ns2:example>A19</ns2:example>
+        <ns1:name xml:lang="en">Name</ns1:name>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N9f415c2e6d52482780df95946a81924b">
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:order>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/notes"/>
+        <ns2:example>perhaps also wise and sage</ns2:example>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:name xml:lang="en">Notes</ns1:name>
+        <ns1:name xml:lang="ja">備考</ns1:name>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N07adb15ff62446b191bacbea46f01c32">
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns1:order>
+        <ns1:name xml:lang="ja">翻字</ns1:name>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns2:example>old, to be fragile (jꜥw)
+Elder (smsw)
+
+bigger (wr)
+
+to learn (rhn)
+
+to hit (ḥwj)</ns2:example>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/transliteration"/>
+        <ns1:name xml:lang="en">Transliteration</ns1:name>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N83acee8dabb1405f8b7301f0e686bed7">
+        <ns1:name xml:lang="en">Description</ns1:name>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns1:order>
+        <ns1:name xml:lang="ja">文字の説明</ns1:name>
+        <ns1:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#description"/>
+        <ns2:example>bent man leaning on staff</ns2:example>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </rdf:Description>
+    </ns1:property>
+  </ns1:NodeShape>
+  <ns1:NodeShape rdf:about="https://w3id.org/hpdb/api/shapes/ItemShape">
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N7818ff2d2e6b4adfa0f7a4a613255186">
+        <ns2:example>https://w3id.org/hpdb/api/term/hieraticNo/1</ns2:example>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:order>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/hieraticNo"/>
+        <ns1:name xml:lang="en">Hieratic No</ns1:name>
+        <ns1:datatype rdf:resource="https://w3id.org/hpdb/api/classes/HieraticNo"/>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:name xml:lang="ja">ヒエラティック番号</ns1:name>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N8f18d18c89cf4ef2ada0bd56b92bf257">
+        <ns1:name xml:lang="ja">識別子</ns1:name>
+        <ns1:path rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <ns1:name xml:lang="en">Identifier</ns1:name>
+        <ns2:example>0001</ns2:example>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns1:order>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Nd3e54bf40cdc4bc1b4d7a448d62cd50e">
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns2:example>http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://moeller.jinsha.tsukuba.ac.jp/data/manifest/8aaa203c-1c5a-4fef-973b-4fb174d60d37/manifest.json&amp;amp;canvas=https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23&amp;amp;xywh=893,2105,3921,501&amp;amp;xywh_highlight=border</ns2:example>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ns1:order>
+        <ns1:path rdf:resource="http://schema.org/relatedLink"/>
+        <ns1:name xml:lang="en">Link to IIIF Curation Viewer</ns1:name>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:name xml:lang="ja">IIIF Curation Viewerへのリンク</ns1:name>
+        <ns1:datatype rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Ndfa70719f69d47a9ad46dabad74d1242">
+        <ns1:datatype rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <ns1:name xml:lang="en">Thumbnail</ns1:name>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns2:example>https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/983,2131,3913,476/,200/0/default.jpg</ns2:example>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ns1:order>
+        <ns1:path rdf:resource="http://schema.org/image"/>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:name xml:lang="ja">サムネイル画像</ns1:name>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Nc61b66862e7d49e3a5609d0742755f09">
+        <ns1:datatype rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <ns1:name xml:lang="en">License</ns1:name>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ns1:order>
+        <ns1:path rdf:resource="http://schema.org/license"/>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:name xml:lang="ja">ライセンス</ns1:name>
+        <ns2:example>http://creativecommons.org/licenses/by/4.0/</ns2:example>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N4141266f6a2b4c449b86d053a39fcab6">
+        <ns1:datatype rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <ns1:name xml:lang="ja">URL</ns1:name>
+        <ns2:example>http://w3id.org/hpdb/item/0001</ns2:example>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:name xml:lang="en">URL</ns1:name>
+        <ns1:path rdf:resource="http://schema.org/url"/>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</ns1:order>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="N4bdc723474d745fc991008f0f5a68f94">
+        <ns1:name xml:lang="en">Volume</ns1:name>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns1:order>
+        <ns2:example rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns2:example>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/vol"/>
+        <ns1:name xml:lang="ja">巻数</ns1:name>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Nc68e9512c8684e9998fa37af1387b213">
+        <ns1:name xml:lang="ja">ヒエログリフ番号</ns1:name>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns2:example>https://w3id.org/hpdb/api/term/hieroglyphNo/A26</ns2:example>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns1:order>
+        <ns1:name xml:lang="en">Hieroglyph No</ns1:name>
+        <ns1:datatype rdf:resource="https://w3id.org/hpdb/api/classes/HieroglyphNo"/>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/hieroglyphNo"/>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Nd004a02b816b4c22aa7a260fb619a065">
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:order>
+        <ns2:example>1(A26)</ns2:example>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:name xml:lang="en">Name</ns1:name>
+        <ns1:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:minCount>
+        <ns1:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <ns1:name xml:lang="ja">名称</ns1:name>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:property>
+      <rdf:Description rdf:nodeID="Nfb537cc897de45ccac11e0a43b1725cd">
+        <ns1:name xml:lang="ja">備考</ns1:name>
+        <ns1:name xml:lang="en">Notes</ns1:name>
+        <ns1:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <ns1:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:maxCount>
+        <ns1:path rdf:resource="https://w3id.org/hpdb/api/properties/notes"/>
+        <ns1:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:order>
+        <ns2:example>See 39(A4/A5).</ns2:example>
+      </rdf:Description>
+    </ns1:property>
+    <ns1:targetClass rdf:resource="https://w3id.org/hpdb/api/classes/Item"/>
+  </ns1:NodeShape>
+</rdf:RDF>
