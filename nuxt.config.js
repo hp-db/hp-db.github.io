@@ -1,7 +1,4 @@
 import colors from 'vuetify/es5/util/colors'
-import axios from 'axios'
-
-import md5 from 'crypto-js/md5'
 
 const environment = process.env.NODE_ENV || 'local'
 const env = require(`./env/${environment}.ts`)
@@ -16,7 +13,7 @@ const routerBase =
       }
     : {}
 
-const GOOGLE_ANALYTICS_ID = 'abc'
+const GOOGLE_ANALYTICS_ID = '251998991'
 
 // path
 const baseUrl = env.BASE_URL || ''
@@ -236,42 +233,42 @@ export default {
   generate: {
     dir: 'docs',
 
-    async routes() {
-      const pages = await axios
-        .get('https://moeller.jinsha.tsukuba.ac.jp/data/curation.json')
-        .then(function (res) {
-          const selections = res.data.selections
-          const pages = []
-          for (let i = 0; i < selections.length; i++) {
-            const selection = selections[i]
-            const members = selection.members
-            for (let j = 0; j < members.length; j++) {
-              const member = members[j]
-              const metadataObj = {}
-              const metadata = member.metadata
-              for (let k = 0; k < metadata.length; k++) {
-                const obj = metadata[k]
-                metadataObj[obj.label] = obj.value
-              }
+    routes() {
+      const fs = require('fs')
+      const curation = JSON.parse(
+        fs.readFileSync('static/data/curation_old.json')
+      )
 
-              // const memberId = member['@id']
-              // const id = md5(memberId)
-              const id = metadataObj.m_sort
-              member.manifest = selection.within['@id']
-
-              pages.push({
-                route: `/item/${id}`,
-                payload: member,
-              })
-
-              pages.push({
-                route: `/ja/item/${id}`,
-                payload: member,
-              })
-            }
+      const selections = curation.selections
+      const pages = []
+      for (let i = 0; i < selections.length; i++) {
+        const selection = selections[i]
+        const members = selection.members
+        for (let j = 0; j < members.length; j++) {
+          const member = members[j]
+          const metadataObj = {}
+          const metadata = member.metadata
+          for (let k = 0; k < metadata.length; k++) {
+            const obj = metadata[k]
+            metadataObj[obj.label] = obj.value
           }
-          return pages
-        })
+
+          // const memberId = member['@id']
+          // const id = md5(memberId)
+          const id = metadataObj.m_sort
+          member.manifest = selection.within['@id']
+
+          pages.push({
+            route: `/item/${id}`,
+            payload: member,
+          })
+
+          pages.push({
+            route: `/ja/item/${id}`,
+            payload: member,
+          })
+        }
+      }
 
       // const pages = []
 

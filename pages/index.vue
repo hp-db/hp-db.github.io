@@ -120,7 +120,7 @@
           <template v-if="$i18n.locale === 'ja'">
             <ul>
               <li>
-                2020年12月XX日:
+                2020年11月9日:
                 システムを更新しました。（日本語ページの追加、アイテム詳細ページの追加、RDFデータの追加、静的サイトジェネレータの利用）
               </li>
               <li>2019年12月11日: システムを公開しました。</li>
@@ -130,7 +130,7 @@
             <div class="text--primary">
               <ul>
                 <li>
-                  XX, Dec., 2020: Updated: Japanese page, Item detail page, RDF
+                  9, Nov., 2020: Updated: Japanese page, Item detail page, RDF
                   data, and SSG functionality were added.
                 </li>
                 <li>

@@ -1,3 +1,3 @@
 module.exports = {
-  BASE_URL: 'https://hp-db.github.io', // '/hpdb4/',
+  BASE_URL: 'https://moeller.jinsha.tsukuba.ac.jp', // '/hpdb4/',
 }

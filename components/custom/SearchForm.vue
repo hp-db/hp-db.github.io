@@ -111,15 +111,15 @@ export default class SearchForm extends Vue {
     }
   }
 
-  vol: string[] = []
+  vol: any = []
 
-  hieraticNo: string = ''
+  hieraticNo: any = ''
 
-  hieroglyphNo: string = ''
+  hieroglyphNo: any = ''
 
-  phonetic: string = ''
+  phonetic: any = ''
 
-  note: string = ''
+  note: any = ''
 
   get advanced() {
     return this.$store.state.advanced
