@@ -13,7 +13,7 @@ const routerBase =
       }
     : {}
 
-const GOOGLE_ANALYTICS_ID = '251998991'
+const GOOGLE_ANALYTICS_ID = 'UA-154128232-1'
 
 // path
 const baseUrl = env.BASE_URL || ''

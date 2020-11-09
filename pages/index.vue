@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="mb-5">
-      <v-parallax src="img/ogp/home.jpg" height="300">
+      <v-parallax :src="baseUrl + '/img/ogp/home.jpg'" height="300">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
             <b>Hieratische Paläographie DB</b>
