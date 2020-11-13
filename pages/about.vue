@@ -1,7 +1,11 @@
 <template>
   <div>
     <v-container class="my-5">
-      <h2>{{ $t('lod_vocabulary') }}</h2>
+      <h2 class="mb-5">{{ $t('manual') }}</h2>
+
+      <p>To be added.</p>
+
+      <h2 class="my-5">{{ $t('lod_vocabulary') }}</h2>
 
       <ul>
         <li v-for="(value, key) in pathes" :key="key">

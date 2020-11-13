@@ -9,7 +9,7 @@ import argparse
 import json
 import urllib.parse
 
-path = "/Users/nakamurasatoru/git/d_nagai/hpdb2/static/data/curation.json"
+path = "/Users/nakamurasatoru/git/d_nagai/hpdb2/static/data/curation_old.json"
 
 json_open = open(path, 'r')
 df = json.load(json_open)
@@ -43,7 +43,7 @@ for selection in selections:
             if label not in metadataObj:
                 metadataObj[label] = []
 
-            values = [value] if isinstance(value, str) else value
+            values = value if isinstance(value, list) else [str(value)]
 
             for value in values:
 

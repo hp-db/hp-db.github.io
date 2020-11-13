@@ -42,14 +42,32 @@
         </v-row>
 
         <v-row>
-          <v-col cols="12" sm="8">
+          <v-col cols="12" sm="3">
+            <v-text-field
+              v-model="page"
+              :label="$t('Page')"
+              @keyup.enter="search"
+            ></v-text-field>
+            <!-- class="phone" -->
+          </v-col>
+
+          <v-col cols="12" sm="3">
+            <v-text-field
+              v-model="order"
+              :label="$t('Order')"
+              @keyup.enter="search"
+            ></v-text-field>
+            <!-- class="phone" -->
+          </v-col>
+
+          <v-col cols="12" sm="3">
             <v-text-field
               v-model="note"
               :label="$t('Note')"
               @keyup.enter="search"
             ></v-text-field>
           </v-col>
-          <v-col cols="12" sm="4">
+          <v-col cols="12" sm="3">
             <v-btn class="ma-2" color="primary" @click="search">{{
               $t('search')
             }}</v-btn>
@@ -109,6 +127,18 @@ export default class SearchForm extends Vue {
     } else {
       this.note = ''
     }
+
+    if (advanced['fc-Page']) {
+      this.page = advanced['fc-Page']
+    } else {
+      this.page = ''
+    }
+
+    if (advanced['fc-Order']) {
+      this.order = advanced['fc-Order']
+    } else {
+      this.order = ''
+    }
   }
 
   vol: any = []
@@ -120,6 +150,10 @@ export default class SearchForm extends Vue {
   phonetic: any = ''
 
   note: any = ''
+
+  page: any = ''
+
+  order: any = ''
 
   get advanced() {
     return this.$store.state.advanced
@@ -174,6 +208,22 @@ export default class SearchForm extends Vue {
 
     if (note !== '') {
       query['q-Note'] = note
+    }
+
+    // --------
+
+    const page = this.page
+
+    if (page !== '') {
+      query['fc-Page'] = page
+    }
+
+    // --------
+
+    const order = this.order
+
+    if (order !== '') {
+      query['fc-Order'] = order
     }
 
     // --------

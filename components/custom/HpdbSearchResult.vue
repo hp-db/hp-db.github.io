@@ -141,7 +141,12 @@
 
             <span>
               <b>{{ $t('Vol') }}</b>
-              &nbsp;{{ obj._source.Vol[0] }}
+              &nbsp;{{ obj._source.Vol[0] }},&nbsp;
+              <b>{{ $t('Page') }}</b>
+              &nbsp;{{ obj._source.Page[0] }},&nbsp;
+
+              <b>{{ $t('Order') }}</b>
+              &nbsp;{{ obj._source.Order[0] }}
             </span>
             <br />
             <template v-if="obj._source.Note[0] != ''">
@@ -151,6 +156,7 @@
               </span>
               <br />
             </template>
+
             <v-switch
               :value="selected.includes(obj._id)"
               @change="select(obj._id)"
