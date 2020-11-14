@@ -35,6 +35,20 @@
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
             <v-btn
+              class="mx-1"
+              icon
+              target="_blank"
+              :href="getUtaUrl()"
+              v-on="on"
+              ><img :src="baseUrl + '/img/icons/ut.ico'" width="30px"
+            /></v-btn>
+          </template>
+          <span>{{ $t('uta') }}</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
               icon
               class="mx-1"
               target="_blank"
@@ -237,6 +251,24 @@ export default {
         '&xywh=' +
         xywh +
         '&xywh_highlight=border'
+      return url
+    },
+    getUtaUrl() {
+      const memberId = this['@id']
+      const memberIdSpl = memberId.split('#xywh=')
+      const canvasId = memberIdSpl[0]
+      const xywh = memberIdSpl[1]
+
+      const page = canvasId.split('/canvas/p')[1]
+
+      const id = this.manifest.split('/manifest/')[1].split('/')[0]
+      const url =
+        'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
+        id +
+        '#?c=0&m=0&s=0&cv=' +
+        (Number(page) ^ 1) +
+        '&xywh=' +
+        xywh
       return url
     },
   },

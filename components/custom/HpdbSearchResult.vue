@@ -178,8 +178,8 @@
               <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
                   <v-btn
-                    class="mt-2"
                     icon
+                    class="mt-2"
                     target="_blank"
                     :href="obj._source._relatedLink[0]"
                     v-on="on"
@@ -189,6 +189,20 @@
                   /></v-btn>
                 </template>
                 <span>{{ 'IIIF Curation Viewer' }}</span>
+              </v-tooltip>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on }">
+                  <v-btn
+                    class="mt-2"
+                    icon
+                    target="_blank"
+                    :href="getUrl(obj._source)"
+                    v-on="on"
+                    ><img :src="baseUrl + '/img/icons/ut.ico'" width="30px"
+                  /></v-btn>
+                </template>
+                <span>{{ $t('uta') }}</span>
               </v-tooltip>
             </div>
           </v-col>
@@ -302,6 +316,21 @@ export default class ListSearchResult extends Vue {
     const seq = this.index._id[id][0]
     const obj = this.dataAll[seq]
     return obj
+  }
+
+  getUrl(obj) {
+    const params = obj._relatedLink[0].split('?')[1].split('&')
+    const page = params[1].split('/canvas/p')[1]
+    const xywh = params[2].split('=')[1]
+    const id = params[0].split('/manifest/')[1].split('/')[0]
+    const url =
+      'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
+      id +
+      '#?c=0&m=0&s=0&cv=' +
+      (Number(page) ^ 1) +
+      '&xywh=' +
+      xywh
+    return url
   }
 }
 </script>
