@@ -1,0 +1,383 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@id": "https://nakamura196.github.io/nagai/data/curation/193.json",
+    "@type": "cr:Curation",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p48#xywh=2300,3570,312,449",
+                    "@type": "sc:Canvas",
+                    "label": "1_18_0_06_04",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 4
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 18
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 193
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 193
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "G14"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "G14a"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nrt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "rnr"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Prisse"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "11-12 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_048.tif/2300,3570,312,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p48#xywh=2615,3573,310,446",
+                    "@type": "sc:Canvas",
+                    "label": "1_18_0_06_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 18
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 193
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 193
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "G14"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "G14a"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nrt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "rnr"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Illahun"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "12 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_048.tif/2615,3573,310,446/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p48#xywh=2928,3573,308,448",
+                    "@type": "sc:Canvas",
+                    "label": "1_18_0_06_06",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 6
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 18
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 193
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 193
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "G14"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "G14a"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nrt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "rnr"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Sinuhe"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "12-13 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_048.tif/2928,3573,308,448/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p48#xywh=4188,3580,309,445",
+                    "@type": "sc:Canvas",
+                    "label": "1_18_0_06_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 18
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 193
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 193
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "G14"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "G14a"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nrt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "rnr"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Golen."
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Hyksos-18 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_048.tif/4188,3580,309,445/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p48#xywh=4499,3581,310,444",
+                    "@type": "sc:Canvas",
+                    "label": "1_18_0_06_11",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 11
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 18
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 193
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 193
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "G14"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "G14a"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nrt"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "rnr"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "mwt"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Ebers"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Hyksos-18 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_048.tif/4499,3581,310,444/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/manifest",
+                "@type": "sc:Manifest",
+                "label": "[1]"
+            }
+        }
+    ]
+}

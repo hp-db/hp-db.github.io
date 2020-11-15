@@ -1,0 +1,1747 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@id": "https://nakamura196.github.io/nagai/data/curation/004.json",
+    "@type": "cr:Curation",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=1652,2140,313,451",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_02",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 2
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Elephantine"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "6 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/1652,2140,313,451/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=1968,2143,314,450",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_03",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 3
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Hatnub"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "10-11 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/1968,2143,314,450/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=2288,2145,311,450",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_04",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 4
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Prisse"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "11-12 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/2288,2145,311,450/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=2602,2148,310,449",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Illahun"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "12 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/2602,2148,310,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=2915,2150,311,449",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_06",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 6
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Sinuhe"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "12-13 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/2915,2150,311,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=3560,2175,289,421",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_08",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 8
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Math."
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Hyksos-18 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/3560,2175,289,421/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=4172,2159,310,449",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Golen."
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Hyksos-18 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/4172,2159,310,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p31#xywh=4485,2162,314,448",
+                    "@type": "sc:Canvas",
+                    "label": "1_01_0_02_11",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 11
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 1
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Ebers"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Hyksos-18 Dynasties"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Abusir,Elephantine,Hatnub,Prisse,Illahun,Sinuhe,Bulaq 18,Math.,Westcar,Golen.,Ebers"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_031.tif/4485,2162,314,448/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/manifest",
+                "@type": "sc:Manifest",
+                "label": "[1]"
+            }
+        },
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range2",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=1388,3498,344,445",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_01",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 1
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Louvre 3226"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Thutmosis III"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/1388,3498,344,445/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=1734,3498,346,445",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_02",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 2
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Lederhs."
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Amenophis II"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/1734,3498,346,445/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=2081,3505,345,439",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_03",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 3
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Guröb"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Amenophis II-III"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/2081,3505,345,439/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=2433,3497,334,446",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_04",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 4
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P.Roilln"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Sethos I"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/2433,3497,334,446/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=2774,3448,345,492",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Ennene"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Menephtah/sethos II"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/2774,3448,345,492/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=3125,3502,342,439",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_06",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 6
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Pentoere"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Menephtah/sethos II"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/3125,3502,342,439/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=3470,3497,356,445",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_07",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 7
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Harris Th."
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Ramses IV"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/3470,3497,356,445/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=3828,3495,335,447",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_08",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 8
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Harris H. M."
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Ramses IV"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/3828,3495,335,447/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=4164,3494,350,447",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_09",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 9
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. Abbott"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Ramses IX"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/4164,3494,350,447/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=4514,3492,346,448",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_04_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "nDm-t"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "21 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/4514,3492,346,448/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest",
+                "@type": "sc:Manifest",
+                "label": "[2]"
+            }
+        },
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range3",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=1283,3492,339,447",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_01",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 1
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Takelothis"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "22 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/1283,3492,339,447/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2193,3495,275,443",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_04",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 4
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leinwand"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "30 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2193,3495,275,443/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2471,3495,287,445",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leinwand"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "30 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2471,3495,287,445/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2764,3492,302,451",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_06",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 6
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Isis-N"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "2 Jahrh. v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2764,3492,302,451/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3354,3499,280,444",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_08",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 8
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leiden J.32"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "um 60 n. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3354,3499,280,444/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3929,3502,256,445",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. 3030"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "9 v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3929,3502,256,445/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=4189,3504,307,443",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_04_11",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 11
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 4
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 4
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A28"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "qAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "Hai"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "HAi"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "jAs"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. 3135"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "1-2 Jahrh. v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/4189,3504,307,443/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/manifest",
+                "@type": "sc:Manifest",
+                "label": "[3]"
+            }
+        }
+    ]
+}

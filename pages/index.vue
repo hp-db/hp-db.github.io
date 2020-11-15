@@ -25,15 +25,24 @@
         <v-card-text>
           <div class="text--primary">
             <template v-if="$i18n.locale === 'ja'">
-              <p>Hieratische Paläographie DBへようこそ</p>
               <p>
-                本DBは、Hieraticスクリプトの検索システムです。Georg Möllerの<i
-                  >Hieratische Paläographie</i
-                >
-                (1909–36)のIIIF画像（東京大学アジア研究図書館所蔵）を使用しています。
+                ヒエラティック・パレオグラフィー・データベース（Hieratische
+                Paläographie DB）へようこそ！
               </p>
               <p>
-                このプラットフォームが、Hieraticスクリプトに関心のあるすべての人に役立つことを願っています。
+                このデータベースでは、Georg Möller,
+                <i>Hieratische Paläographie</i>
+                , 全4巻,
+                1909–36年に掲載されているヒエラティック（古代エジプト神官文字）の字形を検索することができます．
+              </p>
+              <p>
+                検索は、ヒエラティック番号、ヒエログリフ番号、音価/語などから行うことができます．検索の仕方は<nuxt-link
+                  :to="localePath({ name: 'about' })"
+                  >マニュアル</nuxt-link
+                >をご覧に下さい．
+              </p>
+              <p>
+                本データベースが、ヒエラティックに関心のあるすべての人々に役立つことを願っています．
               </p>
               <p>HDB (Hieratic Database)プロジェクトチーム</p>
             </template>
@@ -65,7 +74,9 @@
               <template v-if="$i18n.locale === 'ja'">
                 <li>
                   <a href="https://researchmap.jp/Masakatsu-Nagai/">永井正勝</a
-                  >, 東京大学 附属図書館 特任准教授
+                  >, 東京大学
+                  東京大学附属図書館アジア研究図書館上廣倫理財団寄付研究部門
+                  特任准教授
                 </li>
                 <li>
                   <a href="https://researchmap.jp/wakit/">和氣愛仁</a>, 筑波大学

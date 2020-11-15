@@ -1,0 +1,72 @@
+{
+  "prefix": {
+    "ex": "http://example.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "fields": [
+    { 
+      "label" : "Volume",
+      "value" : "ex:Volume",
+      "type": "in"
+    },
+    {
+      "label": "Page",
+      "value": "ex:Page",
+      "type": "in"
+    },
+    {
+      "label": "Möller Grapheme",
+      "value": "ex:Möller_Grapheme",
+      "type": "in"
+    },
+    {
+      "label": "Möller No",
+      "value": "ex:Möller_No",
+      "type": "in"
+    },
+    {
+      "label": "Gardiner Grapheme",
+      "value": "ex:Gardiner_Grapheme",
+      "type": "in"
+    },
+    {
+      "label": "Gardiner No",
+      "value": "ex:Gardiner_No",
+      "type": "in"
+    },
+    {
+      "label": "Phone",
+      "value": "ex:Phone",
+      "type": "in"
+    },
+    {
+      "label": "Determinative",
+      "value": "ex:Determinative",
+      "type": "in"
+    },
+    {
+      "label": "Text_Name",
+      "value": "ex:Text_Name",
+      "type": "in"
+    },
+    {
+      "label": "Age",
+      "value": "ex:Age",
+      "type": "in"
+    },
+    {
+      "label": "Note",
+      "value": "ex:Note",
+      "type": "in"
+    }
+  ],
+  "title": {
+    "label": "ID",
+    "value": "ex:ID",
+    "type": "in"
+  },
+  "sort": "ex:ID",
+  "headline": "Moeller Database",
+  "footer": "Masakatsu NAGAI, Satoru NAKAMURA, Toshihito WAKI"
+}

@@ -1,0 +1,135 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@id": "https://nakamura196.github.io/nagai/data/curation/003.json",
+    "@type": "cr:Curation",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=2771,3044,351,448",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_03_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 3
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 3
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A?"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A?"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Ennene"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Menephtah/sethos II"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/2771,3044,351,448/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=4159,3038,351,448",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_03_09",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 9
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 3
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 3
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A?"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A?"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "-"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. Abbott"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Ramses IX"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/4159,3038,351,448/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest",
+                "@type": "sc:Manifest",
+                "label": "[2]"
+            }
+        }
+    ]
+}

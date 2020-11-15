@@ -99,7 +99,8 @@ export default class SearchForm extends Vue {
     const advanced = this.$route.query
 
     if (advanced['fc-Vol']) {
-      this.vol = advanced['fc-Vol']
+      const vols = advanced['fc-Vol']
+      this.vol = Array.isArray(vols) ? vols : [vols]
     } else {
       this.vol = []
     }

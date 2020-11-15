@@ -1,9 +1,26 @@
 <template>
   <div>
     <v-container class="my-5">
-      <h2 class="mb-5">{{ $t('manual') }}</h2>
+      <h1 class="mb-5">{{ $t('about_') }}</h1>
 
-      <p>To be added.</p>
+      <h2 class="my-5">{{ $t('manual') }}</h2>
+
+      <ul>
+        <li>
+          <nuxt-link
+            :to="
+              localePath({
+                name: 'manual-search',
+              })
+            "
+          >
+            {{ $t('検索画面') }}
+          </nuxt-link>
+        </li>
+        <li>検索後の絞り込み</li>
+        <li>Miradorを利用した文字の比較</li>
+        <li>ヒエラティックとヒエログリフの対応表</li>
+      </ul>
 
       <h2 class="my-5">{{ $t('lod_vocabulary') }}</h2>
 

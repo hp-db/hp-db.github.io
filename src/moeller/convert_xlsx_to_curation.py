@@ -19,7 +19,7 @@ curation_data = {}
 curation_uri = "https://moeller.jinsha.tsukuba.ac.jp/data/curation.json"
 
 def get_manifest_data(vol):
-    path = "/Users/nakamurasatoru/git/d_nagai/hpdb/src/pm/data/manifests/"+vol+".json"
+    path = "../pm/data/manifests/"+vol+".json"
 
     # jsonファイルを読み込む
     f = open(path)
@@ -53,7 +53,7 @@ def get_curation_data(curation):
     data = json.loads(res.read())
 
     '''
-    path = curation.replace("https://moeller.jinsha.tsukuba.ac.jp/", "/Users/nakamurasatoru/git/d_nagai/hpdb/docs/")
+    path = curation.replace("https://moeller.jinsha.tsukuba.ac.jp/", "")
 
     print("aaa", path)
 
@@ -373,7 +373,7 @@ curation = {
   "selections": selections
 }
 
-with open("/Users/nakamurasatoru/git/d_nagai/hpdb/docs/data/curation.json", 'w') as f:
+with open("data/curation.json", 'w') as f:
     json.dump(curation, f, ensure_ascii=False, indent=4,
             sort_keys=True, separators=(',', ': '))
 

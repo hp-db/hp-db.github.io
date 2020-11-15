@@ -1,0 +1,931 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@id": "https://nakamura196.github.io/nagai/data/curation/001.json",
+    "@type": "cr:Curation",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=2773,2147,347,440",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_01_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Ennene"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "Menephtah/sethos II"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/2773,2147,347,440/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p23#xywh=4509,2142,347,440",
+                    "@type": "sc:Canvas",
+                    "label": "2_01_0_01_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 2
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "nDm-t"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "21 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Louvre 3226,Lederhs.,Guröb,P.Roilln,Ennene,Pentoere,Harris Th.,Harris H. M.,P. Abbott,nDm-t"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_023.tif/4509,2142,347,440/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest",
+                "@type": "sc:Manifest",
+                "label": "[2]"
+            }
+        },
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/dadfe3f0-d765-4da7-8930-75728b94d318/range2",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=1295,2136,343,449",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_01",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 1
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Takelothis"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "22 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/1295,2136,343,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2197,2135,275,449",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_04",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 4
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leinwand"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "30 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2197,2135,275,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2476,2136,284,449",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leinwand"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "30 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2476,2136,284,449/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2768,2142,316,442",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_06",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 6
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Isis-N"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "2 Jahrh. v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2768,2142,316,442/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3080,2142,271,442",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_07",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 7
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Ritual"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "um 20 n. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3080,2142,271,442/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3358,2137,280,451",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_08",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 8
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leiden J.32"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "um 60 n. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3358,2137,280,451/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3641,2138,281,452",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_09",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 9
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Tanis"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "um 100 n. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3641,2138,281,452/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3932,2138,256,452",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. 3030"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "9 v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3932,2138,256,452/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=4195,2142,334,451",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_11",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 11
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. 3135"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "1-2 Jahrh. v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/4195,2142,334,451/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=4506,2142,275,447",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_01_12",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 12
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": 1
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. 3135"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "2-3 Jahrh. v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/4506,2142,275,447/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=2476,2589,284,444",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_02_05",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 5
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": "1bis"
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "Leinwand"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "30 Dynasty"
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/2476,2589,284,444/,300/0/default.jpg"
+                },
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p23#xywh=3934,2595,253,444",
+                    "@type": "sc:Canvas",
+                    "label": "3_01_0_02_10",
+                    "metadata": [
+                        {
+                            "label": "Sign_Order",
+                            "value": 10
+                        },
+                        {
+                            "label": "Volume",
+                            "value": 3
+                        },
+                        {
+                            "label": "Page",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_Grapheme",
+                            "value": 1
+                        },
+                        {
+                            "label": "Möller_No",
+                            "value": "1bis"
+                        },
+                        {
+                            "label": "Gardiner_Grapheme",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Gardiner_No",
+                            "value": "A26"
+                        },
+                        {
+                            "label": "Phone",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "nis"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "i"
+                        },
+                        {
+                            "label": "Determinative",
+                            "value": "aS"
+                        },
+                        {
+                            "label": "Text_Name",
+                            "value": "P. 3030"
+                        },
+                        {
+                            "label": "Age",
+                            "value": "9 v. Chr."
+                        },
+                        {
+                            "label": "fields",
+                            "value": "Takelothis,Leinwand,Isis-N,Ritual,Leiden J.32,Tanis,P. 3030,P. 3135"
+                        }
+                    ],
+                    "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/3/3_023.tif/3934,2595,253,444/,300/0/default.jpg"
+                }
+            ],
+            "within": {
+                "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/manifest",
+                "@type": "sc:Manifest",
+                "label": "[3]"
+            }
+        }
+    ]
+}
