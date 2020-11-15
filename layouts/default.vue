@@ -26,7 +26,9 @@
               <v-icon>mdi-information</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>{{ $t('about_') }}</v-list-item-title>
+              <v-list-item-title>{{
+                $t('ユーザーズガイド')
+              }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 

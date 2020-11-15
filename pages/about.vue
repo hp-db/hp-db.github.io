@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="my-5">
-      <h1 class="mb-5">{{ $t('about_') }}</h1>
+      <h1 class="mb-5">{{ $t('ユーザーズガイド') }}</h1>
 
       <h2 class="my-5">{{ $t('manual') }}</h2>
 
