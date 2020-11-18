@@ -318,7 +318,7 @@ export default class ListSearchResult extends Vue {
     return obj
   }
 
-  getUrl(obj) {
+  getUrl(obj :any) {
     const params = obj._relatedLink[0].split('?')[1].split('&')
     const page = params[1].split('/canvas/p')[1]
     const xywh = params[2].split('=')[1]

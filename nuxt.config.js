@@ -219,7 +219,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    standalone: true, // これを追加！
+    //standalone: true, // これを追加！
     babel: {
       plugins: [
         ['@babel/plugin-proposal-decorators', { legacy: true }],
