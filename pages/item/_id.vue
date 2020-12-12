@@ -32,6 +32,8 @@
           <span>{{ 'IIIF Curation Viewer' }}</span>
         </v-tooltip>
 
+        aaaaaaaaaaaaaa
+
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
             <v-btn
@@ -182,16 +184,31 @@
 import axios from 'axios'
 
 export default {
-  async asyncData({ payload }) {
+  async asyncData({ payload, context, app }) {
     if (payload) {
       return payload
     } else {
+      const id = app.context.route.params.id
       const { data } = await axios.get(
         `http://localhost:3000/data/curation_old.json`
       )
-      const result = data.selections[0].members[0]
-      result.manifest = data.selections[0].within['@id']
-      return result
+      const selections = data.selections
+      for(let i = 0; i < selections.length; i++){
+        const selection = selections[i]
+        const manifest = selection.within["@id"]
+        const members = selection.members
+        for(let j = 0; j < members.length; j++){
+          const member = members[j]
+          const metadata = member.metadata
+          for(let k = 0; k < metadata.length; k++){
+            const m = metadata[k]
+            if(m.label == "m_sort" && m.value == id){
+              member.manifest = manifest
+              return member
+            }
+          }
+        }
+      }
     }
   },
 
@@ -266,7 +283,7 @@ export default {
         'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
         id +
         '#?c=0&m=0&s=0&cv=' +
-        (Number(page) ^ 1) +
+        (Number(page) - 1) +
         '&xywh=' +
         xywh
       return url

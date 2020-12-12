@@ -327,7 +327,7 @@ export default class ListSearchResult extends Vue {
       'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
       id +
       '#?c=0&m=0&s=0&cv=' +
-      (Number(page) ^ 1) +
+      (Number(page) - 1) +
       '&xywh=' +
       xywh
     return url
