@@ -32,8 +32,6 @@
           <span>{{ 'IIIF Curation Viewer' }}</span>
         </v-tooltip>
 
-        aaaaaaaaaaaaaa
-
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
             <v-btn
