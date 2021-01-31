@@ -104,7 +104,10 @@ export default class PageCategory extends Vue {
   tab: number = 0
 
   results: any[] = []
-  label: string = ''
+
+  get label(): any {
+    return this.$route.params.id.replace('-', '/')
+  }
 
   get facetOptions(): any {
     const facetOptions: any = process.env.facetOptions
@@ -135,9 +138,6 @@ export default class PageCategory extends Vue {
       store.commit('setFacetOptions', this.facetOptions)
     }
 
-    const label: any = this.$route.params.id.replace('-', '/')
-    this.label = label // this.facetOptions[label].label
-
     // 検索
     const esQuery = this.$searchUtils.createQuery(
       routeQuery,
@@ -150,7 +150,7 @@ export default class PageCategory extends Vue {
       esQuery
     )
 
-    const results = result.aggregations[label].buckets
+    const results = result.aggregations[this.label].buckets
     this.results = results
   }
 
