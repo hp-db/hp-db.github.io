@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-data-table :headers="headers" :items="items" hide-default-footer>
-      <template v-slot:item.image="{ item }">
+      <template #item.image="{ item }">
         <nuxt-link
           class="mb-4"
           :to="
@@ -20,7 +20,7 @@
         </nuxt-link>
       </template>
 
-      <template v-slot:item.label="{ item }">
+      <template #item.label="{ item }">
         <nuxt-link
           class="mb-4"
           :to="
@@ -34,7 +34,7 @@
         </nuxt-link>
       </template>
 
-      <template v-slot:item.icons="{ item }">
+      <template #item.icons="{ item }">
         <ResultOption
           :item="{
             label: $utils.formatArrayValue(item.raw._source._label),
@@ -71,15 +71,15 @@ export default class TableSearchResult extends Vue {
   }
 
   mounted() {
-    const facetLabels: any = this.$store.state.facetLabels
+    const facetOptions: any = this.$store.state.facetOptions
     const fields: any = [
       { key: 'image', label: '' },
       { key: 'label', label: this.$t('title') },
     ]
-    for (const field in facetLabels) {
+    for (const field in facetOptions) {
       fields.push({
         key: field,
-        label: facetLabels[field],
+        label: facetOptions[field].label,
       })
     }
     fields.push({ key: 'icons', label: '' })

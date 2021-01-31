@@ -78,9 +78,7 @@
             <tr>
               <td width="30%">URL</td>
               <td style="overflow-wrap: break-word" class="py-5">
-                <a :href="prefix + '/item/' + $route.params.id">{{
-                  prefix + '/item/' + $route.params.id
-                }}</a>
+                <a :href="url">{{ url }}</a>
               </td>
             </tr>
 
@@ -280,8 +278,7 @@ export default {
   computed: {
     // 算出 getter 関数
     url() {
-      // `this` は vm インスタンスを指します
-      return this.baseUrl + '/item/' + this.$route.params.id
+      return this.prefix + '/item/' + this.$route.params.id
     },
     id() {
       return this.$route.params.id

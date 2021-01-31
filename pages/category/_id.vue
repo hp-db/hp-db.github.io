@@ -164,7 +164,7 @@ export default class PageCategory extends Vue {
 
   head() {
     return {
-      title: this.$t('category') + ' : ' + this.$t(this.label),
+      title: this.$t('category') + ' : ' + this.$t(this.title),
       meta: [
         {
           hid: 'description',
