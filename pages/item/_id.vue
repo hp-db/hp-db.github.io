@@ -177,17 +177,13 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
-  async asyncData({ payload, app }) {
+  asyncData({ payload, app }) {
     if (payload) {
       return payload
     } else {
       const id = app.context.route.params.id
-      const { data } = await axios.get(
-        process.env.BASE_URL + `/data/curation_old.json`
-      )
+      const data = process.env.curation
       const selections = data.selections
       for (let i = 0; i < selections.length; i++) {
         const selection = selections[i]

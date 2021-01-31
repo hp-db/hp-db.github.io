@@ -1,7 +1,11 @@
+import fs from 'fs'
 import colors from 'vuetify/es5/util/colors'
 
 const environment = process.env.NODE_ENV || 'local'
 const env = require(`./env/${environment}.ts`)
+
+const curation = JSON.parse(fs.readFileSync('static/data/curation_old.json'))
+env.curation = curation
 
 env.facetOptions = {
   'Item Type': {
