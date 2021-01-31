@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/category/Category%20Class", {data:[{}],fetch:[],mutations:[]});

@@ -1,0 +1,84 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@id": "https://moeller.jinsha.tsukuba.ac.jp/curation/21.json",
+    "@type": "cr:Curation",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "https://moeller.jinsha.tsukuba.ac.jp/curation/21.json/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p24#xywh=957,5307,3933,481",
+                    "@type": "sc:Canvas",
+                    "label": "[571]",
+                    "metadata": [
+                        {
+                            "label": "Vol",
+                            "value": "2"
+                        },
+                        {
+                            "label": "Möller No",
+                            "value": [
+                                "21"
+                            ]
+                        },
+                        {
+                            "label": "Möller No Mod",
+                            "value": [
+                                "21"
+                            ]
+                        },
+                        {
+                            "label": "Hieroglyph No",
+                            "value": [
+                                "A58a"
+                            ]
+                        },
+                        {
+                            "label": "Hieroglyph No Mod",
+                            "value": [
+                                "A58"
+                            ]
+                        },
+                        {
+                            "label": "Phone/Word",
+                            "value": [
+                                ""
+                            ]
+                        },
+                        {
+                            "label": "Phone/Word Mod",
+                            "value": [
+                                ""
+                            ]
+                        },
+                        {
+                            "label": "Note",
+                            "value": "A58 or A33a"
+                        },
+                        {
+                            "label": "m_sort",
+                            "value": "0048"
+                        },
+                        {
+                            "label": "h_sort",
+                            "value": "01-0-058A"
+                        }
+                    ],
+                    "related": "https://moeller.jinsha.tsukuba.ac.jp/search?fc-Vol=2&fc-Hieratic%20No=21",
+                    "thumbnail": "https://wdb.jinsha.tsukuba.ac.jp/wdb/hdb/moeller/21.png"
+                }
+            ],
+            "within": {
+                "@id": "https://moeller.jinsha.tsukuba.ac.jp/data/manifest/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest.json",
+                "@type": "sc:Manifest",
+                "label": "[2]"
+            }
+        }
+    ]
+}

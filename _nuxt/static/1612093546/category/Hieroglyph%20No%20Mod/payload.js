@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/category/Hieroglyph%20No%20Mod", {data:[{}],fetch:[],mutations:[]});

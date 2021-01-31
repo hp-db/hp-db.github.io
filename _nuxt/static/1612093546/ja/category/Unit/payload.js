@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/category/Unit", {data:[{}],fetch:[],mutations:[]});

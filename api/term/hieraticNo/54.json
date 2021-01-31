@@ -1,0 +1,24 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/54",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "54"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "mini"
+      },
+      {
+        "@value": "mni"
+      },
+      {
+        "@value": "nb-anx"
+      }
+    ]
+  }
+]

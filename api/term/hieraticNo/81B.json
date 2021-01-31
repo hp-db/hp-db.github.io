@@ -1,0 +1,21 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/81B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "81B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "iwn"
+      },
+      {
+        "@value": "skm"
+      }
+    ]
+  }
+]
