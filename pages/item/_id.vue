@@ -1,14 +1,16 @@
 <template>
   <div>
-    <v-container class="py-5">
-      <iframe
-        :src="getIframeUrl()"
-        width="100%"
-        height="200"
-        allowfullscreen
-        frameborder="0"
-      ></iframe>
-    </v-container>
+    <v-sheet color="grey lighten-3">
+      <v-container>
+        <iframe
+          :src="getIframeUrl()"
+          width="100%"
+          height="200"
+          allowfullscreen
+          frameborder="0"
+        ></iframe>
+      </v-container>
+    </v-sheet>
     <!--
     <v-sheet class="py-2" color="grey lighten-3">
       <v-container>
@@ -16,10 +18,10 @@
       </v-container>
     </v-sheet>
     -->
-    <v-container>
-      <p class="text-center">
+    <v-container class="mt-5 mb-10">
+      <p class="text-center py-5">
         <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
+          <template #activator="{ on }">
             <v-btn
               class="mx-1"
               icon
@@ -33,7 +35,7 @@
         </v-tooltip>
 
         <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
+          <template #activator="{ on }">
             <v-btn
               class="mx-1"
               icon
@@ -47,7 +49,7 @@
         </v-tooltip>
 
         <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
+          <template #activator="{ on }">
             <v-btn
               icon
               class="mx-1"
@@ -62,93 +64,91 @@
           <span>{{ 'RDF' }}</span>
         </v-tooltip>
 
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
-            <v-btn
-              class="mx-1"
-              icon
-              target="_blank"
-              :href="'https://twitter.com/intent/tweet?url=' + url"
-              v-on="on"
-              ><v-icon>mdi-twitter</v-icon></v-btn
-            >
-          </template>
-          <span>{{ 'Twitter' }}</span>
-        </v-tooltip>
-
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
-            <v-btn
-              class="mx-1"
-              icon
-              target="_blank"
-              :href="'https://www.facebook.com/sharer/sharer.php?u=' + url"
-              v-on="on"
-              ><v-icon>mdi-facebook</v-icon></v-btn
-            >
-          </template>
-          <span>{{ 'Facebook' }}</span>
-        </v-tooltip>
-
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on }">
-            <v-btn
-              class="mx-1"
-              icon
-              target="_blank"
-              :href="'http://getpocket.com/edit?url=' + url"
-              v-on="on"
-              ><img
-                style="font-size: 30px"
-                src="https://cultural.jp/img/icons/pocket.svg"
-            /></v-btn>
-          </template>
-          <span>{{ 'Pocket' }}</span>
-        </v-tooltip>
+        <ResultOption
+          :item="{
+            label: id,
+            url: url,
+          }"
+        />
       </p>
-      <dl class="row">
-        <dt class="col-sm-3 text-muted"><b>URL</b></dt>
-        <dd class="col-sm-9">
-          <a :href="prefix + '/item/' + $route.params.id">{{
-            prefix + '/item/' + $route.params.id
-          }}</a>
-        </dd>
-      </dl>
 
-      <dl class="row">
-        <dt class="col-sm-3 text-muted">
-          <b>{{ $t('label') }}</b>
-        </dt>
-        <dd class="col-sm-9">
-          {{ title }}
-        </dd>
-      </dl>
+      <v-simple-table class="mt-10">
+        <template #default>
+          <tbody>
+            <tr>
+              <td width="30%">URL</td>
+              <td style="overflow-wrap: break-word" class="py-5">
+                <a :href="prefix + '/item/' + $route.params.id">{{
+                  prefix + '/item/' + $route.params.id
+                }}</a>
+              </td>
+            </tr>
 
-      <dl v-for="(obj, key) in metadata" :key="key" class="row">
-        <template
-          v-if="
-            !obj.label.includes('sort') &&
-            !obj.label.includes('Mod') &&
-            obj.value != ''
-          "
-        >
-          <dt class="col-sm-3 text-muted">
-            <b>{{ $t(obj.label) }}</b>
-          </dt>
-          <dd
-            class="col-sm-9"
-            :class="obj.label === 'Phone/Word' ? 'phone' : ''"
-          >
-            {{ Array.isArray(obj.value) ? obj.value.join(', ') : obj.value }}
-          </dd>
+            <tr>
+              <td width="30%">ID</td>
+              <td style="overflow-wrap: break-word" class="py-5">
+                {{ id }}
+              </td>
+            </tr>
+
+            <template v-for="(obj, key) in fields">
+              <tr
+                v-if="
+                  metadataObj[obj.label] && metadataObj[obj.label].length > 0
+                "
+                :key="key"
+              >
+                <td width="30%">{{ $t(obj.label) }}</td>
+                <td
+                  style="overflow-wrap: break-word"
+                  class="py-5"
+                  :class="obj.label === 'Phone/Word' ? 'phone' : ''"
+                >
+                  <template
+                    v-if="['Hieratic No', 'Hieroglyph No'].includes(obj.label)"
+                  >
+                    <Split
+                      :data="metadataObj[obj.label]"
+                      :field="`${obj.label} Mod`"
+                    ></Split>
+                  </template>
+                  <template v-else-if="obj.text">
+                    <span
+                      v-for="(v, key2) in metadataObj[obj.label]"
+                      :key="key2"
+                    >
+                      {{ v }}
+                    </span>
+                  </template>
+                  <template v-else>
+                    <nuxt-link
+                      v-for="(v, key2) in metadataObj[obj.label]"
+                      :key="key2"
+                      :to="
+                        localePath({
+                          name: 'search',
+                          query: getQuery(obj.label, v),
+                        })
+                      "
+                    >
+                      {{
+                        ['Item Type', 'Sub Type', 'Unit'].includes(obj.label)
+                          ? $t(v)
+                          : v
+                      }}
+                    </nuxt-link>
+                  </template>
+                </td>
+              </tr>
+            </template>
+          </tbody>
         </template>
-      </dl>
+      </v-simple-table>
 
-      <dl class="row">
-        <dt class="col-sm-3 text-muted">
-          <b>{{ $t('license') }}</b>
-        </dt>
-        <dd class="col-sm-9">
+      <v-sheet class="text-center mt-10">
+        <small>
+          <h3 class="mb-5">{{ $t('license') }}</h3>
+
           <template v-if="$i18n.locale == 'ja'">
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
               ><img
@@ -172,8 +172,8 @@
               >Creative Commons Attribution 4.0 International License</a
             >.
           </template>
-        </dd>
-      </dl>
+        </small>
+      </v-sheet>
     </v-container>
   </div>
 </template>
@@ -182,28 +182,25 @@
 import axios from 'axios'
 
 export default {
-  async asyncData({ payload, context, app }) {
+  async asyncData({ payload, app }) {
     if (payload) {
       return payload
     } else {
       const id = app.context.route.params.id
       const { data } = await axios.get(
-        `http://localhost:3000/data/curation_old.json`
+        process.env.BASE_URL + `/data/curation_old.json`
       )
       const selections = data.selections
-      for(let i = 0; i < selections.length; i++){
+      for (let i = 0; i < selections.length; i++) {
         const selection = selections[i]
-        const manifest = selection.within["@id"]
+        const manifest = selection.within['@id']
         const members = selection.members
-        for(let j = 0; j < members.length; j++){
+        for (let j = 0; j < members.length; j++) {
           const member = members[j]
-          const metadata = member.metadata
-          for(let k = 0; k < metadata.length; k++){
-            const m = metadata[k]
-            if(m.label == "m_sort" && m.value == id){
-              member.manifest = manifest
-              return member
-            }
+
+          if (member.label === id) {
+            member.manifest = manifest
+            return member
           }
         }
       }
@@ -214,78 +211,22 @@ export default {
     return {
       baseUrl: process.env.BASE_URL,
       prefix: 'https://w3id.org/hpdb',
+      fields: [
+        { label: 'Item Type' },
+        { label: 'Sub Type' },
+        { label: 'Unit' },
+        { label: 'Vol' },
+        { label: 'Page' },
+        { label: 'Order' },
+        { label: 'Item Label' },
+        { label: 'Hieratic No' },
+        { label: 'Numeral' },
+        { label: 'Category Class' },
+        { label: 'Hieroglyph No' },
+        { label: 'Phone/Word' },
+        { label: 'Note', text: true },
+      ],
     }
-  },
-
-  computed: {
-    // 算出 getter 関数
-    url() {
-      // `this` は vm インスタンスを指します
-      return this.baseUrl + '/item/' + this.$route.params.id
-    },
-    id() {
-      return this.$route.params.id
-    },
-    title() {
-      const metadata = this.metadata
-      const metadataObj = {}
-      for (let i = 0; i < metadata.length; i++) {
-        const obj = metadata[i]
-        metadataObj[obj.label] = obj.value
-      }
-      return (
-        metadataObj['Möller No Mod'][0] +
-        '(' +
-        metadataObj['Hieroglyph No Mod'][0] +
-        ')'
-      )
-    },
-  },
-
-  methods: {
-    getIframeUrl() {
-      const url =
-        this.baseUrl +
-        '/curation/?manifest=' +
-        this.manifest +
-        '&canvas=' +
-        encodeURIComponent(this['@id'])
-      return url
-    },
-
-    getCurationUrl() {
-      const memberId = this['@id']
-      const memberIdSpl = memberId.split('#xywh=')
-      const canvasId = memberIdSpl[0]
-      const xywh = memberIdSpl[1]
-      const url =
-        'http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=' +
-        this.manifest +
-        '&canvas=' +
-        encodeURIComponent(canvasId) +
-        '&xywh=' +
-        xywh +
-        '&xywh_highlight=border'
-      return url
-    },
-    getUtaUrl() {
-      const memberId = this['@id']
-      const memberIdSpl = memberId.split('#xywh=')
-      const canvasId = memberIdSpl[0]
-      const xywh = memberIdSpl[1]
-
-      const page = canvasId.split('/canvas/p')[1]
-
-      const id = this.manifest.split('/manifest/')[1].split('/')[0]
-      const url =
-        'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
-        id +
-        '#?c=0&m=0&s=0&cv=' +
-        (Number(page) - 1) +
-        '&xywh=' +
-        xywh
-      return url
-    },
   },
 
   head() {
@@ -334,6 +275,85 @@ export default {
         },
       ],
     }
+  },
+
+  computed: {
+    // 算出 getter 関数
+    url() {
+      // `this` は vm インスタンスを指します
+      return this.baseUrl + '/item/' + this.$route.params.id
+    },
+    id() {
+      return this.$route.params.id
+    },
+    title() {
+      return this.id
+    },
+    metadataObj() {
+      const metadata = this.metadata
+      const metadataObj = {}
+      for (let i = 0; i < metadata.length; i++) {
+        const m = metadata[i]
+        const values = Array.isArray(m.value)
+          ? m.value
+          : m.value === ''
+          ? []
+          : [m.value]
+        metadataObj[m.label] = values
+      }
+      return metadataObj
+    },
+  },
+
+  methods: {
+    getIframeUrl() {
+      const url =
+        this.baseUrl +
+        '/curation/?manifest=' +
+        this.manifest +
+        '&canvas=' +
+        encodeURIComponent(this['@id'])
+      return url
+    },
+
+    getCurationUrl() {
+      const memberId = this['@id']
+      const memberIdSpl = memberId.split('#xywh=')
+      const canvasId = memberIdSpl[0]
+      const xywh = memberIdSpl[1]
+      const url =
+        'http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=' +
+        this.manifest +
+        '&canvas=' +
+        encodeURIComponent(canvasId) +
+        '&xywh=' +
+        xywh +
+        '&xywh_highlight=border'
+      return url
+    },
+    getUtaUrl() {
+      const memberId = this['@id']
+      const memberIdSpl = memberId.split('#xywh=')
+      const canvasId = memberIdSpl[0]
+      const xywh = memberIdSpl[1]
+
+      const page = canvasId.split('/canvas/p')[1]
+
+      const id = this.manifest.split('/manifest/')[1].split('/')[0]
+      const url =
+        'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
+        id +
+        '#?c=0&m=0&s=0&cv=' +
+        (Number(page) - 1) +
+        '&xywh=' +
+        xywh
+      return url
+    },
+    getQuery(label, value) {
+      const query = {}
+      query['fc-' + label] = value
+      return query
+    },
   },
 }
 </script>

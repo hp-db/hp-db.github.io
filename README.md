@@ -1,4 +1,8 @@
-# hpdb
+# Hieratische Paläographie DB
+
+![github pages](https://github.com/hp-db/dev/workflows/github%20pages/badge.svg)
+
+This is a retrieval system for hieratic scripts; it uses IIIF format images (owned by the Asian Research Library of the University of Tokyo) of Georg Möller's Hieratische Paläographie (1909–36).
 
 ## Build Setup
 

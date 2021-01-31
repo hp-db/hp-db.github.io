@@ -1,0 +1,4 @@
+python 001_convert_xlsx_to_curation_20200117.py
+python 300_convert_curation_id.py
+python 400_add_id_to_new_curation.py
+python 002_convert_xlsx_to_curation.py

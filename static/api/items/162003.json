@@ -1,0 +1,127 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/643",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "643"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/itemNo/643",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/ItemNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "643"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/categoryClass/M",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Category"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/items/162003",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/1/1_092.tif/900,2555,3840,464/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/license": [
+      {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://schema.org/relatedLink": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://moeller.jinsha.tsukuba.ac.jp/data/manifest/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/manifest.json&canvas=https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4a1fbed0-f2a2-4cf5-8a0a-fa310c62ca50/canvas/p92&xywh=900,2555,3840,464&xywh_highlight=border"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "http://w3id.org/hpdb/item/162003"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "162003"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/643"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M12"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/itemNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/itemNo/643"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/itemType": [
+      {
+        "@value": "Number"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/numeral": [
+      {
+        "@value": "['3000']"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/order": [
+      {
+        "@value": 3
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/page": [
+      {
+        "@value": 62
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/subType": [
+      {
+        "@value": "Numeral"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/M12",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "M12"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/categoryClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/categoryClass/M"
+      }
+    ]
+  }
+]

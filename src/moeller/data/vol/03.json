@@ -4721,7 +4721,7 @@
                     ]
                 },
                 {
-                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p63#xywh=913,3464,3957,499",
+                    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/8aaa203c-1c5a-4fef-973b-4fb174d60d37/canvas/p63#xywh=938,3944,3870,466",
                     "@type": "sc:Canvas",
                     "label": "3-41-433",
                     "metadata": [

@@ -85,25 +85,14 @@ export default class search extends Vue {
     { value: 'stats', text: 'graph' },
   ]
 
-  facetLabels: any = {
-    Vol: this.$t('Vol'),
-    // 'Hieratic No Mod': this.$t('Hieratic No'),
-    // 'Hieroglyph No Mod': this.$t('Hieroglyph No'),
-    // 'Phone/Word Mod': this.$t('Phone/Word'),
-    'Hieratic No': this.$t('Hieratic No'),
-    'Hieroglyph No': this.$t('Hieroglyph No'),
-    'Phone/Word Mod': this.$t('Phone/Word'),
+  get facetOptions(): any {
+    const facetOptions: any = process.env.facetOptions
+    for (const key in facetOptions) {
+      const obj = facetOptions[key]
+      obj.label = this.$t(obj.label)
+    }
+    return facetOptions
   }
-
-  facetFlags: string[] = [
-    'Vol',
-    'Hieratic No Mod',
-    'Hieroglyph No Mod',
-    'Phone/Word Mod',
-    'Hieratic No',
-    'Hieroglyph No',
-    'Phone/Word',
-  ]
 
   loadingFlag: boolean = true
 
@@ -142,9 +131,10 @@ export default class search extends Vue {
 
     // ------ ファセット ---------
 
-    if (Object.keys(store.state.facetLabels)) {
-      store.commit('setFacetLabels', this.facetLabels)
-      store.commit('setFacetFlags', this.facetFlags)
+    if (Object.keys(store.state.facetOptions)) {
+      // store.commit('setFacetLabels', this.facetLabels)
+      // store.commit('setFacetFlags', this.facetFlags)
+      store.commit('setFacetOptions', this.facetOptions)
     }
 
     // 検索

@@ -46,8 +46,8 @@ export class SearchUtils {
     return result
   }
 
-  createQuery(routeQuery: any, config: any): any {
-    const fcs = Object.keys(config.facetLabels) // JSON.parse(process.env.FACETS_LABELS)
+  createQuery(routeQuery: any, config: any, max = true): any {
+    const fcs = Object.keys(config.facetOptions) // JSON.parse(process.env.FACETS_LABELS)
 
     // const qs = Object.keys(config.termLabels)
 
@@ -92,14 +92,20 @@ export class SearchUtils {
         fcsMap[fcsField] = values
       }
 
+      const option = config.facetOptions[field]
+
+      let orderKey = option.orderKey || "_count"
+      let orderValue = option.orderValue || "desc"
+
+      const order: any = {}
+      order[orderKey] = orderValue
+
       // aggs
       aggs[field] = {
         terms: {
           field: field + '.keyword',
-          size: FC_SIZE,
-          order: {
-            _count: 'desc',
-          },
+          size: max ? (option.size || FC_SIZE) : -1,
+          order
         },
       }
     }
@@ -919,6 +925,7 @@ export class SearchUtils {
 
     for (const label in queryAggs) {
       const obj = queryAggs[label].terms
+
       let size = obj.size ? Number(obj.size) : -1
       const field = obj.field.replace('.keyword', '')
       const map = index[field]
@@ -941,19 +948,34 @@ export class SearchUtils {
         }
       }
 
+      // ---- 以下、ソート ----
+
       // オブジェクトに変換
       const arr = Object.keys(mapNew).map((e) => ({
         key: e,
         value: mapNew[e],
       }))
 
-      // 値でそーと
-      arr.sort(function (a, b) {
-        if (a.value < b.value) return 1
-        if (a.value > b.value) return -1
+      const queryKey = Object.keys(obj.order)[0]
+      
+      let sortKey = "value"
+      if(queryKey == "_term"){
+        sortKey = "key"
+      }
+
+      let order = 1
+      if(obj.order[queryKey] == "asc"){
+        order = -1
+      }
+
+      arr.sort(function (a: any, b: any) {
+        if (a[sortKey] < b[sortKey]) return order
+        if (a[sortKey] > b[sortKey]) return -1 * order
         return 0
       })
 
+      //---------
+      
       if (size === -1 || size > arr.length) {
         size = arr.length
       }

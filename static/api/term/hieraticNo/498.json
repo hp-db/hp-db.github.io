@@ -1,12 +1,23 @@
 [
   {
-    "@id": "https://w3id.org/hpdb/api/term/möllerNo/498",
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/498",
     "@type": [
-      "https://w3id.org/hpdb/api/classes/MöllerNo"
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "498"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/497",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "497"
       }
     ]
   }

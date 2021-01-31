@@ -4,7 +4,7 @@
       <v-parallax :src="baseUrl + '/img/ogp/home.jpg'" height="300">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
-            <b>Hieratische Paläographie DB</b>
+            <b>{{ $t(title) }}</b>
           </h1>
           <v-btn
             large
@@ -18,31 +18,28 @@
     </section>
 
     <v-container>
-      <v-card class="my-5">
+      <v-card class="my-5" flat>
         <v-card-title>
           <h2>{{ $t('about_') }}</h2>
         </v-card-title>
         <v-card-text>
           <div class="text--primary">
             <template v-if="$i18n.locale === 'ja'">
+              <p>{{ $t(title) }}（{{ title }}）へようこそ！</p>
               <p>
-                ヒエラティック・パレオグラフィー・データベース（Hieratische
-                Paläographie DB）へようこそ！
-              </p>
-              <p>
-                このデータベースでは、Georg Möller,
+                このデータベースでは，Georg Möller,
                 <i>Hieratische Paläographie</i>
-                , 全4巻,
-                1909–36年に掲載されているヒエラティック（古代エジプト神官文字）の字形を検索することができます．
+                , 1-3巻,
+                1909–12年に掲載されているヒエラティック（古代エジプト神官文字）の字形を検索することができます．
               </p>
               <p>
-                検索は、ヒエラティック番号、ヒエログリフ番号、音価/語などから行うことができます．検索の仕方は<nuxt-link
+                検索は，ヒエラティック番号，ヒエログリフ番号，音価/語などから行うことができます．検索の仕方は<nuxt-link
                   :to="localePath({ name: 'about' })"
                   >マニュアル</nuxt-link
                 >をご覧下さい．
               </p>
               <p>
-                本データベースが、ヒエラティックに関心のあるすべての人に役立つことを願っています．
+                本データベースが，ヒエラティックに関心のあるすべての人に役立つことを願っています．
               </p>
               <p>HDB (Hieratic Database)プロジェクトチーム</p>
             </template>
@@ -52,7 +49,7 @@
                 This is a retrieval system for hieratic scripts; it uses IIIF
                 format images (owned by the Asian Research Library of the
                 University of Tokyo) of Georg Möller's
-                <i>Hieratische Paläographie</i> (1909–36).
+                <i>Hieratische Paläographie</i> (1909–12).
               </p>
               <p>
                 We hope this platform is useful for everyone who has an interest
@@ -64,7 +61,7 @@
         </v-card-text>
       </v-card>
 
-      <v-card class="my-5">
+      <v-card class="my-5" flat>
         <v-card-title>
           <h2>{{ $t('members') }}</h2>
         </v-card-title>
@@ -123,7 +120,7 @@
         </v-card-text>
       </v-card>
 
-      <v-card class="my-5">
+      <v-card class="my-5" flat>
         <v-card-title>
           <h2>{{ $t('updates') }}</h2>
         </v-card-title>
@@ -131,15 +128,24 @@
           <template v-if="$i18n.locale === 'ja'">
             <ul>
               <li>
-                2020年11月9日:
-                システムを更新しました。（日本語ページの追加、アイテム詳細ページの追加、RDFデータの追加、静的サイトジェネレータの利用）
+                2021年1月31日:
+                システムを更新しました．（数字類と連字のコンテンツを追加．メタデータ，表示項目，RDF，UIの修正）
               </li>
-              <li>2019年12月11日: システムを公開しました。</li>
+              <li>
+                2020年11月9日:
+                システムを更新しました．（日本語ページの追加，アイテム詳細ページの追加，RDFデータの追加，静的サイトジェネレータの利用）
+              </li>
+              <li>2019年12月11日: システムを公開しました．</li>
             </ul>
           </template>
           <template v-else>
             <div class="text--primary">
               <ul>
+                <li>
+                  31, Jan.,2021: Updated: Contents of “Number part” and
+                  “Ligature part” were added. Metatada, Display item, RDF data,
+                  and UI were modified.
+                </li>
                 <li>
                   9, Nov., 2020: Updated: Japanese page, Item detail page, RDF
                   data, and SSG functionality were added.
@@ -153,7 +159,7 @@
           </template>
         </v-card-text>
       </v-card>
-      <v-card class="my-5">
+      <v-card class="my-5" flat>
         <v-card-title>
           <h2>{{ $t('contact_information') }}</h2>
         </v-card-title>
@@ -171,18 +177,29 @@
 
       <br />
     </v-container>
+
+    <v-container v-if="false">
+      <nuxt-content :document="document" />
+    </v-container>
   </div>
 </template>
 
 <script>
 export default {
+  /*
+  async asyncData({ $content, app }) {
+    const document = await $content(`${app.i18n.locale}/about`, 'index').fetch()
+    return { document }
+  },
+  */
   data() {
     return {
       baseUrl: process.env.BASE_URL,
+      title: process.env.siteName,
     }
   },
   head() {
-    const title = 'Hieratische Paläographie DB'
+    const title = this.title
     return {
       titleTemplate: null,
       title,

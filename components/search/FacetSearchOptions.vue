@@ -1,12 +1,12 @@
 <template>
   <div>
     <!-- facets -->
-    <template v-for="(label, index) in facetLabels">
+    <template v-for="(obj, index) in facetOptions">
       <FacetOption
         v-if="aggregations[index]"
         :key="index"
         :term="index"
-        :label="label"
+        :label="obj.label"
         :buckets="aggregations[index].buckets"
         :query="query"
         class="mb-5"
@@ -29,8 +29,8 @@ export default class FacetSearchOptions extends Vue {
     return this.$store.state.result.aggregations
   }
 
-  get facetLabels() {
-    return this.$store.state.facetLabels
+  get facetOptions() {
+    return this.$store.state.facetOptions
   }
 
   get query() {

@@ -97,7 +97,7 @@ for df in df_list:
         
        
 
-    g.serialize(destination="/Users/nakamurasatoru/git/d_nagai/hpdb2/static/api/shapes/"+id+".json", format='json-ld')
+    g.serialize(destination="../static/api/shapes/"+id+".json", format='json-ld')
     all += g
    
 all.serialize(destination="data/shapes.rdf", format='pretty-xml')

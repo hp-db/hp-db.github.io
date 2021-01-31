@@ -9,7 +9,7 @@
       </v-btn>
 
       <v-dialog v-model="dialog" scrollable max-width="600px">
-        <template v-slot:activator="{ on }">
+        <template #activator="{ on }">
           <v-btn class="ma-2" v-on="on">{{ $t('list') }}</v-btn>
         </template>
         <v-card>
@@ -47,14 +47,24 @@
       </v-dialog>
     </div>
 
-    <v-card v-for="(obj, index) in results" :key="index" class="mb-5">
+    <v-card
+      v-for="(obj, index) in results"
+      :key="index"
+      flat
+      outlined
+      class="mb-5"
+    >
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="4">
+            
             <span>
-              <b>{{ $t('label') }}</b>
+              <b>{{ $t('Item Label') }}</b>
               &nbsp;
-              {{ obj._source._label[0] }}
+               <Split
+                :data="obj._source['Item Label']"
+                field="Item Label Mod"
+              />
             </span>
 
             <br />
@@ -62,54 +72,103 @@
             <span>
               <b>{{ $t('Hieratic No') }}</b>
               &nbsp;
-              <template v-for="(value, index2) in obj._source['Hieratic No']">
-                <nuxt-link
-                  :key="index2"
-                  :to="
-                    localePath({
-                      name: 'search',
-                      query: {
-                        'fc-Hieratic No': value,
-                      },
-                    })
-                  "
-                  >{{ value }}</nuxt-link
-                >
-                <span
-                  v-show="index2 != obj._source['Hieratic No'].length - 1"
-                  :key="'mno_' + index2"
-                  >&nbsp;+&nbsp;</span
-                >
-              </template>
+              <Split
+                :data="obj._source['Hieratic No']"
+                field="Hieratic No Mod"
+              />
             </span>
 
             <br />
             <span>
               <b>{{ $t('Hieroglyph No') }}</b>
               &nbsp;
-              <template v-for="(value, index2) in obj._source['Hieroglyph No']">
+              <Split
+                :data="obj._source['Hieroglyph No']"
+                field="Hieroglyph No Mod"
+              />
+            </span>
+            <br />
+
+            <span>
+              <b>{{ $t('Item Type') }}</b>
+              &nbsp;
+              <template v-for="(value, index2) in obj._source['Item Type']">
                 <nuxt-link
                   :key="index2"
                   :to="
                     localePath({
                       name: 'search',
                       query: {
-                        'fc-Hieroglyph No': value,
+                        'fc-Item Type': value,
+                      },
+                    })
+                  "
+                  >{{ $t(value) }}</nuxt-link
+                >
+                <span
+                  v-show="index2 != obj._source['Item Type'].length - 1"
+                  :key="'it_' + index2"
+                  >&nbsp;+&nbsp;</span
+                >
+              </template>
+            </span>
+
+            &nbsp;
+
+            <span v-if="obj._source['Unit'] && obj._source['Unit'].length > 0">
+              <b>{{ $t('Unit') }}</b>
+              &nbsp;
+              <template v-for="(value, index2) in obj._source['Unit']">
+                <nuxt-link
+                  :key="index2"
+                  :to="
+                    localePath({
+                      name: 'search',
+                      query: {
+                        'fc-Unit': value,
+                      },
+                    })
+                  "
+                  >{{ $t(value) }}</nuxt-link
+                >
+                <span
+                  v-show="index2 != obj._source['Unit'].length - 1"
+                  :key="'unit_' + index2"
+                  >&nbsp;+&nbsp;</span
+                >
+              </template>
+            </span>
+
+            <br />
+
+            <div
+              v-if="obj._source['Numeral'] && obj._source['Numeral'].length > 0"
+            >
+              <b>{{ $t('Numeral') }}</b>
+
+              &nbsp;
+              <template v-for="(value, index2) in obj._source['Numeral']">
+                <nuxt-link
+                  :key="index2"
+                  :to="
+                    localePath({
+                      name: 'search',
+                      query: {
+                        'fc-Numeral': value,
                       },
                     })
                   "
                   >{{ value }}</nuxt-link
                 >
                 <span
-                  v-show="index2 != obj._source['Hieroglyph No'].length - 1"
-                  :key="'hno_' + index2"
-                  >&nbsp;+&nbsp;</span
+                  v-show="index2 != obj._source['Numeral'].length - 1"
+                  :key="'numeral_' + index2"
+                  >,&nbsp;</span
                 >
               </template>
-            </span>
-            <br />
+            </div>
 
-            <span>
+            <div v-if="obj._source['Phone/Word'].length > 0">
               <b>{{ $t('Phone/Word') }}</b
               >&nbsp;
               <template v-for="(value, index2) in obj._source['Phone/Word']">
@@ -132,12 +191,11 @@
                   >
                   <span v-if="value.split(')').length > 1">)</span>
                   <span v-show="index2 != obj._source['Phone/Word'].length - 1"
-                    >&nbsp;,&nbsp;</span
+                    >,&nbsp;</span
                   >
                 </span>
               </template>
-            </span>
-            <br />
+            </div>
 
             <span>
               <b>{{ $t('Vol') }}</b>
@@ -163,6 +221,18 @@
             ></v-switch>
           </v-col>
           <v-col cols="12" sm="8">
+            <div class="mb-5" v-if="false">
+              <nuxt-link
+                :to="
+                  localePath({
+                    name: 'item-id',
+                    params: { id: obj._id },
+                  })
+                "
+              >
+                {{ $t("view_detail") }}
+              </nuxt-link>
+            </div>
             <nuxt-link
               :to="
                 localePath({
@@ -171,12 +241,16 @@
                 })
               "
             >
-              <v-img :src="obj._source._thumbnail[0]" class="grey lighten-2" />
+              <v-img
+                :src="obj._source._thumbnail[0]"
+                max-height="120px"
+                contain
+              />
             </nuxt-link>
 
             <div class="text-right">
               <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
+                <template #activator="{ on }">
                   <v-btn
                     icon
                     class="mt-2"
@@ -192,7 +266,7 @@
               </v-tooltip>
 
               <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
+                <template #activator="{ on }">
                   <v-btn
                     class="mt-2"
                     icon
@@ -318,7 +392,7 @@ export default class ListSearchResult extends Vue {
     return obj
   }
 
-  getUrl(obj :any) {
+  getUrl(obj: any) {
     const params = obj._relatedLink[0].split('?')[1].split('&')
     const page = params[1].split('/canvas/p')[1]
     const xywh = params[2].split('=')[1]

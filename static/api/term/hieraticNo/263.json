@@ -1,12 +1,49 @@
 [
   {
-    "@id": "https://w3id.org/hpdb/api/term/möllerNo/263",
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/263",
     "@type": [
-      "https://w3id.org/hpdb/api/classes/MöllerNo"
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "263"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rnf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/91",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "91"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rnf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/331",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "331"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rnf"
       }
     ]
   }

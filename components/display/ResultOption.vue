@@ -1,7 +1,7 @@
 <template>
   <span>
     <v-menu top offset-y>
-      <template v-slot:activator="{ on }">
+      <template #activator="{ on }">
         <v-btn depressed icon v-on="on">
           <v-icon>mdi-share-variant</v-icon>
         </v-btn>

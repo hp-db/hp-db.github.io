@@ -16,7 +16,7 @@ df = json.load(json_open)
 
 selections = df["selections"]
 
-print(len(selections))
+# print(len(selections))
 
 index = []
 
@@ -26,7 +26,7 @@ for selection in selections:
     manifest = selection["within"]["@id"]
 
     for member in members:
-        print(member)
+        # print(member)
 
         metadataObj = {}
 
@@ -38,8 +38,6 @@ for selection in selections:
             label = m["label"]
             value = m["value"]
 
-            label = label.replace("Möller", "Hieratic")
-
             if label not in metadataObj:
                 metadataObj[label] = []
 
@@ -47,11 +45,17 @@ for selection in selections:
 
             for value in values:
 
-                metadataObj[label].append(value) 
+                value = value.strip()
 
-        id = metadataObj["m_sort"][0]
+                if value != "":
 
-        metadataObj["_label"] = metadataObj["Hieratic No"][0]+"("+metadataObj["Hieroglyph No"][0]+")"
+                    metadataObj[label].append(value) 
+
+        id = member["label"].replace("[", "").replace("]", "")
+
+        # print(metadataObj)
+
+        metadataObj["_label"] = id
 
         metadataObj["_id"] = id
         metadataObj["_image"] = member["thumbnail"]

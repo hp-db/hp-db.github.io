@@ -36,12 +36,22 @@ export default class ChartLine extends mixins(Bar) {
 
     const chartData: any = {
       labels,
-      datasets: [{ data: dataset, label: '' }],
+      datasets: [{ data: dataset, label: this.$t('items') }],
     }
 
     const chartOption: any = {
       // アスペクト比を固定しないように変更
       maintainAspectRatio: false,
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              // stepSize: 1,
+            },
+          },
+        ],
+      },
     }
 
     this.renderChart(chartData, chartOption)

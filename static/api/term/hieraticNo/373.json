@@ -1,12 +1,20 @@
 [
   {
-    "@id": "https://w3id.org/hpdb/api/term/möllerNo/373",
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/373",
     "@type": [
-      "https://w3id.org/hpdb/api/classes/MöllerNo"
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "373"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "itrt"
+      },
+      {
+        "@value": "xm"
       }
     ]
   }

@@ -1,12 +1,33 @@
 [
   {
-    "@id": "https://w3id.org/hpdb/api/term/möllerNo/560",
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/575",
     "@type": [
-      "https://w3id.org/hpdb/api/classes/MöllerNo"
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "575"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "ty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/560",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "560"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "ty"
       }
     ]
   }

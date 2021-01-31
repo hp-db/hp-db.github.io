@@ -1,9 +1,9 @@
 <template>
   <v-row dense>
     <v-col class="py-0 my-0" cols="12" sm="6" lg="8">
-      <h2 class="my-2" style="vertical-align: middle">
-        <Stats />
-      </h2>
+      <div class="my-2" style="vertical-align: middle">
+        <b><Stats /></b>
+      </div>
     </v-col>
     <v-col class="py-0 my-0" cols="12" sm="6" lg="4">
       <v-row dense>

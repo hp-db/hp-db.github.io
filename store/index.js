@@ -22,6 +22,8 @@ export const state = () => ({
   facetFlags: {},
   facetLabels: {},
 
+  facetOptions: {},
+
   result: {},
 
   data: [],
@@ -126,6 +128,11 @@ export const mutations = {
   setFacetLabels(state, value) {
     state.facetLabels = value
   },
+
+  setFacetOptions(state, value) {
+    state.facetOptions = value
+  },
+
   setFacetFlags(state, flags) {
     for (let i = 0; i < flags.length; i++) {
       const field = flags[i]
@@ -195,7 +202,7 @@ export const mutations = {
   },
   // changeかセットか
   changeFacetFlags(state, data) {
-    state.facetFlags[data.label] = data.value
+    state.facetOptions[data.label].open = data.value
   },
   removeKeyword(state, value) {
     const array = state.keyword

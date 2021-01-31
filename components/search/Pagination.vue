@@ -1,11 +1,11 @@
 <template>
   <v-pagination
+    v-show="layout_ !== 'stats' && layout_ !== 'map'"
     v-model="currentPage"
     :length="paginationLength"
     :total-visible="7"
     @input="setCurrentPage"
   ></v-pagination>
-  <!-- v-show="layout_ !== 'stats' && layout_ !== 'map'" -->
 </template>
 
 <script lang="ts">
@@ -23,6 +23,10 @@ export default class Pagination extends Vue {
 
   get size() {
     return this.$store.state.size
+  }
+
+  get layout_() {
+    return this.$store.state.layout
   }
 
   get paginationLength() {

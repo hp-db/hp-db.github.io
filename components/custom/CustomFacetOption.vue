@@ -1,15 +1,16 @@
 <template>
   <v-expansion-panels
     v-if="buckets.length > 0 || getArray('-').length > 0"
+    flat
     :value="openFlag ? 0 : null"
   >
     <v-expansion-panel>
       <v-expansion-panel-header class="grey lighten-2"
-        ><h3>
+        ><b>
           <!-- {{ label.startsWith('_') ? $t(label.slice(1)) : $t(label) }} -->
           {{ label.startsWith('_') ? label.slice(1) : label }}
           <small>({{ message }})</small>
-        </h3></v-expansion-panel-header
+        </b></v-expansion-panel-header
       >
       <v-expansion-panel-content>
         <v-list dense>
@@ -28,7 +29,11 @@
                     dense
                     x-small
                     color="primary"
-                    :label="term == 'jp' ? $t(bucket.key) : bucket.key"
+                    :label="
+                      ['Item Type', 'Sub Type', 'Unit'].includes(term)
+                        ? $t(bucket.key)
+                        : bucket.key
+                    "
                     @change="change('fc-' + term, bucket.key)"
                   ></v-checkbox>
                 </v-list-item-content>
@@ -147,13 +152,13 @@ export default class FacetOption extends Vue {
   }
 
   openFlag: boolean = !!(
-    this.$store.state.facetFlags[this.term] ||
+    this.$store.state.facetOptions[this.term].open ||
     this.getArray('-').length > 0 ||
     this.getArray('+').length > 0
   )
 
-  get facetFlags() {
-    return this.$store.state.facetFlags
+  get facetOptions() {
+    return this.$store.state.facetOptions
   }
 
   changeFacetFlags() {

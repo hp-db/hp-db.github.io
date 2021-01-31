@@ -3,12 +3,65 @@ import colors from 'vuetify/es5/util/colors'
 const environment = process.env.NODE_ENV || 'local'
 const env = require(`./env/${environment}.ts`)
 
+env.facetOptions = {
+  'Item Type': {
+    label: 'Item Type', // this.$t('Class'),
+    open: true,
+  },
+  'Sub Type': {
+    label: 'Sub Type', // this.$t('Class'),
+    open: true,
+  },
+  Unit: {
+    label: 'Unit', // this.$t('Compound'),
+    open: true,
+  },
+  'Item Label Mod': {
+    label: 'Item Label', // this.$t('Hieratic No'),
+    open: true,
+  },
+  'Hieratic No Mod': {
+    label: 'Hieratic No', // this.$t('Hieratic No'),
+    open: true,
+  },
+  'Category Class': {
+    label: 'Category Class', // this.$t('Category'),
+    open: true,
+  },
+  'Hieroglyph No Mod': {
+    label: 'Hieroglyph No', // this.$t('Hieroglyph No'),
+    open: true,
+  },
+  'Phone/Word Mod': {
+    label: 'Phone/Word', // this.$t('Phone/Word'),
+    open: true,
+  },
+  Numeral: {
+    label: 'Numeral', // this.$t('Category'),
+    open: true,
+  },
+  Vol: {
+    label: 'Vol', // this.$t('Vol'),
+    open: true,
+  },
+  /*
+  'Item Type': {
+    label: 'Item Type', // this.$t('Class'),
+    open: true,
+    orderKey: '_term',
+    orderValue: 'asc',
+  },
+  */
+}
+
+console.log({ env })
+
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/hpdb4/',
+          base: '/dev/',
         },
       }
     : {}
@@ -23,6 +76,7 @@ const basePath = baseUrl + baseDir
 // meta
 const lang = 'en'
 const siteName = 'Hieratische Paläographie DB'
+env.siteName = siteName
 const siteDesc =
   "This is a retrieval system for hieratic scripts; it uses IIIF format images (owned by the Asian Research Library of the University of Tokyo) of Georg Möller's Hieratische Paläographie (1909–36)."
 const siteKeywords = 'IIIF, Hieratic, Hieroglyph'
@@ -38,6 +92,8 @@ const manifestIcon = 'img/icons/icon-512.png'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
+
+  ssr: false,
   target: 'static',
   // srcDir: 'src/',
 
@@ -166,6 +222,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
     '@nuxtjs/sitemap',
     [
       '@nuxtjs/google-analytics',
@@ -176,6 +233,7 @@ export default {
     'nuxt-i18n',
     // Simple usage
     // '@nuxtjs/amp',
+    '@nuxtjs/content',
   ],
 
   sitemap: {
@@ -217,9 +275,12 @@ export default {
     // strategy: 'no_prefix'
   },
 
+  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  content: {},
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    //standalone: true, // これを追加！
+    // standalone: true, // これを追加！
     babel: {
       plugins: [
         ['@babel/plugin-proposal-decorators', { legacy: true }],
@@ -231,62 +292,6 @@ export default {
   ...routerBase,
 
   generate: {
-    dir: 'docs',
-
-    routes() {
-      const fs = require('fs')
-      const curation = JSON.parse(
-        fs.readFileSync('static/data/curation_old.json')
-      )
-
-      const selections = curation.selections
-      const pages = []
-      for (let i = 0; i < selections.length; i++) {
-        const selection = selections[i]
-        const members = selection.members
-        for (let j = 0; j < members.length; j++) {
-          const member = members[j]
-          const metadataObj = {}
-          const metadata = member.metadata
-          for (let k = 0; k < metadata.length; k++) {
-            const obj = metadata[k]
-            metadataObj[obj.label] = obj.value
-          }
-
-          // const memberId = member['@id']
-          // const id = md5(memberId)
-          const id = metadataObj.m_sort
-          member.manifest = selection.within['@id']
-
-          pages.push({
-            route: `/item/${id}`,
-            payload: member,
-          })
-
-          pages.push({
-            route: `/ja/item/${id}`,
-            payload: member,
-          })
-        }
-      }
-
-      // const pages = []
-
-      const aaa = ['Item', 'HieroglyphNo', 'HieraticNo']
-
-      for (let i = 0; i < aaa.length; i++) {
-        const id = aaa[i]
-
-        pages.push({
-          route: `/property/${id}`,
-        })
-
-        pages.push({
-          route: `/ja/property/${id}`,
-        })
-      }
-
-      return pages
-    },
+    // dir: 'docs',
   },
 }

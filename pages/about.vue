@@ -17,9 +17,12 @@
             {{ $t('検索画面') }}
           </nuxt-link>
         </li>
+        <!--<li>メタデータ一覧（エクセルファイル）</li>
+        
         <li>検索後の絞り込み</li>
         <li>Miradorを利用した文字の比較</li>
         <li>ヒエラティックとヒエログリフの対応表</li>
+        -->
       </ul>
 
       <h2 class="my-5">{{ $t('lod_vocabulary') }}</h2>
@@ -35,6 +38,22 @@
             "
           >
             {{ value }}
+          </nuxt-link>
+        </li>
+      </ul>
+
+      <h2 class="my-5">{{ $t('policy') }}</h2>
+
+      <ul>
+        <li>
+          <nuxt-link
+            :to="
+              localePath({
+                name: 'manual-ga',
+              })
+            "
+          >
+            Googleアナリティクスからの情報取得について
           </nuxt-link>
         </li>
       </ul>

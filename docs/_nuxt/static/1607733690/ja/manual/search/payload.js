@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/manual/search", {data:[{}],fetch:[],mutations:[]});

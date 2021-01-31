@@ -147,11 +147,13 @@ export default class CustomFilter extends Vue {
       if (term.startsWith(type)) {
         const label = term.replace(type, '')
 
+        console.log(label, termLabels)
+
         result =
           '[' +
           types[type] +
           '] ' +
-          (termLabels && termLabels[label] ? termLabels[label] : label)
+          this.$t((termLabels && termLabels[label] ? termLabels[label] : label))
 
         break
       }

@@ -16,7 +16,7 @@ df = json.load(json_open)
 
 selections = df["selections"]
 
-print(len(selections))
+# print(len(selections))
 
 for selection in selections:
     members = selection["members"]
@@ -24,7 +24,7 @@ for selection in selections:
     manifest = selection["within"]["@id"]
 
     for member in members:
-        print(member)
+        # print(member)
 
         metadataObj = {}
 
@@ -37,7 +37,7 @@ for selection in selections:
             value = m["value"]
             metadataObj[label] = value
 
-            if "Mod" not in label and value != "" and "_sort" not in label:
+            if "Search" not in label and value != "" and "_sort" not in label:
                 metadata2.append({
                     "label" : label,
                     "value" : value
@@ -45,7 +45,7 @@ for selection in selections:
 
         member["metadata"] = metadata2
 
-        id = metadataObj["m_sort"]
+        id = member["label"].replace("[", "").replace("]", "")
 
         uri = "https://w3id.org/hpdb/api/items/"+id
         member["seeAlso"] = uri
