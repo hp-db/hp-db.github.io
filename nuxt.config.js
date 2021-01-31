@@ -61,7 +61,7 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/dev/',
+          // base: '/dev/',
         },
       }
     : {}
@@ -93,7 +93,7 @@ const manifestIcon = 'img/icons/icon-512.png'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
 
-  ssr: false,
+  // ssr: false,
   target: 'static',
   // srcDir: 'src/',
 
@@ -239,6 +239,24 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: baseUrl,
+    routes() {
+      /*
+      return Promise.all([
+        axios.get('https://example.jp/api/posts'),
+        axios.get('https://example.jp/api/columns')
+      ])
+        .then(([posts, columns]) => {
+          let exp01 = posts.data.map(contact => '/posts/' + contact.slug)
+          let exp02 = columns.data.map(contact => '/columns/' + contact.slug)
+          let array = [exp01, exp02]
+          let flattened = array.reduce(
+            (accumulator, currentValue) => accumulator.concat(currentValue),
+            []
+          )
+          return flattened
+        })
+        */
+    },
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
