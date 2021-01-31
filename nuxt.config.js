@@ -240,50 +240,7 @@ export default {
     path: '/sitemap.xml',
     hostname: baseUrl,
     routes() {
-      const fs = require('fs')
-      const curation = JSON.parse(
-        fs.readFileSync('static/data/curation_old.json')
-      )
-
-      const selections = curation.selections
-      const pages = []
-      for (let i = 0; i < selections.length; i++) {
-        const selection = selections[i]
-        const members = selection.members
-        for (let j = 0; j < members.length; j++) {
-          const member = members[j]
-          const id = member.label
-          member.manifest = selection.within['@id']
-
-          pages.push({
-            route: `/item/${id}`,
-            payload: member,
-          })
-
-          pages.push({
-            route: `/ja/item/${id}`,
-            payload: member,
-          })
-        }
-      }
-
-      // const pages = []
-
-      const aaa = ['Item', 'HieroglyphNo', 'HieraticNo']
-
-      for (let i = 0; i < aaa.length; i++) {
-        const id = aaa[i]
-
-        pages.push({
-          route: `/property/${id}`,
-        })
-
-        pages.push({
-          route: `/ja/property/${id}`,
-        })
-      }
-
-      return pages
+      return routes2()
     },
   },
 
@@ -341,50 +298,52 @@ export default {
     // dir: 'docs',
 
     routes() {
-      const fs = require('fs')
-      const curation = JSON.parse(
-        fs.readFileSync('static/data/curation_old.json')
-      )
-
-      const selections = curation.selections
-      const pages = []
-      for (let i = 0; i < selections.length; i++) {
-        const selection = selections[i]
-        const members = selection.members
-        for (let j = 0; j < members.length; j++) {
-          const member = members[j]
-          const id = member.label
-          member.manifest = selection.within['@id']
-
-          pages.push({
-            route: `/item/${id}`,
-            payload: member,
-          })
-
-          pages.push({
-            route: `/ja/item/${id}`,
-            payload: member,
-          })
-        }
-      }
-
-      // const pages = []
-
-      const aaa = ['Item', 'HieroglyphNo', 'HieraticNo']
-
-      for (let i = 0; i < aaa.length; i++) {
-        const id = aaa[i]
-
-        pages.push({
-          route: `/property/${id}`,
-        })
-
-        pages.push({
-          route: `/ja/property/${id}`,
-        })
-      }
-
-      return pages
+      return routes2()
     },
   },
+}
+
+function routes2() {
+  const fs = require('fs')
+  const curation = JSON.parse(fs.readFileSync('static/data/curation_old.json'))
+
+  const selections = curation.selections
+  const pages = []
+  for (let i = 0; i < selections.length; i++) {
+    const selection = selections[i]
+    const members = selection.members
+    for (let j = 0; j < members.length; j++) {
+      const member = members[j]
+      const id = member.label
+      member.manifest = selection.within['@id']
+
+      pages.push({
+        route: `/item/${id}`,
+        payload: member,
+      })
+
+      pages.push({
+        route: `/ja/item/${id}`,
+        payload: member,
+      })
+    }
+  }
+
+  // const pages = []
+
+  const aaa = ['Item', 'HieroglyphNo', 'HieraticNo']
+
+  for (let i = 0; i < aaa.length; i++) {
+    const id = aaa[i]
+
+    pages.push({
+      route: `/property/${id}`,
+    })
+
+    pages.push({
+      route: `/ja/property/${id}`,
+    })
+  }
+
+  return pages
 }
