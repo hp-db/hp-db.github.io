@@ -64,7 +64,7 @@
           <span>{{ 'RDF' }}</span>
         </v-tooltip>
 
-        <ResultOption
+        <DisplayResultOption
           :item="{
             label: id,
             url: url,
@@ -105,10 +105,10 @@
                   <template
                     v-if="['Hieratic No', 'Hieroglyph No'].includes(obj.label)"
                   >
-                    <Split
+                    <CustomSplit
                       :data="metadataObj[obj.label]"
                       :field="`${obj.label} Mod`"
-                    ></Split>
+                    ></CustomSplit>
                   </template>
                   <template v-else-if="obj.text">
                     <span

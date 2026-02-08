@@ -61,7 +61,7 @@
             <span>
               <b>{{ $t('Item Label') }}</b>
               &nbsp;
-               <Split
+               <CustomSplit
                 :data="obj._source['Item Label']"
                 field="Item Label Mod"
               />
@@ -72,7 +72,7 @@
             <span>
               <b>{{ $t('Hieratic No') }}</b>
               &nbsp;
-              <Split
+              <CustomSplit
                 :data="obj._source['Hieratic No']"
                 field="Hieratic No Mod"
               />
@@ -82,7 +82,7 @@
             <span>
               <b>{{ $t('Hieroglyph No') }}</b>
               &nbsp;
-              <Split
+              <CustomSplit
                 :data="obj._source['Hieroglyph No']"
                 field="Hieroglyph No Mod"
               />

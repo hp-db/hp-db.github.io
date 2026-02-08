@@ -21,7 +21,7 @@ import { Vue, Prop, Component } from 'nuxt-property-decorator'
 // import { queryStore } from '~/store'
 
 @Component
-export default class FacetOption extends Vue {
+export default class Split extends Vue {
   @Prop({
     required: true,
   })
