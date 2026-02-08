@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/category/Phone-Word Mod", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,36 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/160",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "160"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "nHdt"
+      },
+      {
+        "@value": "dbH"
+      },
+      {
+        "@value": "Hw"
+      },
+      {
+        "@value": "TtTt"
+      },
+      {
+        "@value": "wSa"
+      },
+      {
+        "@value": "sbt"
+      },
+      {
+        "@value": "bH"
+      }
+    ]
+  }
+]
