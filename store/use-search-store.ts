@@ -1,5 +1,13 @@
 import { create } from 'zustand'
 import { convert2arr } from '@/lib/utils'
+import { splitForFacet, getFacetField } from '@/lib/facet-utils'
+
+const MOD_FACET_KEYS = new Set([
+  'fc-' + getFacetField('Item Label'),
+  'fc-' + getFacetField('Hieratic No'),
+  'fc-' + getFacetField('Hieroglyph No'),
+  'fc-' + getFacetField('Phone/Word'),
+])
 
 interface Advanced {
   q: Record<string, { '+': string[]; '-': string[] }>
@@ -82,8 +90,12 @@ export const useSearchStore = create<SearchState & SearchActions>((set) => ({
         const types = ['fc', 'q'] as const
         for (const type of types) {
           if (key.includes(type + '-')) {
-            let values = routeQuery[key]
-            const valArr = convert2arr(values)
+            const values = routeQuery[key]
+            // Split comma-separated values for Mod facet fields (legacy URL compatibility)
+            const rawArr = convert2arr(values)
+            const valArr = MOD_FACET_KEYS.has(key)
+              ? rawArr.flatMap((v) => splitForFacet(v))
+              : rawArr
 
             if (!newAdvanced[type][key]) {
               newAdvanced[type][key] = { '+': [], '-': [] }

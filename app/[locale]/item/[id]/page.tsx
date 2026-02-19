@@ -2,6 +2,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
 import { ShareButtons } from '@/components/common/share-buttons'
+import { getFacetValues } from '@/lib/facet-utils'
 import { Filter, ExternalLink } from 'lucide-react'
 import fs from 'fs'
 import path from 'path'
@@ -183,29 +184,30 @@ function ItemContent({ member, id }: { member: CurationMember; id: string }) {
             {fields.map((field) => {
               const vals = metadataObj[field.label]
               if (!vals || vals.length === 0) return null
+              const { facetField, values: facetValues } = getFacetValues(metadataObj, field.label)
               return (
                 <tr key={field.label} className="border-b">
                   <td className="w-[30%] py-3 px-2 font-medium">{t(field.label)}</td>
                   <td className={`py-5 px-2 break-words ${field.label === 'Phone/Word' ? 'phone' : ''}`}>
-                    {['Hieratic No', 'Hieroglyph No'].includes(field.label) ? (
-                      <SplitValues data={vals} field={`${field.label} Mod`} />
-                    ) : field.text ? (
+                    {field.text ? (
                       vals.map((v, i) => <span key={i}>{v}</span>)
                     ) : (
-                      vals.map((v, i) => (
-                        <span key={i} className="inline-flex items-center mr-2">
-                          {['Item Type', 'Sub Type', 'Unit'].includes(field.label)
-                            ? t(v)
-                            : v}
-                          <Link
-                            href={`/search?fc-${field.label}=${encodeURIComponent(v)}`}
-                            className="ml-1 inline-flex items-center justify-center w-5 h-5 rounded border border-border bg-muted hover:bg-accent transition-colors"
-                            title={t('filter_by_this')}
-                          >
-                            <Filter className="w-3 h-3" />
-                          </Link>
-                        </span>
-                      ))
+                      <span className="inline-flex items-center flex-wrap gap-x-2">
+                        {facetValues.map((v, i) => (
+                          <span key={i} className="inline-flex items-center">
+                            {['Item Type', 'Sub Type', 'Unit'].includes(field.label)
+                              ? t(v)
+                              : v}
+                            <Link
+                              href={`/search?fc-${encodeURIComponent(facetField)}=${encodeURIComponent(v)}`}
+                              className="ml-1 inline-flex items-center justify-center w-5 h-5 rounded border border-border bg-muted hover:bg-accent transition-colors"
+                              title={t('filter_by_this')}
+                            >
+                              <Filter className="w-3 h-3" />
+                            </Link>
+                          </span>
+                        ))}
+                      </span>
                     )}
                   </td>
                 </tr>
@@ -259,29 +261,3 @@ function ItemContent({ member, id }: { member: CurationMember; id: string }) {
   )
 }
 
-function SplitValues({ data, field }: { data: string[]; field: string }) {
-  return (
-    <span className="inline-flex items-center flex-wrap gap-x-2">
-      {data.map((value, i) => {
-        const parts = value.split(', ')
-        return (
-          <span key={i} className="contents">
-            {parts.map((part, j) => (
-              <span key={j} className="inline-flex items-center">
-                {j > 0 && <span className="mr-1">,</span>}
-                {part.trim()}
-                <Link
-                  href={`/search?fc-${field}=${encodeURIComponent(part.trim())}`}
-                  className="ml-1 inline-flex items-center justify-center w-5 h-5 rounded border border-border bg-muted hover:bg-accent transition-colors"
-                  title="Filter"
-                >
-                  <Filter className="w-3 h-3" />
-                </Link>
-              </span>
-            ))}
-          </span>
-        )
-      })}
-    </span>
-  )
-}

@@ -3,19 +3,14 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { Filter } from 'lucide-react'
+import { splitForFacet } from '@/lib/facet-utils'
 
 export function CustomSplit({ data, field }: { data: string[] | undefined; field: string }) {
   const t = useTranslations()
 
   if (!data || data.length === 0) return null
   const raw = data[0]
-  const targets = ['(', ')', '=', '\u00d73', '\u00d72', '/', ',']
-
-  let processed = raw
-  for (const tgt of targets) {
-    processed = processed.split(tgt).join('+')
-  }
-  const items = processed.split('+')
+  const items = splitForFacet(raw)
 
   // Build elements array for display
   let display = raw

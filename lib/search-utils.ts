@@ -1,4 +1,13 @@
 import { convert2arr } from './utils'
+import { splitForFacet, getFacetField } from './facet-utils'
+
+/** Fields whose facet values may contain commas in legacy URLs. */
+const MOD_FACET_FIELDS = new Set([
+  getFacetField('Item Label'),
+  getFacetField('Hieratic No'),
+  getFacetField('Hieroglyph No'),
+  getFacetField('Phone/Word'),
+])
 
 export function splitKeyword(keyword: string): { label: string; value: string }[] {
   const keywords = keyword
@@ -99,7 +108,12 @@ export function createQuery(
     const boolQuery = ops[prefix] ? 'should' : mustOfFilter
 
     const value = routeQuery[field]
-    const values = Array.isArray(value) ? value : [value as string]
+    const rawValues = Array.isArray(value) ? value : [value as string]
+    // Split comma-separated values for Mod facet fields (legacy URL compatibility)
+    const facetName = type === 'fc' ? field.slice(3) : ''
+    const values = type === 'fc' && MOD_FACET_FIELDS.has(facetName)
+      ? rawValues.flatMap((v) => splitForFacet(v))
+      : rawValues
 
     const pluses: string[] = []
     const minuses: string[] = []

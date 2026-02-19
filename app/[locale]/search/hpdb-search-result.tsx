@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { useSearchStore } from '@/store/use-search-store'
 import { CustomSplit } from './custom-split'
+import { getFacetField } from '@/lib/facet-utils'
 import { Filter, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -165,15 +166,15 @@ export function HpdbSearchResult() {
                 <div className="sm:w-1/3 space-y-1 text-sm">
                   <div>
                     <b>{t('Item Label')}</b>&nbsp;
-                    <CustomSplit data={source['Item Label']} field="Item Label Mod" />
+                    <CustomSplit data={source['Item Label']} field={getFacetField('Item Label')} />
                   </div>
                   <div>
                     <b>{t('Hieratic No')}</b>&nbsp;
-                    <CustomSplit data={source['Hieratic No']} field="Hieratic No Mod" />
+                    <CustomSplit data={source['Hieratic No']} field={getFacetField('Hieratic No')} />
                   </div>
                   <div>
                     <b>{t('Hieroglyph No')}</b>&nbsp;
-                    <CustomSplit data={source['Hieroglyph No']} field="Hieroglyph No Mod" />
+                    <CustomSplit data={source['Hieroglyph No']} field={getFacetField('Hieroglyph No')} />
                   </div>
                   <div className="flex items-center flex-wrap">
                     <b>{t('Item Type')}</b>&nbsp;
@@ -215,20 +216,21 @@ export function HpdbSearchResult() {
                       ))}
                     </div>
                   )}
-                  {source['Phone/Word'] && source['Phone/Word'].length > 0 && (
+                  {source[getFacetField('Phone/Word')] && source[getFacetField('Phone/Word')].length > 0 && (
                     <div className="flex items-center flex-wrap">
                       <b>{t('Phone/Word')}</b>&nbsp;
-                      {source['Phone/Word'].map((v, j) => {
-                        const clean = v.replace('(', '').replace(')', '')
+                      {source[getFacetField('Phone/Word')].map((v, j, arr) => {
+                        const raw = source['Phone/Word']?.[0] || ''
+                        const inParens = raw.includes('(' + v) || raw.includes(v + ')')
                         return (
                           <span key={j} className="inline-flex items-center">
-                            {v.startsWith('(') && '('}
-                            <span className="phone">{clean}</span>
-                            <Link href={`/search?fc-Phone%2FWord+Mod=${encodeURIComponent(clean)}`} className="ml-1 inline-flex items-center justify-center w-5 h-5 rounded border border-border bg-muted hover:bg-accent transition-colors" title={t('filter_by_this')}>
+                            {inParens && '('}
+                            <span className="phone">{v}</span>
+                            <Link href={`/search?fc-${encodeURIComponent(getFacetField('Phone/Word'))}=${encodeURIComponent(v)}`} className="ml-1 inline-flex items-center justify-center w-5 h-5 rounded border border-border bg-muted hover:bg-accent transition-colors" title={t('filter_by_this')}>
                               <Filter className="w-3 h-3" />
                             </Link>
-                            {v.endsWith(')') && ')'}
-                            {j < source['Phone/Word'].length - 1 && ', '}
+                            {inParens && ')'}
+                            {j < arr.length - 1 && ', '}
                           </span>
                         )
                       })}

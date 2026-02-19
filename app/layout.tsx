@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: siteName,
     description: siteDesc,
-    images: [{ url: '/img/ogp/home.jpg' }],
+    images: [{ url: '/img/ogp/ogp.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
