@@ -12,6 +12,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from '@/components/ui/dialog'
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || ''
+const IDX = process.env.NODE_ENV === 'development' ? 'index.html' : ''
 
 export function HpdbSearchResult() {
   const t = useTranslations()
@@ -53,7 +54,7 @@ export function HpdbSearchResult() {
 
     const url =
       BASE_URL +
-      '/mirador/?params=' +
+      '/mirador/' + IDX + '?params=' +
       encodeURIComponent(JSON.stringify(param)) +
       '&layout=1x' +
       selected.length
@@ -66,7 +67,7 @@ export function HpdbSearchResult() {
     const manifest = spl[0].split('=')[1]
     const canvas = spl[1].split('=')[1] + '#xywh=' + spl[2].split('=')[1]
     const params = JSON.stringify([{ manifest, canvas }])
-    return BASE_URL + '/mirador/?params=' + encodeURIComponent(params)
+    return BASE_URL + '/mirador/' + IDX + '?params=' + encodeURIComponent(params)
   }
 
   const getUtaUrl = (source: Record<string, string[]>) => {
