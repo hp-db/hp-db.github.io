@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Mirador Viewer</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+    #mirador { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; }
+  </style>
+</head>
+
+<body>
+  <div id="mirador"></div>
+  <script src="https://unpkg.com/mirador@3.4.3/dist/mirador.min.js"></script>
+  <script>
+    (function () {
+      var urlParams = new URLSearchParams(location.search);
+      var paramsJson = urlParams.get('params');
+      var layoutStr = urlParams.get('layout');
+      var hideTitle = urlParams.get('hideTitle') === 'true';
+
+      var windows = [];
+      var catalog = [];
+      var catalogSet = {};
+
+      if (paramsJson) {
+        var items = JSON.parse(decodeURIComponent(paramsJson));
+
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          if (!item.manifest) continue;
+
+          var win = {
+            manifestId: item.manifest,
+            id: 'window-' + i,
+          };
+
+          if (item.canvas) {
+            var canvasId = item.canvas;
+            if (canvasId.indexOf('#xywh=') !== -1) {
+              var parts = canvasId.split('#xywh=');
+              win.canvasId = parts[0];
+              var coords = parts[1].split(',').map(Number);
+              win.initialViewerConfig = {
+                x: coords[0] + coords[2] / 2,
+                y: coords[1] + coords[3] / 2,
+                zoom: 1 / coords[2],
+              };
+            } else {
+              win.canvasId = canvasId;
+            }
+          }
+
+          windows.push(win);
+
+          if (!catalogSet[item.manifest]) {
+            catalogSet[item.manifest] = true;
+            catalog.push({ manifestId: item.manifest });
+          }
+        }
+      }
+
+      // Build mosaic layout: stack vertically (column direction)
+      var layout = undefined;
+      if (windows.length > 1) {
+        function buildMosaic(ids) {
+          if (ids.length === 1) return ids[0];
+          var mid = Math.ceil(ids.length / 2);
+          return {
+            direction: 'column',
+            first: buildMosaic(ids.slice(0, mid)),
+            second: buildMosaic(ids.slice(mid)),
+            splitPercentage: (mid / ids.length) * 100,
+          };
+        }
+        layout = buildMosaic(windows.map(function (w) { return w.id; }));
+      }
+
+      var config = {
+        id: 'mirador',
+        windows: windows,
+        catalog: catalog,
+        window: {
+          allowClose: false,
+          allowFullscreen: true,
+          allowMaximize: false,
+          hideWindowTitle: hideTitle,
+          sideBarOpen: false,
+          panels: {
+            info: false,
+            attribution: false,
+            canvas: false,
+          },
+        },
+        workspace: {
+          type: 'mosaic',
+        },
+        workspaceControlPanel: {
+          enabled: false,
+        },
+      };
+
+      if (layout) {
+        config.workspace.layout = layout;
+      }
+
+      Mirador.viewer(config);
+    })();
+  </script>
+</body>
+
+</html>

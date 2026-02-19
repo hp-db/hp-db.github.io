@@ -1,0 +1,82 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/91",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "91"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rmT"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/561",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "561"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rmT"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/528",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "528"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rmT"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/61B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "61B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rmT"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/33B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "33B"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rmT"
+      }
+    ]
+  }
+]

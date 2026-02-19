@@ -1,36 +1,53 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
-    ],
-    "esModuleInterop": true,
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "sourceMap": true,
+    "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "experimentalDecorators": true,
-    "baseUrl": ".",
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
-    },
-    "types": [
-      "@types/node",
-      "@nuxt/types"
-    ]
+      "@/*": ["./*"]
+    }
   },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
   "exclude": [
     "node_modules",
-    ".nuxt",
-    "dist"
+    "src/**",
+    "static/**",
+    "dist/**",
+    "plugins/**",
+    "store/index.js",
+    "nuxt.config.js",
+    "index.d.ts",
+    "pages/**",
+    "layouts/**",
+    "components/search/**",
+    "components/custom/**",
+    "components/display/**",
+    "components/common/ShareButtons.vue",
+    "components/common/Breadcrumbs.vue",
+    "components/common/Map.vue",
+    "components/common/TOC.vue",
+    "components/common/Split.vue"
   ]
 }

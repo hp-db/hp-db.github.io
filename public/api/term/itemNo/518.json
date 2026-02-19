@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/itemNo/518",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/ItemNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "518"
+      }
+    ]
+  }
+]
