@@ -120,17 +120,17 @@ function ItemContent({ member, id }: { member: CurationMember; id: string }) {
   const memberIdSpl = memberId.split('#xywh=')
 
   const miradorParams = JSON.stringify([{ manifest: member.manifest, canvas: memberId }])
-  const iframeUrl = `${BASE_URL}/mirador/index.html?params=${encodeURIComponent(miradorParams)}&hideTitle=true`
+  const iframeUrl = `${BASE_URL}/mirador/?params=${encodeURIComponent(miradorParams)}&hideTitle=true`
 
   const canvasId = memberIdSpl[0]
   const xywh = memberIdSpl[1]
-  const miradorUrl = `${BASE_URL}/mirador/index.html?params=${encodeURIComponent(JSON.stringify([{ manifest: member.manifest, canvas: memberId }]))}`
+  const miradorUrl = `${BASE_URL}/mirador/?params=${encodeURIComponent(JSON.stringify([{ manifest: member.manifest, canvas: memberId }]))}`
 
   const pageNum = canvasId.split('/canvas/p')[1]
   const manifestId = (member.manifest || '').split('/manifest/')[1]?.split('/')[0] || ''
   const utaUrl = `https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/${manifestId}#?c=0&m=0&s=0&cv=${Number(pageNum) - 1}&xywh=${xywh}`
 
-  const rdfUrl = `${BASE_URL}/snorql/index.html?describe=${PREFIX}/api/items/${id}`
+  const rdfUrl = `${BASE_URL}/snorql/?describe=${PREFIX}/api/items/${id}`
 
   return (
     <div>

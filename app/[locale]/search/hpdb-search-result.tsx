@@ -53,7 +53,7 @@ export function HpdbSearchResult() {
 
     const url =
       BASE_URL +
-      '/mirador/index.html?params=' +
+      '/mirador/?params=' +
       encodeURIComponent(JSON.stringify(param)) +
       '&layout=1x' +
       selected.length
@@ -66,7 +66,7 @@ export function HpdbSearchResult() {
     const manifest = spl[0].split('=')[1]
     const canvas = spl[1].split('=')[1] + '#xywh=' + spl[2].split('=')[1]
     const params = JSON.stringify([{ manifest, canvas }])
-    return BASE_URL + '/mirador/index.html?params=' + encodeURIComponent(params)
+    return BASE_URL + '/mirador/?params=' + encodeURIComponent(params)
   }
 
   const getUtaUrl = (source: Record<string, string[]>) => {
