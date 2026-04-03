@@ -12,6 +12,7 @@ import {
   Image,
   Database,
   Languages,
+  TableProperties,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -41,6 +42,7 @@ export function AppHeader() {
   const navItems = [
     { href: '/search', label: t('search'), icon: Search },
     { href: '/category/Vol', label: t('category'), icon: List },
+    { href: '/concordance', label: t('concordance'), icon: TableProperties },
     { href: '/about', label: t('ユーザーズガイド'), icon: Info },
     {
       href: BASE_URL + '/snorql',
@@ -138,7 +140,7 @@ export function AppHeader() {
 
           {/* Desktop nav links */}
           <nav className="hidden lg:flex items-center ml-8 gap-1">
-            {navItems.slice(0, 3).map((item, i) => (
+            {navItems.slice(0, 4).map((item, i) => (
               <Link
                 key={i}
                 href={item.href}
