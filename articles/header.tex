@@ -1,0 +1,5 @@
+\directlua{
+  luaotfload.add_fallback("egyptfallback", {"Noto Sans Egyptian Hieroglyphs:mode=harf"})
+}
+\setmainfont{Hiragino Mincho ProN}[RawFeature={fallback=egyptfallback}]
+\setmonofont{Menlo}[RawFeature={fallback=egyptfallback}]
