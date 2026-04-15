@@ -25,6 +25,10 @@ function staticEntries(): MetadataRoute.Sitemap {
     { path: '/datasets/', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/api/', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/about/', priority: 0.5, changeFrequency: 'yearly' },
+    { path: '/about/changelog/', priority: 0.4, changeFrequency: 'monthly' },
+    { path: '/about/concordance-sources/', priority: 0.4, changeFrequency: 'yearly' },
+    { path: '/manual/search/', priority: 0.4, changeFrequency: 'yearly' },
+    { path: '/manual/ga/', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/category/Vol/', priority: 0.7, changeFrequency: 'monthly' },
   ]
 
