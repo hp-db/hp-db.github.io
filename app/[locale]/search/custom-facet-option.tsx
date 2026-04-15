@@ -80,6 +80,8 @@ export function CustomFacetOption({
         type: 'fc',
       })
     }
+    // updateQuery reads getState() — defer one tick so the store update lands first
+    setTimeout(updateQuery, 0)
   }
 
   const handleExclude = (key: string) => {

@@ -1,6 +1,23 @@
 import { convert2arr } from './utils'
 import { splitForFacet, getFacetField } from './facet-utils'
 
+/**
+ * Map URL-safe field names (no spaces) to actual index field names.
+ * e.g. q-HieraticNo → "Hieratic No"
+ */
+const Q_FIELD_NAME_MAP: Record<string, string> = {
+  'HieraticNo': 'Hieratic No',
+  'HieroglyphNo': 'Hieroglyph No',
+  'ItemLabel': 'Item Label',
+  'ItemType': 'Item Type',
+  'SubType': 'Sub Type',
+  'CategoryClass': 'Category Class',
+  'PhoneWord': 'Phone/Word',
+  'ItemLabelSearch': 'Item Label Search',
+  'HieraticNoSearch': 'Hieratic No Search',
+  'HieroglyphNoSearch': 'Hieroglyph No Search',
+}
+
 /** Fields whose facet values may contain commas in legacy URLs. */
 const MOD_FACET_FIELDS = new Set([
   getFacetField('Item Label'),
@@ -126,6 +143,10 @@ export function createQuery(
       }
     }
 
+    // Resolve actual index field name for q- params (URL-safe names → spaced names)
+    const rawQField = field.slice(2)
+    const resolvedQField = Q_FIELD_NAME_MAP[rawQField] ?? rawQField
+
     // Minuses
     for (const v of minuses) {
       if (type === 'fc') {
@@ -134,7 +155,7 @@ export function createQuery(
         bool.must_not.push({ term: termPhase })
       } else {
         const termPhase: Record<string, string> = {}
-        termPhase[field.slice(2)] = v
+        termPhase[resolvedQField] = v
         bool.must_not.push({ term: termPhase })
       }
     }
@@ -152,7 +173,7 @@ export function createQuery(
     } else {
       for (const v of pluses) {
         const termPhase: Record<string, string> = {}
-        termPhase[field.slice(2)] = v
+        termPhase[resolvedQField] = v
         bool[boolQuery].push({ term: termPhase })
       }
     }

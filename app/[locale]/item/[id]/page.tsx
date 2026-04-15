@@ -6,6 +6,7 @@ import { getFacetValues } from '@/lib/facet-utils'
 import { findConcordanceByMoller, WIKI_GARDINER, type ConcordanceEntry } from '@/lib/concordance-utils'
 import { Filter, ExternalLink } from 'lucide-react'
 import { CiteButton, CopyUrlButton } from './cite-button'
+import { MiradorIframe } from '@/components/mirador-iframe'
 import fs from 'fs'
 import path from 'path'
 import type { Metadata } from 'next'
@@ -219,14 +220,7 @@ function ItemContent({
       {/* IIIF ビューア */}
       <div className="bg-muted border-b">
         <div className="max-w-5xl mx-auto px-4">
-          <iframe
-            src={iframeUrl}
-            width="100%"
-            height={350}
-            allowFullScreen
-            style={{ border: 0 }}
-            title="Mirador IIIF Viewer"
-          />
+          <MiradorIframe baseUrl={iframeUrl} height={350} />
         </div>
       </div>
 
