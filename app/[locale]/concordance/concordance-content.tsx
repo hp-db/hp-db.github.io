@@ -267,7 +267,7 @@ export function ConcordanceContent() {
                 <TableRow key={i} className={`hover:bg-primary/5 ${i % 2 === 0 ? '' : 'bg-muted/20'}`}>
                   {/* Möller → HPDB search */}
                   {td(r.moller_no
-                    ? <Link href={`/search?q-HieraticNo=${r.moller_no}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
+                    ? <Link href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(r.moller_no)}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
                     : empty
                   )}
                   {/* Gardiner */}
