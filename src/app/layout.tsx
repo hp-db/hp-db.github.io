@@ -4,9 +4,10 @@ import './globals.css'
 const siteName = 'Hieratische Paläographie DB'
 const siteDesc =
   "This is a retrieval system for hieratic scripts; it uses IIIF format images (owned by the Asian Research Library of the University of Tokyo) of Georg Möller's Hieratische Paläographie (1909–36)."
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://moeller.jinsha.tsukuba.ac.jp'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://moeller.jinsha.tsukuba.ac.jp'),
+  metadataBase: new URL(baseUrl),
   title: {
     default: siteName,
     template: `%s - ${siteName}`,
@@ -18,7 +19,9 @@ export const metadata: Metadata = {
     type: 'website',
     title: siteName,
     description: siteDesc,
-    images: [{ url: '/img/ogp/ogp.jpg' }],
+    url: `${baseUrl}/`,
+    locale: 'en_US',
+    alternateLocale: ['ja_JP'],
   },
   twitter: {
     card: 'summary_large_image',

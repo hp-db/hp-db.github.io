@@ -232,6 +232,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: siteName,
       description,
       type: 'website',
+      url: `${base}/${locale}/`,
+      locale: locale === 'ja' ? 'ja_JP' : 'en_US',
+      alternateLocale: locale === 'ja' ? ['en_US'] : ['ja_JP'],
     },
     twitter: {
       card: 'summary_large_image',
