@@ -194,8 +194,8 @@ function HomeContent() {
             <CardContent className="text-sm">
               <p>
                 {locale === 'ja' ? '永井正勝' : 'Masakatsu Nagai'}:{' '}
-                <a href="mailto:nagai.masakatsu@mail.u-tokyo.ac.jp">
-                  nagai.masakatsu [at] mail.u-tokyo.ac.jp
+                <a href="mailto:mnagai@slis.tsukuba.ac.jp">
+                  mnagai [at] slis.tsukuba.ac.jp
                 </a>
               </p>
             </CardContent>
@@ -214,7 +214,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const description =
     locale === 'ja'
-      ? 'ゲオルク・メラー『ヒエラティック古書体学』（1909–36）のヒエラティック字形を検索できるデータベース。東京大学東洋文庫所蔵IIIFイメージを使用。'
+      ? 'ゲオルク・メラー『ヒエラティック古書体学』（1909–36）のヒエラティック字形を検索できるデータベース。東京大学アジア研究図書館所蔵IIIFイメージを使用。'
       : "Search database for hieratic scripts from Georg Möller's Hieratische Paläographie (1909–36), with IIIF images from the University of Tokyo Asian Research Library."
 
   return {
