@@ -26,7 +26,7 @@ function ExtLink({ href, children }: { href: string; children: React.ReactNode }
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-0.5 text-blue-600 hover:underline"
+      className="inline-flex items-center gap-0.5 text-primary hover:underline"
     >
       {children}
       <ExternalLink className="w-3 h-3 shrink-0" />
@@ -198,11 +198,11 @@ function ConcordanceSourcesContent() {
 
       <p className="mt-6 text-xs text-muted-foreground">
         Source data:{' '}
-        <Link href="/concordance" className="text-blue-600 hover:underline">
+        <Link href="/concordance" className="text-primary hover:underline">
           ID Concordance Table
         </Link>
         {' — '}
-        <Link href="/datasets" className="text-blue-600 hover:underline">
+        <Link href="/datasets" className="text-primary hover:underline">
           Datasets
         </Link>
       </p>

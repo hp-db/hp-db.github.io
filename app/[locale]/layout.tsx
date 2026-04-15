@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { locales } from '@/i18n/config'
 import { AppHeader } from './header'
 import { AppFooter } from './footer'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
@@ -58,7 +59,7 @@ function LocaleLayoutClient({
   const messages = useMessages()
 
   return (
-    <html lang={locale} prefix="og: http://ogp.me/ns#">
+    <html lang={locale} prefix="og: http://ogp.me/ns#" suppressHydrationWarning>
       <head>
         {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/assets/css/main.css" />
@@ -78,11 +79,13 @@ gtag('config', '${GA_ID}');`}
         )}
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground">
-        <NextIntlClientProvider messages={messages}>
-          <AppHeader />
-          <main className="flex-1">{children}</main>
-          <AppFooter />
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider messages={messages}>
+            <AppHeader />
+            <main className="flex-1">{children}</main>
+            <AppFooter />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

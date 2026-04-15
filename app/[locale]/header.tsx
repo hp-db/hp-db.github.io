@@ -30,6 +30,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || ''
 
@@ -159,6 +160,9 @@ export function AppHeader() {
           </div>
 
           <div className="flex-1 sm:hidden" />
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
 
           {/* Language Switcher */}
           <DropdownMenu>

@@ -254,7 +254,7 @@ export function ConcordanceContent() {
               const empty = <span className="text-muted-foreground/40 select-none">–</span>
               const lnk = (href: string, text: string) => (
                 <a href={href} target="_blank" rel="noopener noreferrer"
-                   className="text-blue-600 hover:underline hover:text-blue-500">
+                   className="text-primary hover:underline">
                   {text}
                 </a>
               )
@@ -267,7 +267,7 @@ export function ConcordanceContent() {
                 <TableRow key={i} className={`hover:bg-primary/5 ${i % 2 === 0 ? '' : 'bg-muted/20'}`}>
                   {/* Möller → HPDB search */}
                   {td(r.moller_no
-                    ? <Link href={`/search?q-HieraticNo=${r.moller_no}`} className="font-medium text-blue-600 hover:underline hover:text-blue-500">{r.moller_no}</Link>
+                    ? <Link href={`/search?q-HieraticNo=${r.moller_no}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
                     : empty
                   )}
                   {/* Gardiner */}
@@ -353,7 +353,7 @@ export function ConcordanceContent() {
                 >
                   <ExternalLink className="w-3 h-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                   <div>
-                    <div className="text-xs font-medium text-blue-600 group-hover:underline leading-tight">
+                    <div className="text-xs font-medium text-primary group-hover:underline leading-tight">
                       {t(db.nameKey)}
                     </div>
                     <p className="text-[10px] text-muted-foreground mt-0.5 leading-tight line-clamp-2">

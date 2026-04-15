@@ -102,7 +102,7 @@ export default async function ItemPage({ params }: { params: Promise<{ locale: s
 function ExtLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer"
-       className="inline-flex items-center gap-0.5 text-blue-600 hover:underline text-sm">
+       className="inline-flex items-center gap-0.5 text-primary hover:underline text-sm">
       {children}
       <ExternalLink className="w-3 h-3 shrink-0" />
     </a>
@@ -114,7 +114,7 @@ function ConcordanceSection({ entry }: { entry: ConcordanceEntry }) {
 
   const lnk = (href: string, text: string) => (
     <a href={href} target="_blank" rel="noopener noreferrer"
-       className="inline-flex items-center gap-0.5 text-blue-600 hover:underline font-mono text-xs">
+       className="inline-flex items-center gap-0.5 text-primary hover:underline font-mono text-xs">
       {text}
       <ExternalLink className="w-2.5 h-2.5 shrink-0" />
     </a>
@@ -327,7 +327,7 @@ function ItemContent({
               </a>
               <p className="text-xs mt-1">
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
-                  className="text-blue-600 hover:underline">
+                  className="text-primary hover:underline">
                   CC BY 4.0
                 </a>
               </p>
@@ -342,7 +342,7 @@ function ItemContent({
             <h2 className="text-base font-semibold mb-3 tracking-tight">
               ID Concordance
               <Link href={`/concordance?q=${concordance.moller_no}`}
-                className="ml-3 text-xs font-normal text-blue-600 hover:underline">
+                className="ml-3 text-xs font-normal text-primary hover:underline">
                 {locale === 'ja' ? '全体を見る →' : 'Full table →'}
               </Link>
             </h2>

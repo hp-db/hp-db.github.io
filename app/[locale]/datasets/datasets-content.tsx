@@ -196,7 +196,7 @@ export function DatasetsContent() {
           href="https://creativecommons.org/licenses/by/4.0/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 mt-2 text-sm text-blue-600 hover:underline"
+          className="inline-flex items-center gap-1 mt-2 text-sm text-primary hover:underline"
         >
           CC BY 4.0 <ExternalLink className="w-3 h-3" />
         </a>

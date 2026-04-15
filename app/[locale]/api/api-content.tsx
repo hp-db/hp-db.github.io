@@ -132,7 +132,7 @@ export function ApiContent() {
                       href={snorqlQueryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs text-blue-600 hover:underline"
+                      className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
                     >
                       <ExternalLink className="w-3 h-3" />
                       Run
@@ -177,7 +177,7 @@ export function ApiContent() {
                 href={`${BASE_URL}/api/items/${EXAMPLE_ITEM_ID}.json`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-blue-600 hover:underline"
+                className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
               >
                 JSON-LD <ExternalLink className="w-3 h-3" />
               </a>
