@@ -232,7 +232,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: siteName,
       description,
       type: 'website',
-      images: [{ url: '/img/ogp/ogp.jpg' }],
     },
     twitter: {
       card: 'summary_large_image',

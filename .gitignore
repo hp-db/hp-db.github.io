@@ -5,6 +5,11 @@ node_modules/
 .next
 out
 
+# Legacy Nuxt artifacts
+.nuxt
+dist
+static
+
 # Environment variables
 .env
 .env.local
