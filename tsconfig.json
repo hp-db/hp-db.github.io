@@ -24,7 +24,7 @@
     ],
     "paths": {
       "@/*": [
-        "./*"
+        "./src/*"
       ]
     }
   },
@@ -38,22 +38,12 @@
   ],
   "exclude": [
     "node_modules",
-    "src/**",
-    "static/**",
+    "scripts/**",
     "dist/**",
-    "plugins/**",
-    "store/index.js",
-    "nuxt.config.js",
-    "index.d.ts",
     "pages/**",
-    "layouts/**",
-    "components/search/**",
-    "components/custom/**",
-    "components/display/**",
-    "components/common/ShareButtons.vue",
-    "components/common/Breadcrumbs.vue",
-    "components/common/Map.vue",
-    "components/common/TOC.vue",
-    "components/common/Split.vue"
+    "src/components/common/Breadcrumbs.vue",
+    "src/components/common/Map.vue",
+    "src/components/common/TOC.vue",
+    "src/components/common/Split.vue"
   ]
 }

@@ -9,6 +9,16 @@
     html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
     #mirador { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; }
   </style>
+  <script>
+    // Apply dark background immediately to avoid flash
+    (function () {
+      var p = new URLSearchParams(location.search)
+      if (p.get('theme') === 'dark') {
+        document.documentElement.style.background = '#121212'
+        document.body && (document.body.style.background = '#121212')
+      }
+    })()
+  </script>
 </head>
 
 <body>
@@ -78,8 +88,12 @@
         layout = buildMosaic(windows.map(function (w) { return w.id; }));
       }
 
+      var themeParam = urlParams.get('theme');
+      var isDark = themeParam === 'dark';
+
       var config = {
         id: 'mirador',
+        selectedTheme: isDark ? 'dark' : 'light',
         windows: windows,
         catalog: catalog,
         window: {
