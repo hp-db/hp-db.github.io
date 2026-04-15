@@ -237,7 +237,7 @@ export function HpdbSearchResult() {
                     <img
                       src={source._thumbnail?.[0]}
                       alt={source._label?.[0] || ''}
-                      className="max-h-36 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
+                      className="max-h-36 object-contain mx-auto"
                     />
                   </Link>
                   <div className="mt-3">
