@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/0eyp7q_k9p7iq.css","style"]
 :HL["/assets/css/main.css","style"]
 :HL["https://i.creativecommons.org/l/by/4.0/88x31.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locale","param":{"type":"d","key":"en","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"item","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"134010","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"hU7k1mMkx0yCuEWcFJ_mL"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"locale","param":{"type":"d","key":"en","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"item","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"134010","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"Gv09H7Fh84m6d9HAaH34o"}
