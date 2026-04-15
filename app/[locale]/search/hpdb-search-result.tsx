@@ -160,10 +160,10 @@ export function HpdbSearchResult() {
         const source = item._source
 
         return (
-          <Card key={i} className="mb-5">
-            <CardContent className="p-4">
+          <Card key={i} className="mb-5 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 group">
+            <CardContent className="p-5">
               <div className="flex flex-col sm:flex-row gap-4">
-                <div className="sm:w-1/3 space-y-1 text-sm">
+                <div className="sm:w-1/3 space-y-1.5 text-sm">
                   <div>
                     <b>{t('Item Label')}</b>&nbsp;
                     <CustomSplit data={source['Item Label']} field={getFacetField('Item Label')} />
@@ -255,29 +255,29 @@ export function HpdbSearchResult() {
                   </label>
                 </div>
 
-                <div className="sm:w-2/3 flex flex-col items-center">
-                  <Link href={`/item/${item._id}`}>
+                <div className="sm:w-2/3 flex flex-col items-center bg-muted/30 rounded-lg p-4">
+                  <Link href={`/item/${item._id}`} className="block">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={source._thumbnail?.[0]}
                       alt={source._label?.[0] || ''}
-                      className="max-h-32 object-contain mx-auto"
+                      className="max-h-36 object-contain mx-auto transition-transform duration-200 group-hover:scale-105"
                     />
                   </Link>
                   <div className="mt-3">
                     <Link href={`/item/${item._id}`} className="no-underline">
-                      <Button variant="outline" size="sm" className="gap-1.5">
+                      <Button variant="default" size="sm" className="gap-1.5 shadow-sm">
                         {t('view_detail')}
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Button>
                     </Link>
                   </div>
                   <div className="mt-2 flex justify-center gap-2">
-                    <a href={getMiradorUrl(source)} target="_blank" rel="noopener noreferrer">
+                    <a href={getMiradorUrl(source)} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={BASE_URL + '/img/icons/mirador.svg'} width="30" alt="Mirador" />
                     </a>
-                    <a href={getUtaUrl(source)} target="_blank" rel="noopener noreferrer">
+                    <a href={getUtaUrl(source)} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={BASE_URL + '/img/icons/ut.ico'} width="30" alt={t('uta')} />
                     </a>

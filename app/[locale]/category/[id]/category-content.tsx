@@ -10,7 +10,6 @@ import { facetOptions as defaultFacetOptions } from '@/lib/facet-options'
 import { BarChart } from '../../search/bar-chart'
 import { PieChart } from '../pie-chart'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || ''
 
@@ -61,7 +60,7 @@ export function CategoryContent() {
   }, [doSearch])
 
   return (
-    <div className="max-w-4xl mx-auto px-4 my-8">
+    <div className="max-w-4xl mx-auto px-4 py-10">
       <h1 className="text-2xl font-bold mb-6">
         {locale === 'ja' ? (
           <>{title}を一覧する</>
@@ -75,20 +74,17 @@ export function CategoryContent() {
           <Link
             key={key}
             href={`/category/${key.replace('/', '-')}`}
-            className="text-sm px-2 py-1 hover:bg-accent rounded-md transition-colors"
+            className="text-xs px-3 py-1.5 rounded-full border border-border hover:border-primary hover:text-primary hover:bg-primary/5 transition-all duration-150 font-medium"
           >
             {opt.label.startsWith('_') ? t(opt.label) : opt.label}
           </Link>
         ))}
       </div>
 
-      <Card className="mb-5">
-        <CardContent className="p-3">
-          <span className="font-bold text-sm">
-            {results.length.toLocaleString()}{t('hits')}
-          </span>
-        </CardContent>
-      </Card>
+      <div className="mb-5 flex items-center gap-2">
+        <span className="text-2xl font-bold tabular-nums">{results.length.toLocaleString()}</span>
+        <span className="text-sm text-muted-foreground">{t('hits')}</span>
+      </div>
 
       <Tabs defaultValue="list">
         <TabsList>
@@ -98,14 +94,14 @@ export function CategoryContent() {
         <TabsContent value="list">
           <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 mb-5">
             {results.map((obj, i) => (
-              <div key={i} className="break-words">
+              <div key={i} className="break-words p-2 rounded-md hover:bg-accent/50 transition-colors">
                 <Link
                   href={`/search?fc-${id}=${encodeURIComponent(obj.key)}`}
-                  className={`mr-2 ${id.includes('Phone/Word') ? 'phone' : ''}`}
+                  className={`mr-1 font-medium text-sm hover:text-primary ${id.includes('Phone/Word') ? 'phone' : ''}`}
                 >
                   {['Item Type', 'Sub Type', 'Unit'].includes(id) ? t(obj.key) : obj.key}
                 </Link>
-                <span className="text-muted-foreground text-sm">({Number(obj.doc_count).toLocaleString()})</span>
+                <span className="text-muted-foreground text-xs">({Number(obj.doc_count).toLocaleString()})</span>
               </div>
             ))}
           </div>

@@ -13,6 +13,7 @@ import {
   Database,
   Languages,
   TableProperties,
+  HardDriveDownload,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -43,6 +44,7 @@ export function AppHeader() {
     { href: '/search', label: t('search'), icon: Search },
     { href: '/category/Vol', label: t('category'), icon: List },
     { href: '/concordance', label: t('concordance'), icon: TableProperties },
+    { href: '/datasets', label: t('datasets'), icon: HardDriveDownload },
     { href: '/about', label: t('ユーザーズガイド'), icon: Info },
     {
       href: BASE_URL + '/snorql',
@@ -82,7 +84,7 @@ export function AppHeader() {
 
   return (
     <>
-      <header className="bg-background sticky top-0 z-40 border-b border-primary/20">
+      <header className="bg-background/95 backdrop-blur-sm sticky top-0 z-40 border-b border-primary/10 shadow-sm">
         <div className="flex items-center h-16 px-4 max-w-7xl mx-auto">
           {/* Mobile menu */}
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
@@ -133,18 +135,18 @@ export function AppHeader() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-lg font-semibold text-foreground no-underline hover:no-underline truncate"
+            className="text-base font-bold text-foreground no-underline hover:no-underline truncate tracking-tight"
           >
             {t('Hieratische Paläographie DB')}
           </Link>
 
           {/* Desktop nav links */}
           <nav className="hidden lg:flex items-center ml-8 gap-1">
-            {navItems.slice(0, 4).map((item, i) => (
+            {navItems.slice(0, 5).map((item, i) => (
               <Link
                 key={i}
                 href={item.href}
-                className="px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-accent no-underline transition-colors"
+                className="px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-accent/70 no-underline transition-colors font-medium"
               >
                 {item.label}
               </Link>
@@ -212,10 +214,10 @@ function FullTextSearchBar() {
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
         placeholder={t('search')}
-        className="h-9"
+        className="h-9 bg-muted/50 border-muted-foreground/20 focus:bg-background transition-colors"
         aria-label={t('search')}
       />
-      <Button variant="ghost" size="icon" onClick={handleSearch} className="shrink-0 h-9 w-9" aria-label={t('search')}>
+      <Button variant="ghost" size="icon" onClick={handleSearch} className="shrink-0 h-9 w-9 text-muted-foreground hover:text-foreground" aria-label={t('search')}>
         <Search className="w-4 h-4" />
       </Button>
     </div>

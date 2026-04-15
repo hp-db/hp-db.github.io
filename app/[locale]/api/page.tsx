@@ -1,8 +1,7 @@
-import { Suspense } from 'react'
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { locales } from '@/i18n/config'
-import { ConcordanceContent } from './concordance-content'
+import { ApiContent } from './api-content'
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -12,23 +11,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const t = await getTranslations({ locale })
   const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://moeller.jinsha.tsukuba.ac.jp'
-  const pageTitle = t('concordance_title')
+  const pageTitle = t('api_title')
   const siteName = 'Hieratische Paläographie DB'
 
   const description =
     locale === 'ja'
-      ? 'メラー番号とガーディナー記号一覧、Unicode、JSesh、MdC、TSLなどエジプト学データベースとの対照表。'
-      : 'Cross-reference table mapping Möller hieratic numbers to Gardiner Sign List, Unicode, JSesh, MdC, TSL, and other Egyptological databases.'
+      ? 'ヒエラティック古書体学データベースのSPARQLエンドポイントとLinked Data API。w3id.org/hpdb URIでJSON-LDとして取得可能。'
+      : 'SPARQL endpoint and Linked Data API for the Hieratische Paläographie Database. All items available as JSON-LD via w3id.org/hpdb URIs.'
 
   return {
     title: pageTitle,
     description,
     alternates: {
-      canonical: `${base}/${locale}/concordance/`,
+      canonical: `${base}/${locale}/api/`,
       languages: {
-        'en': `${base}/en/concordance/`,
-        'ja': `${base}/ja/concordance/`,
-        'x-default': `${base}/en/concordance/`,
+        'en': `${base}/en/api/`,
+        'ja': `${base}/ja/api/`,
+        'x-default': `${base}/en/api/`,
       },
     },
     openGraph: {
@@ -45,12 +44,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }
 }
 
-export default async function ConcordancePage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function ApiPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   setRequestLocale(locale)
-  return (
-    <Suspense>
-      <ConcordanceContent />
-    </Suspense>
-  )
+  return <ApiContent />
 }

@@ -11,6 +11,20 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://moeller.jinsha.tsukuba.ac.jp'
+  return {
+    alternates: {
+      languages: {
+        'en': `${base}/en/`,
+        'ja': `${base}/ja/`,
+        'x-default': `${base}/en/`,
+      },
+    },
+  }
+}
+
 export default function LocaleLayout({
   children,
   params,

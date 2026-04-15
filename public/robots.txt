@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://moeller.jinsha.tsukuba.ac.jp/sitemap.xml

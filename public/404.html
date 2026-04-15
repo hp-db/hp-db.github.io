@@ -1,9 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting... — Hieratische Paläographie DB</title>
   <script>
-    var pathName = window.location.pathname;
-    var redirectPath = '/redirect'; ///dev/redirect
-    location.href = redirectPath + '?p=' + encodeURI(pathName);
+    (function() {
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      // If the path already starts with a locale prefix (/en/ or /ja/),
+      // this is a genuine 404 — show the 404 page below.
+      if (/^\/(en|ja)(\/|$)/.test(path)) return;
+
+      // Old URL without locale prefix → redirect to /en/ equivalent,
+      // preserving the full query string and hash.
+      window.location.replace('/en' + path + search + hash);
+    })();
   </script>
 </head>
+<body style="font-family:system-ui,-apple-system,'Segoe UI',sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;background:#fafafa;margin:0;">
+  <div style="text-align:center;padding:2rem;">
+    <h1 style="font-size:3rem;font-weight:700;color:#0f172a;margin:0 0 0.5rem;letter-spacing:-0.02em;">404</h1>
+    <p style="color:#64748b;margin:0 0 2rem;font-size:1.125rem;">Page not found</p>
+    <a href="/en/" style="background:#0d9488;color:#fff;padding:0.625rem 1.5rem;border-radius:0.5rem;text-decoration:none;font-weight:500;font-size:0.875rem;">
+      Go to Home
+    </a>
+  </div>
+</body>
 </html>
