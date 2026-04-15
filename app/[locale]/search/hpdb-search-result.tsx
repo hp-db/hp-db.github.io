@@ -62,30 +62,6 @@ export function HpdbSearchResult() {
     window.open(url, '_blank')
   }
 
-  const getMiradorUrl = (source: Record<string, string[]>) => {
-    const related = source._relatedLink[0]
-    const spl = related.split('&')
-    const manifest = spl[0].split('=')[1]
-    const canvas = spl[1].split('=')[1] + '#xywh=' + spl[2].split('=')[1]
-    const params = JSON.stringify([{ manifest, canvas }])
-    return BASE_URL + '/mirador/' + IDX + '?params=' + encodeURIComponent(params)
-  }
-
-  const getUtaUrl = (source: Record<string, string[]>) => {
-    const params = source._relatedLink[0].split('?')[1].split('&')
-    const page = params[1].split('/canvas/p')[1]
-    const xywh = params[2].split('=')[1]
-    const id = params[0].split('/manifest/')[1].split('/')[0]
-    return (
-      'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/asia/document/' +
-      id +
-      '#?c=0&m=0&s=0&cv=' +
-      (Number(page) - 1) +
-      '&xywh=' +
-      xywh
-    )
-  }
-
   return (
     <div>
       <div className="my-4 text-right flex justify-end gap-2">
@@ -271,16 +247,6 @@ export function HpdbSearchResult() {
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Button>
                     </Link>
-                  </div>
-                  <div className="mt-2 flex justify-center gap-2">
-                    <a href={getMiradorUrl(source)} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={BASE_URL + '/img/icons/mirador.svg'} width="30" alt="Mirador" />
-                    </a>
-                    <a href={getUtaUrl(source)} target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={BASE_URL + '/img/icons/ut.ico'} width="30" alt={t('uta')} />
-                    </a>
                   </div>
                 </div>
               </div>
