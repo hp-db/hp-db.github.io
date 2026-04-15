@@ -1,0 +1,176 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z2",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z2"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/categoryClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/categoryClass/Z"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/categoryClass/Z",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Category"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Z"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/561",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "561"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/itemNo/57",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/ItemNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "57"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A1",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A1"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/categoryClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/categoryClass/A"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/items/269001",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_091.tif/984,1678,3864,448/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/license": [
+      {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://schema.org/relatedLink": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://moeller.jinsha.tsukuba.ac.jp/data/manifest/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest.json&canvas=https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p91&xywh=984,1678,3864,448&xywh_highlight=border"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "http://w3id.org/hpdb/item/269001"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "269001"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/33B"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/561"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/A1"
+      },
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/Z2"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/itemNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/itemNo/57"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/itemType": [
+      {
+        "@value": "Ligature"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/order": [
+      {
+        "@value": 1
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/page": [
+      {
+        "@value": 69
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/unit": [
+      {
+        "@value": "Continuous"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/categoryClass/A",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Category"
+    ],
+    "http://schema.org/description": [
+      {
+        "@value": "Man and his occupations"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "56 signs in Gardiner (1957:242–247), with A59 \"man threatening with stick\" inserted after A25 \"man striking with left hand hanging behind back\", and two variants A14* \"blood interpreted as ax\" of A14 \"man with blood streaming from his head\" and A17* \"child sitting with arms hanging down\" of A17 \"child sitting with hand to mouth\"."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/33B",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "33B"
+      }
+    ]
+  }
+]

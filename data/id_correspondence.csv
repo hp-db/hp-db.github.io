@@ -1,0 +1,938 @@
+moller_no,gardiner_no,unicode_cp,unicode_char,jsesh,mdc,hieroglyphica,ifao,wikidata_id,wikidata_label,wikidata_image,tsl_id,desc,match_type
+1,A26,U+1301E,𓀞,A26,A26,A26,"4,5",Q117876890,Servant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A26.png,396,"Man, standing, right arm outstretched before him, with the left arm hanging beside the body.",matched
+2,A30,U+13022,𓀢,A30,A30,A30,"6,4",Q108070997,Man worshiping,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A30.png,460,"Man, standing, both arms raised in front, hands held vertically, handpalms outwards.",matched
+3,A??,,,,,,,,,,,,unknown
+4,A28,U+13020,𓀠,A28,A28,A28,"5,11",Q117876990,Man with arms raised,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A28.png,422,"Man, standing, with arms raised at either side of the body , handpalms inwards.",matched
+5,A31,U+13023,𓀣,A31,A31,A31,"4,16",,,,492,"Man, standing, head facing forwards, arms raised behind him, hand palms outwards.",matched
+6,A32,U+13024,𓀤,A32,A32,A32,"29,9",,,,516,"Man, dancing, left leg straight, right knee in front of the left leg, right foot behind the left leg, toes at the hight of the left foot, right arm in front of the body, left arm raised at the back, hand at the hight of the head.",matched
+7,A16,U+13013,𓀓,A16,A16,A16,"6,10",Q123414573,Q123414573,,234,"Man, standing, bend forwards, arms hanging downwards, extended towards the front.",matched
+8,A16a,,,,,,,,,,,,unmatched
+9,A81,,,,,,,,,,899,,unmatched
+10,A53,U+1303E,𓀾,A53,A53,A53,"47,5",Q117877959,Mummy,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A53.png,,"A mummy with a long curved beard, standing upright.",matched
+11,A21,U+13019,𓀙,A21,sr A21,A21,"8,15",Q117876272,Man with staff,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A21.png,303,"Man, standing, right arm in front, holding a long stick/staff, left arm hanging beside the body, holding a piece of cloth.",matched
+12,A23,U+1301B,𓀛,A23,A23,A23,,,,,,"The king, standing, with a long straight beard and short wig/coif, with a uraeus bound to the forehead, right arm forward, hand at the hight of the shoulder, holding a staff with a triangular piece (point down) at the hight of the waist, left arm hanging beside the body, holding a mace (T3) horizontally.",matched
+13,A19,U+13017,𓀗,A19,A19,,"9,7",,,,274,"Man, standing, with a bend back, right arm forward, holding a staff/stick near the top, left arm hanging beside the body.",matched
+14,A19,U+13017,𓀗,A19,A19,,"9,7",,,,274,"Man, standing, with a bend back, right arm forward, holding a staff/stick near the top, left arm hanging beside the body.",matched
+15,A24,U+1301C,𓀜,A24,A24,A24,"22,8",Q117876806,Man hitting,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A24.png,361,"Man, standing, both arms towards the front, holding a branch, as if to strike with it.",matched
+16,A25,U+1301D,𓀝,A25,A25,A25,,,,,383,"Man, standing, back bend forward, right arm forward, holding a stick which slightly curves towards the body, left arm hanging beside the body.",matched
+17,A59,U+13044,𓁄,A59,A59,A59,"22,15",,,,846,"Man, standing, right arm forward, forearm and hand at the level of the waist, left arm raised, forearm vertically, holding a stick nearly horizontally.",matched
+18,A170,,,,,,,,,,246,,unmatched
+19,A199a,,,,,,,,,,,,unmatched
+20,A176,,,,,,,,,,,,unmatched
+21,A58a,,,,,,,,,,,,unmatched
+22,A35,U+13028,𓀨,A35,A35,A35,"16,12",Q117877177,Mason,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A35.png,563,"Man, standing, both arms raised in front, touching a vertically written wall with battlements near the top.",matched
+23,A121c,,,,,,,,,,,,unmatched
+24,A38,U+1302B,𓀫,A38,qiz A38,A38,"32,5",,,,606,"Man, standing, arms at either side of the body, holding the necks of two emblematic animals with panther heads, connected by a line which runs under the feet of the man.",matched
+25,A36c,,,,,,,,,,593,,unmatched
+26,A50,U+1303B,𓀻,A50,Sps A50,A50,"37,16",Q117877785,Nobleman,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A50.png,794,"Man, with short straight beard, seated on a chair, no arms visible.",matched
+27,A??,,,,,,,,,,,,unknown
+28,A??,,,,,,,,,,,,unknown
+29,A??,,,,,,,,,,,,unknown
+30,A17,U+13014,𓀔,A17,Xrd A17,A17,"34,1",Q3054132,𓀔 child,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A17.png,245,"A child, seated on nothing, forelegs separated, right arm raised with hand to mouth, left arm hanging beside the body.",matched
+31,A17*,U+13014,𓀔,A17,Xrd A17,A17,"34,1",Q3054132,𓀔 child,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A17.png,,"A child, seated on nothing, forelegs separated, right arm raised with hand to mouth, left arm hanging beside the body.",matched
+32,A7,U+13009,𓀉,A7,A7,A7,"2,9",Q117849077,Tired man,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A7.png,879,"Man, seated on heel, right leg extended with foot in front of left leg, right and left arm sloping downward to either side of the body.",matched
+33,A1,U+13000,𓀀,A1,A1,A1,"1,1",Q117849041,Man,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A1.png,82,"Man, seated, right knee raised, right arm raised, left arm in front of body.",matched
+34,A??,,,,,,,,,,,,unknown
+35,A2,U+13001,𓀁,A2,A2,A2,"2,4",Q117849031,Man with hand at mouth,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A2.png,290,"Man, seated, right knee raised, right arm raised with hand to mouth, left arm hanging beside the body.",matched
+36,A8,U+1300A,𓀊,A8,A8,,"3,7",Q117849080,Rejoicing man,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A8.png,895,"Man, seated, right knee raised, right arm angled in front of the body, left arm raised, hand held verically, handpalm inwards (hnw gesture).",matched
+37,C11,U+13068,𓁨,C11,HH C11,,,Q117849443,Heh-god,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C11.png,,"God, seated on heel, right knee raised, with long curved beard and coif, with a palm branch, stripped of leaves and notched on his head (M4), notch forward, raised arms at either side of the body, hands held vertically, with the handpalms inwards.",matched
+38,A4,U+13003,𓀃,A4,A4,A4,"2,14",Q6746125,𓀃,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A4.png,630,"Man, seated, right knee raised, back straight, both arms raised in front, handpalms outwards.",matched
+39,A4/A5,U+13003,𓀃,A4,A4,A4,"2,14",Q6746125,𓀃,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A4.png,,"Man, seated, right knee raised, back straight, both arms raised in front, handpalms outwards.",matched
+40,A6,U+13006,𓀆,A6,A6,A6,"13,5",Q117849072,Man with water jug,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A6.png,7114,"Man, seated, right knee raised, with a vase on its side, with liquid issuing from it (W54), orientated to the front, on his head, both arms raised towards the front, handpalms outwards.",matched
+41,A133,,,,,,,,,,155,,unmatched
+42,A9,U+1300B,𓀋,A9,A9,A9,"11,6",Q117849086,Man with basket on head,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A9.png,912,"Man, seated, right knee raised, a vessel on his head, right arm raised in front, with the hand at the vessel, left arm hanging beside the body.",matched
+43,A11,U+1300D,𓀍,A11,A11,A11,,Q123458462,Q123458462,,114,"Man, seated, right knee raised, right arm raised In front, holding a sceptre (S42), angled towards the head, left arm in front of the body, holding a stick, resting against the shoulder.",matched
+44,A12,U+1300E,𓀎,A12,mSa A12,A12,,Q4785990,𓀎,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A12.png,132,"Man, seated on heel, right knee up, with a feather (H6) on his head, angling backwards, right arm forwards, forearm horizontal, holding a composite bow (T10), left arm in front of the body, holding a stick which angles backwards, leaning against the left shoulder.",matched
+45,A40,U+1302D,𓀭,A40,A40,,"38,9",Q117849675,God-seated,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A40.png,,"God, seated, both knees up, with covered legs and arms, with a long curved beard and long wig.",matched
+46,A52,U+1303D,𓀽,A52,A52,A52,"46,11",Q119094059,Q119094059,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A52.png,821,"Man, seated, both knees down, with short straight beard, both arms forward, forearms horizontal, one above the other, holding a flagellum (S45).",matched
+47,A47,U+13038,𓀸,A47,iry A47,A47,"17,8",Q117877693,Sitting man with tool,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A47.png,748,"Man (shepherd), seated, both knees up, with covered legs and arms, with a short straight beard and short hair/wig, holding a stick which curves inwards, with a band of string or fabric, with the ties away from the body.",matched
+48,A47,U+13038,𓀸,A47,iry A47,A47,"17,8",Q117877693,Sitting man with tool,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A47.png,748,"Man (shepherd), seated, both knees up, with covered legs and arms, with a short straight beard and short hair/wig, holding a stick which curves inwards, with a band of string or fabric, with the ties away from the body.",matched
+49,A13,U+1300F,𓀏,A13,A13,A13,"24,5",Q3404012,𓀏,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A13.png,149,"Man (enemy), seated on heel, both knees down, both arms behind the back, bound together with rope.",matched
+50,A14*,U+13010,𓀐,A14,A14,A14,,,,,,"Man, curled up, right and left lower legs separated, back nearly horizontal, both arms forward, forearms horizontal, grasping a line of liquid (blood) which comes from the head.",matched
+51,A14,U+13010,𓀐,A14,A14,A14,,Q117875766,Enemy,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A14A.png,189,"Man, curled up, right and left lower legs separated, back nearly horizontal, both arms forward, forearms horizontal, grasping a line of liquid (blood) which comes from the head.",matched
+52,A15,U+13012,𓀒,A15,xr A15,A15,"7,11",Q117875920,Man falling down,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A15.png,214,"Man, written horizontally, facing down, arms raised in front.",matched
+53,A29,U+13021,𓀡,A29,A29,A29,"6,2",,,,436,"Man, upside down, both arms raised at either side of the body, handpalms inwards.",matched
+54,A54,U+1303F,𓀿,A54,A54,A54,"47,6",,,,,"A mummy with a long curved beard, lying horizontally.",matched
+55,A98,,,,,,,,,,926,,unmatched
+56,A??,,,,,,,,,,,,unknown
+57,A??,,,,,,,,,,,,unknown
+58,A??,,,,,,,,,,,,unknown
+59,A??,,,,,,,,,,,,unknown
+61,B1,U+13050,𓁐,B1,B1,B1,"48,3",Q117849099,Woman,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-B1.png,,"Woman, seated, both knees up, with covered legs and arms, with long hair.",matched
+62,B7,U+13057,𓁗,B7,B7,B7,"49,6",Q117849157,Queen with flower,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-B7.png,,"Woman, seated, both knees up, with covered legs and arms, with long hair, wearing a diadem, holding a flower which curves forward, with the flower orientated downwards.",matched
+63,A48,U+13039,𓀹,A48,A48,,,,,,764,"Man, seated, both knees up, with covered legs and arms, with short hair/wig, holding an unknown object (mace/knife/stick?)",matched
+64,B64,,,,,,,,,,,,unmatched
+65,B2,U+13051,𓁑,B2,B2,B2,"54,2",,,,,"Woman, pregnant, seated, both knees down, with a band of cloth around the head, right arm forward, angling down towards the knee, left arm hanging beside the body.",matched
+66,B4,U+13053,𓁓,B4,B4,B4,,Q117849105,Woman giving birth,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-B4.png,,"Woman, pregnant, seated, both knees down, right arm forward, angling down towards the knee, left arm hanging beside the body, with 3 vertical lines coming from the legs.",matched
+67,B3,U+13052,𓁒,B3,msi B3,B3,"54,5",Q117849105,Woman giving birth,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-B4.png,,"Woman, pregnant, seated, both knees down, right arm forward, angling down towards the knee, left arm hanging beside the body, with the head and arms of a child coming from the legs.",matched
+68,B5,U+13054,𓁔,B5,B5,B5,"54,8",Q117849129,Woman suckling,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-B5.png,,"Woman, seated, both knees down, nursing a child, seated on her lap, left arm forward, hand over the chest of the woman, right arm hanging beside the body; right arm forward, embracing/holding the child, left arm over the chest.",matched
+69,A??,,,,,,,,,,,,unknown
+70,C18,U+1306F,𓁯,,C18,,,Q117849562,Tatenen-god,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C18.png,,"God, seated, both knees down, with a long curved beard and long hair/wig, wearing a headdress consisting of two feathers on rams horns (S77).",matched
+71,A304,,,,,,,,,,,,unmatched
+72,C72,,,,,,,,,,,,unmatched
+73,C7,U+13063,𓁣,C7,stX C7,C7,"76,9",Q117849271,Seth-god,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C7.png,,"God, seated, knees up, with covered legs and arms, with the head of a Seth animal.",matched
+74,C4/C5,U+13060,𓁠,C4,Xnmw C4,C4,"71,3",,,,,"God, seated, knees up, with covered legs and arms, with the head of a ram, with horizontal twisted horns.",matched
+75,C75,,,,,,,,,,,,unmatched
+76,C1,U+1305A,𓁚,C1,C1,C1,"76,5",Q117849183,Ra-god,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C2.png,,"God, seated, knees up, with covered legs and arms, with a long curved beard and long wig/hair,  with N6 (The sun, encircled by a cobra (Naja haja), standing up, with expanded hood (Uraeus)) on its head.",matched
+77,C10,U+13066,𓁦,C10,mAat C10,C10,"85,7",Q117849384,Maat-goddess,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C10A.png,,"Goddess, seated, knees up, with covered legs and arms, with a cloth band around her head, with a feather (H6) on her head.",matched
+78,C78,,,,,,,,,,,,unmatched
+79,D1,U+13076,𓁶,D1,tp D1,D1,"94,1",Q117849808,Head,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D1.png,,"The head of a human man, seen in profile, with a short straight beard.",matched
+80,D2,U+13077,𓁷,D2,Hr D2,D2,"94,12",Q5428311,𓁷,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D2.png,,The face of a human man.,matched
+81,D3,U+13078,𓁸,D3,Sny D3,D3,,Q117849873,Hair,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D3.png,,A lock of hair with three strands.,matched
+82,D4,U+13079,𓁹,D4,ir D4,D4,"96,14",Q3596265,𓆉,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D4.png,,An eye.,matched
+83,D6,U+1307B,𓁻,D6,D6,D6,"97,4",,,,,"An eye, with a line of eye-paint above the eye.",matched
+84,D7,U+1307C,𓁼,D7,D7,D7,"98,1",,,,,An eye with a painted lower lid.,matched
+85,D9,U+1307F,𓁿,D9,rmi D9,D9,,Q125669073,Q125669073,,,"An eye, with three lines coming from the bottom.",matched
+86,D10,U+13080,𓂀,D10,wDAt D10,D10,"99,1",Q211286,Eye of Horus,http://commons.wikimedia.org/wiki/Special:FilePath/Eye%20of%20Horus%20bw.svg,,"An eye, with the markings of the head of a falcon.",matched
+87,D17,U+13087,𓂇,D17,D17,D17,"99,14",Q117850116,Image symbol,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D17.png,,The left and right lower marking of an Udjat eye.,matched
+88,D12,U+13082,𓂂,D12,D12,D12,"99,8",,,,,The pupil of an eye.,matched
+89,D13,U+13083,𓂃,D13,D13,D13,"99,10",,,,,An eyebrow.,matched
+90,D20/D19,U+1308A,𓂊,D20,D20,D20,"100,8",,,,,"The nose, eye and cheek of a human, written in a semi-cursive fashion.",matched
+91,D21,U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+92,D25,U+1308F,𓂏,D25,spty D25,D25,"101,11",,,,,"The upper and lower lip of a human, with teeth.",matched
+93,D26,U+13090,𓂐,D26,D26,D26,"102,1",Q117850447,Spitting mouth,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D26.png,,"A human mouth, seen from the side, with a wavy downwards sloping line coming from the lips.",matched
+94,D27,U+13091,𓂑,D27,mnD D27,D27,"102,13",Q117850490,Breast,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D27.png,,A human breast.,matched
+95,D52,U+130B8,𓂸,D52,mt D52,D52,"116,14",Q65660545,𓂸 phallus,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D52.png,,A phallus with a scrotum.,matched
+96,D53,U+130BA,𓂺,D53,D53,D53,"117,7",Q65660598,𓂺,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D53.png,,"A phallus with a scrotum, with a line of liquid issuing from it.",matched
+97,D279,,,,,,,,,,,,unmatched
+98,N42/N41,U+1321F,𓈟,N42,N42,N42,"279,8",,,,,A well with a straight line of water.,matched
+99,D36,U+1309D,𓂝,D36,a D36,D36,"109,7",Q2923885,Arm,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D36.png,,"A forearm, with the palm of the hand facing upwards.",matched
+100,D42,U+130A3,𓂣,D42,D42,D42,"111,13",Q18205033,𓂣,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D42.png,,"A forearm, with the palm of the hand downwards, upper arm vertical.",matched
+101,D41,U+130A2,𓂢,D41,D41,D41,"111,10",,,,,"A forearm, with the palm of the hand downwards, with the upper arm bend forwards.",matched
+102,D212a,,,,,,,,,,,,unmatched
+103,D37,U+1309E,𓂞,D37,D37,D37,"110,1",Q117850780,Arm with conical bread,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D37.png,,A forearm with the hand holding a conical loaf of bread (X8).,matched
+104,D39,U+130A0,𓂠,D39,D39,D39,"110,6",Q117851014,Arm with pot,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D39.png,,A forearm with the hand holding a round vessel with an upstanding rim (W24).,matched
+105,D40,U+130A1,𓂡,D40,D40,D40,"110,13",Q117851073,Arm with stick,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D40.png,,A forearm with the hand holding a stick.,matched
+106,D43,U+130A4,𓂤,D43,D43,D43,"112,1",Q117851119,Arm with flail,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D43.png,,A forearm with the hand holding a flagellum (S45).,matched
+107,D45,U+130A6,𓂦,D45,Dsr D45,D45,"113,4",Q5285380,𓂦,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D45.png,,"An arm, bend at the elbow, forearm nearly horizontal, holding a wand or brush.",matched
+108,D28,U+13093,𓂓,D28,kA D28,D28,"103,2",Q117850523,Arms spread out (ka hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Ka%20arms.svg,,"Two arms, raised upwards, with the forearms and hands vertical, handpalms inwards.",matched
+110,D32,U+13098,𓂘,D32,D32,D32,"106,4",Q4793835,𓂘,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D32.png,,"Two arms, lowered, with the elbows bent outwards, and the palms of the hands facing towards each other.",matched
+111,D35,U+1309C,𓂜,D35,D35,D35,"109,5",Q117850673,Arms spread,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D35.png,,"Two arms, connected at the shoulders, spread sideways, forearms horizontal, with the palms of the hands facing upwards",matched
+112,D33,U+13099,𓂙,D33,D33,D33,"108,1",Q117850601,Arms with oar,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D33.png,,"Two arms, holding an oar, in a rowing motion, below a cover.",matched
+113,D34,U+1309A,𓂚,,aHA D34,D34,,Q117850639,Arms with shield,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D34.png,,"Two arms, connected at the shoulders, one arm forwards, with a horizontal forearm, holding a shield as seen in profile, top curving inwards, other arm downwards, forearm vertical, holding a mace (T3) horizontally.",matched
+115,D46,U+130A7,𓂧,D46,d D46,D46,"114,10",Q613996,𓂧,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D46.png,,A human hand.,matched
+116,D49,U+130AC,𓂬,D49,D49,D49,"115,14",Q117851208,Fist,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D49.png,,"A human hand, held as a fist, with the thumb on top.",matched
+117,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+118,D51,U+130B7,𓂷,D51,D51,D51,"116,12",,,,,A horizontal human finger.,matched
+121,D55,U+130BD,𓂽,D55,D55,D55,"118,6",Q6518673,𓂽,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D55.png,,"Legs in a walking posture, feet orientated away from the reading direction.",matched
+122,D56,U+130BE,𓂾,D56,sbq D56,D56,"119,5",Q117851350,Leg,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D56.png,,A leg with a bend knee.,matched
+123,D57=D56+T30,,𓂿+𓂾+𓌪,,,,,,,,,,unmatched
+124,D58,U+130C0,𓃀,D58,b D58,D58,"119,12",Q3160823,𓃀,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D58.png,,A human foot and lower leg.,matched
+125,E23,U+130ED,𓃭,E23,rw E23,E23,"136,12",Q6555369,𓃭 recumbent lion,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E23.png,,"A lion, lying down, tail curled over the body towards the back.",matched
+126,E13,U+130E0,𓃠,E13,E13,E13,"131,5",Q117858290,Cat,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E13.png,,"A cat, seated, tail curled over the body towards the back.",matched
+127,E14,U+130E1,𓃡,E14,E14,E14,"129,4",Q117858301,Sloughi,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E14.png,,"A hunting hound, standing, tail curling upwards.",matched
+128,E17,U+130E5,𓃥,E17,zAb E17,E17,"129,5",Q117858313,Standing canine,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E17.png,,"A jackal, standing, tail down.",matched
+129,E15,U+130E2,𓃢,E15,E15,E15,"130,3",Q117858305,Recumbent canine,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E16.png,,"A jackal, lying down, tail downwards.",matched
+130,E16,U+130E3,𓃣,E16,E16,E16,"130,15",,,,,"A jackal, lying down, tail downwards, on top of a shrine.",matched
+131,E130,,,,,,,,,,,,unmatched
+132,E34,U+130F9,𓃹,E34,wn E34,E34,"135,1",Q3257384,𓃹 hare,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E34.png,,"A desert hare, lying down.",matched
+133,E7,U+130D8,𓃘,E7,E7,E7,"124,1",Q117858103,Donkey,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E7.png,,"A donkey/ass, standing.",matched
+134,E12,U+130DF,𓃟,E12,E12,,"137,14",Q117858287,Pig,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E12.png,,A pig.,matched
+135,E25,U+130EF,𓃯,E25,E25,E25,"133,8",Q18206446,𓃯,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E25.png,,A hippopotamus (Hippopotamus amphibius).,matched
+136,E30,U+130F5,𓃵,E30,E30,E30,,Q117858597,Ibex,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E30.png,,A Nubian ibex (Capra nubiana).,matched
+137,E29,U+130F4,𓃴,E29,E29,E29,"127,3",Q117858533,Gazelle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E29.png,,"A gazelle, standing, with one horn visible.",matched
+138,E28,U+130F2,𓃲,E28,E28,E28,"126,3",Q117858467,Oryx,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E28.png,,"An oryx, standing.",matched
+140,E10,U+130DD,𓃝,E10,E10,E10,"127,8",Q117858285,Ram,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E11.png,,"A ram (Ovis longipes palaeo-aegyptiacus), standing, with a beard.",matched
+141,E2,U+130D3,𓃓,E2,E2,E2,"142,13",,,,,"A bovid (bull), standing, with its head lowered as if to attack.",matched
+142,E1,U+130D2,𓃒,E1,E1,,,Q18205350,𓃒,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E1.png,,"A bovid (bull), standing, with outwards curving horns.",matched
+143,E9,U+130DB,𓃛,E9,E9,E9,"128,9",Q18210760,𓃛,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E9.png,,"A newborn bubalis antilope, lying down, legs folded beneath the body, long tail downwards.",matched
+144,E21,U+130EB,𓃫,E21,E21,E21,"124,9",,,,,"The animal of Seth, lying down, tail up.",matched
+145,E??,,,,,,,,,,,,unknown
+146,F4,U+13102,𓄂,F4,HAt F4,F4,"152,14",Q117859891,Forepart of lion,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F4.png,,"The forepart of a lion, lying down.",matched
+147,F9,U+13107,𓄇,F9,F9,F9,"152,9",Q6526857,𓄇,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F9.png,,The head of a leopard.,matched
+148,F12,U+1310A,𓄊,F12,wsr F12,F12,"149,5",Q117859913,Wsr staff,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F12.png,,The head and neck of a canine animal.,matched
+149,F78,,,,,,,,,,,,unmatched
+150,F10,U+13108,𓄈,F10,F10,F10,"150,9",,,,,"The head and neck of a long-necked horned animal, with a forked end to the neck with a horizontal line over the forked end.",matched
+151,F5,U+13103,𓄃,F5,SsA F5,F5,"151,12",Q117859897,Head of gazelle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F6.png,,The head of a bubalis antilope.,matched
+152,F7,U+13105,𓄅,F7,F7,F7,"146,7",Q117859901,Head of ram,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F8.png,,"The head of a ram (Ovis longipes palaeo-aegyptiacus), with beard.",matched
+153,F5,U+13103,𓄃,F5,SsA F5,F5,"151,12",Q117859897,Head of gazelle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F6.png,,The head of a bubalis antilope.,matched
+154,F1,U+130FE,𓃾,F1,F1,,"147,6",Q117859876,Head of cow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F1.png,,The head of a bovid (ox) with outwards curving horns.,matched
+155,F13,U+1310B,𓄋,F13,wp F13,F13,"154,10",Q117859918,Horns (wp hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F13.png,,The horns of a bovid (ox).,matched
+156,F15,U+1310E,𓄎,F15,F15,F15,"155,2",,,,,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a sun-disk (N5), written within the horns of a bovid (F13).",matched
+157,F16,U+1310F,𓄏,F16,db F16,F16,"155,14",Q117859926,Horn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F16.png,,A horn of a bovid,matched
+158,F21,U+13114,𓄔,F21,sDm F21,F21,,Q117859964,Ear of animal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F21.png,,"The ear of a bovid (ox), without internal detail.",matched
+159,F21,U+13114,𓄔,F21,sDm F21,F21,,Q117859964,Ear of animal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F21.png,,"The ear of a bovid (ox), without internal detail.",matched
+160,F18,U+13111,𓄑,F18,bH F18,F18,"156,10",Q117859938,Tusk,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F18.png,,A tusk of an elephant.,matched
+161,F20,U+13113,𓄓,F20,ns F20,F20,"157,5",Q117859951,"Tongue,",http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F20.png,,A tongue.,matched
+162,F25,U+13119,𓄙,F25,wHm F25,F25,"159,8",Q118093535,Leg of cow (whm hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F25.png,,The leg and hoof of a bovid (ox).,matched
+163,F22,U+13116,𓄖,F22,pH F22,F22,"159,1",Q117859973,Hind parts of lion,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F22.png,,The hind-quarters of a seated lion or leopard.,matched
+164,F23,U+13117,𓄗,F23,xpS F23,F23,"159,12",Q5468631,𓄗 leg of cow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F23.png,,"A foreleg of a bovid (ox), hoof orientated towards the reading direction.",matched
+165,F26,U+1311A,𓄚,F26,Xn F26,F26,"161,1",Q117859988,Goat skin,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F26.png,,The skin of a goat.,matched
+166,F27,U+1311B,𓄛,F27,F27,F27,"161,4",Q117860005,Cow skin,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F27.png,,"The skin of a cow, with the tail curved backwards.",matched
+167,F29,U+1311D,𓄝,F29,sti F29,F29,"161,12",Q117860014,Cow skin with arrow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F29.png,,"The skin of a cow, with the tail hanging straight down, pierced by an arrow with rounded fletching (T11).",matched
+168,F28,U+1311C,𓄜,F28,F28,F28,"161,11",Q117860010,Cow skin (ab hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F28.png,,"The skin of a cow, with the tail hanging straight down.",matched
+169,F32,U+13121,𓄡,F32,X F32,F32,"163,10",Q117860023,Belly with teats (kh hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F32.png,,"The udder and tail of an animal, seen from below.",matched
+171,F33,U+13122,𓄢,F33,sd F33,F33,,Q117860029,Tail,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F33.png,,The tail of an animal.,matched
+172,F39,U+1312A,𓄪,F39,imAx F39,F39,"167,2",Q117860095,Spine and nerve,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F39.png,,"A spine, with the spinal cord hanging out at the backside.",matched
+173,F37,U+13126,𓄦,F37,F37,F37,,,,,,"A spine with four ribs, with a downwards curving loop at the end of the spine.",matched
+174,F37b,,,,,,,,,,,,unmatched
+175,F42,U+1312D,𓄭,F42,spr F42,F42,"168,10",,,,,A rib.,matched
+176,F44,U+1312F,𓄯,F44,iwa F44,F44,"168,14",Q4941480,𓄯,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F44.png,,A leg-bone with meat.,matched
+177,F51,U+13139,𓄹,F51,F51,F51,"170,3",Q117860163,Meat,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F51.png,,"A piece of flesh, point towards the back, curving downwards.",matched
+178,F51,U+13139,𓄹,F51,F51,F51,"170,3",Q117860163,Meat,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F51.png,,"A piece of flesh, point towards the back, curving downwards.",matched
+179,F34,U+13123,𓄣,F34,ib F34,,"164,1",Q3010780,heart,http://commons.wikimedia.org/wiki/Special:FilePath/Egyptian%20heart.svg,,A heart without internal detail.,matched
+180,F35,U+13124,𓄤,F35,nfr F35,F35,"164,13",Q69889613,Nefer,,,"A windpipe and heart, with a single horizontal stroke at the top.",matched
+181,F36,U+13125,𓄥,F36,zmA F36,F36,"165,2",Q18169273,𓄥,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F36.png,,A windpipe and lungs.,matched
+182,F45,U+13130,𓄰,F45,F45,F45,,Q117860121,Uterus,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F45.png,,The uterus of a cow.,matched
+183,F46/F47/F48/F49,U+13132,𓄲,F46,qAb F46,F46,,,,,,"An intestine, with the opening to the bottom right.",matched
+184,G5,U+13143,𓅃,G5,G5,G5,"184,14",Q117859330,Horus-falcon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G5.png,,A falcon.,matched
+185,G144,,,,,,,,,,,,unmatched
+186,G6,U+13144,𓅄,G6,G6,G6,"185,3",Q117859433,Falcon with flail,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G6.png,,A falcon (G5) with a flagellum (S45) on its back.,matched
+190,G12,U+1314E,𓅎,G12,G12,G12,"193,11",Q117859737,Crouching falcon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G12.png,,"An archaic image of a falcon/cult image of a falcon, with a flagellum (S45) on its back.",matched
+191,G4,U+13142,𓅂,G4,tyw G4,G4,,Q117859031,Buzzard,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G4.png,,A long-legged buzzard (Buteo rufinus).,matched
+192,G1,U+1313F,𓄿,G1,A G1,G1,"204,1",Q3555104,𓄿,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G1.png,,An Egyptian vulture (Neophron percnopterus).,matched
+193,G14,U+13150,𓅐,G14,mwt G14,G14,"201,9",Q117859744,Vulture (mt hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G14.png,,A griffon vulture (Gyps fulvus).,matched
+196,G17,U+13153,𓅓,G17,m G17,G17,"176,10",Q928672,𓅓 owl,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G17.png,,An owl.,matched
+197,G37,U+1316A,𓅪,G37,nDs G37,G37,"195,12",Q117859815,Sparrow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G37.png,,A house sparrow (Passer domesticus niloticus).,matched
+198,G36,U+13168,𓅨,G36,wr G36,G36,"194,13",Q3136285,𓅨,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G36.png,,A swallow (Hirundo rustica savignii).,matched
+199,G22,U+13159,𓅙,,Db G22,,"195,15",,,,,A hoopoe (Upupa epops).,matched
+200,G43,U+13171,𓅱,G43,w G43,G43,"171,9",Q3400709,𓅱 quail chick,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G43.png,,A quail chick (Coturnix coturnix).,matched
+203,G32,U+13164,𓅤,G32,baHi G32,G32,,Q118221297,Q118221297,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G32.png,,"A gray heron (Ardea cinerea), legs drawn towards the body, seated on a pole, held upright through ropes (R91).",matched
+204,G25,U+1315C,𓅜,G25,Ax G25,G25,"182,8",Q117859777,Ibis-crested,http://commons.wikimedia.org/wiki/Special:FilePath/Gardiner%20G25%20Glyph.svg,,A crested ibis (Ibis comata).,matched
+205,G28,U+13160,𓅠,G28,gm G28,G28,"179,10",Q117859795,Glossy ibis,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G28.png,,A black ibis (Plegadis falcinellus).,matched
+206,G26*,U+1315D,𓅝,G26,G26,G26,"182,16",,,,,"An African sacred ibis (Threskiornis aethiopicus) (G26A), on top of a standard used for carrying religious symbols (R12).",matched
+208,G29,U+13161,𓅡,G29,bA G29,G29,"179,11",Q117859801,Stork,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G29.png,,"A saddle-billed stork (Ephippiorhynchus senegalensis), with lappet.",matched
+213,G27,U+1315F,𓅟,G27,dSr G27,G27,"179,4",Q117859793,Flamingo (dshr hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G27.png,,A greater flamingo (Phoenicopterus roseus).,matched
+214,G51,U+1317B,𓅻,G51,G51,G51,"181,2",,,,,"A cattle egret (Bubulcus ibis), pecking and standing upon a fish with a long broad fin on its back, and two small fins on its belly.",matched
+215,G35,U+13167,𓅧,G35,aq G35,G35,"178,13",Q117859811,Cormorant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G35.png,,A great cormorant (Phalacrocorax carbo).,matched
+216,G39,U+1316D,𓅭,G39,zA G39,G39,"173,8",Q117859821,Duck (sa hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G39.png,,A pintail duck (Anas acuta).,matched
+217,G37,U+1316A,𓅪,G37,nDs G37,G37,"195,12",Q117859815,Sparrow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G37.png,,A house sparrow (Passer domesticus niloticus).,matched
+218,G38?,,,,,,,,,,,,unmatched
+219,G42,U+13170,𓅰,G42,wSA G42,G42,"176,9",Q117859841,Fattened duck,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G42.png,,A widgeon (Mareca penelope).,matched
+220,G42,U+13170,𓅰,G42,wSA G42,G42,"176,9",Q117859841,Fattened duck,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G42.png,,A widgeon (Mareca penelope).,matched
+221,G41,U+1316F,𓅯,G41,xn G41,G41,"174,13",,,,,"A greater white-fronted goose (Anser albifrons), alighting or flying up, with both wings behind the body.",matched
+222,G41,U+1316F,𓅯,G41,xn G41,G41,"174,13",,,,,"A greater white-fronted goose (Anser albifrons), alighting or flying up, with both wings behind the body.",matched
+224,G47,U+13177,𓅷,G47,TA G47,G47,"198,11",Q117859845,Chick,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G47.png,,"A duckling, with open beak, outstretched wings on either side of the body, and the legs drawn towards the body.",matched
+225,G235+X1+Z4,,𓏏+𓏭,,,,,,,,,,compound
+226,G49,U+13179,𓅹,,G49,,,,,,,,matched
+227,G54,U+1317E,𓅾,G54,snD G54,G54,"196,15",Q117859864,Plucked goose,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G54.png,,"A trussed and plucked goose or duck, with the head backwards below its body.",matched
+228,G??,,,,,,,,,,,,unknown
+229,G21,U+13158,𓅘,G21,nH G21,G21,"200,4",Q117859761,Guineafowl,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G21.png,,"A saharan helmeted guinea fowl (Numida m. meleagris), with a lappet.",matched
+230,G53,U+1317D,𓅽,G53,G53,G53,,Q117859858,Ba-bird with human head,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G53.png,,"A bowl for incense with smoke rising from the bowl (R7), written in front of the legs of a human headed bird (G53A).",matched
+231,H1,U+1317F,𓅿,H1,H1,H1,"207,3",Q117854722,Head of duck,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-H1.png,,The head of a pintail duck (Anas acuta).,matched
+232,H2,U+13180,𓆀,H2,wSm H2,H2,,Q117854792,Head of heron,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-H2.png,,The head of a gray heron (Ardea cinerea).,matched
+233,H3,U+13181,𓆁,H3,pAq H3,H3,"207,12",Q117857397,Head of spoonbill,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-H3.png,,The head of a spoonbill (Platalea leucorodia).,matched
+234,H19,,,,,,,,,,,,unmatched
+235,H5,U+13183,𓆃,H5,H5,H5,,Q117857409,Wing,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-H5.png,,The fully extended wing of a bird.,matched
+236,H6,U+13184,𓆄,H6,Sw H6,H6,"209,5",Q117857413,Feather,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-H6A.png,,A feather.,matched
+237,H6*,U+13184,𓆄,H6,Sw H6,H6,"209,5",,,,,A feather.,matched
+238,H8,U+13187,𓆇,H8,H8,H8,"210,8",Q5347800,𓆇 egg,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-H8.png,,An egg.,matched
+239,I2,U+13189,𓆉,I2,Styw I2,I2,"211,3",Q117858823,Tortoise,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I2.png,,A freshwater turtle.,matched
+240,I1,U+13188,𓆈,I1,aSA I1,I1,"211,1",Q117858810,Lizard,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I1.png,,A lizard or gecko.,matched
+241,I3,U+1318A,𓆊,I3,mzH I3,I3,"211,4",Q117858827,Crocodile,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I3.png,,A Nile crocodile (Crocodylus niloticus).,matched
+242,I5*,U+1318C,𓆌,I5,sAq I5,I5,"212,8",,,,,"A Nile crocodile (Crocodylus niloticus) with its tail curved forward, below the body.",matched
+243,I5,U+1318C,𓆌,I5,sAq I5,I5,"212,8",,,,,"A Nile crocodile (Crocodylus niloticus) with its tail curved forward, below the body.",matched
+244,I7/I8,U+1318F,𓆏,I7,I7,I7,"213,14",,,,,A frog or toad.,matched
+245,I12,U+13197,𓆗,I12,I12,I12,"220,4",Q2981158,𓆗,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I12.png,,"A cobra (Naja haja), standing up, with expanded hood (Uraeus), with a coiled tail.",matched
+247,I14,U+13199,𓆙,I14,I14,I14,"223,8",Q117858869,Snake,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I15.png,,"A snake with a coiled tail, consisting of two coils.",matched
+248,I15,U+1319A,𓆚,I15,I15,I15,"223,7",Q117858869,Snake,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I15.png,,"A cobra (Naja haja), standing up, with expanded hood (Uraeus), with a coiled tail, consisting of two coils.",matched
+249,I86a,,,,,,,,,,,,unmatched
+250,I10,U+13193,𓆓,I10,D I10,I10,"215,10",Q5138959,𓆓,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I10.png,,A cobra in repose (Naja haja).,matched
+251,I31c,,,,,,,,,,,,unmatched
+252,V21a,,,,,,,,,,,,unmatched
+253,K1,U+1319B,𓆛,K1,in K1,K1,"226,1",Q117860238,Tilapia,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-K1.png,,A Nile tilapia (Oreochromis niloticus).,matched
+254,K3,U+1319D,𓆝,K3,ad K3,K3,"226,13",Q117860932,mullet,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-K3.png,,A mullet (Mugil cephalus).,matched
+255,K18a,,,,,,,,,,,,unmatched
+256,K2,U+1319C,𓆜,K2,K2,K2,"226,5",Q117860388,Barbel,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-K2.png,,A fish (Labeobarbus bynni),matched
+257,K4,U+1319E,𓆞,K4,XA K4,K4,"227,8",Q117860940,Elephant-snout fish,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-K4.png,,A freshwater elephant fish (Mormyrus kannume).,matched
+258,L1,U+131A3,𓆣,L1,xpr L1,L1,"229,1",Q25393855,𓆣,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-L1.png,,"A dung beetle, scarab (scarabaeus sacer).",matched
+259,L??,,,,,,,,,,,,unknown
+260,L2,U+131A4,𓆤,L2,bit L2,L2,"230,4",Q18205204,𓆤,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-L2.png,,A bee.,matched
+261,L5,U+131A8,𓆨,L5,L5,L5,"230,10",Q117861024,Millipede,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-L5.png,,A centipede.,matched
+262,"L7, L19",,,,,,,,,,,,unmatched
+263,I9,U+13191,𓆑,I9,f I9,I9,"214,12",Q3560535,horned viper,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I9.png,,A horned desert viper (Cerastes cerastes).,matched
+264,L6,U+131A9,𓆩,L6,L6,L6,,Q117861027,Sea shell,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-L6.png,,A bivalve shell.,matched
+265,M183,,,,,,,,,,,,unmatched
+266,M1,U+131AD,𓆭,M1,iAm M1,M1,"232,1",Q117861042,Tree,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M1.png,,A tree.,matched
+267,M43,U+131ED,𓇭,M43,M43,M43,,Q5596998,𓇭,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M43.png,,"A vine with fruits on two forked supports, with the back of the vine descending down, into a basket or vessel.",matched
+268,M2,U+131B0,𓆰,M2,Hn M2,M2,"233,8",Q117861048,Plant stalks,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M2.png,,"A herb, with three flowers or leaves, curving upwards, with the middle flower/leaf higher than the other two.",matched
+269,M3,U+131B1,𓆱,M3,xt M3,M3,"234,4",Q4956331,𓆱,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M3.png,,"A branch, horizontally written.",matched
+270,M4,U+131B3,𓆳,M4,rnp M4,M4,"235,4",Q117861051,Palm panicle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M4.png,,"A palm branch, stripped of leaves and notched with a round notch.",matched
+271,M6,U+131B5,𓆵,M6,tr M6,M6,"235,14",Q118150516,Time,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M6.png,,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a mouth (D21).",matched
+274,M8,U+131B7,𓆷,M8,SA M8,M8,,Q117861064,Pool with lotus,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M8.png,,"A pool with lotus flowers, consisting of 3 flowers and two buds.",matched
+275,M9,U+131B8,𓆸,M9,zSn M9,M9,"240,4",Q3260057,𓆸,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M9.png,,"A lotus flower, with the flower facing forward, and the stem facing downward.",matched
+276,M10,U+131B9,𓆹,M10,M10,M10,"238,3",Q117861081,Lotus bud,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M10.png,,"A lotus bud, with the bud facing forward, and the stem facing downward.",matched
+277,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+278,M15,U+131C7,𓇇,M15,M15,M15,"247,14",Q117861103,Papyrus clump,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M15.png,,"A clump of three papyrus flowers, with two buds bent down.",matched
+279,M16,U+131C9,𓇉,M16,HA M16,M16,"247,3",Q117861111,Papyrus clump (ha hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M16.png,,A clump of three papyrus flowers.,matched
+280,M13,U+131C5,𓇅,M13,wAD M13,M13,"245,6",Q3357891,𓇅,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M13.png,,A stem of papyrus with a bud.,matched
+282,M17,U+131CB,𓇋,M17,i M17,M17,"248,7",Q3442445,𓇋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M17.png,,A flowering reed.,matched
+283,M17×2,,,,,,,,,,,,unmatched
+284,M18,U+131CD,𓇍,M18,ii M18,M18,"248,14",Q117861117,Reed with legs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M18.png,,"A flowering reed (M17), on top of legs in a walking posture, feet orientated towards the reading direction (D54).",matched
+285,M20,U+131CF,𓇏,M20,sxt M20,M20,"249,11",Q117861138,Reeds in swamp,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M20.png,,A field of reeds with three flowering reeds and three stumps.,matched
+286,M19,U+131CE,𓇎,M19,M19,M19,"249,5",Q117861130,Reed and club,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M19.png,,"A flowering reed (M17) and a club used by washer-men for beating laundry as part of the cleaning process (U36), connected by a network consisting of four horizontal lines and three lines going from bottom corner to top corner.",matched
+287,M22,U+131D1,𓇑,M22,M22,M22,"250,4",,,,,A rush with two shoots.,matched
+288,M22×2,,,,,,,,,,,,unmatched
+289,M23,U+131D3,𓇓,M23,sw M23,M23,"250,10",Q117861143,"Rush, sedge (sw hieroglyph)",http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M23.png,,A sedge.,matched
+290,M24,U+131D4,𓇔,M24,rsw M24,M24,"251,4",,,,,"A sedge (M23), written on top of a mouth (D21).",matched
+291,M26,U+131D7,𓇗,M26,Sma M26,M26,"252,3",,,,,"A desert plant, with four branches, with flowers on every branch, on a horizontal base.",matched
+293,M34,U+131E3,𓇣,M34,bdt M34,M34,"255,1",,,,,An ear of corn.,matched
+294,M36,U+131E5,𓇥,M36,Dr M36,M36,"256,8",Q117861204,Bale of flax,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M37.png,,"A bundle of flax stems, bound together with string, loop and tie at the back, with the bolls visible on the top, squared at the bottom.",matched
+295,M33,U+131E0,𓇠,M33,M33,M33,,Q117861185,Grains of corn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M33.png,,"Three grains of corn, arranged horizontally.",matched
+296,M29,U+131DB,𓇛,M29,nDm M29,M29,"253,1",Q18205416,Pod with seeds,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M29.png,,A pod of a carob (Ceratonia siliqua) tree.,matched
+297,M30,U+131DC,𓇜,M30,bnr M30,M30,"253,6",Q117861168,Sweet root,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M30.png,,A root.,matched
+298,M32/M31,U+131DF,𓇟,M32,M32,M32,,,,,,"A rhizome of a lotus, with two shoots at the bottom.",matched
+299,M44,U+131EE,𓇮,M44,M44,M44,"259,7",Q117861234,Thorn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M44.png,,A thorn.,matched
+300,N1,U+131EF,𓇯,N1,pt N1,N1,"261,1",Q2972322,𓇯,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N1.png,,The sky.,matched
+301,N2,U+131F0,𓇰,N2,N2,N2,,,,,,The sky with a sceptre with a forked end hanging from it.,matched
+302,N4,U+131F2,𓇲,N4,idt N4,N4,"262,3",,,,,"The sky, with lines of moisture coming from it.",matched
+303,N5,U+131F3,𓇳,N5,zw N5,N5,"262,6",Q3489299,𓇳,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N5.png,,"The sun, within a halo.",matched
+304,N6,U+131F4,𓇴,N6,N6,N6,"263,2",Q117861251,Sun with Uraeus,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N6.png,,"The sun within a halo, encircled by a cobra (Naja haja), standing up, with expanded hood (Uraeus).",matched
+305,N55,,,,,,,,,,,,unmatched
+306,N8,U+131F6,𓇶,,Hnmmt N8,,,Q7638130,𓇶,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N8.png,,"The sun, with thee beams of sunlight coming from it.",matched
+307,N28,U+1320D,𓈍,N28,xa N28,N28,"274,12",Q7638128,𓈍,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N28.png,,A hill with a halo of sun rays behind it.,matched
+308,N12/N11,U+131FA,𓇺,N12,N12,N12,"266,8",,,,, A crescent moon with a part of the moon disc.,matched
+309,N12/N11,U+131FA,𓇺,N12,N12,N12,"266,8",,,,, A crescent moon with a part of the moon disc.,matched
+314,N14,U+131FC,𓇼,N14,sbA N14,N14,"268,1",Q117861304,Star,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N14.png,,A star.,matched
+316,N13=N63+N14,,𓇻+𓇼,,,,,,,,,,unmatched
+317,N16/N17,U+131FE,𓇾,N16,tA N16,N16,,,,,,"A strip of land, with three grains of sand written beneath it.",matched
+319,N29,U+1320E,𓈎,N29,q N29,N29,"275,8",Q117861411,Hill slope (q hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N29.png,, A sandy hill slope.,matched
+320,N26,U+1320B,𓈋,N26,Dw N26,N26,"273,4",Q117861396,Mountains,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N26.png,,A sand covered mountain over the edge of the cultivated areas.,matched
+321,N27,U+1320C,𓈌,N27,Axt N27,N27,"274,4",Q552228,𓈌,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N27.png,,The sun rising over a sand covered mountain over the edge of the cultivated areas.,matched
+322,N25,U+13209,𓈉,N25,xAst N25,N25,"272,8",Q17004574,𓈉,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N25.png,,The hill country over the edge of the cultivated areas.,matched
+323,N21,U+13205,𓈅,N21,N21,N21,"269,15",,,,,A tongue of land.,matched
+324,N23,U+13207,𓈇,N23,N23,N23,"270,15",Q117861374,Irrigation canals,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N23.png,,An irrigation canal.,matched
+325,N24,U+13208,𓈈,N24,spAt N24,N24,"271,5",Q18207055,𓈈,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N24.png,,A parcel of land with irrigation ditches.,matched
+326,N31,U+13210,𓈐,N31,N31,N31,"276,6",Q7339267,𓈐,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N31.png,,"A road with two shrubs at the top, and one at the bottom.",matched
+327,Aa13,,,,,,,Q7204993,𓐝,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa15.png,,,unmatched
+328,Aa16,,,,,,,Q117874638,Side symbol (gs hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa16.png,,,unmatched
+329,N33,U+13212,𓈒,N33,N33,N33,"274,2",Q117861425,Grain of sand,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N33.png,,A grain of sand.,matched
+330,N18,U+13200,𓈀,N18,iw N18,N18,"269,4",Q117861339,Island,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N18.png,,An oval of sand.,matched
+331,N35,U+13216,𓈖,N35,n N35,N35,"277,2",Q3046655,N-water ripple,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N35.png,,A ripple of water.,matched
+333,N35×3,,,,,,,,,,,,unmatched
+334,N36,U+13218,𓈘,N36,N36,N36,"277,11",Q117861564,Canal (mr hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N36.png,,A canal.,matched
+335,N37/N38/N39,U+13219,𓈙,N37,S N37,N37,"278,7",Q7228556,𓈙,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N37.png,,A rectangular pool.,matched
+337,N102,,,,,,,,,,,,unmatched
+339,O49,U+13296,𓊖,O49,niwt O49,O49,"324,5",Q5188806,Crossroads,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O49.png,,A plan of a crossroads in a village.,matched
+340,O1,U+13250,𓉐,O1,pr O1,O1,"280,1",Q3278571,𓉐,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O1.png,,A house or enclosure.,matched
+341,O16/O17,U+1326A,𓉪,,O16,,,,,,," A plan and façade of a hall, with a cornice with Uraei on top, with half orientated forwards and half orientated backwards.",matched
+342,O4,U+13254,𓉔,O4,h O4,O4,"283,2",Q7306723,𓉔 winding wall,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O4.png,,A plan of a courtyard or reed shelter.,matched
+343,O5,U+13255,𓉕,O5,O5,O5,"283,8",Q118150997,Winding wall (mr hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O5.png,,A plan of a winding wall.,matched
+344,O15,U+13269,𓉩,O15,wsxt O15,O15,"296,10",Q117861707,Wide hall,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O15.png,,"A wide cup (W10) above a half round loaf of bread (X1), written inside the enclosed part of an enclosure wall without battlements, with a block on each corner.",matched
+345,O6,U+13257,𓉗,O6,Hwt O6,O6,"284,1",Q117861651,Building (hwt hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O7.png,,"A plan of a rectangular enclosure, with an internal rectangle in the lower corner away from the reading direction.",matched
+347,O9b,,,,,,,,,,,,unmatched
+348,O11,U+13265,𓉥,O11,aH O11,O11,"293,5",Q117861681,Palace,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O12.png,,"A wall of the palace, with ornamental chevaux de frise on top of the wall, with internal decoration.",matched
+349,O45/O46,U+13292,𓊒,O45,ipt O45,O45,"322,12",,,,,"A domed building, in the form of a quarter of a circle, with a smaller quarter circle inside the corner away from the reading direction.",matched
+350,O190,,,,,,,,,,,,unmatched
+351,O18,U+1326C,𓉬,O18,kAr O18,O18,"304,8",Q64526160,𓉬 shrine,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O18.png,,"A shrine, seen from the side, with a downwards sloping roof.",matched
+352,O22,U+13272,𓉲,O22,zH O22,O22,"310,5",Q117861721,Tent of mats,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O22.png,,An open booth supported by a pole.,matched
+353,W4,U+133B3,𓎳,W4,W4,W4,"311,4",Q117871749,Tent and basin,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W4.png,,"An open booth supported by a pole (O22), on top of an alabaster basin with a diamond shaped inner marking (W3).",matched
+354,O23,U+13273,𓉳,O23,O23,O23,"310,12",Q6301899,𓉳,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O23.png,,"A double pavilion, with flower-topped capitals on the columns, with curved roofs, with two carrying chairs (Q2) facing away from one another.",matched
+355,M43,U+131ED,𓇭,M43,M43,M43,,Q5596998,𓇭,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M43.png,,"A vine with fruits on two forked supports, with the back of the vine descending down, into a basket or vessel.",matched
+356,O51,U+1329A,𓊚,O51,Snwt O51,O51,,Q117861854,Barn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O51.png,,A heap of grain on a raised floor.,matched
+357,O39,U+1328C,𓊌,O39,O39,O39,"321,11",Q117861820,Block of stone,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O39.png,,A rectangular stone slab or brick.,matched
+358,O36,U+13285,𓊅,O36,inb O36,O36,"299,1",Q117861812,Wall,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O36.png,,"A wall, written vertically, with battlements on the corners, and one in the middle of the long sides.",matched
+359,O37,U+1328A,𓊊,O37,O37,O37,,,,,,"A wall, with battlements on the corners, and one in the middle of the long sides, written at a forward angle.",matched
+360,O33,U+13281,𓊁,O33,O33,,,Q117861794,Serekh,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O33.png,,"A façade of a palace or tomb, with the top resembling two floating horizontal lines.",matched
+361,O40,U+1328D,𓊍,O40,O40,O40,"319,8",Q7597078,𓊍,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O40.png,,A stairway.,matched
+362,O28,U+1327A,𓉺,,iwn O28,,"314,11",Q117861744,Pillar (iwn hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O28.png,,"A column with a tenon at the top, represented as a vertical line.",matched
+363,O29,U+1327B,𓉻,O29,aA O29,O29,,Q117861769,Column,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O29.png,,"A wooden column, written horizontally.",matched
+364,O31,U+1327F,𓉿,O31,O31,O31,"317,4",Q117861779,Wing of door,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O31.png,,"A tenoned door, written horizontally.",matched
+365,O??,,,,,,,,,,,,unknown
+366,O34,U+13283,𓊃,O34,z O34,O34,"317,10",Q117861804,Door bolt (s hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O34.png,,A door-bolt.,matched
+368,O42/O43,U+1328F,𓊏,O42,Szp O42,O42,"319,14",,,,,"A fence, consisting of a horizontal base with four lines with bulbs at the end, angled backwards, with a curved line connecting the front of the base and the first line with a bulb, with a horizontal line with a loop at the front through the bulbs.",matched
+369,O26,U+13278,𓉸,O26,O26,O26,"313,13",Q117861734,Stela,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O26.png,,A stela on a base.,matched
+370,O25,U+13276,𓉶,O25,txn O25,O25,"313,7",Q7074700,𓉶,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O25.png,,"An obelisk, with base.",matched
+371,O24,U+13274,𓉴,O24,O24,O24,"313,2",Q117861728,Pyramid (mr hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O24.png,,A pyramid with an enclosure wall.,matched
+372,Q6,U+132AD,𓊭,Q6,qrsw Q6,Q6,,Q117865760,Sarcophagus,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Q6.png,,"A rectangular coffin with a rounded lid, and upstanding sides, with legs at the side.",matched
+373,O20,U+1326F,𓉯,O20,O20,O20,"307,10",,,,,"A tall shrine with a round roof, with two vertical lines enclosing the top, on a base, with internal decoration consisting of two vertical lines",matched
+374,P1,U+1329B,𓊛,P1,P1,P1,"325,8",Q117862349,Ship on water,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P1.png,,"A boat/ship, resembling a crescent moon, on top of a rectangle representing water, with a carrying chair (Q2) inside the boat/ship, with an oar/rudder at the back.",matched
+375,P(1),U+1329B,𓊛,P1,P1,P1,"325,8",,,,,"A boat/ship, resembling a crescent moon, on top of a rectangle representing water, with a carrying chair (Q2) inside the boat/ship, with an oar/rudder at the back.",matched
+376,P4,U+132A0,𓊠,P4,wHa P4,P4,"332,9",Q117862618,Fishing boat with net,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P4.png,,"A fishersman's boat, on top of a rectangle representing water, with a net inside the boat, without internal detail.",matched
+377,P3,U+1329E,𓊞,,P3,,,Q117862553,Barque with naos,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P3.png,,"A boat/ship with a vertical prow and a stern resembling the handle of a handle of a sickle (U1), on top of a rectangle resembling water, with an oval with rounded corners in the boat/ship, with an oar/rudder at the back.",matched
+378,G10,U+1314B,𓅋,G10,G10,G10,,Q117859733,Sokaris,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G10.png,,"A falcon (G5), on top of a moon-sickle shaped boat with an higher prow than stern, with a rudder, with the head of an antilope (F81) on top of the prow, facing inwards, with a downwards line with multiple horizontal lines written over it coming from the head, on top of a sledge (P60B).",matched
+379,P5,U+132A1,𓊡,P5,nfw P5,P5,,Q7400127,𓊡,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P5.png,,"A rectangular sail, on a mast of a ship with two prongs, connected by vertical lines (P6), written behind the sail.",matched
+380,P6,U+132A2,𓊢,P6,aHa P6,P6,"335,7",Q6784854,𓊢,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P6.png,,"A mast of a ship with two prongs, connected by vertical lines.",matched
+381,P8,U+132A4,𓊤,P8,xrw P8,P8,"336,15",Q117862740,Oar,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P8.png,,"An oar, written vertically.",matched
+382,P10,U+132A6,𓊦,P10,P10,P10,"337,5",Q117862972,Rudder,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P10.png,,An oar used for the steering of a ship (rudder).,matched
+383,Q1,U+132A8,𓊨,Q1,st Q1,Q1,"339,4",Q117863204,Throne (st hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Q1.png,,A seat.,matched
+384,"Q19, A55",,,,,,,,,,,,unmatched
+386,O18,U+1326C,𓉬,O18,kAr O18,O18,"304,8",Q64526160,𓉬 shrine,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O18.png,,"A shrine, seen from the side, with a downwards sloping roof.",matched
+387,Q5,U+132AC,𓊬,Q5,Q5,Q5,"261,2",Q117865757,Chest,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Q5.png,,"A rectangular chest, with legs at the side.",matched
+388,Q3,U+132AA,𓊪,Q3,p Q3,Q3,"340,5",Q7619641,"Mat, stool",http://commons.wikimedia.org/wiki/Special:FilePath/Louvres-antiquites-egyptiennes-img%202734.jpg,,A stool made of reed matting.,matched
+389,V17,U+13383,𓎃,V17,V17,V17,"436,10",Q117866507,Papyrus mat (sa hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Sa%20amulet.svg,,A rolled up herdsman's shelter of papyrus with an rectangle at either side of the loop.,matched
+390,Aa5,,,,,,,Q117874316,Rudder-parts,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa5.png,,,unmatched
+391,U28/U29,U+13351,𓍑,U28,DA U28,U28,"401,2",,,,,A fire-drill in a piece of wood.,matched
+392,I6,U+1318E,𓆎,I6,km I6,,,Q1738480,𓆎,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I6.png,,"A piece of crocodile skin with horizontal spines, or tail of a crocodile.",matched
+393,U30,U+13354,𓍔,U30,U30,U30,"402,5",Q117866303,Kiln,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U30.png,,A pottery kiln.,matched
+394,Q7,U+132AE,𓊮,Q7,Q7,Q7,"344,14",Q4958604,𓊮,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Q7.png,," A brazier with a flame rising from it, flame angling towards the front.",matched
+395,W11/W12,U+133BC,𓎼,W11,g W11,W11,"450,9",Q6159438,𓎼,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W11.png,,A ring-stand for jars.,matched
+396,W11/W12,U+133BC,𓎼,W11,g W11,W11,"450,9",Q6159438,𓎼,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W11.png,,A ring-stand for jars.,matched
+397,T28,U+13328,𓌨,T28,Xr T28,T28,"427,7",Q117866099,Butcher block,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T28.png,,A butcher's block.,matched
+398,V29,U+1339D,𓎝,V29,wAH V29,V29,"440,14",Q117869281,Wick and fibers,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V29.png,,A swab made from a hank of fibre with two loops.,matched
+399,V29,U+1339D,𓎝,V29,wAH V29,V29,"440,14",Q117869281,Wick and fibers,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V29.png,,A swab made from a hank of fibre with two loops.,matched
+400,V29,U+1339D,𓎝,V29,wAH V29,V29,"440,14",Q117869281,Wick and fibers,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V29.png,,A swab made from a hank of fibre with two loops.,matched
+401,U33,U+13358,𓍘,U33,ti U33,U33,"403,7",Q117866313,Pestle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U33.png,,A pestle.,matched
+402,U32,U+13356,𓍖,U32,zmn U32,U32,"402,15",Q117866309,Pestle and mortar,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U32.png,,"A pestle, inside a round-bottomed mortar.",matched
+403,O50,U+13297,𓊗,O50,zp O50,,,Q117861852,Threshing floor,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O50.png,,A circular threshing floor covered with grain.,matched
+404,U38,U+1335D,𓍝,U38,mxAt U38,U38,"405,8",Q117866335,Balance,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U38.png,,"A balance, with a plummet resembling a heart (F34).",matched
+405,U39,U+1335E,𓍞,U39,U39,U39,"407,2",Q117866338,Stand of balance,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U39.png,,"The pole of a balance, on a horizontal base, with a angled line on each side as support.",matched
+406,S36/S35,U+132FC,𓋼,S36,S36,S36,"358,3",,,,,"A sun shade, made of a staff which holds feathers at the top, resembling a half circle, without internal detail.",matched
+407,S37,U+132FD,𓋽,S37,xw S37,S37,,Q117865899,Fan,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S37.png,,"A one handed fan, with a handle resembling a stem of papyrus with a bud (M13).",matched
+408,F31,U+1311F,𓄟,F31,ms F31,F31,"163,2",Q18106981,𓄟,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F31.png,,"Three skins of foxes, tied together at the top.",matched
+409,S10a,,,,,,,,,,,,unmatched
+410,S57,,,,,,,,,,,,unmatched
+411,S1,U+132D1,𓋑,S1,HDt S1,S1,"366,1",Q117865826,White crown,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S1.png,,The white crown of Upper Egypt.,matched
+413,S3,U+132D4,𓋔,S3,dSrt S3,S3,"367,1",Q6951503,𓋔 red crown,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S3.png,,The red crown of Lower Egypt.,matched
+414,S5=S1+S3,,𓋖+𓋑+𓋔,,,,,,,,,,unmatched
+415,S8,U+132DA,𓋚,S8,Atf S8,S8,"369,5",Q4812991,𓋚 Atef crown,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S8.png,,The Atef crown with rams horns and a sun disk.,matched
+416,S9,U+132DB,𓋛,S9,Swty S9,S9,,Q1498692,Shuty crown,http://commons.wikimedia.org/wiki/Special:FilePath/Shuti%20crown%20of%20Amun.svg,,A headdress consisting of two plumes.,matched
+417,S15,U+132E3,𓋣,S15,tHn S15,S15,"375,11",Q117865847,Pectoral,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S15.png,,A pectoral of three glass or faïence beads.,matched
+418,S11,U+132DD,𓋝,S11,wsx S11,S11,,Q117865843,Collar,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S11.png,,A collar of beads with ornamental terminals.,matched
+419,S12,U+132DE,𓋞,S12,nbw S12,S12,"374,16",Q5578573,𓋞,http://commons.wikimedia.org/wiki/Special:FilePath/Nebu%20symbol.svg,,A collar of beads.,matched
+421,S23,U+132EC,𓋬,S23,dmD S23,S23,,Q7859462,𓋬,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S23.png,,Two pieces of cloth strung together / Two flagellums (S45) on top of/written through a cartouche in a round form (V9).,matched
+422,S20,U+132E9,𓋩,S20,xtm S20,S20,"377,14",Q117865851,Seal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S20.png,,"A seal, attached to a neck string.",matched
+423,S19,U+132E8,𓋨,S19,sDAw S19,S19,"377,7",Q117865850,Seal with cording,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S19.png,,"A seal, attached to a neck string, with the sting curving backwards and downwards, with a loop below the seal.",matched
+424,S18,U+132E7,𓋧,S18,mnit S18,S18,,Q117865848,Menat necklace,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S18.png,,A bead necklace with a counterweight.,matched
+425,Aa20,,,,,,,Q117874882,Apr symbol,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa20.png,,,unmatched
+426,S10,U+132DC,𓋜,S10,mDH S10,S10,"371,12",Q117865842,Headband,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S10.png,,"A band of cloth, used as a fillet.",matched
+427,S26,U+132EF,𓋯,S26,Sndyt S26,S26,"379,7",Q131704669,Shendyt,,,A kilt or apron.,matched
+428,S22,U+132EB,𓋫,S22,sT S22,S22,"378,4",Q117865865,Shoulder knot,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S22.png,,"A shoulder knot, with loops a the top ends and ties at the bottom ends.",matched
+429,S32,U+132F7,𓋷,S32,siA S32,S32,"382,2",Q117865883,Cloth with fringes (sja hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S32.png,,"A rectangular piece of cloth, with sloping fringes on its front short side, without internal decoration.",matched
+430,S28,U+132F3,𓋳,S28,S28,,"380,2",Q117865877,Cloth with fringes (khbs hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S28.png,,"A horizontal strip of cloth with fringes, combined with a folded piece of cloth (S29).",matched
+431,S27,U+132F2,𓋲,S27,mnxt S27,S27,"379,13",Q117865875,Cloth with fringes,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S27.png,,A horizontal strip of cloth with two fringes.,matched
+432,S29,U+132F4,𓋴,S29,s S29,S29,"380,6",Q5464280,𓋴,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S29.png,,A folded piece of cloth.,matched
+433,S33,U+132F8,𓋸,S33,Tb S33,S33,"382,8",Q117865887,Sandal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S33.png,,A sandal.,matched
+434,T62,,,,,,,,,,,,unmatched
+435,T10,U+13314,𓌔,T10,pD T10,T10,"415,11",,,,,"A composite bow, with handle bound to the bowstring when out of use.",matched
+436,T9,U+13312,𓌒,T9,pd T9,T9,"415,9",Q117866039,Bow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T9.png,,"A bow, written horizontally, with a rectangular central section, with the tips of the bow forming a bowl-shaped loop.",matched
+437,Aa32,,,,,,,,,,,,unmatched
+438,T12,U+13317,𓌗,T12,rwd T12,T12,"418,3",Q4951440,𓌗,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T12.png,,"A bow-string, coiled up, with a loop at the front end, and the back end angled downwards, with a loop on it.",matched
+439,T11,U+13315,𓌕,T11,zwn T11,T11,,Q117866043,Arrow,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T11.png,,An arrow with rounded fletching.,matched
+440,T8,U+13310,𓌐,T8,T8,T8,"414,8",Q117866033,Dagger (tp hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T8.png,,A dagger within a round tipped sheath.,matched
+441,T30,U+1332A,𓌪,T30,T30,T30,"429,10",Q117866101,Knife,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T30.png,,A knife with a rounded blade and rounded handle.,matched
+443,T18,U+1331E,𓌞,T18,Sms T18,T18,"421,5",Q117866070,Follower symbol,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T18.png,,"A shepherds crook with a package lashed to it, with a tie above and below the package.",matched
+444,T33,U+1332E,𓌮,T33,T33,T33,"430,9",,,,,"A knife sharpener, with a thin, curved body, and a loop at the end.",matched
+446,N34,U+13214,𓈔,N34,N34,N34,,Q117861433,Metal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N34.png,,An ingot of metal.,matched
+447,T3/T4,U+13309,𓌉,T3,HD T3,T3,"411,4",,,,,"A mace with a pear-shaped head, written vertically.",matched
+448,T1,U+13307,𓌇,T1,T1,T1,,Q117866018,Disk mace,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T1.png,,"A mace with cup or dish shaped head, written horizontally.",matched
+449,S42,U+13302,𓌂,S42,xrp S42,S42,"385,7",Q117865924,Sekhem sceptre,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S42.png,,A sceptre.,matched
+450,S42,U+13302,𓌂,S42,xrp S42,S42,"385,7",Q117865924,Sekhem sceptre,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S42.png,,A sceptre.,matched
+451,S42,U+13302,𓌂,S42,xrp S42,S42,"385,7",Q117865924,Sekhem sceptre,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S42.png,,A sceptre.,matched
+452,S44a,,,,,,,,,,,,unmatched
+453,S38,U+132FE,𓋾,S38,HqA S38,S38,"384,7",Q117865905,Crook,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S38.png,,A crook.,matched
+454,S39,U+132FF,𓋿,S39,awt S39,S39,"387,1",,,,,A shepherd's crook.,matched
+455,S40,U+13300,𓌀,S40,wAs S40,S40,"384,11",Q117865917,Was sceptre,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S40.png,,"A sceptre with a straight shaft, a forked base, topped with the head of the Seth animal.",matched
+456,S43,U+13303,𓌃,S43,md S43,S43,"386,8",Q117865929,Walking stick,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S43.png,,A staff which widens towards the bottom.,matched
+457,T14/T15,U+13319,𓌙,T14,qmA T14,T14,"419,10",Q7798521,𓌙,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T14.png,,"A throwing-stick, or a club used by foreign people.",matched
+458,S45,U+13305,𓌅,S45,nxxw S45,S45,"387,2",Q117865954,Flail,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S45.png,,"A flagellum or flail, with the stick oriented forwards.",matched
+459,V22/V23,U+13394,𓎔,V22,mH V22,V22,"437,8",,,,,A whip.,matched
+460,T19/T20,U+1331F,𓌟,T19B,qs T19,T19B,"421,13",,,,,A harpoon-head with two horizontal strokes on top and an angled stroke below a curl as point.,matched
+461,T21,U+13321,𓌡,T21,wa T21,T21,"423,6",Q5663609,𓌡,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T21.png,,"An one-barbed harpoon, with handle, written horizontally.",matched
+462,T25,U+13325,𓌥,T25,DbA T25,T25,,Q117866090,Float for net,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T25.png,,"A float, made of reed, with a tie towards the front at the top.",matched
+463,T24,U+13324,𓌤,T24,iH T24,T24,,Q117866085,Fishing net,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T24.png,,A net used for fishing or fowling.,matched
+464,T26/T27,U+13326,𓌦,T26,T26,T26,,,,,,"A bird trap consisting of a horizontal beam and vertical beam, with two lines running from the horizontal beam to the vertical beam, crossing in the middle.",matched
+465,U6/U7,U+13338,𓌸,U6,mr U6,U6,"389,12",,,,,"A hoe with a rope connecting the two pieces, written at an angle.",matched
+466,U8,U+1333C,𓌼,U8,U8,U8,"390,6",Q117866202,Hoe (hn hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U8.png,,A hoe without a rope connecting the two pieces.,matched
+467,U17/U18,U+13345,𓍅,U17,grg U17,U17,"394,5",Q7190688,𓍅,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U17.png,,"A hoe or pick excavating a rectangular pool, with the handle angling downwards.",matched
+468,U13/U14,U+13341,𓍁,U13,hb U13,U13,,,,,,"A plough, with a cross-bar and two vertical lines on the end of the long beam.",matched
+469,U1/U2,U+13333,𓌳,U1,mA U1,U1,"388,1",,,,,A sickle.,matched
+470,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+471,V19,U+13385,𓎅,V19,mDt V19,V19,"436,13",Q117866547,Animal fetter,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V19.png,,A hobble for cattle with a crossbar.,matched
+472,P11,U+132A7,𓊧,P11,P11,P11,"338,1",Q117863112,Mooring post,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P11.png,,A mooring post.,matched
+473,U35,U+1335A,𓍚,U35,U35,U35,"404,4",Q117866317,Spindle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U34.png,,"A horned desert viper (Cerastes cerastes) (I9), written over a spindle (U34).",matched
+474,V25/V24,U+13398,𓎘,V25,V25,V25,"438,11",,,,,"A string wound on a stick, with a tie sticking out at the front.",matched
+475,V26/V27,U+13399,𓎙,V26,aD V26,V26,"439,4",,,,,"A double forked tool for the mending of nets, with a broad middle section.",matched
+476,Aa23/Aa24,,,,,,,,,,,,unmatched
+477,Aa11/Aa12,,,,,,,,,,,,unmatched
+478,O38,U+1328B,𓊋,O38,qnbt O38,O38,"318,12",Q117861817,Corner,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O38.png,,"The corner of a wall, with the opening in the bottom right corner.",matched
+479,(T30+?),,𓌪,,,,,,,,,,compound
+480,U19/U20,U+13347,𓍇,U19,U19,U19,"394,11",,,,,An adze.,matched
+481,U21,U+13349,𓍉,U21,stp U21,U21,"395,5",Q125753162,Q125753162,,,"An adze, with an attached blade at the front (U19A), in a piece of wood.",matched
+482,U22,U+1334A,𓍊,U22,mnx U22,U22,"396,9",Q117866233,Chisel (mnkh hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U22.png,,A chisel with a conical handle and short blade.,matched
+483,U36,U+1335B,𓍛,U36,Hm U36,U36,"404,9",Q117866327,Launderer's club,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U36.png,,A club used by washer-men for beating laundry.,matched
+484,U23,U+1334B,𓍋,U23,Ab U23,U23,"397,6",Q117866286,Chisel,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U23.png,,"A hair-pin or burin, with a horizontal line above and below the oval of the pin.",matched
+485,U23,U+1334B,𓍋,U23,Ab U23,U23,"397,6",Q117866286,Chisel,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U23.png,,"A hair-pin or burin, with a horizontal line above and below the oval of the pin.",matched
+486,U24/U25,U+1334D,𓍍,U24,Hmt U24,U24,"399,16",Q5647147,𓍍,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U25.png,,"A drill, with a half-circle handle, with a backwards tick on top of the handle, with a forked drill-bit with a horizontal line on top of the forked drill-bit, with a short vertical stroke next to the drill, connected to the handle.",matched
+487,U26/U27,U+1334F,𓍏,U26,wbA U26,U26,,,,,,"A drill with a truncated pyramid-shaped handle, with a round drill-bit with a horizontal line over it.",matched
+488,Aa28/Aa29,,,,,,,,,,,,unmatched
+489,U15,U+13343,𓍃,U15,tm U15,U15,"393,9",Q117866219,Sled (tm hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U15.png,,A sledge.,matched
+490,U37,U+1335C,𓍜,U37,U37,U37,"404,12",Q117866332,Razor,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U37.png,,A razor.,matched
+491,U31,U+13355,𓍕,U31,rtH U31,U31,,Q4849088,𓍕,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U31.png,,A bakers raker or two crossed castanet sticks.,matched
+492,W10,U+133BA,𓎺,W10,iab W10,W10,"449,14",Q117871931,Bowl,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W10.png,,A wide cup.,matched
+493,W1,U+133AF,𓎯,W1,W1,W1,"447,1",Q117871697,Oil-jar,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W1.png,,"A sealed ointment jar, with ties.",matched
+494,V37,U+133A9,𓎩,V37,idr V37,V37,"445,2",,,,,A fastening knot of a dress on the shoulder.,matched
+495,W24,U+133CC,𓏌,W24,nw W24,W24,"456,5",Q117872595,Spherical pot,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W24.png,,A round vessel with an upstanding rim.,matched
+496,W25,U+133CE,𓏎,W25,ini W25,W25,"118,10",Q117872659,Pot with legs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W25.png,,"A round vessel with an upstanding rim (W24), on top of long legs in a walking posture, feet orientated towards the reading direction.",matched
+499,W54,,,,,,,,,,,,unmatched
+502,W14,U+133BF,𓎿,W14,Hz W14,W14,"450,12",Q117872120,Vase,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W14.png,,A tall water pot.,matched
+503,W15,U+133C1,𓏁,W15,W15,W15,,Q117872181,Vase with water,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W15.png,,"A tall water pot, with a forwards, downwards line of liquid coming from the top of the vessel.",matched
+504,W18/W17,U+133C5,𓏅,W18,W18,W18,"452,9",,,,,Four sealed water pots in a rack.,matched
+505,W6/W7,U+133B5,𓎵,W6,W6,W6,,,,,,A flat bottomed cauldron with handles and an upstanding rim.,matched
+506,W23,U+133CB,𓏋,W23,W23,W23,"455,14",Q117872511,Pot with handles,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W23.png,,A flat bottomed jar with handles.,matched
+507,W70,,,,,,,,,,,,unmatched
+508,W9,U+133B8,𓎸,W9,Xnm W9,W9,,Q117871914,Jug with handle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W9.png,,"A stone jug with a large handle connecting to the rim, and a small round handle.",matched
+509,W19,U+133C7,𓏇,W19,mi W19,W19,"453,9",Q117872281,"Milk jug, in net (mi hieroglyph)",http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W19.png,,A milk jar in a carrying sling.,matched
+510,V30,U+1339F,𓎟,V30,nb V30,V30,"441,12",Q4867622,⟢,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V30.png,,A wickerwork basket.,matched
+511,V31*,U+133A1,𓎡,V31,k V31,V31,"442,3",Q4867620,𓎡,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V31.png,," A wickerwork basket with a handle, orientated with the handle to the back.",matched
+512,W3,U+133B1,𓎱,W3,Hb W3,W3,"448,6",Q3554946,Alabaster basin,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W3.png,,An alabaster basin with a diamond shaped inner marking.,matched
+513,V32,U+133A3,𓎣,V32,msn V32,V32,"442,13",Q117869367,Weir-basket,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V32.png,,A wickerwork frail with ties.,matched
+514,S25,U+132EE,𓋮,S25,S25,S25,"379,2",Q117865870,Apron,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S25.png,,A garment with downwards curving ties at both sides.,matched
+515,V33,U+133A4,𓎤,V33,sSr V33,V33,"443,12",Q117871678,Linen bag,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V35.png,,"A bag or a sack of linen, with a tie towards the front, and a (small) loop at the back.",matched
+516,R5/R6,U+132B6,𓊶,R5,kp R5,R5,"351,14",Q12060709,𓊶,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R5.png,,"A censer for fumigation, written horizontally, with a forwards, downwards line at the front.",matched
+517,F30,U+1311E,𓄞,F30,Sd F30,F30,"162,13",Q117860018,Water skin,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F30.png,,A water skin.,matched
+518,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+519,V2,U+1336C,𓍬,V2,sTA V2,V2,,Q117866357,Coil and bolt,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V2.png,,"A horizontal line, intersected in the middle by a coil of rope (V1).",matched
+520,V6,U+13371,𓍱,V6,Ss V6,V6,"432,13",Q117866375,Shes loop,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V6.png,,A loop of cord with the ends upwards.,matched
+521,V7/V8,U+13372,𓍲,V7,Sn V7,V7,"433,1",,,,,A loop of cord with the ends downwards.,matched
+522,V12,U+1337C,𓍼,V12,arq V12,V12,"435,6",Q117866429,Piece of string,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V12.png,,A band of string or fabric.,matched
+523,V5,U+13370,𓍰,V5,snT V5,V5,,Q117866368,Loop of rope,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V5.png,,"A looped rope, with two small loops at the bottom, and a small loop within a big loop above the small loops.",matched
+524,V4,U+1336F,𓍯,V4,wA V4,V4,"432,3",Q3218358,𓍯 lasso,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V4.png,,"A lasso, with a big loop at the front, with a tie at the front and a small loop at the back, with an upwards, downwards cuving line behind the loop.",matched
+525,V28,U+1339B,𓎛,V28,H,V28,"439,6",Q7998226,Wick,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V28.png,,"A wick of twisted flax, consisting of three loops.",matched
+526,F48/F46/F47/F49,U+13136,𓄶,F48,F48,F48,"169,13",,,,,"An intestine, with the openings top left and bottom right.",matched
+527,M11,U+131BB,𓆻,M11,wdn M11,M11,"242,3",Q117861088,Flower on bent staff,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M11.png,,"A lotus flower, facing forwards, with a long twisted stalk, which is folded under itself.",matched
+528,V14/V13,U+13380,𓎀,V14,V14,V14,"435,14",,,,,"A rope used for the tethering of animals, with an diacritic stroke added to the large loop.",matched
+529,V15,U+13381,𓎁,V15,iTi V15,V15,"436,3",Q117866466,Hobble with legs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V15.png,,"A rope used for the tethering of animals (V13), written on top of legs in a walking posture, feet orientated towards the reading direction (D54).",matched
+530,V9,U+13376,𓍶,V9,V9,V9,"433,10",Q117866398,Shen ring,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V9.png,,A cartouche in a round form.,matched
+531,V10,U+13377,𓍷,V10,V10,V10,"434,3",Q224104,cartouche,http://commons.wikimedia.org/wiki/Special:FilePath/Cartouches%20of%20Ramesses%20III.jpg,,An oval cartouche.,matched
+532,V10,U+13377,𓍷,V10,V10,V10,"434,3",Q224104,cartouche,http://commons.wikimedia.org/wiki/Special:FilePath/Cartouches%20of%20Ramesses%20III.jpg,,An oval cartouche.,matched
+533,V10,U+13377,𓍷,V10,V10,V10,"434,3",Q224104,cartouche,http://commons.wikimedia.org/wiki/Special:FilePath/Cartouches%20of%20Ramesses%20III.jpg,,An oval cartouche.,matched
+534,S34,U+132F9,𓋹,S34,anx S34,S34,"382,11",Q117865892,Ankh,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S34.png,,"A tie or strap, used with sandals (ankh-sign).",matched
+535,S24,U+132ED,𓋭,S24,Tz S24,S24,"378,13",Q6423047,𓋭,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S24.png,,A girdle knot.,matched
+536,V16,U+13382,𓎂,V16,V16,V16,"436,7",Q117866484,Leg fetter (sa hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V16.png,,"A looped cord, used as a hobble for cattle, with two horizontal loops and eight vertical loops.",matched
+537,Y3/Y4,U+133DE,𓏞,Y3,zS Y3,Y3,"466,2",Q7439151,𓏞,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y3.png,,"A scribe's kit, consisting of a palette, ink or paint pouch and a reed pen.",matched
+538,Y1/Y2,U+133DB,𓏛,Y1,mDAt Y1,Y1,"465,6",Q18210804,𓏛,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y1v.png,,"A papyrus scroll, rolled up, tied and sealed, written horizontally, with ties.",matched
+539,Y8,U+133E3,𓏣,Y8,zSSt Y8,Y8,"468,1",Q117884412,Sistrum,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y8.png,,"A sistrum, with the top piece in the form of a shrine encosed by two curls.",matched
+540,Y5,U+133E0,𓏠,Y5,mn Y5,Y5,"466,8",Q117873364,Senet boardgame (mn hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y5.png,,A game board (of Senet) with game pieces.,matched
+541,R11,U+132BD,𓊽,R11,dd R11,R11,"355,14",Q117865781,Djed,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R11.png,,A column imitating a bundle of stalks tied together.,matched
+542,R17/R18,U+132C4,𓋄,R17,R17,R17,,,,,,"A wig with a fillet, with a headdress consisting of two plumes (S9), on top of a pole.",matched
+544,???,,,,,,,,,,,,unknown
+546,R12,U+132BE,𓊾,R12,R12,R12,,Q117865785,Standard,http://commons.wikimedia.org/wiki/Special:FilePath/Nome%20standard.svg,,A standard used for carrying religious symbols.,matched
+547,R8,U+132B9,𓊹,R8,nTr R8,R8,"353,3",Q117865770,Flag,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R8.png,,"A cloth wound on a pole, an emblem of divinity.",matched
+550,R7,U+132B8,𓊸,R7,snTr R7,R7,"352,11",Q12060710,𓊸,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R7.png,,A bowl for incense with smoke rising from the bowl.,matched
+551,R2,U+132B0,𓊰,R2,R2,R2,"347,1",Q117865765,Table with offerings,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R2.png,,"A one legged table with long upright loaves of bread, cut in halves.",matched
+552,R4,U+132B5,𓊵,R4,Htp R4,R4,"351,6",Q117865767,Altar,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R4.png,,A loaf of bread upon a reed mat.,matched
+553,X3,U+133D1,𓏑,X3,X3,X3,"462,7",,,,,"A loaf of bread, without internal detail.",matched
+554,X2,U+133D0,𓏐,X2,X2,X2,"461,3",Q117872819,Loaf of bread,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X2.png,,A loaf of bread with a horizontal line inside the bread.,matched
+555,X4,U+133D2,𓏒,X4F,X4,X4F,"462,14",Q117872977,Elongated loaf,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X4.png,,"A roll of bread, with a diamond in the middle.",matched
+556,X4,U+133D2,𓏒,X4F,X4,X4F,"462,14",Q117872977,Elongated loaf,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X4.png,,"A roll of bread, with a diamond in the middle.",matched
+557,X6,U+133D6,𓏖,X6,X6,X6,,Q117873038,Round loaf,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X6.png,,A round loaf with a finger mark at the bottom.,matched
+558,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+559,Z5,U+133EF,𓏯,Z5,Z5,Z5,"469,10",Q117873884,Diagonal stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z5.png,,"A doubly curved, diagonal stroke.",matched
+560,Z4,U+133ED,𓏭,Z4,y Z4,Z4,"469,6",Q117873820,Two diagonal strokes,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z4.png,,Two diagonal strokes arranged horizontally.,matched
+561,Z2,U+133E5,𓏥,Z2,Z2,Z2,,Q117873757,3 strokes,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z2.png,, Three vertical strokes in a horizontal orientation.,matched
+562,Z3a,U+133EB,𓏫,Z3A,Z3a,Z3A,,,,,,Three horizontal strokes arranged vertically.,matched
+563,Z3,U+133EA,𓏪,Z3,Z3,Z3,"469,2",,,,,Three vertical strokes in a vertical orientation.,matched
+564,Z11,U+133F6,𓏶,Z11,imi Z11,Z11,"469,13",Q117874174,Crossed planks,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z11.png,,"A short horizontal stroke overlapped by a longer vertical stroke, the crossing point is in the middle of both strokes.",matched
+565,Z9/Z10,U+133F4,𓏴,Z9,Z9,Z9,"469,11",,,,,A cross.,matched
+566,Aa2/Aa3,,,,,,,,,,,,unmatched
+567,M44,U+131EE,𓇮,M44,M44,M44,"259,7",Q117861234,Thorn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M44.png,,A thorn.,matched
+568,M35,U+131E4,𓇤,M35,M35,M35,,,,,,A heap of corn.,matched
+569,X8,U+133D9,𓏙,X8,rdi di X8,X8,"464,1",Q4959123,𓏙,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X8.png,,"A conical loaf of bread, with a triangular finger mark at the bottom.",matched
+570,M44,U+131EE,𓇮,M44,M44,M44,"259,7",Q117861234,Thorn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M44.png,,A thorn.,matched
+571,X5,U+133D5,𓏕,X5,X5,X5,"463,3",,,,,"An horizontal oval shape, with two upwards curving strokes added at the front short side.",matched
+572,W24,U+133CC,𓏌,W24,nw W24,W24,"456,5",Q117872595,Spherical pot,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W24.png,,A round vessel with an upstanding rim.,matched
+573,N9/N10,U+131F7,𓇷,N9,pzD N9,N9,"267,6",,,,,"The moon, with one half obscured.",matched
+574,Aa1,,,,,,,Q7511786,"Placenta, Sieve",http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa1.png,,,unmatched
+575,X1,U+133CF,𓏏,X1,t X1,X1,"461,1",Q49000857,𓏏 bread bun,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X1.png,,A half round loaf of bread.,matched
+578,R15,U+132C1,𓋁,R15,iAb R15,,,Q4265559,𓋁,http://commons.wikimedia.org/wiki/Special:FilePath/Emblem%20of%20the%20east.svg,,"A spear made into a standard, with a circle on either side of the speartip, with a loop over the standard.",matched
+579,R14,U+132C0,𓋀,R14,imnt R14,R14,"359,14",Q5370075,𓊿,http://commons.wikimedia.org/wiki/Special:FilePath/Emblem%20of%20the%20west.svg,,"A feather (H6), angled forwards on top of a standard with a round top, with an short vertical line beside the main pole.",matched
+580,M40,U+131E9,𓇩,M40,iz M40,M40,"257,8",Q117861213,Bundle of sedges,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M40.png,,"A vertical bundle of reeds, tied together, with the ties at the front",matched
+581,Aa9,,,,,,,,,,,,unmatched
+582,Aa2/Aa3,,,,,,,,,,,,unmatched
+583,Aa21/Aa22,,,,,,,,,,,,unmatched
+584,V11,U+13378,𓍸,V11,V11,V11,"434,9",Q117866421,Cartouche half,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V11.png,,"The rear half of a cartouche, with the opening to the back.",matched
+585,T34/T35,U+13330,𓌰,T34,nm T34,T34,"430,6",,,,,"A vertical slaughtering knife, with cup-shaped handle.",matched
+586,O47/O48,U+13294,𓊔,O47,nxn O47,,"322,15",,,,,"A plan of a prehistoric building at the town of Nekhen, written as an oval, without the angled lines touching the oval.",matched
+587,Aa27,,,,,,,Q5188182,𓐩,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa27.png,,,unmatched
+588,T13,U+13318,𓌘,T13,rs T13,T13,"419,6",Q117866049,Rs symbol,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-T13.png,,"Pieces of wood, lashed together with the top piece at an angle, with a loop and tie at the back.",matched
+589,N34,U+13214,𓈔,N34,N34,N34,,Q117861433,Metal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N34.png,,An ingot of metal.,matched
+590,V36,U+133A8,𓎨,V36,V36,V36,,Q117871682,Container,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V36.png,,"A sheath or receptacle with V shaped indentation at the top, bound at the top with a tie at the backside.",matched
+591,Aa19,,,,,,,Q117874825,Hr symbol,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa19.png,,,unmatched
+592,Aa30/Aa31,,,,,,,,,,,,unmatched
+593,Aa30b/Aa31b,,,,,,,,,,,,unmatched
+594,Aa17/Aa18,,,,,,,,,,,,unmatched
+595,D61/D62/D63,U+130C3,𓃃,D61,sAH D61,D61,"122,1",,,,,"A stylised row of three toes, with the ovals at the left side.",matched
+596,T22/T23,U+13322,𓌢,T22,sn T22,T22,"423,16",,,,,"A two-barbed arrow-head, with the point facing downwards.",matched
+597,Aa2/Aa3,,,,,,,,,,,,unmatched
+598,O30,U+1327D,𓉽,O30,zxnt O30,O30,"315,16",Q117861774,Forked branch,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O30.png,,A forked pole for supporting a roof.,matched
+599,F41,U+1312C,𓄬,F41,F41,F41,"168,6",Q117860103,Vertebrae,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F41.png,,"A section of vertebrae, written vertically, with a small dot on top.",matched
+600,U13/U14,U+13341,𓍁,U13,hb U13,U13,,,,,,"A plough, with a cross-bar and two vertical lines on the end of the long beam.",matched
+601,???,,,,,,,,,,,,unknown
+602,V37,U+133A9,𓎩,V37,idr V37,V37,"445,2",,,,,A fastening knot of a dress on the shoulder.,matched
+603,R5/R6,U+132B6,𓊶,R5,kp R5,R5,"351,14",Q12060709,𓊶,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R5.png,,"A censer for fumigation, written horizontally, with a forwards, downwards line at the front.",matched
+604,Aa8,,,,,,,Q117874435,Irrigation canal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa8.png,,,unmatched
+605,???,,,,,,,,,,,,unknown
+606,???,,,,,,,,,,,,unknown
+607,???,,,,,,,,,,,,unknown
+608,???,,,,,,,,,,,,unknown
+609,???,,,,,,,,,,,,unknown
+610,???,,,,,,,,,,,,unknown
+611,???,,,,,,,,,,,,unknown
+612,???,,,,,,,,,,,,unknown
+613,???,,,,,,,,,,,,unknown
+614,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+615,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+616,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+617,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+618,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+619,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+620,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+621,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+622,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+623,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+624,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+625,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+626,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+627,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+628,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+629,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+630,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+631,V20,U+13386,𓎆,V20,mD V20 10,V20,"437,4",Q18204672,𓎆,http://commons.wikimedia.org/wiki/Special:FilePath/Num%20aeg%20hierog%200000010%20L2R%2040px.svg,,A hobble for cattle without a crossbar.,matched
+632,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+633,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+634,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+635,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+636,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+637,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+638,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+639,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+640,V1,U+13362,𓍢,V1,V1 100,V1,"431,4",Q117866345,Coil &#34;100&#34;,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V1.png,,A coil of rope.,matched
+641,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+642,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+643,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+644,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+645,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+646,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+647,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+648,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+649,M12,U+131BC,𓆼,M12,M12 1000,M12,"243,4",Q117861093,Lotus plant,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M12.png,,"A leaf, stem and root of a lotus plant.",matched
+650,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+651,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+652,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+653,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+654,I7/I8,U+1318F,𓆏,I7,I7,I7,"213,14",,,,,A frog or toad.,matched
+655,C11,U+13068,𓁨,C11,HH C11,,,Q117849443,Heh-god,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C11.png,,"God, seated on heel, right knee raised, with long curved beard and coif, with a palm branch, stripped of leaves and notched on his head (M4), notch forward, raised arms at either side of the body, hands held vertically, with the handpalms inwards.",matched
+656,(Z1*),,,,,,,,,,,,unmatched
+657,(Z1*),,,,,,,,,,,,unmatched
+658,(Z1*),,,,,,,,,,,,unmatched
+659,(Z1*),,,,,,,,,,,,unmatched
+660,(Z1*),,,,,,,,,,,,unmatched
+661,(Z1*),,,,,,,,,,,,unmatched
+662,(Z1*),,,,,,,,,,,,unmatched
+663,(Z1*),,,,,,,,,,,,unmatched
+664,(Z1*),,,,,,,,,,,,unmatched
+665,(V20*),,,,,,,,,,,,unmatched
+666,(V20*),,,,,,,,,,,,unmatched
+667,D22,U+1308C,𓂌,D22,D22,D22,"100,13",,,,,A mouth with two vertical lines at the bottom of the sign.,matched
+668,Aa16,,,,,,,Q117874638,Side symbol (gs hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa16.png,,,unmatched
+669,D23,U+1308D,𓂍,D23,D23,D23,,,,,,A mouth with three vertical lines at the bottom of the sign,matched
+670,Z9/Z10,U+133F4,𓏴,Z9,Z9,Z9,"469,11",,,,,A cross.,matched
+671,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+672,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+673,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+674,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+675,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+676,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+677,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+678,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+679,D42,U+130A3,𓂣,D42,D42,D42,"111,13",Q18205033,𓂣,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D42.png,,"A forearm, with the palm of the hand downwards, upper arm vertical.",matched
+680,N11,U+131F9,𓇹,N11,iaH N11,N11,"266,7",Q117861279,Crescent moon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N11.png,,A crescent moon.,matched
+681,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+682,M3,U+131B1,𓆱,M3,xt M3,M3,"234,4",Q4956331,𓆱,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M3.png,,"A branch, horizontally written.",matched
+683,V2,U+1336C,𓍬,V2,sTA V2,V2,,Q117866357,Coil and bolt,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V2.png,,"A horizontal line, intersected in the middle by a coil of rope (V1).",matched
+684,N11,U+131F9,𓇹,N11,iaH N11,N11,"266,7",Q117861279,Crescent moon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N11.png,,A crescent moon.,matched
+685,N11,U+131F9,𓇹,N11,iaH N11,N11,"266,7",Q117861279,Crescent moon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N11.png,,A crescent moon.,matched
+686,N11,U+131F9,𓇹,N11,iaH N11,N11,"266,7",Q117861279,Crescent moon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N11.png,,A crescent moon.,matched
+687,D41,U+130A2,𓂢,D41,D41,D41,"111,10",,,,,"A forearm, with the palm of the hand downwards, with the upper arm bend forwards.",matched
+688,Z9/Z10,U+133F4,𓏴,Z9,Z9,Z9,"469,11",,,,,A cross.,matched
+689,G39,U+1316D,𓅭,G39,zA G39,G39,"173,8",Q117859821,Duck (sa hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G39.png,,A pintail duck (Anas acuta).,matched
+690,D42,U+130A3,𓂣,D42,D42,D42,"111,13",Q18205033,𓂣,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D42.png,,"A forearm, with the palm of the hand downwards, upper arm vertical.",matched
+691,D42,U+130A3,𓂣,D42,D42,D42,"111,13",Q18205033,𓂣,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D42.png,,"A forearm, with the palm of the hand downwards, upper arm vertical.",matched
+692,Aa16,,,,,,,Q117874638,Side symbol (gs hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Aa16.png,,,unmatched
+693,Z9/Z10,U+133F4,𓏴,Z9,Z9,Z9,"469,11",,,,,A cross.,matched
+694,Z1,U+133E4,𓏤,Z1,Z1,Z1,"469,1",Q117873612,Stroke,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z45.png,,A vertical stroke.,matched
+695,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+696,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+697,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+698,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+699,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+700,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+701,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+702,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+703,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+704,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+705,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+706,U9,U+1333D,𓌽,U9,U9,U9,,Q117866211,Corn measure,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-U9.png,,"A grain measure, with a forwards and downwards line of grain coming from the front.",matched
+707,D12+D11,,𓂂+𓂁,,,,,,,,,,compound
+708,D11,U+13081,𓂁,D11,D11,D11,"99,7",,,,,The left part of the white of an eye.,matched
+709,D12,U+13082,𓂂,D12,D12,D12,"99,8",,,,,The pupil of an eye.,matched
+710,F16,U+1310F,𓄏,F16,db F16,F16,"155,14",Q117859926,Horn,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F16.png,,A horn of a bovid,matched
+711,D14,U+13084,𓂄,D14,D14,D14,"99,13",,,,,The right part of the white of an eye.,matched
+712,D15,U+13085,𓂅,D15,D15,D15,,,,,,The right lower marking of an Udjat eye.,matched
+713,D16,U+13086,𓂆,D16,D16,D16,,,,,,The left lower marking of an Udjat eye.,matched
+714,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+715,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+716,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+717,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+718,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+719,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+33B,A1,U+13000,𓀀,A1,A1,A1,"1,1",Q117849041,Man,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A1.png,82,"Man, seated, right knee raised, right arm raised, left arm in front of body.",matched
+35B,A2,U+13001,𓀁,A2,A2,A2,"2,4",Q117849031,Man with hand at mouth,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A2.png,290,"Man, seated, right knee raised, right arm raised with hand to mouth, left arm hanging beside the body.",matched
+42B,A9,U+1300B,𓀋,A9,A9,A9,"11,6",Q117849086,Man with basket on head,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-A9.png,912,"Man, seated, right knee raised, a vessel on his head, right arm raised in front, with the hand at the vessel, left arm hanging beside the body.",matched
+49B,Z6,U+133F1,𓏱,Z6,Z6,Z6,,,,,,"A slightly inclined stroke with two smaller strokes protruding at its right lower end, the upper one being shorter than the lower of them.",matched
+61B,B1,U+13050,𓁐,B1,B1,B1,"48,3",Q117849099,Woman,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-B1.png,,"Woman, seated, both knees up, with covered legs and arms, with long hair.",matched
+80C=80+921,D2+D21,,𓁷+𓂋,,,,,,,,,,compound
+92B,D24,U+1308E,𓂎,D24,spt D24,D24,"101,9",,,,,The upper lip of a human with teeth.,matched
+103B=91+99/103+575,D21+D36/D37+X1,,𓂋+𓏏,,,,,,,,,,compound
+118B=118+105,D51+D40,,𓂷+𓂡,,,,,,,,,,compound
+119/120,D54,U+130BB,𓂻,D54,D54,D54,"118,5",Q117851299,Legs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D54.png,,"Legs in a walking posture, feet orientated towards the reading direction.",matched
+132B=132+331,E34+N35,,𓃹+𓈖,,,,,,,,,,compound
+138bis/139,E8,U+130D9,𓃙,E8,E8,E8,,Q117858184,Kid,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-E8A.png,,A immature goat (kid).,matched
+155bis,O44,U+13291,𓊑,O44,O44,O44,"322,4",Q117861838,Profession emblem,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O44.png,,"The emblem erected outside the temple of Min, resembling the horns of a bovid (F13) on top of a stem of papyrus with a bud (M13), with a coil of rope (V1) between the horns.",matched
+160B,F18,U+13111,𓄑,F18,bH F18,F18,"156,10",Q117859938,Tusk,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F18.png,,A tusk of an elephant.,matched
+160bis,F19,U+13112,𓄒,F19,F19,F19,,Q117859944,Lower jawbone,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F19.png,,The lower jaw-bone of a bovid (ox).,matched
+161B,F20,U+13113,𓄓,F20,ns F20,F20,"157,5",Q117859951,"Tongue,",http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F20.png,,A tongue.,matched
+165B,F26,U+1311A,𓄚,F26,Xn F26,F26,"161,1",Q117859988,Goat skin,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F26.png,,The skin of a goat.,matched
+172bis,F40,U+1312B,𓄫,F40,Aw F40,F40,"167,14",Q7577534,𓄫 spine and nerve,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F40.png,,"A spine, with the spinal cord hanging out at either side.",matched
+180B,F35×3,,,,,,,,,,,,unmatched
+187=184+419,G8=G5+S12,,𓅉+𓅃+𓋞,,,,,,,,,,unmatched
+188B=184+419,G7=G5+R12,,𓅆+𓅃+𓊾,,,,,,,,,,unmatched
+189=184+546+236,R13=G5+R12+H6,,𓊿+𓅃+𓊾+𓆄,,,,,,,,,,unmatched
+192B,G1,U+1313F,𓄿,G1,A G1,G1,"204,1",Q3555104,𓄿,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G1.png,,An Egyptian vulture (Neophron percnopterus).,matched
+192C,G1,U+1313F,𓄿,G1,A G1,G1,"204,1",Q3555104,𓄿,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G1.png,,An Egyptian vulture (Neophron percnopterus).,matched
+194=193+575+238,G14+X1+H8,,𓅐+𓏏+𓆇,,,,,,,,,,compound
+195=193+510,G16a=G14+V30,,𓅐+𓎟,,,,,,,,,,unmatched
+196B,G17,U+13153,𓅓,G17,m G17,G17,"176,10",Q928672,𓅓 owl,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G17.png,,An owl.,matched
+200B,Z7,U+133F2,𓏲,Z7,W Z7,Z7,,Q117873960,Coil (w hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Z7.png,," A spiral, winding counter-clockwise away from its central point, ending at the right lower corner after about 1,5 turns.",matched
+201A,G23,U+1315A,𓅚,G23,rxyt G23,G23,"201,1",Q117859764,Lapwing,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G23.png,,A lapwing (Vanellus cristatus).,matched
+207=207+575+560,G26+X1+Z4,,𓅝+𓏏+𓏭,,,,,,,,,,compound
+207B=207B+575+560,G26+X1+Z4,,𓅝+𓏏+𓏭,,,,,,,,,,compound
+209=208+550+558,G29+R7+Z1,,𓅡+𓊸+𓏤,,,,,,,,,,compound
+211=208+511,G226=G29+V31*,,𓅡+𓎡,,,,,,,,,,unmatched
+212=208+208+208,G30=G29×3,,,,,,,,,,,,unmatched
+216B=216+558,G39+Z1,,𓅭+𓏤,,,,,,,,,,compound
+217bis,G38,U+1316C,𓅬,G38,gb G38,G38,"196,4",Q117859817,Goose,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G38.png,,A greater white-fronted goose (Anser albifrons).,matched
+223=453+221/222,T14+G41,,𓌙+𓅯,,,,,,,,,,compound
+246=245+510,I13=I12+V30,,𓆘+𓆗+𓎟,,,,,,,,,,unmatched
+272/273,M5/M7,U+131B4,𓆴,M5,M5,M5,,,,,,"A palm branch, stripped of leaves and notched with a round notch (M4), on top of a half round loaf of bread (X1).",matched
+281=280+250,M14=M13+I10,,𓇆+𓇅+𓆓,,,,,,,,,,unmatched
+292=291+99,M27=M26+D36,,𓇘+𓇗+𓂝,,,,,,,,,,unmatched
+303B,N5,U+131F3,𓇳,N5,zw N5,N5,"262,6",Q3489299,𓇳,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N5.png,,"The sun, within a halo.",matched
+310=309+614,N12+1,,𓇺,,,,,,,,,,compound
+311=309+615,N12+2,,𓇺,,,,,,,,,,compound
+312=309+616,N12+3,,𓇺,,,,,,,,,,compound
+313=309+617,N12+4,,𓇺,,,,,,,,,,compound
+315=309+314,N64=N12/N11+N14,,𓇼,,,,,,,,,,unmatched
+318=317+558+324,N16/N17+Z1+N23,U+131FE,𓇾,N16,tA N16,N16,,,,,,"A strip of land, with three grains of sand written beneath it.",compound
+318bis=317+317+324+324,N16/N17+N16N17+N23+N23,U+131FE,𓇾,N16,tA N16,N16,,,,,,"A strip of land, with three grains of sand written beneath it.",compound
+326bis,N30,U+1320F,𓈏,N30,iAt N30,N30,"275,12",Q117861416,Hill with shrubs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N30.png,,A hill with shrubs.,matched
+334bis=334+324,N36+N23,,𓈘+𓈇,,,,,,,,,,compound
+336=335+119/120,N40=N37/N38/N39+D54,,𓈝+𓂻,,,,,,,,,,unmatched
+338=330+330,N19=N18+N18,,𓈃+𓈀+𓈀,,,,,,,,,,unmatched
+346=345+99,O8a=O6+D36,,𓉗+𓂝,,,,,,,,,,unmatched
+363B,O29,U+1327B,𓉻,O29,aA O29,O29,,Q117861769,Column,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O29.png,,"A wooden column, written horizontally.",matched
+367=366+119/120,O35=O34+D54,,𓊄+𓊃+𓂻,,,,,,,,,,unmatched
+403B,O50,U+13297,𓊗,O50,zp O50,,,Q117861852,Threshing floor,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O50.png,,A circular threshing floor covered with grain.,matched
+419B=419+124,S13=S12+D58,,𓋟+𓋞+𓃀,,,,,,,,,,unmatched
+442=441+397,T29=T30+T28,,𓌩+𓌪+𓌨,,,,,,,,,,unmatched
+445=432+444,S124=T33+D52,,𓌮+𓂸,,,,,,,,,,unmatched
+455B,R19,U+132C6,𓋆,R19,R19,R19,"363,15",Q117865810,Thebes emblem,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-R19.png,,"A sceptre with a straight shaft, a forked base, topped with the head of the Seth animal (S40), with a fillet and a backwards angled feather (H6) on top of the staff.",matched
+469B=469+477,U4=U1/U2+Aa11/Aa12,,𓌶,,,,,,,,,,unmatched
+470B=470+561,U9+Z2,,𓌽+𓏥,,,,,,,,,,compound
+497/498,W22,U+133CA,𓏊,W22,Hnqt W22,W22,"456,16",Q117872461,Beer jug,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W22.png,,A beer-jug.,matched
+500=499+124,D60=W54+D58,,𓃂+𓃀,,,,,,,,,,unmatched
+501=157+499,F17=F16+D60,,𓄐+𓄏+𓃂,,,,,,,,,,unmatched
+540B=540+331,Y5+N35,,𓏠+𓈖,,,,,,,,,,compound
+542bis,R24/R25,U+132CB,𓋋,R24,R24,R24,,,,,,"Two bows, strung together as a package.",matched
+545=546+545B,R12+R22/R23,,𓊾,,,,,,,,,,compound
+548=547+547+547,R8×3,,,,,,,,,,,,unmatched
+555B=575+554+555+561,X1+X2+X4+Z2,,𓏏+𓏐+𓏒+𓏥,,,,,,,,,,compound
+584B,V11,U+13378,𓍸,V11,V11,V11,"434,9",Q117866421,Cartouche half,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V11.png,,"The rear half of a cartouche, with the opening to the back.",matched
+613bis,???,,,,,,,,,,,,unknown
+653B,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+653C,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+653D,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+653E,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+653F,D50,U+130AD,𓂭,D50,Dba D50,D50,"116,7",Q117851248,Finger,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D50.png,,A vertical human finger.,matched
+680B,N11,U+131F9,𓇹,N11,iaH N11,N11,"266,7",Q117861279,Crescent moon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N11.png,,A crescent moon.,matched
+680C,N11,U+131F9,𓇹,N11,iaH N11,N11,"266,7",Q117861279,Crescent moon,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N11.png,,A crescent moon.,matched
+192B(192C)+124,G1+D58,,𓄿+𓃀,,,,,,,,,,compound
+99+511,D36+V31*,,𓂝+𓎡,,,,,,,,,,compound
+99+575,D36+X1,,𓂝+𓏏,,,,,,,,,,compound
+200B+560,Z7+Z4,,𓏲+𓏭,,,,,,,,,,compound
+200+575,G43+X1,,𓅱+𓏏,,,,,,,,,,compound
+200B+575,Z7+X1,,𓏲+𓏏,,,,,,,,,,compound
+124+331,D58+N35,,𓃀+𓈖,,,,,,,,,,compound
+388+331,Q3+N35,,𓊪+𓈖,,,,,,,,,,compound
+388+575,Q3+X1,,𓊪+𓏏,,,,,,,,,,compound
+263+560,I9+Z4,,𓆑+𓏭,,,,,,,,,,compound
+263+91,I9+D21,,𓆑+𓂋,,,,,,,,,,compound
+196B+99,G17+D36,,𓅓+𓂝,,,,,,,,,,compound
+196+91,G17+D21,,𓅓+𓂋,,,,,,,,,,compound
+196+575,G17+X1,,𓅓+𓏏,,,,,,,,,,compound
+331+192B(192C)+(331),N35+G1(+N35),,𓈖+𓄿+𓈖,,,,,,,,,,compound
+331+124,N35+D58,,𓈖+𓃀,,,,,,,,,,compound
+331+263,N35+I9,,𓈖+𓆑,,,,,,,,,,compound
+331+91,N35+D21,,𓈖+𓂋,,,,,,,,,,compound
+331+574,N35+Aa1,,𓈖,,,,,Q3046655,N-water ripple,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N35.png,,,compound
+331+511,N35+V31*,,𓈖+𓎡,,,,,,,,,,compound
+331+575,N35+X1,,𓈖+𓏏,,,,,,,,,,compound
+91+99,D21+D36,,𓂋+𓂝,,,,,,,,,,compound
+91+200B,D21+Z1,,𓂋+𓏤,,,,,,,,,,compound
+91+560,D21+Z4,,𓂋+𓏭,,,,,,,,,,compound
+91+574,D21+Aa1,,𓂋,,,,,Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,,compound
+91+575,D21+X1,,𓂋+𓏏,,,,,,,,,,compound
+335+124,N37+D58,,𓈙+𓃀,,,,,,,,,,compound
+319+192B(192C),N29+G1,,𓈎+𓄿,,,,,,,,,,compound
+319+331,N29+N35,,𓈎+𓈖,,,,,,,,,,compound
+319+91,N29+D21,,𓈎+𓂋,,,,,,,,,,compound
+319+575,N29+X1,,𓈎+𓏏,,,,,,,,,,compound
+511+192B(192C),V31*+G1,,𓎡+𓄿,,,,,,,,,,compound
+395+91,W11/W12+D21,U+133BC,𓎼,W11,g W11,W11,"450,9",Q6159438,𓎼,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-W11.png,,A ring-stand for jars.,compound
+575+192C,X1+G1,,𓏏+𓄿,,,,,,,,,,compound
+575+200B,X1+Z7,,𓏏+𓏲,,,,,,,,,,compound
+575+560,X1+Z4,,𓏏+𓏭,,,,,,,,,,compound
+575+263,X1+I9,,𓏏+𓆑,,,,,,,,,,compound
+575+91,X1+D21,,𓏏+𓂋,,,,,,,,,,compound
+575+575,X1+X1,,𓏏+𓏏,,,,,,,,,,compound
+115+575,D46+X1,,𓂧+𓏏,,,,,,,,,,compound
+263+115,I9+D46,,𓆑+𓂧,,,,,,,,,,compound
+200B+497,Z7+W22,,𓏲+𓏊,,,,,,,,,,compound
+196B+538,G17+Y1/Y2,,𓅓,,,,,Q928672,𓅓 owl,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G17.png,,,compound
+200B+538,Z7+Y1/Y2,,𓏲,,,,,,,,,,compound
+200B+538+561,Z7+Y1/Y2+Z2,,𓏲+𓏥,,,,,,,,,,compound
+388+99,Q3+D36,,𓊪+𓂝,,,,,,,,,,compound
+91+538,D21+Y1/Y2,,𓂋,,,,,Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,,compound
+575+538,X1+Y1/Y2,,𓏏,,,,,Q49000857,𓏏 bread bun,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X1.png,,,compound
+575+339,X1+O49,,𓏏+𓊖,,,,,,,,,,compound
+575+340,X1+O1,,𓏏+𓉐,,,,,,,,,,compound
+91+558,D21+Z1,,𓂋+𓏤,,,,,,,,,,compound
+575+558,X1+Z1,,𓏏+𓏤,,,,,,,,,,compound
+200B+562,Z7+Z3a,,𓏲+𓏫,,,,,,,,,,compound
+200B+331+561,Z7+N35+Z2,,𓏲+𓈖+𓏥,,,,,,,,,,compound
+331+561,N35+Z2,,𓈖+𓏥,,,,,,,,,,compound
+575+561,X1+Z2,,𓏏+𓏥,,,,,,,,,,compound
+33B+561,A1+Z2,,𓀀+𓏥,,,,,,,,,,compound
+538+561,Y1/Y2+Z2,U+133DB,𓏛,Y1,mDAt Y1,Y1,"465,6",Q18210804,𓏛,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y1v.png,,"A papyrus scroll, rolled up, tied and sealed, written horizontally, with ties.",compound
+559+538,Z5+Y1/Y2,,𓏯,,,,,,,,,,compound
+274+575+303,M8+X1+N5,,𓆷+𓏏+𓇳,,,,,,,,,,compound
+282+196(196B)+327+99,M17+G17+Aa13/Aa14/Aa15+D36,,𓇋+𓅓+𓂝,,,,,,,,,,compound
+282+540+331,M17+Y5+N35,,𓇋+𓏠+𓈖,,,,,,,,,,compound
+282+495+511+33B,M17+W24+V31*+A1,,𓇋+𓏌+𓎡+𓀀,,,,,,,,,,compound
+282+35(35B)+560+91+558+196B+99,M17+A2+Z4+D21+Z1+G17+D36,,𓇋+𓀁+𓏭+𓂋+𓏤+𓅓+𓂝,,,,,,,,,,compound
+534+391+432,S34+U28+S29,,𓋹+𓍑+𓋴,,,,,,,,,,compound
+363+340+340+188B,O29+O1+O1+G7,,𓉻+𓉐+𓉐+𓅆,,,,,,,,,,compound
+538+575+558+522+558,Y1/Y2+X1+Z1+V12+Z1,U+133DB,𓏛,Y1,mDAt Y1,Y1,"465,6",Q18210804,𓏛,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y1v.png,,"A papyrus scroll, rolled up, tied and sealed, written horizontally, with ties.",compound
+331+269+574+575,N35+M3+Aa1+X1,,𓈖+𓆱+𓏏,,,,,,,,,,compound
+91+528+33B+61B+561,D21+V13+A1+B1+Z2,,𓂋+𓍿+𓀀+𓁐+𓏥,,,,,,,,,,compound
+340+91+200B+303,O4+D21+Z7+N5,,𓉔+𓂋+𓏲+𓇳,,,,,,,,,,compound
+289+575+331,M23+X1+N35,,𓇓+𓏏+𓈖,,,,,,,,,,compound
+565+331+538,Z9/Z10+N35+Y1/Y2,U+133F4,𓏴,Z9,Z9,Z9,"469,11",,,,,A cross.,compound
+1bis,A83,,,,,,,,,,,,unmatched
+12bis,A23a,,,,,,,,,,,,unmatched
+20bis,A184a,,,,,,,,,,,,unmatched
+37bis,C11e,,,,,,,,,,,,unmatched
+74bis,C12,U+13069,𓁩,C12,C12,C12,"57,9",Q117849477,Amun-god,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-C12.png,,"God, seated, knees up, with covered legs and arms, with a long curved beard, wearing the double-plume headdress (S72A), with a line running from the crown down the back, holding a sceptre with a straight shaft, topped with the head of the Seth animal vertically.",matched
+81B,D3,U+13078,𓁸,D3,Sny D3,D3,,Q117849873,Hair,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D3.png,,A lock of hair with three strands.,matched
+82bis,D4,U+13079,𓁹,D4,ir D4,D4,"96,14",Q3596265,𓆉,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D4.png,,An eye.,matched
+111B=111+331,D35+N35,,𓂜+𓈖,,,,,,,,,,compound
+114B,D64,U+130C6,𓃆,D271,D64,D271,,,,,,A human hand with the thumb downwards and the palm curved downwards.,matched
+128bis,E141,,,,,,,,,,,,unmatched
+174bis,F43,U+1312E,𓄮,F43,F43,F43,,Q117860108,Ribs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F43.png,,Ribs of beef.,matched
+188=184+546,G7=G5+R12,,𓅆+𓅃+𓊾,,,,,,,,,,unmatched
+201B,G24,U+1315B,𓅛,G24,G24,G24,"201,4",Q5713162,𓅛,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-G24.png,,"A lapwing (Vanellus cristatus), legs drawn towards the body, wings extended above the body.",matched
+202B,G68,,,,,,,,,,,,unmatched
+230bis,G53a,,,,,,,,,,,,unmatched
+234bis,H16,,,,,,,,,,,,unmatched
+241bis=241+546,I3+R12,,𓆊+𓊾,,,,,,,,,,compound
+246bis,I44=I12×2,,,,,,,,,,,,unmatched
+263bis=263+328,I24=I9+Aa16,,𓆑,,,,,Q3560535,horned viper,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-I9.png,,,unmatched
+290B,M24,U+131D4,𓇔,M24,rsw M24,M24,"251,4",,,,,"A sedge (M23), written on top of a mouth (D21).",matched
+316bis,N15,U+131FD,𓇽,N15,dwAt N15,N15,"268,5",Q117861307,Star in circle,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-N15.png,,"A star, within a circle.",matched
+322bis=457+322,T14+N25,,𓌙+𓈉,,,,,,,,,,compound
+340B,O1,U+13250,𓉐,O1,pr O1,O1,"280,1",Q3278571,𓉐,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O1.png,,A house or enclosure.,matched
+340bis=340+381,O70=O1+P8,,𓉐+𓊤,,,,,,,,,,unmatched
+340ter,O32,U+13280,𓊀,O32,O32,O32,,Q117861788,Gate,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O32.png,,A gateway.,matched
+341bis,O??,,,,,,,,,,,,unknown
+344bis,O249/260b,,,,,,,,,,,,unmatched
+352bis,O175b,,,,,,,,,,,,unmatched
+361bis,O41,U+1328E,𓊎,O41,O41,O41,"319,6",Q117861828,Double stairs,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O41.png,,A double stairway.,matched
+362bis,O30,U+1327D,𓉽,O30,zxnt O30,O30,"315,16",Q117861774,Forked branch,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-O30.png,,A forked pole for supporting a roof.,matched
+377bis,P3,U+1329E,𓊞,,P3,,,Q117862553,Barque with naos,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-P3.png,,"A boat/ship with a vertical prow and a stern resembling the handle of a handle of a sickle (U1), on top of a rectangle resembling water, with an oval with rounded corners in the boat/ship, with an oar/rudder at the back.",matched
+384B,"Q19, A55",,,,,,,,,,,,unmatched
+391bis,T124=T13+U28/U29+T13,,𓌘+𓌘,,,,,,,,,,unmatched
+412=411+510,S2=S1+V30,,𓋒+𓋑+𓎟,,,,,,,,,,unmatched
+418bis,S93a,,,,,,,,,,,,unmatched
+447bis,A25a,,,,,,,,,,395,,unmatched
+516bis,V32,U+133A3,𓎣,V32,msn V32,V32,"442,13",Q117869367,Weir-basket,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V32.png,,A wickerwork frail with ties.,matched
+526B,F48/F46/F47/F49,U+13136,𓄶,F48,F48,F48,"169,13",,,,,"An intestine, with the openings top left and bottom right.",matched
+538B,Y1/Y2,U+133DB,𓏛,Y1,mDAt Y1,Y1,"465,6",Q18210804,𓏛,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y1v.png,,"A papyrus scroll, rolled up, tied and sealed, written horizontally, with ties.",matched
+539bis,Y7,U+133E2,𓏢,Y7,Y7,Y7,"466,11",Q117873483,Harp,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Y7.png,,A rounded harp.,matched
+545B,R22/R23,U+132C9,𓋉,R22,xm R22,R22,"364,11",,,,,Two bones of a fossil squid (belemnite).,matched
+551bis,R3,U+132B2,𓊲,R3,R3,R3,"347,9",,,,,"A round loaf of bread (X6), a tall water-jug (W14) and a loaf of bread (X3), arranged horizontally on a table with an inwards incline of the legs, with a horizontal beam connecting the legs( R3P).",matched
+564B,M42,U+131EC,𓇬,M42,M42,M42,"240,15",Q117861226,Flower,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-M42.png,,A flower with four petals.,matched
+678bis,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+678ter,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+678quat,(D21),U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+282+331,M17+N35,,𓇋+𓈖,,,,,,,,,,compound
+196B+560,G17+Z4,,𓅓+𓏭,,,,,,,,,,compound
+331+560,N35+Z4,,𓈖+𓏭,,,,,,,,,,compound
+331+575+560,N35+X1+Z4,,𓈖+𓏏+𓏭,,,,,,,,,,compound
+511+124,V31*+D58,,𓎡+𓃀,,,,,,,,,,compound
+511+525,V31*+V28,,𓎡+𓎛,,,,,,,,,,compound
+575+192B(192C),X1+G1,,𓏏+𓄿,,,,,,,,,,compound
+250+115,I10+D46,,𓆓+𓂧,,,,,,,,,,compound
+200B+277,Z7+M12,,𓏲+𓆼,,,,,,,,,,compound
+335+561,N35+Z2,,𓈖+𓏥,,,,,,,,,,compound
+329+561,N33+Z2,,𓈒+𓏥,,,,,,,,,,compound
+274+574+575+303,M8+Aa1+X1+N5,,𓆷+𓏏+𓇳,,,,,,,,,,compound
+495+33B+511,W24+V31*+A1,,𓏌+𓎡+𓀀,,,,,,,,,,compound
+532+340+363B+45,V10+O1+O29+A40,,𓍷+𓉐+𓉻+𓀭,,,,,,,,,,compound
+303+510,N5+V30,,𓇳+𓎟,,,,,,,,,,compound
+269+574+575+119/120,M3+Aa1+X1+D54,,𓆱+𓏏+𓂻,,,,,,,,,,compound
+495+331+340,W34+N35+O1,,𓈖+𓉐,,,,,,,,,,compound
+80B=80+558,D2+Z1,,𓁷+𓏤,,,,,,,,,,compound
+91B,D21,U+1308B,𓂋,D21,r rA D21,D21,"100,11",Q2921350,𓂋,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D21.png,,A mouth.,matched
+109=483+108,D28+U36,,𓂓+𓍛,,,,,,,,,,compound
+114A,D47,U+130A9,𓂩,D47,D47,D47,"115,6",Q613996,𓂧,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-D46.png,,A human hand with the thumb upwards and the palm curved upwards.,matched
+123=122+441,D57=D56+T30,,𓂿+𓂾+𓌪,,,,,,,,,,unmatched
+"158, 159",F21,U+13114,𓄔,F21,sDm F21,F21,,Q117859964,Ear of animal,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-F21.png,,"The ear of a bovid (ox), without internal detail.",matched
+202A,G33,U+13165,𓅥,G33,G33,G33,"180,9",Q118221292,Q118221292,,,A cattle egret (Bubulcus ibis).,matched
+210=208+465,G225=G29+U6/U7,,𓅡,,,,,,,,,,unmatched
+318=317+324+558,N16/N17+N23+Z1,U+131FE,𓇾,N16,tA N16,N16,,,,,,"A strip of land, with three grains of sand written beneath it.",compound
+388B,Q3,U+132AA,𓊪,Q3,p Q3,Q3,"340,5",Q7619641,"Mat, stool",http://commons.wikimedia.org/wiki/Special:FilePath/Louvres-antiquites-egyptiennes-img%202734.jpg,,A stool made of reed matting.,matched
+394B,Q7,U+132AE,𓊮,Q7,Q7,Q7,"344,14",Q4958604,𓊮,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-Q7.png,," A brazier with a flame rising from it, flame angling towards the front.",matched
+420=419+447,S14=S12+T3,,𓋠+𓋞+𓌉,,,,,,,,,,unmatched
+430B,S28,U+132F3,𓋳,S28,S28,,"380,2",Q117865877,Cloth with fringes (khbs hieroglyph),http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-S28.png,,"A horizontal strip of cloth with fringes, combined with a folded piece of cloth (S29).",matched
+510B=510+575,V30+X1,,𓎟+𓏏,,,,,,,,,,compound
+511B,V31,U+133A1,𓎡,V31,k V31,V31,"442,3",Q4867620,𓎡,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-V31.png,," A wickerwork basket with a handle, orientated with the handle to the back.",matched
+549=547+397+319,R10=R8+T28+N29,,𓊻+𓊹+𓌨+𓈎,,,,,,,,,,unmatched
+99+91+91,D36+D21+D21,,𓂝+𓂋+𓂋,,,,,,,,,,compound
+124+575,D58+X1,,𓃀+𓏏,,,,,,,,,,compound
+196(196B)+99,G17+D36,,𓅓+𓂝,,,,,,,,,,compound
+"331+192(192B, 192C)",N35+G1,,𓈖+𓄿,,,,,,,,,,compound
+331+99,N35+D36,,𓈖+𓂝,,,,,,,,,,compound
+331+575+263,N35+X1+I9,,𓈖+𓏏+𓆑,,,,,,,,,,compound
+331+575+575,N35+X1+X1,,𓈖+𓏏+𓏏,,,,,,,,,,compound
+331+250,N35+I10,,𓈖+𓆓,,,,,,,,,,compound
+91+331,D21+N35,,𓂋+𓈖,,,,,,,,,,compound
+91+331+263,D21+N35+I9,,𓂋+𓈖+𓆑,,,,,,,,,,compound
+574+575,Aa1+X1,,𓏏,,,,,Q49000857,𓏏 bread bun,http://commons.wikimedia.org/wiki/Special:FilePath/Abydos-Bold-hieroglyph-X1.png,,,compound
+366+331,O34+N35,,𓊃+𓈖,,,,,,,,,,compound
+432+91,S29+D21,,𓋴+𓂋,,,,,,,,,,compound
+335+331,N37+N35,,𓈙+𓈖,,,,,,,,,,compound
+575+99,X1+D36,,𓏏+𓂝,,,,,,,,,,compound
+575+200,X1+G43,,𓏏+𓅱,,,,,,,,,,compound
+575+388,X1+Q3,,𓏏+𓊪,,,,,,,,,,compound
+575+331,X1+N35,,𓏏+𓈖,,,,,,,,,,compound
+528+575,V14/V13+X1,U+13380,𓎀,V14,V14,V14,"435,14",,,,,"A rope used for the tethering of animals, with an diacritic stroke added to the large loop.",compound
+115+366,D46+O34,,𓂧+𓊃,,,,,,,,,,compound
+99+119/120,D36+D54,,𓂝+𓂻,,,,,,,,,,compound
+575+119/120,X1+D54,,𓏏+𓂻,,,,,,,,,,compound
+33(33B)+331,A1+N35,,𓀀+𓈖,,,,,,,,,,compound
+33(33B)+561,A1+Z2,,𓀀+𓏥,,,,,,,,,,compound
+33(33B)+61B+561,A1+B1+Z2,,𓀀+𓁐+𓏥,,,,,,,,,,compound
+324+561,N23+Z2,,𓈇+𓏥,,,,,,,,,,compound
+497/498+561,W22+Z1,,𓏊+𓏤,,,,,,,,,,compound
+558+561,Z1+Z2,,𓏤+𓏥,,,,,,,,,,compound
+274+574+575,M8+Aa1+X1,,𓆷+𓏏,,,,,,,,,,compound
+282+196B+327+99,M17+G17+Aa13/Aa14/Aa15+D36,,𓇋+𓅓+𓂝,,,,,,,,,,compound
+282+540+331+188B,M17+Y5+N35+G7,,𓇋+𓏠+𓈖+𓅆,,,,,,,,,,compound
+495+511,W24+V31*,,𓏌+𓎡,,,,,,,,,,compound
+340+91+575+303,O1+D21+X1+N5,,𓉐+𓂋+𓏏+𓇳,,,,,,,,,,compound
+540+331+528+200B+188B,Y5+N35+V14/V13+Z7+G7,,𓏠+𓈖+𓏲+𓅆,,,,,,,,,,compound
+340+91+200B(200)+303,O4+D21+Z7(G43)+N5,,𓉔+𓂋+𓇳,,,,,,,,,,compound
+269+574+575,M3+Aa1+X1,,𓆱+𓏏,,,,,,,,,,compound
+335+333+303,N37+N35×3+N5,,𓈙+𓇳,,,,,,,,,,compound
+250+575+317,I10+X1+N17,,𓆓+𓏏+𓇿,,,,,,,,,,compound

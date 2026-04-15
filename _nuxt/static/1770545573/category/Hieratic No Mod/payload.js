@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/category/Hieratic No Mod", {data:[{}],fetch:{},mutations:[]});

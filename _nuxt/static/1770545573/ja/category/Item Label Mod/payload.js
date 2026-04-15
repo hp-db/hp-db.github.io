@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/category/Item Label Mod", {data:[{}],fetch:{},mutations:[]});

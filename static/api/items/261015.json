@@ -1,0 +1,132 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/itemNo/687",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/ItemNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "687"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/items/261015",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Item"
+    ],
+    "http://schema.org/image": [
+      {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia/hp/2/2_083.tif/924,5235,1284,460/,200/0/default.jpg"
+      }
+    ],
+    "http://schema.org/license": [
+      {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://schema.org/relatedLink": [
+      {
+        "@id": "http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?manifest=https://moeller.jinsha.tsukuba.ac.jp/data/manifest/56653a59-0d55-4d1a-a7e3-2242e02859a1/manifest.json&canvas=https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/56653a59-0d55-4d1a-a7e3-2242e02859a1/canvas/p83&xywh=924,5235,1284,460&xywh_highlight=border"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "http://w3id.org/hpdb/item/261015"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "261015"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieraticNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieraticNo/687"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/hieroglyphNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D41"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/itemNo": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/itemNo/687"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/itemType": [
+      {
+        "@value": "Number"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/notes": [
+      {
+        "@value": "sTAt 1 = 100 rmn = 4 Hsb = 8 sA = 1000 mH"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/order": [
+      {
+        "@value": 15
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/page": [
+      {
+        "@value": 61
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/subType": [
+      {
+        "@value": "Area"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/vol": [
+      {
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieroglyphNo/D41",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieroglyphNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D41"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/categoryClass": [
+      {
+        "@id": "https://w3id.org/hpdb/api/term/categoryClass/D"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/categoryClass/D",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/Category"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/687",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "687"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "rmn"
+      }
+    ]
+  }
+]

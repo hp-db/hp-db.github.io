@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/category/Numeral", {data:[{}],fetch:{},mutations:[]});

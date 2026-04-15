@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "https://w3id.org/hpdb/api/term/hieraticNo/47",
+    "@type": [
+      "https://w3id.org/hpdb/api/classes/HieraticNo"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "47"
+      }
+    ],
+    "https://w3id.org/hpdb/api/properties/phonetic": [
+      {
+        "@value": "iry"
+      },
+      {
+        "@value": "sA"
+      },
+      {
+        "@value": "miniw"
+      },
+      {
+        "@value": "sAw"
+      },
+      {
+        "@value": "mniw"
+      }
+    ]
+  }
+]

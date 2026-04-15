@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/category/Sub Type", {data:[{}],fetch:{},mutations:[]});
