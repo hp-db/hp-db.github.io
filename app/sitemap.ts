@@ -1,3 +1,5 @@
+export const dynamic = 'force-static'
+
 import type { MetadataRoute } from 'next'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
