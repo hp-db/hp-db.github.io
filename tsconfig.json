@@ -38,12 +38,6 @@
   ],
   "exclude": [
     "node_modules",
-    "scripts/**",
-    "dist/**",
-    "pages/**",
-    "src/components/common/Breadcrumbs.vue",
-    "src/components/common/Map.vue",
-    "src/components/common/TOC.vue",
-    "src/components/common/Split.vue"
+    "scripts/**"
   ]
 }
