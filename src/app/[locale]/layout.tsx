@@ -5,6 +5,7 @@ import { locales } from '@/i18n/config'
 import { AppHeader } from './header'
 import { AppFooter } from './footer'
 import { ThemeProvider } from '@/components/theme-provider'
+import { BackToTop } from '@/components/common/back-to-top'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
@@ -84,6 +85,7 @@ gtag('config', '${GA_ID}');`}
             <AppHeader />
             <main className="flex-1">{children}</main>
             <AppFooter />
+            <BackToTop />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
