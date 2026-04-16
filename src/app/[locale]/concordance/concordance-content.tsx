@@ -330,10 +330,10 @@ export function ConcordanceContent() {
       </div>
 
       {/* ─── テーブル（スクロール領域） ─── */}
-      <div className="flex-1 overflow-auto">
+      <div className="flex-1 overflow-y-auto overflow-x-hidden">
         {/* Table コンポーネントの内部 overflow-auto ラッパーを避け、
             このdivを唯一のスクロールコンテナにするため <table> を直接使う */}
-        <table className="w-full border-collapse caption-bottom text-sm">
+        <table className="w-full border-collapse caption-bottom text-xs table-fixed">
           <TableHeader className="sticky top-0 z-10">
             <TableRow className="align-bottom bg-muted/60 backdrop-blur-sm">
               {COL_DEFS.map(({ label, href }) => {
@@ -346,8 +346,7 @@ export function ConcordanceContent() {
                 return (
                   <TableHead
                     key={label}
-                    className="px-1 py-2 align-bottom border-b-2 border-border"
-                    style={{ minWidth: '80px' }}
+                    className="px-0.5 py-2 align-bottom border-b-2 border-border"
                   >
                     <div className="flex justify-center items-end text-center leading-tight">
                       {href ? (
@@ -381,7 +380,7 @@ export function ConcordanceContent() {
                 </a>
               )
               const td = (content: React.ReactNode) => (
-                <TableCell className="px-2 py-1 text-center font-mono text-xs">
+                <TableCell className="px-1 py-1 text-center font-mono text-[11px] break-words whitespace-normal">
                   {content}
                 </TableCell>
               )
@@ -393,7 +392,7 @@ export function ConcordanceContent() {
                   {/* Hieroglyphica */}
                   {td(r.hieroglyphica || empty)}
                   {/* Glyph */}
-                  <TableCell className="px-2 py-0.5 text-center text-xl leading-none">
+                  <TableCell className="px-1 py-0.5 text-center text-lg leading-none break-words">
                     {r.unicode_char || empty}
                   </TableCell>
                   {/* Gardiner */}
