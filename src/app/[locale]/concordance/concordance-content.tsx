@@ -47,6 +47,83 @@ const RELATED_DATABASES = [
   { nameKey: 'concordance_db_ifao_name', descKey: 'concordance_db_ifao_desc', url: 'https://www.ifao.egnet.net/publications/publier/outils-ed/polices/' },
 ]
 
+// Split the `mdc` field into a graphical code (e.g. "A21") and a transliteration
+// prefix (e.g. "sr"). The raw `mdc` field may contain one of:
+//   - empty
+//   - a single code token: "A4"
+//   - "{transcription} {code}": "sr A21", "mAat C10"
+//   - edge cases with extra tokens: "mD V20 10", "M12 1000"
+function parseMdc(mdc: string, gardinerNo: string): { code: string; transcription: string } {
+  if (!mdc) return { code: '', transcription: '' }
+  if (!mdc.includes(' ')) return { code: mdc, transcription: '' }
+  // Anchor the split on gardiner_no if it appears inside mdc as a whole word.
+  if (gardinerNo) {
+    const re = new RegExp(`(^|\\s)${gardinerNo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(\\s|$)`)
+    const m = mdc.match(re)
+    if (m && m.index !== undefined) {
+      const idx = m.index + m[1].length
+      const before = mdc.slice(0, idx).trim()
+      const after = mdc.slice(idx + gardinerNo.length).trim()
+      const transcription = [before, after].filter(Boolean).join(' ')
+      return { code: gardinerNo, transcription }
+    }
+  }
+  // Fallback: treat last token as code, everything before as transcription.
+  const parts = mdc.trim().split(/\s+/)
+  return {
+    code: parts[parts.length - 1],
+    transcription: parts.slice(0, -1).join(' '),
+  }
+}
+
+// Natural sort for sign codes like "A1", "A10", "Aa1", "A17A".
+// Strips decorators like "(D21)", "A17*", "A4/A5" (keeps first alt) so decorated
+// variants cluster with their canonical form instead of the lexicographic edge.
+// Empty/unparseable values sort last.
+function compareSignCode(a: string, b: string): number {
+  const parse = (s: string): [string, number, string] => {
+    if (!s) return ['\uffff', Number.MAX_SAFE_INTEGER, '']
+    const normalized = s.replace(/[()]/g, '').split('/')[0].replace(/\*$/, '').trim()
+    const m = normalized.match(/^([A-Za-z]+)(\d+)(.*)$/)
+    if (!m) return [normalized || s, 0, '']
+    return [m[1], parseInt(m[2], 10), m[3]]
+  }
+  const [la, na, sa] = parse(a)
+  const [lb, nb, sb] = parse(b)
+  const letterCmp = la.localeCompare(lb)
+  if (letterCmp !== 0) return letterCmp
+  if (na !== nb) return na - nb
+  return sa.localeCompare(sb)
+}
+
+// Natural sort for Möller numbers like "1", "1B", "33bis", "331ter".
+// Suffix order: base < letter variant (B, C, …) < Latin (bis, ter, quat, …).
+function compareMoller(a: string, b: string): number {
+  const suffixRank = (suffix: string): number => {
+    if (!suffix) return 0
+    const lower = suffix.toLowerCase()
+    if (lower === 'bis') return 100
+    if (lower === 'ter') return 101
+    if (lower === 'quat' || lower === 'quater') return 102
+    if (lower === 'quinq' || lower === 'quinquies') return 103
+    if (lower === 'sex' || lower === 'sexies') return 104
+    // Single letter variant: B=2, C=3, …; base (no suffix) is already 0.
+    if (/^[A-Za-z]$/.test(suffix)) return suffix.toUpperCase().charCodeAt(0) - 64
+    return 900
+  }
+  const parse = (s: string): [number, number, string] => {
+    if (!s) return [Number.MAX_SAFE_INTEGER, 0, '']
+    const m = s.match(/^(\d+)(.*)$/)
+    if (!m) return [Number.MAX_SAFE_INTEGER, 0, s]
+    return [parseInt(m[1], 10), suffixRank(m[2]), m[2]]
+  }
+  const [na, ra, sa] = parse(a)
+  const [nb, rb, sb] = parse(b)
+  if (na !== nb) return na - nb
+  if (ra !== rb) return ra - rb
+  return sa.localeCompare(sb)
+}
+
 // Valid anchor IDs on https://en.wikipedia.org/wiki/List_of_Egyptian_hieroglyphs
 const WIKI_GARDINER = new Set(['A1','A10','A11','A12','A13','A14','A14A','A15','A16','A17','A17A','A18','A19','A2','A20','A21','A22','A23','A24','A25','A26','A27','A28','A29','A3','A30','A31','A32','A32A','A33','A34','A35','A36','A37','A38','A39','A4','A40','A40A','A41','A42','A42A','A43','A43A','A44','A45','A45A','A46','A47','A48','A49','A5','A50','A51','A52','A53','A54','A55','A56','A57','A58','A59','A5A','A6','A60','A61','A62','A63','A64','A65','A66','A67','A68','A69','A6A','A6B','A7','A70','A8','A9','Aa1','Aa10','Aa11','Aa12','Aa13','Aa14','Aa15','Aa16','Aa17','Aa18','Aa19','Aa2','Aa20','Aa21','Aa22','Aa23','Aa24','Aa25','Aa26','Aa27','Aa28','Aa29','Aa3','Aa30','Aa31','Aa32','Aa4','Aa5','Aa6','Aa7','Aa7A','Aa7B','Aa8','Aa9','B1','B2','B3','B4','B5','B5A','B6','B7','B8','B9','C1','C10','C10A','C11','C12','C13','C14','C15','C16','C17','C18','C19','C2','C20','C21','C22','C23','C24','C2A','C2B','C2C','C3','C4','C5','C6','C7','C8','C9','D1','D10','D11','D12','D13','D14','D15','D16','D17','D18','D19','D2','D20','D21','D22','D23','D24','D25','D26','D27','D27A','D28','D29','D3','D30','D31','D31A','D32','D33','D34','D34A','D35','D36','D37','D38','D39','D4','D40','D41','D42','D43','D44','D45','D46','D46A','D47','D48','D48A','D49','D5','D50','D50A','D50B','D50C','D50D','D50E','D50F','D50G','D50H','D50I','D51','D52','D52A','D53','D54','D54A','D55','D56','D57','D58','D59','D6','D60','D61','D62','D63','D64','D65','D66','D67','D67A','D67B','D67C','D67D','D67E','D67F','D67G','D67H','D7','D8','D8A','D9','E1','E10','E11','E12','E13','E14','E15','E16','E16A','E17','E17A','E18','E19','E2','E20','E20A','E21','E22','E23','E24','E25','E26','E27','E28','E28A','E29','E3','E30','E31','E32','E33','E34','E34A','E36','E37','E38','E4','E5','E6','E7','E8','E8A','E9','E9A','F1','F10','F11','F12','F13','F13A','F14','F15','F16','F17','F18','F19','F1A','F2','F20','F21','F21A','F22','F23','F24','F25','F26','F27','F28','F29','F3','F30','F31','F31A','F32','F33','F34','F35','F36','F37','F37A','F38','F38A','F39','F4','F40','F41','F42','F43','F44','F45','F45A','F46','F46A','F47','F47A','F48','F49','F5','F50','F51','F51A','F51B','F51C','F52','F53','F6','F7','F8','F9','G1','G10','G11','G11A','G12','G13','G14','G15','G16','G17','G18','G19','G2','G20','G20A','G21','G22','G23','G24','G25','G26','G26A','G27','G28','G29','G3','G30','G31','G32','G33','G34','G35','G36','G36A','G37','G37A','G38','G39','G4','G40','G41','G42','G43','G43A','G44','G45','G45A','G46','G47','G48','G49','G5','G50','G51','G52','G53','G54','G6','G6A','G7','G7A','G7B','G8','G9','H1','H2','H3','H4','H5','H6','H6A','H7','H8','I1','I10','I10A','I11','I11A','I12','I13','I14','I15','I2','I3','I4','I5','I5A','I6','I7','I8','I9','I9A','K1','K2','K3','K4','K5','K6','K7','K8','L1','L2','L2A','L3','L4','L5','L6','L6A','L7','L8','M1','M10','M10A','M11','M12','M12A','M12B','M12C','M12D','M12E','M12F','M12G','M12H','M13','M14','M15','M15A','M16','M16A','M17','M17A','M18','M19','M1A','M1B','M2','M20','M21','M22','M22A','M23','M24','M24A','M25','M26','M27','M28','M28A','M29','M3','M30','M31','M31A','M32','M33','M33A','M33B','M34','M35','M36','M37','M38','M39','M3A','M4','M40','M40A','M41','M42','M43','M44','M5','M6','M7','M8','M9','N1','N10','N11','N12','N13','N14','N15','N16','N17','N18','N18A','N18B','N19','N2','N20','N21','N22','N23','N24','N25','N25A','N26','N27','N28','N29','N3','N30','N31','N32','N33','N33A','N34','N34A','N35','N35A','N36','N37','N37A','N38','N39','N4','N40','N41','N42','N5','N6','N7','N8','N9','O1','O10','O10A','O10B','O10C','O11','O12','O13','O14','O15','O16','O17','O18','O19','O19A','O1A','O2','O20','O20A','O21','O22','O23','O24','O24A','O25','O25A','O26','O27','O28','O29','O29A','O3','O30','O30A','O31','O32','O33','O33A','O34','O35','O36','O36A','O36B','O36C','O36D','O37','O38','O39','O4','O40','O41','O42','O43','O44','O45','O46','O47','O48','O49','O5','O50','O50A','O50B','O51','O5A','O6','O6A','O6B','O6C','O6D','O6E','O6F','O7','O8','O9','P1','P10','P11','P1A','P2','P3','P3A','P4','P5','P6','P7','P8','P9','Q1','Q2','Q3','Q4','Q5','Q6','Q7','R1','R10','R10A','R11','R12','R13','R14','R15','R16','R16A','R17','R18','R19','R2','R20','R21','R22','R23','R24','R25','R26','R27','R28','R29','R2A','R3','R3A','R3B','R4','R5','R6','R7','R8','R9','S1','S10','S11','S12','S13','S14','S14A','S14B','S15','S16','S17','S17A','S18','S19','S2','S20','S21','S22','S23','S24','S25','S26','S26A','S26B','S27','S28','S29','S2A','S3','S30','S31','S32','S33','S34','S35','S35A','S36','S37','S38','S39','S4','S40','S41','S42','S43','S44','S45','S46','S5','S6','S6A','S7','S8','S9','T1','T10','T11','T11A','T12','T13','T14','T15','T16','T16A','T17','T18','T19','T2','T20','T21','T22','T23','T24','T25','T26','T27','T28','T29','T3','T30','T31','T32','T32A','T33','T33A','T34','T35','T36','T3A','T4','T5','T6','T7','T7A','T8','T8A','T9','T9A','U1','U10','U11','U12','U13','U14','U15','U16','U17','U18','U19','U2','U20','U21','U22','U23','U23A','U24','U25','U26','U27','U28','U29','U29A','U3','U30','U31','U32','U32A','U33','U34','U35','U36','U37','U38','U39','U4','U40','U41','U42','U5','U6','U6A','U6B','U7','U8','U9','V1','V10','V11','V11A','V11B','V11C','V12','V12A','V12B','V13','V14','V15','V16','V17','V18','V19','V1A','V1B','V1C','V1D','V1E','V1F','V1G','V1H','V1I','V2','V20','V20A','V20B','V20C','V20D','V20E','V20F','V20G','V20H','V20I','V20J','V20K','V20L','V21','V22','V23','V23A','V24','V25','V26','V27','V28','V28A','V29','V29A','V2A','V3','V30','V30A','V31','V31A','V32','V33','V33A','V34','V35','V36','V37','V37A','V38','V39','V4','V40','V40A','V5','V6','V7','V7A','V7B','V8','V9','W1','W10','W10A','W11','W12','W13','W14','W14A','W15','W16','W17','W17A','W18','W18A','W19','W2','W20','W21','W22','W23','W24','W24A','W25','W3','W3A','W4','W5','W6','W7','W8','W9','W9A','X1','X2','X3','X4','X4A','X4B','X5','X6','X6A','X7','X8','X8A','Y1','Y1A','Y2','Y3','Y4','Y5','Y6','Y7','Y8','Z1','Z10','Z11','Z12','Z13','Z14','Z15','Z15A','Z15B','Z15C','Z15D','Z15E','Z15F','Z15G','Z15H','Z15I','Z16','Z16A','Z16B','Z16C','Z16D','Z16E','Z16F','Z16G','Z16H','Z2','Z2A','Z2B','Z2C','Z2D','Z3','Z3A','Z3B','Z4','Z4A','Z5','Z5A','Z6','Z7','Z8','Z9'])
 
@@ -57,26 +134,49 @@ export function ConcordanceContent() {
   const router = useRouter()
   const pathname = usePathname()
   const [data, setData] = useState<ConcordanceEntry[]>([])
+  const [hpdbIndex, setHpdbIndex] = useState<Record<string, string[]>>({})
   const [search, setSearch] = useState(() => searchParams?.get('q') ?? '')
   const [loading, setLoading] = useState(true)
-  const [sortKey, setSortKey] = useState<'moller' | 'gardiner'>(
-    () => (searchParams?.get('sort') === 'gardiner' ? 'gardiner' : 'moller')
+  const [sortKey, setSortKey] = useState<'hieroglyphica' | 'moller' | 'gardiner'>(
+    () => {
+      const s = searchParams?.get('sort')
+      if (s === 'moller' || s === 'gardiner') return s
+      return 'hieroglyphica'
+    }
   )
   const [legendOpen, setLegendOpen] = useState(false)
 
   const updateParams = useCallback((q: string, sort: string) => {
     const params = new URLSearchParams()
     if (q) params.set('q', q)
-    if (sort !== 'moller') params.set('sort', sort)
+    if (sort !== 'hieroglyphica') params.set('sort', sort)
     const qs = params.toString()
     router.replace(`${pathname}${qs ? `?${qs}` : ''}`, { scroll: false })
   }, [router, pathname])
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/data/id_correspondence.json`)
-      .then((res) => res.json())
-      .then((json) => {
-        setData(json)
+    const base = process.env.NEXT_PUBLIC_BASE_URL || ''
+    Promise.all([
+      fetch(`${base}/data/id_correspondence.json`).then((r) => r.json()),
+      fetch(`${base}/data/index.json`).then((r) => r.json()).catch(() => []),
+    ])
+      .then(([corr, index]: [ConcordanceEntry[], unknown[]]) => {
+        setData(corr)
+        const byMoller: Record<string, string[]> = {}
+        if (Array.isArray(index)) {
+          for (const item of index) {
+            const it = item as Record<string, unknown>
+            const id = typeof it['_id'] === 'string' ? it['_id'] as string : ''
+            const hm = it['Hieratic No Mod']
+            const mollerNos: string[] = Array.isArray(hm) ? hm as string[] : hm ? [hm as string] : []
+            if (!id) continue
+            for (const mn of mollerNos) {
+              if (!mn) continue
+              ;(byMoller[mn] ||= []).push(id)
+            }
+          }
+        }
+        setHpdbIndex(byMoller)
         setLoading(false)
       })
       .catch(() => setLoading(false))
@@ -91,19 +191,22 @@ export function ConcordanceContent() {
           r.moller_no.toLowerCase().includes(q) ||
           r.gardiner_no.toLowerCase().includes(q) ||
           r.unicode_cp.toLowerCase().includes(q) ||
-          r.jsesh.toLowerCase().includes(q) ||
           r.mdc.toLowerCase().includes(q) ||
+          r.hieroglyphica.toLowerCase().includes(q) ||
           r.tsl_id.toLowerCase().includes(q) ||
           r.desc.toLowerCase().includes(q)
       )
     }
     return result.sort((a, b) => {
       if (sortKey === 'moller') {
-        const an = parseInt(a.moller_no) || 9999
-        const bn = parseInt(b.moller_no) || 9999
-        return an - bn
+        return compareMoller(a.moller_no, b.moller_no)
       }
-      return a.gardiner_no.localeCompare(b.gardiner_no)
+      // Primary sort by sign code, secondary by Möller number for deterministic ties.
+      const primary = sortKey === 'gardiner'
+        ? compareSignCode(a.gardiner_no, b.gardiner_no)
+        : compareSignCode(a.hieroglyphica, b.hieroglyphica)
+      if (primary !== 0) return primary
+      return compareMoller(a.moller_no, b.moller_no)
     })
   }, [data, search, sortKey])
 
@@ -130,22 +233,24 @@ export function ConcordanceContent() {
   }
 
   const COL_DEFS = [
-    { label: t('concordance_col_moller'),   href: 'https://mjn.host.cs.st-andrews.ac.uk/egyptian/unicode/tablehieratic.html' },
-    { label: t('concordance_col_gardiner'), href: null },
-    { label: t('concordance_col_glyph'),    href: null },
-    { label: t('concordance_col_jsesh'),    href: null },
-    { label: t('concordance_col_hg'),       href: null, title: t('concordance_col_hg_full') },
-    { label: t('concordance_col_mdc'),      href: null },
-    { label: t('concordance_col_tsl'),      href: 'https://thotsignlist.org/' },
-    { label: t('concordance_col_aku'),      href: 'https://aku-pal.uni-mainz.de/graphemes' },
-    { label: t('concordance_col_dpdp'),     href: 'http://129.206.5.162/beta/palaeography/' },
-    { label: t('concordance_col_isut'),     href: 'https://isut.uliege.be/signs/list' },
-    { label: t('concordance_col_phrp'),     href: 'https://www.phrp.be/' },
-    { label: t('concordance_col_unicode'),  href: 'https://www.unicode.org/charts/PDF/U13000.pdf' },
+    { label: t('concordance_col_hieroglyphica'),     href: null },
+    { label: t('concordance_col_glyph'),             href: null },
+    { label: t('concordance_col_gardiner'),          href: null },
+    { label: t('concordance_col_mdc'),               href: null },
+    { label: t('concordance_col_mdc_transcription'), href: null },
+    { label: t('concordance_col_tsl'),               href: 'https://thotsignlist.org/' },
+    { label: t('concordance_col_moller'),            href: 'https://mjn.host.cs.st-andrews.ac.uk/egyptian/unicode/tablehieratic.html' },
+    { label: t('concordance_col_hpdb'),              href: null },
+    { label: t('concordance_col_aku'),               href: 'https://aku-pal.uni-mainz.de/graphemes' },
+    { label: t('concordance_col_dpdp'),              href: 'http://129.206.5.162/beta/palaeography/' },
+    { label: t('concordance_col_isut'),              href: 'https://isut.uliege.be/signs/list' },
+    { label: t('concordance_col_phrp'),              href: 'https://www.phrp.be/' },
+    { label: t('concordance_col_unicode'),           href: 'https://www.unicode.org/charts/PDF/U13000.pdf' },
+    { label: t('concordance_col_jsesh'),             href: 'https://jsesh.qenherkhopeshef.org/' },
   ]
 
   return (
-    <div className="max-w-7xl mx-auto flex flex-col h-[calc(100vh-4rem)]">
+    <div className="w-full flex flex-col h-[calc(100vh-4rem)]">
 
       {/* ─── 上部固定パネル ─── */}
       <div className="shrink-0 bg-background border-b">
@@ -169,8 +274,18 @@ export function ConcordanceContent() {
           {/* ソートボタン */}
           <div className="flex rounded-md border overflow-hidden text-sm">
             <button
-              onClick={() => { setSortKey('moller'); updateParams(search, 'moller') }}
+              onClick={() => { setSortKey('hieroglyphica'); updateParams(search, 'hieroglyphica') }}
               className={`px-3 h-8 transition-colors ${
+                sortKey === 'hieroglyphica'
+                  ? 'bg-primary text-primary-foreground font-medium'
+                  : 'bg-background text-muted-foreground hover:text-foreground hover:bg-muted'
+              }`}
+            >
+              {t('concordance_sort_hieroglyphica')}
+            </button>
+            <button
+              onClick={() => { setSortKey('moller'); updateParams(search, 'moller') }}
+              className={`px-3 h-8 border-l transition-colors ${
                 sortKey === 'moller'
                   ? 'bg-primary text-primary-foreground font-medium'
                   : 'bg-background text-muted-foreground hover:text-foreground hover:bg-muted'
@@ -221,30 +336,37 @@ export function ConcordanceContent() {
         <table className="w-full border-collapse caption-bottom text-sm">
           <TableHeader className="sticky top-0 z-10">
             <TableRow className="align-bottom bg-muted/60 backdrop-blur-sm">
-              {COL_DEFS.map(({ label, href, title }) => (
-                <TableHead key={label} className="p-0 align-bottom border-b-2 border-border">
-                  <div className="flex justify-center">
-                    <div
-                      className="flex items-end pb-1.5 pt-2"
-                      style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: '88px', whiteSpace: 'nowrap' }}
-                    >
+              {COL_DEFS.map(({ label, href }) => {
+                // Insert a word-break opportunity before "(" so long labels like
+                // "MdC(transcription)" wrap cleanly into two lines.
+                const parenIdx = label.indexOf('(')
+                const labelNode = parenIdx > 0
+                  ? <>{label.slice(0, parenIdx)}<wbr />{label.slice(parenIdx)}</>
+                  : label
+                return (
+                  <TableHead
+                    key={label}
+                    className="px-1 py-2 align-bottom border-b-2 border-border"
+                    style={{ minWidth: '80px' }}
+                  >
+                    <div className="flex justify-center items-end text-center leading-tight">
                       {href ? (
                         <a
                           href={href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          title={title}
-                          className="inline-flex items-center gap-0.5 text-xs text-primary hover:underline"
+                          className="inline-flex items-end justify-center gap-0.5 text-xs text-primary hover:underline"
                         >
-                          {label}<ExternalLink className="w-2.5 h-2.5 shrink-0" />
+                          <span className="whitespace-normal break-words">{labelNode}</span>
+                          <ExternalLink className="w-2.5 h-2.5 shrink-0 mb-0.5" />
                         </a>
                       ) : (
-                        <span className="text-xs text-foreground/70" title={title}>{label}</span>
+                        <span className="text-xs text-foreground/70 whitespace-normal break-words">{labelNode}</span>
                       )}
                     </div>
-                  </div>
-                </TableHead>
-              ))}
+                  </TableHead>
+                )
+              })}
             </TableRow>
           </TableHeader>
 
@@ -263,13 +385,17 @@ export function ConcordanceContent() {
                   {content}
                 </TableCell>
               )
+              const mdcParts = parseMdc(r.mdc, r.gardiner_no)
+              // Fallback for MdC graphical code: prefer parsed token, else gardiner_no (strip suffixes like "*", "/A5")
+              const mdcCode = mdcParts.code || r.gardiner_no.replace(/[*/].*$/, '')
               return (
                 <TableRow key={i} className={`hover:bg-primary/5 ${i % 2 === 0 ? '' : 'bg-muted/20'}`}>
-                  {/* Möller → HPDB search */}
-                  {td(r.moller_no
-                    ? <Link href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(r.moller_no)}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
-                    : empty
-                  )}
+                  {/* Hieroglyphica */}
+                  {td(r.hieroglyphica || empty)}
+                  {/* Glyph */}
+                  <TableCell className="px-2 py-0.5 text-center text-xl leading-none">
+                    {r.unicode_char || empty}
+                  </TableCell>
                   {/* Gardiner */}
                   {td(r.gardiner_no
                     ? (simple
@@ -277,24 +403,39 @@ export function ConcordanceContent() {
                         : r.gardiner_no)
                     : empty
                   )}
-                  {/* Glyph */}
-                  <TableCell className="px-2 py-0.5 text-center text-xl leading-none">
-                    {r.unicode_char || empty}
-                  </TableCell>
-                  {/* JSesh — link to SVG glyph image */}
-                  {td(r.jsesh
-                    ? lnk(`https://files.qenherkhopeshef.org/jsjsesh/images/glyphs/${r.jsesh}.svg`, r.jsesh)
-                    : empty
-                  )}
-                  {/* Hieroglyphica */}
-                  {td(r.hieroglyphica || empty)}
-                  {/* MdC */}
-                  {td(r.mdc || empty)}
+                  {/* MdC (graphical code) */}
+                  {td(mdcCode || empty)}
+                  {/* MdC (transcription) */}
+                  {td(mdcParts.transcription || empty)}
                   {/* TSL */}
                   {td(r.tsl_id
                     ? lnk(`https://thotsignlist.org/mysign?id=${r.tsl_id}`, r.tsl_id)
                     : empty
                   )}
+                  {/* Möller → HPDB search */}
+                  {td(r.moller_no
+                    ? <Link href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(r.moller_no)}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
+                    : empty
+                  )}
+                  {/* HPDB — item IDs for this Möller number */}
+                  {td((() => {
+                    const ids = r.moller_no ? hpdbIndex[r.moller_no] ?? [] : []
+                    if (ids.length === 0) return empty
+                    if (ids.length === 1) {
+                      return <Link href={`/item/${ids[0]}`} className="text-primary hover:underline">{ids[0]}</Link>
+                    }
+                    return (
+                      <span className="inline-flex items-baseline gap-1">
+                        <Link href={`/item/${ids[0]}`} className="text-primary hover:underline">{ids[0]}</Link>
+                        <Link
+                          href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(r.moller_no)}`}
+                          className="text-[10px] text-muted-foreground hover:text-primary hover:underline"
+                        >
+                          +{ids.length - 1}
+                        </Link>
+                      </span>
+                    )
+                  })())}
                   {/* AKU */}
                   {td(r.aku_id
                     ? lnk(`https://aku-pal.uni-mainz.de/graphemes#mdc=${r.mdc}`, r.aku_id)
@@ -318,6 +459,11 @@ export function ConcordanceContent() {
                   {/* Unicode */}
                   {td(r.unicode_cp
                     ? lnk(`https://util.unicode.org/UnicodeJsps/character.jsp?a=${r.unicode_cp.replace('U+', '')}`, r.unicode_cp)
+                    : empty
+                  )}
+                  {/* JSesh — link to SVG glyph image */}
+                  {td(r.jsesh
+                    ? lnk(`https://files.qenherkhopeshef.org/jsjsesh/images/glyphs/${r.jsesh}.svg`, r.jsesh)
                     : empty
                   )}
                 </TableRow>

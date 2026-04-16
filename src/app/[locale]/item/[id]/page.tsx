@@ -135,7 +135,7 @@ function ConcordanceSection({ entry }: { entry: ConcordanceEntry }) {
     { label: 'JSesh', content: entry.jsesh
       ? lnk(`https://files.qenherkhopeshef.org/jsjsesh/images/glyphs/${entry.jsesh}.svg`, entry.jsesh)
       : empty },
-    { label: 'HG', content: entry.hieroglyphica ? <span className="font-mono text-xs">{entry.hieroglyphica}</span> : empty },
+    { label: 'Hieroglyphica', content: entry.hieroglyphica ? <span className="font-mono text-xs">{entry.hieroglyphica}</span> : empty },
     { label: 'MdC', content: entry.mdc ? <span className="font-mono text-xs">{entry.mdc}</span> : empty },
     { label: 'Unicode', content: entry.unicode_cp
       ? lnk(`https://util.unicode.org/UnicodeJsps/character.jsp?a=${entry.unicode_cp.replace('U+', '')}`, entry.unicode_cp)
