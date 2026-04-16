@@ -24,7 +24,7 @@ interface ChangelogEntry {
 
 const entries: ChangelogEntry[] = [
   {
-    date: '2025–2026',
+    date: '2026-04-15',
     titleEn: 'Next.js Migration & Feature Update',
     titleJa: 'Next.js 移行・機能更新',
     itemsEn: [
