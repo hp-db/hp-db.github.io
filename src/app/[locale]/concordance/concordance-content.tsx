@@ -412,14 +412,21 @@ export function ConcordanceContent() {
                     ? lnk(`https://thotsignlist.org/mysign?id=${r.tsl_id}`, r.tsl_id)
                     : empty
                   )}
-                  {/* Möller → HPDB search */}
-                  {td(r.moller_no
-                    ? <Link href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(r.moller_no)}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
-                    : empty
-                  )}
-                  {/* HPDB — item IDs for this Möller number */}
+                  {/* Möller → HPDB search (use first atomic token for compound keys
+                     like "119/120" so the search matches HPDB's decomposed values) */}
                   {td((() => {
-                    const ids = r.moller_no ? hpdbIndex[r.moller_no] ?? [] : []
+                    if (!r.moller_no) return empty
+                    const searchTarget = r.moller_no.split(/[=+/]/).map((t) => t.trim()).find(Boolean) ?? r.moller_no
+                    return <Link href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(searchTarget)}`} className="font-medium text-primary hover:underline">{r.moller_no}</Link>
+                  })())}
+                  {/* HPDB — HPDB item ids for this Möller number. Tokenize compound
+                     moller_no like "119/120" or "109=483+108" so we aggregate items
+                     for every atomic Möller number the concordance row covers. */}
+                  {td((() => {
+                    if (!r.moller_no) return empty
+                    const tokens = r.moller_no.split(/[=+/]/).map((t) => t.trim()).filter(Boolean)
+                    const searchTarget = tokens[0] || r.moller_no
+                    const ids = Array.from(new Set(tokens.flatMap((t) => hpdbIndex[t] ?? [])))
                     if (ids.length === 0) return empty
                     if (ids.length === 1) {
                       return <Link href={`/item/${ids[0]}`} className="text-primary hover:underline">{ids[0]}</Link>
@@ -428,7 +435,7 @@ export function ConcordanceContent() {
                       <span className="inline-flex items-baseline gap-1">
                         <Link href={`/item/${ids[0]}`} className="text-primary hover:underline">{ids[0]}</Link>
                         <Link
-                          href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(r.moller_no)}`}
+                          href={`/search?fc-${encodeURIComponent('Hieratic No Mod')}=${encodeURIComponent(searchTarget)}`}
                           className="text-[10px] text-muted-foreground hover:text-primary hover:underline"
                         >
                           +{ids.length - 1}
