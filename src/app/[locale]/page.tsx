@@ -185,16 +185,16 @@ function HomeContent() {
               <ul className="list-disc pl-6 space-y-2 text-sm">
                 {locale === 'ja' ? (
                   <>
-                    <li>2025–2026: Next.js 16へ移行し、IDコンコーダンス表・引用ボタン・フッターナビゲーション等を追加。<Link href="/about/changelog" className="ml-1 text-primary hover:underline">→ 更新履歴</Link></li>
+                    <li>2025–2026: IDコンコーダンス表・引用ボタン・フッターナビゲーション等を追加。<Link href="/about/changelog" className="ml-1 text-primary hover:underline">→ 更新履歴</Link></li>
                     <li>2021年1月31日: システムを更新しました．（数字類と連字のコンテンツを追加．メタデータ，表示項目，RDF，UIの修正）</li>
-                    <li>2020年11月9日: システムを更新しました．（日本語ページの追加，アイテム詳細ページの追加，RDFデータの追加，静的サイトジェネレータの利用）</li>
+                    <li>2020年11月9日: システムを更新しました．（日本語ページの追加，アイテム詳細ページの追加，RDFデータの追加）</li>
                     <li>2019年12月11日: システムを公開しました．</li>
                   </>
                 ) : (
                   <>
-                    <li>2025–2026: Migrated to Next.js 16; added ID Concordance table, citation buttons, footer navigation, and more. <Link href="/about/changelog" className="text-primary hover:underline">→ Full changelog</Link></li>
+                    <li>2025–2026: Added ID Concordance table, citation buttons, footer navigation, and more. <Link href="/about/changelog" className="text-primary hover:underline">→ Full changelog</Link></li>
                     <li>31, Jan.,2021: Updated: Contents of &quot;Number part&quot; and &quot;Ligature part&quot; were added. Metatada, Display item, RDF data, and UI were modified.</li>
-                    <li>9, Nov., 2020: Updated: Japanese page, Item detail page, RDF data, and SSG functionality were added.</li>
+                    <li>9, Nov., 2020: Updated: Japanese page, Item detail page, and RDF data were added.</li>
                     <li>11, Dec., 2019: Uploaded the data of Möller No.1 to 613bis, vols.1-3.</li>
                   </>
                 )}
