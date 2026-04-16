@@ -135,24 +135,42 @@ function HomeContent() {
             <CardHeader>
               <CardTitle>{t('members')}</CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-6 space-y-2 text-sm">
-                {locale === 'ja' ? (
-                  <>
-                    <li><a href="https://researchmap.jp/Masakatsu-Nagai/">永井正勝</a>, 筑波大学 図書館情報メディア系 教授</li>
-                    <li><a href="https://researchmap.jp/wakit/">和氣愛仁</a>, 筑波大学 人文社会系 准教授</li>
-                    <li><a href="https://researchmap.jp/takahashi.yona">高橋洋成</a>, 東京外国語大学 アジア・アフリカ言語文化研究所 研究員</li>
-                    <li><a href="https://researchmap.jp/nakamura.satoru/">中村覚</a>, 東京大学 史料編纂所 准教授</li>
-                  </>
-                ) : (
-                  <>
-                    <li><a href="https://researchmap.jp/Masakatsu-Nagai/?lang=english">Masakatsu NAGAI</a>, Professor, Library, Information and Media System, University of Tsukuba.</li>
-                    <li><a href="https://researchmap.jp/wakit/?lang=english">Toshihito WAKI</a>, Associate Professor, Faculty of Humanities and Social Sciences, University of Tsukuba.</li>
-                    <li><a href="https://researchmap.jp/takahashi.yona?lang=en">Yona TAKAHASHI</a>, Research Associate, Research Institute for Languages and Cultures of Asia and Africa, Tokyo University of Foreign Studies.</li>
-                    <li><a href="https://researchmap.jp/nakamura.satoru/?lang=english">Satoru NAKAMURA</a>, Associate Professor, Historiographical Institute, The University of Tokyo.</li>
-                  </>
-                )}
-              </ul>
+            <CardContent className="space-y-4 text-sm">
+              {locale === 'ja' ? (
+                <>
+                  <div>
+                    <h3 className="font-semibold mb-2">開発者</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li><a href="https://researchmap.jp/Masakatsu-Nagai/">永井正勝</a>, 筑波大学 図書館情報メディア系 教授（開発責任者）</li>
+                      <li><a href="https://researchmap.jp/nakamura.satoru/">中村覚</a>, 東京大学 史料編纂所 准教授</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">協力者</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li><a href="https://researchmap.jp/wakit/">和氣愛仁</a>, 筑波大学 人文社会系 准教授</li>
+                      <li><a href="https://researchmap.jp/takahashi.yona">高橋洋成</a>, 東京外国語大学 アジア・アフリカ言語文化研究所 研究員</li>
+                    </ul>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <h3 className="font-semibold mb-2">Developers</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Development Manager, Dr. <a href="https://researchmap.jp/Masakatsu-Nagai/?lang=english">Masakatsu NAGAI</a>, Professor, Library, Information and Media System, University of Tsukuba.</li>
+                      <li>Dr. <a href="https://researchmap.jp/nakamura.satoru/?lang=english">Satoru NAKAMURA</a>, Associate Professor, Historiographical Institute, The University of Tokyo.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Contributors</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Dr. <a href="https://researchmap.jp/wakit/?lang=english">Toshihito WAKI</a>, Associate Professor, Faculty of Humanities and Social Sciences, University of Tsukuba.</li>
+                      <li>Dr. <a href="https://researchmap.jp/takahashi.yona?lang=en">Yona TAKAHASHI</a>, Research Associate, Research Institute for Languages and Cultures of Asia and Africa, Tokyo University of Foreign Studies.</li>
+                    </ul>
+                  </div>
+                </>
+              )}
             </CardContent>
           </Card>
         </section>
